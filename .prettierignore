@@ -1,0 +1,12 @@
+# node_modules
+**/node_modules/**
+# cache-dirs
+**/.cache
+# pnpm lockfile
+pnpm-lock.yaml
+# built site
+_site
+# markdown files
+*.md
+# css files
+*.css
