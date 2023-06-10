@@ -6,7 +6,11 @@
     "dev": "npx @11ty/eleventy --serve --quiet",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "devdebug": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "author": "equk <equk@users.noreply.github.com>",
   "private": true,
@@ -18,7 +22,12 @@
     "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "luxon": "^3.3.0",
-    "markdown-it-anchor": "^8.6.7"
+    "markdown-it-anchor": "^8.6.7",
+    "prettier": "^2.8.8"
   }
 }
