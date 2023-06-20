@@ -1,3 +1,5 @@
+const slugify = require('slugify')
+
 function dateLink(dateInput) {
   const date = new Date(dateInput)
   const year = date.getFullYear()
@@ -30,9 +32,10 @@ module.exports = {
       if (data.permalink) {
         return data.permalink
       }
-      const { date, fileSlug } = data.page
+      const { date } = data.page
       const dateURL = dateLink(date)
-      return `${dateURL}/${fileSlug}/`
+      const titleSlug = slugify(data.title)
+      return `${dateURL}/${titleSlug}/`
     },
   },
 }
