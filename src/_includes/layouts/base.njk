@@ -22,9 +22,9 @@
     #}
 
     {#- Add an arbitrary string to the bundle #}
-    {%- css %}* { box-sizing: border-box; }{% endcss %}
+    {# {%- css %}* { box-sizing: border-box; }{% endcss %} #}
     {#- Add the contents of a file to the bundle #}
-    {%- css %}{% include "public/css/index.css" %}{% endcss %}
+    {%- css %}{% include "dist/css/styles.css" %}{% endcss %}
 
     {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
     <style>{% getBundle "css" %}</style>
