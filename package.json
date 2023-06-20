@@ -2,7 +2,9 @@
   "name": "11ty-equk",
   "description": "Eleventy blog for equk",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "npm-run-all -p build:*",
+    "build:html": "npx @11ty/eleventy",
+    "build:css": "tailwindcss -i src/_styles/_global.css -o dist/css/styles.css --minify --postcss",
     "dev": "npx @11ty/eleventy --serve --quiet",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "devdebug": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
@@ -29,6 +31,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "luxon": "^3.3.0",
     "markdown-it-anchor": "^8.6.7",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2"
