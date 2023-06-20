@@ -6,6 +6,7 @@
 pnpm-lock.yaml
 # built site
 _site
+dist
 # markdown files
 *.md
 # css files
