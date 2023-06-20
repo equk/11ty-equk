@@ -1,0 +1,13 @@
+/*
+  -----------------------------------------
+  Global CSS Styles
+  -----------------------------------------
+  equk 11ty blog
+  https://github.com/equk/
+ */
+
+/* TailwindCSS Styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
