@@ -12,7 +12,7 @@ const pluginImages = require('./eleventy.config.images.js')
 
 module.exports = function (eleventyConfig) {
   // Copy the contents of the `public` folder to the output folder
-  // For example, `./public/css/` ends up in `_site/css/`
+  // For example, `./public/css/` ends up in `dist/css/`
   eleventyConfig.addPassthroughCopy({
     './public/': '/',
   })
@@ -116,10 +116,8 @@ module.exports = function (eleventyConfig) {
 
     // These are all optional:
     dir: {
-      input: 'content', // default: "."
-      includes: '../_includes', // default: "_includes"
-      data: '../_data', // default: "_data"
-      output: '_site',
+      input: 'src',
+      output: 'dist',
     },
 
     // -----------------------------------------------------------------
