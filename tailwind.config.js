@@ -25,9 +25,9 @@ module.exports = {
       },
       fontFamily: {
         // Add any custom fonts here
-        sans: [...fontFamily.sans],
+        sans: ['Inter', ...fontFamily.sans],
         serif: [...fontFamily.serif],
-        mono: [...fontFamily.mono],
+        mono: ['Fira Mono', ...fontFamily.mono],
       },
     },
   },
