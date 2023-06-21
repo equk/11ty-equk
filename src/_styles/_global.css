@@ -6,6 +6,28 @@
   https://github.com/equk/
  */
 
+
+/* imports */
+
+@import 'fonts.css';
+@import 'hero.css';
+
+/* Base Styles */
+
+body {
+  margin: auto;
+  padding: 0;
+  text-align: left;
+  font-size: 1.12rem;
+  line-height: 1.5rem;
+  -webkit-transition: background-color ease 0.7s;
+  transition: background-color ease 0.7s;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
 /* TailwindCSS Styles */
 
 @tailwind base;

@@ -1,0 +1,117 @@
+/*
+  -----------------------------------------
+  Hero Component CSS Styles
+  -----------------------------------------
+  equk gatsby blog
+  https://github.com/equk/
+ */
+
+
+/* Top Banner */
+
+.top-banner {
+  position: relative;
+}
+
+.top-banner:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(128, 100%, 77%, 1) 50%, hsla(197, 100%, 64%, 1) 100%);
+}
+
+.topbanner-body {
+  background-size: cover;
+  background-image: url("/media/images/keys_banner.webp");
+  background-position: center bottom;
+  position: relative;
+  height: 350px;
+}
+
+.topbanner-body::before {
+  background: -webkit-linear-gradient(-45deg, #081123, #22185b);
+  background-color: #130d33;
+  background: linear, 135deg, #081123 0, #22185b 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  left: 0;
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  content: ""
+}
+
+.top-banner h1,
+.top-banner h2 {
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.top-banner h2 {
+  color: #0282c9;
+}
+
+.social-blocks {
+  font-size: 37px;
+  text-align: center;
+}
+
+.social-blocks .fa {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-blocks a .fa-twitter {
+  background-color: #55acee;
+}
+
+.social-blocks a .fa-facebook {
+  background-color: #3b5998;
+}
+
+.social-blocks a .fa-google-plus {
+  background-color: #d34836;
+}
+
+.social-blocks a .fa-tumblr {
+  background-color: #36465d;
+}
+
+.social-blocks a .fa-github {
+  background-color: #333;
+}
+
+.social-blocks a .fa-mastodon {
+  background-color: #563acc;
+}
+
+/* Hero Image */
+
+main .hero-w {
+  max-width: 1200px;
+  max-height: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e5e7eb;
+  -webkit-box-shadow: 5px 5px 20px rgba(39, 44, 49, .6), 1px 3px 8px rgba(39, 44, 49, .3);
+  box-shadow: 5px 5px 20px rgba(39, 44, 49, .6), 1px 3px 8px rgba(39, 44, 49, .3);
+}
+
+main .hero-w {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, .6), 1px 3px 8px rgba(0, 0, 0, .3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6), 1px 3px 8px rgba(0, 0, 0, .3);
+}
+
+main .hero-w .gatsby-image-wrapper {
+  background-color: #333;
+}
