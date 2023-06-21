@@ -17,6 +17,13 @@ module.exports = function (eleventyConfig) {
     './public/': '/',
   })
 
+  // Disable livereload injection (use patched instead)
+  // This fixes inlined CSS (default changes style link elements)
+  eleventyConfig.setServerOptions({
+    liveReload: false,
+    domDiff: false,
+  })
+
   // Run Eleventy when these files change:
   // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
