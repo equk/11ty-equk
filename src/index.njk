@@ -1,8 +1,8 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-key: Home
-order: 1
+  key: Home
+  order: 1
 numberOfLatestPostsToShow: 8
 ---
 <article class="content">
@@ -18,7 +18,7 @@ numberOfLatestPostsToShow: 8
 
       {% set morePosts = postsCount - numberOfLatestPostsToShow %}
       {% if morePosts > 0 %}
-      <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+      <p>View <a href="/blog/">All Post{% if morePosts != 1 %}s{% endif %}</a></p>
       {% endif %}
 
       {# List every content page in the project #}
