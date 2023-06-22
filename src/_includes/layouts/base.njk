@@ -32,21 +32,29 @@
     {#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
   </head>
   <body>
-    <a href="#skip" class="visually-hidden">Skip to main content</a>
-
-    <header>
-      <a href="/" class="home-link">{{ metadata.title }}</a>
-
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <nav>
-        <h2 class="visually-hidden">Top level navigation menu</h2>
-        <ul class="nav">
-        {%- for entry in collections.all | eleventyNavigation %}
-          <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-        {%- endfor %}
-        </ul>
-      </nav>
-    </header>
+    <div class="page-wrapper">
+      <header class="mx-auto w-full flex-none duration-100 ease-in">
+        <div class="topbar mx-auto w-full max-w-6xl md:flex md:justify-between">
+          <div class="flex justify-between">
+            <a class="flex items-center" href="/"><span class="site-title text-gray-900 dark:text-white">{{ metadata.title }}</span></a>
+            <div class="flex items-center md:hidden">
+              <button class="ml-1.5 inline-flex items-center rounded-lg p-2.5 text-sm text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-700" id="toggle-navigation-menu" aria-label="Toggle Menu" type="button" data-aw-toggle-menu=""><svg astro-icon="tabler:menu" class="h-6 w-6" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g fill="none" class="icon-tabler" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M4 8h16"></path>
+                    <path d="M4 16h16"></path>
+                  </g>
+                </svg></button>
+            </div>
+          </div>
+          <nav aria-label="Main navigation" id="main-nav" class="hidden w-full items-center overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:w-auto md:overflow-visible">
+            <ul class="flex w-full flex-col text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
+              {%- for entry in collections.all | eleventyNavigation %}
+              <li class="nav-item"><a href="{{ entry.url }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
+              {%- endfor %}
+            </ul>
+          </nav>
+        </div>
+      </header>
 
     <main id="skip">
       {{ content | safe }}
@@ -55,6 +63,7 @@
     <footer></footer>
 
     <!-- Current page: {{ page.url | htmlBaseUrl }} -->
+  </div>
   </body>
 </html>
 <script type="module" src="/reload-client.js"></script>
