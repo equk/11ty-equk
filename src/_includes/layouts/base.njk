@@ -56,11 +56,46 @@
         </div>
       </header>
 
-    <main id="skip">
+    <main>
       {{ content | safe }}
     </main>
 
-    <footer></footer>
+    <footer class="border-t border-gray-300 text-gray-800 dark:border-gray-900 dark:text-gray-100">
+      <div class="mx-auto max-w-6xl py-10">
+        <div class="grid sm:grid-cols-1 md:grid-cols-4 md:gap-8 lg:grid-cols-4">
+          <div class="footer-title">
+            <p class="pb-4 text-center md:justify-start md:pb-0 md:text-left">equk</p>
+          </div>
+          <div class="hidden md:block">
+          </div>
+          <div class="footer-nav hidden md:block">
+            <nav aria-label="Footer navigation" class="gap-x-2 text-center sm:gap-x-0">
+              <ul class="md:self-center">
+                {%- for entry in collections.all | eleventyNavigation %}
+                <li class="nav-item"><a href="{{ entry.url }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
+                {%- endfor %}
+              </ul>
+            </nav>
+          </div>
+          <div class="social-blocks">
+            <a href="https://twitter.com/equilibriumuk" target="_blank" aria-label="go to github" rel="noopener noreferrer">
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="https://twitter.com/equilibriumuk" target="_blank" aria-label="go to mastodon" rel="me noopener noreferrer">
+              <i class="fa fa-mastodon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mx-auto grid max-w-6xl border-t border-gray-300 p-1 dark:border-gray-900 md:grid-cols-2">
+          <div class="copyright text-center text-sm md:text-left">© 2023 equk.co.uk all rights reserved.</div>
+          <div class="powered-by hidden text-right text-sm md:block">
+            Powered by
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Current page: {{ page.url | htmlBaseUrl }} -->
   </div>
