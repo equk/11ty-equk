@@ -54,6 +54,28 @@
               <li class="nav-item"><a href="{{ entry.url }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
               {%- endfor %}
             </ul>
+            <toggle-dark>
+              <button
+              class="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              aria-label="toggle dark mode"
+              type="button"
+              id="toggle-dark"
+              data-aw-toggle-color-scheme=""
+              ><svg class="h-5 w-5" viewBox="0 0 24 24"
+                ><g
+                  fill="none"
+                  class="icon-tabler"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  ><circle cx="12" cy="12" r="4"></circle><path
+                    d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7-.7.7m0 11.4.7.7m-12.1-.7-.7.7"
+                  ></path></g
+                ></svg
+              >
+            </button>
+          </toggle-dark>
           </nav>
         </div>
       </header>
