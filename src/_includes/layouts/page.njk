@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+---
+{# Only include the syntax highlighter CSS on blog posts #}
+{%- css %}{% include "src/_styles/prism/prism-okaidia.css" %}{% endcss %}
+{%- css %}{% include "src/_styles/prism/prism-diff.css" %}{%- endcss %}
+
+<main>
+  <article class="content">
+    <header class="pb-16 pt-24">
+      <div class="space-y-4">
+        <h1 class="text-center text-5xl font-bold dark:text-gray-100">{{ title }}</h1>
+      </div>
+    </header>
+
+    <section class="post-full-content xl:relative">
+      <div class="post-content">
+        <div class="xl:col-span-3 xl:row-span-2 xl:pb-0">
+          <div class="prose lg:prose-lg mx-auto max-w-none">
+            <div class="content-body">
+              {{ content | safe }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
