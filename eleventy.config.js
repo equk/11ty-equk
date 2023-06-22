@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
   // For example, `./public/css/` ends up in `dist/css/`
   eleventyConfig.addPassthroughCopy({
     './public/': '/',
+    './src/_assets/fonts': '/fonts',
   })
 
   // Disable livereload injection (use patched instead)
