@@ -20,8 +20,6 @@ layout: layouts/base.njk
       </div>
     </header>
 
-
-
     <section class="post-full-content xl:relative">
       <div class="post-content">
         <div class="xl:col-span-3 xl:row-span-2 xl:pb-0">
@@ -35,7 +33,7 @@ layout: layouts/base.njk
       <div class="post-footer border-t border-b border-slate-200 px-3 py-2 dark:border-slate-700/40">
         <div class="flex items-center">
           <div class="flex items-center">
-            <i class="fa fa-photo"></i>
+            <img class="object-cover h-20 rounded-full" src={{ metadata.author.photo }} alt={{ metadata.author.name }} />
           </div>
           <div class="mx-5 flex-1 items-center text-left">
             <a href="/about" class="mx-2 text-2xl font-semibold text-gray-700 dark:text-gray-200">

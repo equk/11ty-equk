@@ -5,6 +5,7 @@ module.exports = {
   description: 'writings of a coder + sysadmin',
   author: {
     name: 'equilibriumuk',
+    photo: '/users/equilibriumuk.jpg',
     email: 'equk@users.noreply.github.com',
     url: 'https://equk.co.uk/about/',
     contacts: {
