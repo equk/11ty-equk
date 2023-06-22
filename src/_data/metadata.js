@@ -1,11 +1,17 @@
 module.exports = {
-  title: 'Eleventy Base Blog v8',
-  url: 'https://example.com/',
+  title: `equk's blog`,
+  url: 'https://equk.co.uk/',
   language: 'en',
-  description: 'I am writing about my experiences as a naval navel-gazer.',
+  description: 'writings of a coder + sysadmin',
   author: {
-    name: 'Your Name Here',
-    email: 'youremailaddress@example.com',
-    url: 'https://example.com/about-me/',
+    name: 'equilibriumuk',
+    email: 'equk@users.noreply.github.com',
+    url: 'https://equk.co.uk/about/',
+    contacts: {
+      twitter: 'equilibriumuk',
+      github: 'equk',
+      mastodon: '@equilibriumuk@hachyderm.io',
+      mastodon_url: 'hachyderm.io/@equilibriumuk',
+    },
   },
 }
