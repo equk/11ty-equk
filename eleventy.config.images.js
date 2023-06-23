@@ -16,7 +16,7 @@ module.exports = (eleventyConfig) => {
     async function imageShortcode(src, alt, widths, sizes) {
       // Full list of formats here: https://www.11ty.dev/docs/plugins/image/#output-formats
       // Warning: Avif can be resource-intensive so take care!
-      const formats = ['avif', 'webp', 'auto']
+      const formats = ['webp', 'auto']
       const file = relativeToInputPath(this.page.inputPath, src)
       const metadata = await eleventyImage(file, {
         widths: widths || ['auto'],
@@ -42,23 +42,17 @@ module.exports = (eleventyConfig) => {
       const fixpath = (src) => src.replace('../../', '')
       const src = fixpath(token.attrGet('src'))
       const alt = token.content
-      const formats = ['avif', 'webp', 'auto']
+      const formats = ['webp', 'auto']
       const metadata = eleventyImage.statsSync(src, {
         widths: ['auto'],
         formats,
         outputDir: path.join(eleventyConfig.dir.output, 'img'), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
       })
-      return eleventyImage.generateHTML(
-        metadata,
-        {
-          alt,
-          loading: 'lazy',
-          decoding: 'async',
-        },
-        {
-          whitespaceMode: 'inline',
-        }
-      )
+      return eleventyImage.generateHTML(metadata, {
+        alt,
+        loading: 'lazy',
+        decoding: 'async',
+      })
     }
   })
 }
