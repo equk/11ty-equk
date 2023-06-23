@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon')
 const markdownItAnchor = require('markdown-it-anchor')
+const markdownItTaskLists = require('markdown-it-task-lists')
 
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
@@ -102,6 +103,7 @@ module.exports = function (eleventyConfig) {
       level: [1, 2, 3, 4],
       slugify: eleventyConfig.getFilter('slugify'),
     })
+    mdLib.use(markdownItTaskLists, { label: true })
   })
 
   // Features to make your build faster (when you need them)
