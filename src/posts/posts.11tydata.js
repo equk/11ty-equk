@@ -34,7 +34,7 @@ module.exports = {
       }
       const { date } = data.page
       const dateURL = dateLink(date)
-      const titleSlug = slugify(data.title)
+      const titleSlug = slugify(data.title, { lower: true })
       return `${dateURL}/${titleSlug}/`
     },
   },
