@@ -1,0 +1,202 @@
+code[class*='language-'],
+pre[class*='language-'] {
+  position: relative;
+}
+
+pre[class*='language-']::before {
+  background: #ddd;
+  border-radius: 0 0 4px 4px;
+  color: #000000;
+  font-size: 0.75rem;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+
+pre[class='language-javascript']::before {
+  content: 'js';
+  background: #f7df1e;
+}
+
+pre[class='language-js']::before {
+  content: 'js';
+  background: #f7df1e;
+}
+
+pre[class='language-jsx']::before {
+  content: 'jsx';
+  background: #61dafb;
+}
+
+pre[class='language-graphql']::before {
+  content: 'GraphQL';
+  background: #e10098;
+  color: #ffffff;
+}
+
+pre[class='language-powershell']::before,
+pre[class='language-ps']::before {
+  content: 'ps';
+  background: #0050af;
+  color: #ffffff;
+}
+
+pre[class='language-html']::before {
+  content: 'html';
+  background: #005a9c;
+  color: #ffffff;
+}
+
+pre[class='language-css']::before {
+  content: 'css';
+  background: #ff9800;
+  color: #ffffff;
+}
+
+pre[class='language-mdx']::before {
+  content: 'mdx';
+  background: #f9ac00;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+pre[class='language-shell']::before {
+  content: 'shell';
+}
+
+pre[class='language-sh']::before {
+  content: 'sh';
+}
+
+pre[class='language-bash']::before {
+  content: 'bash';
+}
+
+pre[class='language-yaml']::before {
+  content: 'yaml';
+  background: #ffa8df;
+}
+
+pre[class='language-markdown']::before {
+  content: 'md';
+}
+
+pre[class='language-json']::before,
+pre[class='language-json5']::before {
+  content: 'json';
+  background: linen;
+}
+
+pre[class='language-diff']::before {
+  content: 'diff';
+  background: #e6ffed;
+}
+
+pre[class='language-text']::before {
+  content: 'text';
+  background: #ffffff;
+}
+
+pre[class='language-flow']::before {
+  content: 'flow';
+  background: #e8bd36;
+}
+
+pre[class='language-go']::before {
+  content: 'go';
+  background: #00add8;
+  color: #fff;
+}
+
+pre[class='language-lua']::before {
+  content: 'lua';
+  background: #000080;
+  color: #fff;
+}
+
+pre[class='language-ts']::before {
+  content: 'ts';
+  background: #3178c6;
+  color: #fff;
+}
+
+pre[class*='language-']::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+pre[class='language-javascript']::after {
+  background: #f7df1e;
+}
+
+pre[class='language-js']::after {
+  background: #f7df1e;
+}
+
+pre[class='language-jsx']::after {
+  background: #61dafb;
+}
+
+pre[class='language-graphql']::after {
+  background: #e10098;
+  color: #ffffff;
+}
+
+pre[class='language-powershell']::after,
+pre[class='language-ps']::after {
+  background: #0050af;
+  color: #ffffff;
+}
+
+pre[class='language-html']::after {
+  background: #005a9c;
+  color: #ffffff;
+}
+
+pre[class='language-css']::after {
+  background: #ff9800;
+  color: #ffffff;
+}
+
+pre[class='language-mdx']::after {
+  background: #f9ac00;
+}
+
+pre[class='language-yaml']::after {
+  background: #ffa8df;
+}
+
+pre[class='language-json']::after,
+pre[class='language-json5']::after {
+  background: linen;
+}
+
+pre[class='language-diff']::after {
+  background: #e6ffed;
+}
+
+pre[class='language-flow']::after {
+  background: #e8bd36;
+}
+
+pre[class='language-go']::after {
+  background: #00add8;
+}
+
+pre[class='language-lua']::after {
+  background: #000080;
+}
+
+pre[class='language-ts']::after {
+  background: #3178c6;
+}
