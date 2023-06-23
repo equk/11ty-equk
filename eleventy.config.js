@@ -30,8 +30,9 @@ module.exports = function (eleventyConfig) {
   // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
   // Watch content images for the image pipeline.
+  // eleventyConfig.addWatchTarget('src/**/*.{svg,webp,png,jpeg}')
   // Watch for css changes.
-  eleventyConfig.addWatchTarget('src/**/*.{svg,webp,png,jpeg,css}')
+  eleventyConfig.addWatchTarget('src/_styles/*.css')
 
   // App plugins
   eleventyConfig.addPlugin(pluginDrafts)
