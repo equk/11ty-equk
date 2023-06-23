@@ -24,6 +24,14 @@ layout: layouts/base.njk
     <div class="hero-image">
       <div class="hero-w">
         {% image image, "" %}
+        {% if imgAuthor %}
+        <div class="hero-link text-right text-sm italic">
+          Photo by
+          <a href={{ imgAuthorURL }} target="_blank" rel="noreferrer">
+            {{ imgAuthor }}
+          </a>
+        </div>
+        {% endif %}
       </div>
     </div>
     {% endif %}
