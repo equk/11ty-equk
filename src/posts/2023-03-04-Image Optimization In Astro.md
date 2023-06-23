@@ -8,6 +8,8 @@ tags:
   - astro
   - github
 image: ../../public/media/images/hero/nasa-space-sil.jpg
+imgAuthor: "NASA"
+imgAuthorURL: "https://unsplash.com/@nasa"
 ---
 
 Adding image optimization to Astro using `@astrojs/image`

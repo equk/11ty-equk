@@ -128,5 +128,5 @@ main .hero-image img {
 main .hero-image img {
   margin-left: auto;
   margin-right: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
