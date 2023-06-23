@@ -44,6 +44,9 @@ devDependencies:
   markdown-it-anchor:
     specifier: ^8.6.7
     version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
+  markdown-it-task-lists:
+    specifier: ^2.1.1
+    version: 2.1.1
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
@@ -2051,6 +2054,10 @@ packages:
     dependencies:
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
+    dev: true
+
+  /markdown-it-task-lists@2.1.1:
+    resolution: {integrity: sha512-TxFAc76Jnhb2OUu+n3yz9RMu4CwGfaT788br6HhEDlvWfdeJcLUsxk1Hgw2yJio0OXsxv7pyIPmvECY7bMbluA==}
     dev: true
 
   /markdown-it@13.0.1:
