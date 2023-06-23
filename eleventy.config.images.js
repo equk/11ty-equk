@@ -19,7 +19,7 @@ module.exports = (eleventyConfig) => {
       const formats = ['webp', 'auto']
       const file = relativeToInputPath(this.page.inputPath, src)
       const metadata = await eleventyImage(file, {
-        widths: widths || [400, 800, 1200, 'auto'],
+        widths: widths || [400, 800, 1200],
         formats,
         outputDir: path.join(eleventyConfig.dir.output, 'img'), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
       })
@@ -44,7 +44,7 @@ module.exports = (eleventyConfig) => {
       const alt = token.content
       const formats = ['webp', 'auto']
       const metadata = eleventyImage.statsSync(src, {
-        widths: [400, 800, 1200, 'auto'],
+        widths: [400, 800, 1200],
         formats,
         outputDir: path.join(eleventyConfig.dir.output, 'img'), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
       })
