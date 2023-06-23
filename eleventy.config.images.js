@@ -19,7 +19,7 @@ module.exports = (eleventyConfig) => {
       const formats = ['webp', 'auto']
       const file = relativeToInputPath(this.page.inputPath, src)
       const metadata = await eleventyImage(file, {
-        widths: widths || ['auto'],
+        widths: widths || [400, 800, 1200, 'auto'],
         formats,
         outputDir: path.join(eleventyConfig.dir.output, 'img'), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
       })
@@ -27,7 +27,7 @@ module.exports = (eleventyConfig) => {
       // TODO loading=eager and fetchpriority=high
       const imageAttributes = {
         alt,
-        sizes,
+        sizes: '(max-width: 1200px) 100vw, 1200px',
         loading: 'lazy',
         decoding: 'async',
       }
@@ -44,7 +44,7 @@ module.exports = (eleventyConfig) => {
       const alt = token.content
       const formats = ['webp', 'auto']
       const metadata = eleventyImage.statsSync(src, {
-        widths: ['auto'],
+        widths: [400, 800, 1200, 'auto'],
         formats,
         outputDir: path.join(eleventyConfig.dir.output, 'img'), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
       })
@@ -52,6 +52,7 @@ module.exports = (eleventyConfig) => {
         alt,
         loading: 'lazy',
         decoding: 'async',
+        sizes: '(max-width: 1200px) 100vw, 1200px',
       })
     }
   })
