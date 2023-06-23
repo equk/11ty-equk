@@ -10,25 +10,16 @@ numberOfLatestPostsToShow: 8
     <div class="post-content">
       {% set postsCount = collections.posts | length %}
       {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-      {# <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1> #}
-
       {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-      {% set postslistCounter = postsCount %}
       {% include "postslist.njk" %}
-
       {% set morePosts = postsCount - numberOfLatestPostsToShow %}
       {% if morePosts > 0 %}
-      <p>View <a href="/blog/">All Post{% if morePosts != 1 %}s{% endif %}</a></p>
+      <div class="pagination flex justify-center border-t-2 border-slate-200 px-3 py-2 dark:border-slate-700/40">
+        <nav class="pagination flex items-center gap-x-8" role="navigation">
+          <a href="/page/1/" rel="next" class="mr-auto py-2 sm:hover:text-accent">Next</a>
+        </nav>
+      </div>
       {% endif %}
-
-      {# List every content page in the project #}
-      {#
-      <ul>
-        {%- for entry in collections.all %}
-        <li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-        {%- endfor %}
-      </ul>
-      #}
     </div>
   </section>
 </article>
