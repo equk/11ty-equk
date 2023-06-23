@@ -3,23 +3,23 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Home
   order: 1
-numberOfLatestPostsToShow: 8
+pagination:
+  data: collections.posts
+  size: 4
+  alias: postslist
+  reverse: true
+permalink: "{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}{% endif %}/index.html"
 ---
 <article class="content">
   <section class="page-full-content">
     <div class="post-content">
-      {% set postsCount = collections.posts | length %}
-      {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-      {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
       {% include "postslist.njk" %}
-      {% set morePosts = postsCount - numberOfLatestPostsToShow %}
-      {% if morePosts > 0 %}
       <div class="pagination flex justify-center border-t-2 border-slate-200 px-3 py-2 dark:border-slate-700/40">
         <nav class="pagination flex items-center gap-x-8" role="navigation">
-          <a href="/page/1/" rel="next" class="mr-auto py-2 sm:hover:text-accent">Next</a>
+          {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" rel="prev" class="mr-auto py-2 sm:hover:text-accent">Previous</a>{% endif %}
+          {% if pagination.href.next %}<a href="{{ pagination.href.next }}" rel="next" class="mr-auto py-2 sm:hover:text-accent">Next</a>{% endif %}
         </nav>
       </div>
-      {% endif %}
     </div>
   </section>
 </article>
