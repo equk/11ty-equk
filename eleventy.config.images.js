@@ -34,4 +34,31 @@ module.exports = (eleventyConfig) => {
       return eleventyImage.generateHTML(metadata, imageAttributes)
     }
   )
+
+  // Add markdown support
+  eleventyConfig.amendLibrary('md', (markdown) => {
+    markdown.renderer.rules.image = function (tokens, idx) {
+      const token = tokens[idx]
+      const fixpath = (src) => src.replace('../../', '')
+      const src = fixpath(token.attrGet('src'))
+      const alt = token.content
+      const formats = ['avif', 'webp', 'auto']
+      const metadata = eleventyImage.statsSync(src, {
+        widths: ['auto'],
+        formats,
+        outputDir: path.join(eleventyConfig.dir.output, 'img'), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
+      })
+      return eleventyImage.generateHTML(
+        metadata,
+        {
+          alt,
+          loading: 'lazy',
+          decoding: 'async',
+        },
+        {
+          whitespaceMode: 'inline',
+        }
+      )
+    }
+  })
 }
