@@ -83,7 +83,8 @@ nav a {
   }
 
   main .post-content,
-  main .hero-image {
+  main .hero-image,
+  main .post-full-content {
     @apply pb-8;
   }
 
