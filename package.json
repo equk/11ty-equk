@@ -3,10 +3,8 @@
   "description": "Eleventy blog for equk",
   "scripts": {
     "build": "npm-run-all -s build:*",
-    "build:css": "tailwindcss -i src/_styles/_global.css -o dist/css/styles.css --minify --postcss",
     "build:html": "npx @11ty/eleventy",
     "dev": "npm-run-all -p dev:* -r",
-    "dev:css": "tailwindcss -i src/_styles/_global.css -o dist/css/styles.css --watch",
     "dev:html": "npx @11ty/eleventy --serve --quiet",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "devdebug": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
