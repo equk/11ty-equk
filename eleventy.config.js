@@ -120,7 +120,7 @@ module.exports = function (eleventyConfig) {
   // PostCSS filter for tailwindcss
   eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
     postcss([tailwindcss(), autoprefixer(), postcssimport()])
-      .process(cssCode)
+      .process(cssCode, { from: undefined })
       .then(
         (r) => done(null, r.css),
         (e) => done(e, null)
