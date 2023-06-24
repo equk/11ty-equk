@@ -7,16 +7,16 @@ equk.co.uk blog using eleventy v2.0
 - [x] tailwindcss with postcss
 - [x] eslint with prettier
 - [x] image optimization
-- [x] per page css using bundles
 - [x] syntax highlighting (zero JS output)
 - [x] atom feed generation
 - [x] sitemap generation
-- [x] inline css using bundles
 - [x] markdown checklists
 - [x] post feature image
 - [x] image attribution link
 - [x] post list pagination
 - [x] darkmode support (`localStorage` & `prefers-color-scheme`)
+- [x] postcss & tailwindcss integrated with eleventy
+- [x] inlined css
 
 ## Image Optimization
 
