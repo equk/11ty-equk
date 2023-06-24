@@ -13,23 +13,12 @@
     {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
     {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
 
-    {#-
-    CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
-    1. You can add to them using `{% css %}`
-    2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-    3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
-    4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-    #}
+    {# Use PostCSS filter to provide inlined css #}
+    {% set css %}
+    {% include "src/_styles/_global.css" %}
+    {% endset %}
+    <style>{{css | postcss | safe}}</style>
 
-    {#- Add an arbitrary string to the bundle #}
-    {# {%- css %}* { box-sizing: border-box; }{% endcss %} #}
-    {#- Add the contents of a file to the bundle #}
-    {%- css %}{% include "dist/css/styles.css" %}{% endcss %}
-
-    {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
-    <style>{% getBundle "css" %}</style>
-    {#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-    {#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
     {%- js %}{% include "src/_scripts/darkmode.js" %}{% endjs %}
     <script type="module">{% getBundle "js" %}</script>
   </head>
