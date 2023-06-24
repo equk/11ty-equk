@@ -8,6 +8,11 @@ const pluginBundle = require('@11ty/eleventy-plugin-bundle')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const { EleventyHtmlBasePlugin } = require('@11ty/eleventy')
 
+const postcss = require('postcss')
+const tailwindcss = require('tailwindcss')
+const autoprefixer = require('autoprefixer')
+const postcssimport = require('postcss-import')
+
 const pluginDrafts = require('./eleventy.config.drafts.js')
 const pluginImages = require('./eleventy.config.images.js')
 
@@ -110,6 +115,16 @@ module.exports = function (eleventyConfig) {
       slugify: eleventyConfig.getFilter('slugify'),
     })
     mdLib.use(markdownItTaskLists, { label: true })
+  })
+
+  // PostCSS filter for tailwindcss
+  eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
+    postcss([tailwindcss(), autoprefixer(), postcssimport()])
+      .process(cssCode)
+      .then(
+        (r) => done(null, r.css),
+        (e) => done(e, null)
+      )
   })
 
   // Features to make your build faster (when you need them)
