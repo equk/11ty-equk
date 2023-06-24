@@ -9,5 +9,5 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  ignorePatterns: ['_site/**/*'],
+  ignorePatterns: ['_site/**/*', 'dist/**/*', 'public/**/*'],
 }
