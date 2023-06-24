@@ -9,9 +9,11 @@
 
 /* imports */
 
-@import 'fonts.css';
-@import 'hero.css';
-@import 'fa/fork-awesome.css';
+@import 'src/_styles/fonts.css';
+@import 'src/_styles/hero.css';
+@import 'src/_styles/fa/fork-awesome.css';
+@import 'src/_styles/prism/prism-nord.css';
+@import 'src/_styles/prism/language-tabs.css';
 
 /* Base Styles */
 
