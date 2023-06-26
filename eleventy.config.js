@@ -44,14 +44,7 @@ module.exports = function (eleventyConfig) {
 
   // Official plugins
   eleventyConfig.addPlugin(pluginRss)
-  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-    preAttributes: {
-      tabindex: 0,
-      'data-language': function ({ language, content, options }) {
-        return language
-      },
-    },
-  })
+  eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
   eleventyConfig.addPlugin(pluginBundle)

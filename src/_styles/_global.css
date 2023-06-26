@@ -186,6 +186,13 @@ footer nav li {
   color: rgb(51 65 85);
 }
 
+/* Fix Text Codeblock */
+
+pre:has(> code) {
+  background-color: #011627;
+  color: #fff;
+}
+
 /*
   -----------------------------------------
   Post Styles
