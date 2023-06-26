@@ -102,6 +102,16 @@ module.exports = function (eleventyConfig) {
     )
   })
 
+  // Excerpt filter (used for atom feed)
+  eleventyConfig.addFilter('excerpt', (post) => {
+    const content = post
+      .replace(/(<([^>]+)>)/gi, '')
+      .split(' ')
+      .slice(0, 80)
+      .join(' ')
+    return content
+  })
+
   // Customize Markdown library settings:
   eleventyConfig.amendLibrary('md', (mdLib) => {
     mdLib.use(markdownItAnchor, {
