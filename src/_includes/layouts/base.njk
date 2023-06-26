@@ -19,7 +19,7 @@
     {% endset %}
     <style>{{css | postcss | safe}}</style>
 
-    {%- js %}{% include "src/_scripts/darkmode.js" %}{% endjs %}
+    {%- js %}{% include "src/_assets/js/darkmode.js" %}{% endjs %}
     <script type="module">{% getBundle "js" %}</script>
   </head>
   <body>
