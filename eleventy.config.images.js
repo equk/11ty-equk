@@ -1,5 +1,6 @@
 const path = require('path')
 const eleventyImage = require('@11ty/eleventy-img')
+const postsPath = './src/posts/'
 
 module.exports = (eleventyConfig) => {
   function relativeToInputPath(inputPath, relativeFilePath) {
@@ -39,8 +40,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.amendLibrary('md', (markdown) => {
     markdown.renderer.rules.image = function (tokens, idx) {
       const token = tokens[idx]
-      const fixpath = (src) => src.replace('../../', '')
-      const src = fixpath(token.attrGet('src'))
+      const src = relativeToInputPath(postsPath, token.attrGet('src'))
       const alt = token.content
       const formats = ['webp', 'auto']
       const metadata = eleventyImage.statsSync(src, {
