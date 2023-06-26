@@ -1,3 +1,5 @@
+const esbuild = require('esbuild')
+
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItTaskLists = require('markdown-it-task-lists')
 
@@ -16,6 +18,16 @@ const pluginDrafts = require('./eleventy.config.drafts.js')
 const pluginImages = require('./eleventy.config.images.js')
 
 module.exports = function (eleventyConfig) {
+  // Run esbuild before anything else (using bundle for js)
+  eleventyConfig.on('eleventy.before', async () => {
+    await esbuild.build({
+      entryPoints: ['src/_scripts/darkmode.js'],
+      outdir: 'src/_assets/js',
+      minify: true,
+      sourcemap: false,
+    })
+  })
+
   // Copy the contents of the `public` folder to the output folder
   // For example, `./public/css/` ends up in `dist/css/`
   eleventyConfig.addPassthroughCopy({
@@ -37,6 +49,8 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addWatchTarget('src/**/*.{svg,webp,png,jpeg}')
   // Watch for css changes.
   eleventyConfig.addWatchTarget('src/_styles/*.css')
+  // Watch for js changes
+  eleventyConfig.addWatchTarget('src/_scripts/*.js')
 
   // App plugins
   eleventyConfig.addPlugin(pluginDrafts)
