@@ -2,6 +2,9 @@
 _site/
 dist/
 
+# esbuild output
+src/_assets/js/
+
 # dependencies
 node_modules/
 
