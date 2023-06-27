@@ -7,7 +7,7 @@ tags:
   - javascript
   - astro
   - github
-image: ../../static/media/images/hero/nasa-space-sil.jpg
+image: ../_media/images/hero/nasa-space-sil.jpg
 imgAuthor: "NASA"
 imgAuthorURL: "https://unsplash.com/@nasa"
 ---
