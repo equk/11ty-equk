@@ -15,12 +15,16 @@ permalink: /tag/{{ tag | slugify }}/
 
 <main>
   <article class="content">
-    <header class="pb-16 pt-24">
-      <div class="space-y-4">
-        <h1 class="text-center text-5xl font-bold dark:text-gray-100">Posts tagged with #{{ tag }}</h1>
+    <section class="page-full-content">
+      <div class="post-content">
+        <header class="pb-16 pt-24">
+          <div class="space-y-4">
+            <h1 class="text-center text-5xl font-bold dark:text-gray-100">Posts tagged with #{{ tag }}</h1>
+          </div>
+        </header>
+        {% set postslist = collections[ tag ] %}
+        {% include "postslist.njk" %}
       </div>
-    </header>
-  {% set postslist = collections[ tag ] %}
-  {% include "postslist.njk" %}
+    </section>
   </article>
 </main>
