@@ -28,25 +28,30 @@ Everything can be seen in `eleventy.config.images.js`.
 The main difference is using `amendLibrary` to change the `markdown-it` configuration & override `markdown.renderer.rules.image`.
 
 ```js
-  eleventyConfig.amendLibrary('md', (markdown) => {
-    markdown.renderer.rules.image = function (tokens, idx) {
-      const token = tokens[idx]
-      const src = relativeToInputPath(postsPath, token.attrGet('src'))
-      const alt = token.content
-      const formats = ['webp', 'auto']
-      const metadata = eleventyImage.statsSync(src, {
-        widths: [400, 800, 1200],
-        formats,
-        outputDir: path.join(eleventyConfig.dir.output, 'img'),
-      })
-      return eleventyImage.generateHTML(metadata, {
-        alt,
-        loading: 'lazy',
-        decoding: 'async',
-        sizes: '(max-width: 1200px) 100vw, 1200px',
-      })
+// Add markdown support
+eleventyConfig.amendLibrary('md', (markdown) => {
+  markdown.renderer.rules.image = function (tokens, idx) {
+    const token = tokens[idx]
+    const file = relativeToInputPath(postsPath, token.attrGet('src'))
+    const alt = token.content
+    const formats = ['webp', 'auto']
+    const imageOptions = {
+      widths: [400, 800, 1200],
+      formats,
+      outputDir: path.join(eleventyConfig.dir.output, 'img'),
     }
-  })
+    const metadata = eleventyImage.statsSync(file, imageOptions)
+    eleventyImage(file, imageOptions)
+
+    const imageAttributes = {
+      alt,
+      sizes: '(max-width: 1200px) 100vw, 1200px',
+      loading: 'lazy',
+      decoding: 'async',
+    }
+    return eleventyImage.generateHTML(metadata, imageAttributes)
+  }
+})
 ```
 
 One useful function already in `eleventy-base-blog` is `relativeToInputPath`.
