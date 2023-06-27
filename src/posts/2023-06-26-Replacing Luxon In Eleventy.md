@@ -12,7 +12,7 @@ imgAuthor:
 imgAuthorURL:
 ---
 
-{% image "../_media/images/11ty-200.png", "11ty logo" %}
+![11ty logo](../_media/images/11ty-200.png)
 
 <article class="message is-info">
   <div class="message-body">

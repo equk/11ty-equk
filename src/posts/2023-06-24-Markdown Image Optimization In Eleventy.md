@@ -7,14 +7,16 @@ tags:
   - javascript
   - eleventy
   - github
-image: ../_media/images/hero/nasa-space-sil.jpg
-imgAuthor: "NASA"
-imgAuthorURL: "https://unsplash.com/@nasa"
+image:
+imgAuthor:
+imgAuthorURL:
 ---
+
+![11ty logo](../_media/images/11ty-200.png)
 
 Automatic image optimization in markdown using `@11ty/eleventy-img`
 
-This article continues on from previous post: Image Optimization In Eleventy
+This article continues on from previous post: 📝[Image Optimization In Eleventy](/2023/06/23/image-optimization-in-eleventy/)
 
 ## Adding Markdown Support
 
