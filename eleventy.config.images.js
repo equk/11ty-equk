@@ -40,20 +40,24 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.amendLibrary('md', (markdown) => {
     markdown.renderer.rules.image = function (tokens, idx) {
       const token = tokens[idx]
-      const src = relativeToInputPath(postsPath, token.attrGet('src'))
+      const file = relativeToInputPath(postsPath, token.attrGet('src'))
       const alt = token.content
       const formats = ['webp', 'auto']
-      const metadata = eleventyImage.statsSync(src, {
+      const imageOptions = {
         widths: [400, 800, 1200],
         formats,
-        outputDir: path.join(eleventyConfig.dir.output, 'img'), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
-      })
-      return eleventyImage.generateHTML(metadata, {
+        outputDir: path.join(eleventyConfig.dir.output, 'img'),
+      }
+      const metadata = eleventyImage.statsSync(file, imageOptions)
+      eleventyImage(file, imageOptions)
+
+      const imageAttributes = {
         alt,
+        sizes: '(max-width: 1200px) 100vw, 1200px',
         loading: 'lazy',
         decoding: 'async',
-        sizes: '(max-width: 1200px) 100vw, 1200px',
-      })
+      }
+      return eleventyImage.generateHTML(metadata, imageAttributes)
     }
   })
 }
