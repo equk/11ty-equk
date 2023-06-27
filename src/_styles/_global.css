@@ -102,11 +102,15 @@ nav a {
 
   main a.post-title-link:hover,
   main a.post-title-link:focus {
-    color: var(--theme-link);
+    color: var(--theme-hover);
   }
 
   main a.post-title-link {
     color: var(--theme-text);
+  }
+
+  main .postlist-date {
+    color: var(--theme-link);
   }
 }
 

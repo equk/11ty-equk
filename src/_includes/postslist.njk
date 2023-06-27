@@ -6,7 +6,7 @@
         {% for post in postslist %}
         <li class="mt-4 postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
           <h2 class="post-title mb-1 mt-0 font-normal">
-            <a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+            <a href="{{ post.url }}" class="post-title-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
           </h2>
           <div class="flex items-center space-x-2 uppercase">
             <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
