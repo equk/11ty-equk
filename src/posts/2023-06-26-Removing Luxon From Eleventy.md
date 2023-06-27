@@ -1,5 +1,5 @@
 ---
-title: "Replacing Luxon In Eleventy"
+title: "Removing Luxon From Eleventy"
 date: 2023-06-26T12:23:04.901Z
 author: equilibriumuk
 draft: false
