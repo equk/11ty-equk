@@ -15,7 +15,8 @@ templateEngineOverride: md
 
 ![11ty logo](../_media/images/11ty-200.png)
 
-At first I was using `npm-run-all` with scripts to run tailwindcss & 11ty as that seemed to be the standard for most eleventy sites using tailwindcss.
+At first I was using `npm-run-all` with scripts to run tailwindcss & 11ty as that seemed to be the standard for most eleventy sites using tailwindcss.<br/>
+This caused some issues in dev mode as I was using a inline css bundle which referenced the output of tailwindcss.
 
 ## Integrating Tailwindcss & Postcss
 
@@ -23,7 +24,7 @@ I found it is possible to integrate postcss with eleventy using a filter with nu
 
 This fixes a lot of issues & means scripts in `package.json` are cleaner.
 
-<i class="fa fa-link"></i> <a href="https://tnobody-github-io.vercel.app/blog/postcss-with-11ty/" target="_blank" rel="noopener noreferrer">Using PostCss and Tailwindcss in 11ty</a>
+<i class="fa fa-link"></i> <a href="https://zenzes.me/eleventy-postcss-und-tailwind-css-integrieren/" target="_blank" rel="noopener noreferrer">Eleventy: PostCSS und Tailwind CSS integrieren</a>
 
 Slight modification of above & you can have `postcss` & `tailwindcss` integrated with eleventy.
 
@@ -33,13 +34,12 @@ Slight modification of above & you can have `postcss` & `tailwindcss` integrated
 const postcss = require('postcss')
 const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer')
-const postcssimport = require('postcss-import')
 ```
 
 ```js
   // PostCSS filter for tailwindcss
   eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
-    postcss([tailwindcss(), autoprefixer(), postcssimport()])
+    postcss([tailwindcss(), autoprefixer()])
       .process(cssCode, { from: undefined })
       .then(
         (r) => done(null, r.css),
@@ -65,19 +65,22 @@ In head of `base.njk`
 <style>{{css | postcss | safe}}</style>
 ```
 
-## Old Way (No Integration)
+### Adding Plugins
 
-```json
-  "scripts": {
-    "build": "npm-run-all -s build:*",
-    "build:css": "tailwindcss -i src/_styles/_global.css -o dist/css/styles.css --minify --postcss",
-    "build:html": "npx @11ty/eleventy",
-    "dev": "npm-run-all -p dev:* -r",
-    "dev:css": "tailwindcss -i src/_styles/_global.css -o dist/css/styles.css --watch",
-    "dev:html": "npx @11ty/eleventy --serve --quiet",
-  },
+It's possible to extend this with more postcss plugins.
+
+I added cssnano with the default preset but this seems to slow things down a lot so I removed it.
+
+#### build without cssnano
+
+```
+[11ty] Benchmark    858ms  35%    22× (Configuration) "postcss" Nunjucks Async Filter
+[11ty] Copied 13 files / Wrote 25 files in 2.19 seconds (87.6ms each, v2.0.1)
 ```
 
-This caused some issues in dev mode as I was using a inline css bundle which referenced the output of tailwindcss.
+#### build with cssnano
 
-It also seemed a lot slower.
+```
+[11ty] Benchmark   1231ms  17%    22× (Configuration) "postcss" Nunjucks Async Filter
+[11ty] Copied 13 files / Wrote 25 files in 6.75 seconds (270.0ms each, v2.0.1)
+```
