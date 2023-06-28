@@ -10,6 +10,7 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
+templateEngineOverride: md
 ---
 
 ![11ty logo](../_media/images/11ty-200.png)
@@ -22,7 +23,7 @@ imgAuthorURL:
 
 After looking at code in eleventy I noticed almost every starter template uses `luxon` for formatting dates.
 
-There are possibly cases where using `luxon` is beneficial but to me you are using 4MB for something that should be a small function in a few lines of code.
+There are possibly cases where using `luxon` is beneficial but in most cases, you are using 4MB for something that could be a small function in a few lines of code.
 
 ## Luxon Package Size
 
@@ -47,6 +48,22 @@ Both take in `Date`
 
 - `readableDate` returns `DD Month YYYY`
 - `htmlDateString` returns `YYYY-MM-DD`
+
+```js
+eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+  return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+});
+
+eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+  return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+});
+```
+
+```html
+<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+```
+
+<i class="fa fa-link"></i> <a href="https://github.com/11ty/eleventy-base-blog/blob/5ec08b9765304f1690ffc9d33300adf752b00a9a/eleventy.config.js#L41" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog/eleventy.config.js - Github</a>
 
 ### Using Node To Check Output
 
@@ -146,4 +163,4 @@ New
 
 ## 4MB Saved
 
-You can now remove `luxon` as a dependency & can format using functionality built in to javascript.
+Replace the filters in `eleventy.config.js` & luxon can be removed as a dependency saving 4MB.
