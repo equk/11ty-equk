@@ -13,6 +13,7 @@ const postcss = require('postcss')
 const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer')
 const postcssimport = require('postcss-import')
+const cssnano = require('cssnano')
 
 const pluginDrafts = require('./eleventy.config.drafts.js')
 const pluginImages = require('./eleventy.config.images.js')
@@ -141,9 +142,23 @@ module.exports = function (eleventyConfig) {
     mdLib.use(markdownItTaskLists, { label: true })
   })
 
-  // PostCSS filter for tailwindcss
+  // PostCSS filter
   eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
-    postcss([tailwindcss(), autoprefixer(), postcssimport()])
+    postcss([
+      tailwindcss(),
+      autoprefixer(),
+      postcssimport(),
+      cssnano({
+        preset: [
+          'lite',
+          {
+            discardComments: {
+              removeAll: true,
+            },
+          },
+        ],
+      }),
+    ])
       .process(cssCode, { from: undefined })
       .then(
         (r) => done(null, r.css),
