@@ -4,7 +4,7 @@ eleventyNavigation:
   key: Projects
   order: 4
 title: Projects
-permalink: projects
+permalink: projects/index.html
 ---
 
 <i class="fa fa-microchip"></i> Hardware

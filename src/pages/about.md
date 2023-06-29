@@ -4,7 +4,7 @@ eleventyNavigation:
   key: About
   order: 3
 title: About
-permalink: about
+permalink: about/index.html
 ---
 <div class="bg-gray-100 border border-gray-400 shadow rounded-lg p-5 dark:bg-gray-900 dark:border-gray-800">
     <div class="flex flex-col gap-1 text-center items-center">
