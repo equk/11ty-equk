@@ -4,7 +4,9 @@ date: 2023-06-29T11:47:02.613Z
 author: equilibriumuk
 draft: false
 tags:
- - github
+  - javascript
+  - eleventy
+  - github
 image:
 imgAuthor:
 imgAuthorURL:
@@ -27,6 +29,8 @@ After working on the eleventy site for a while I got this idea from esbuild impl
 Putting these together I thought why not use `eleventy.before` to run postcss to output a minified css file (like esbuild) then use a transform to inject styles into head (see previous post).
 
 📝[Postcss 11ty Integration Update (Using a Transform)](/2023/06/29/postcss-11ty-integration-update/)
+
+📝[Using Esbuild With Eleventy (eleventy.before)](/2023/06/26/using-esbuild-with-eleventy/)
 
 ## Running Postcss Once
 
