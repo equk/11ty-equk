@@ -13,11 +13,7 @@
     {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
     {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
 
-    {# Use PostCSS filter to provide inlined css #}
-    {% set css %}
-    {% include "src/_styles/_global.css" %}
-    {% endset %}
-    <style>{{css | postcss | safe}}</style>
+    {# Postcss transformer inserts generated styles inline automatically #}
 
     {%- js %}{% include "src/_assets/js/darkmode.js" %}{% endjs %}
     <script type="module">{% getBundle "js" %}</script>
