@@ -5,6 +5,9 @@ dist/
 # esbuild output
 src/_assets/js/
 
+# postcss output
+src/_assets/css/
+
 # dependencies
 node_modules/
 
@@ -20,4 +23,3 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-
