@@ -180,19 +180,15 @@ module.exports = function (eleventyConfig) {
   })
 
   // PostCSS transform
-  eleventyConfig.addTransform(
-    'postcss-trans',
-    async (contentInput, outputPath) => {
-      let content = contentInput
-      if (outputPath && outputPath.endsWith('.html')) {
-        const minCSS = fs.readFileSync('src/_assets/css/styles.css', {
-          encoding: 'utf-8',
-        })
-        content = content.replace('</head>', `<style>${minCSS}</style></head>`)
-      }
-      return content
+  eleventyConfig.addTransform('postcss', function (content) {
+    if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {
+      const minCSS = fs.readFileSync('src/_assets/css/styles.css', {
+        encoding: 'utf-8',
+      })
+      content = content.replace('</head>', `<style>${minCSS}</style></head>`)
     }
-  )
+    return content
+  })
 
   // Features to make your build faster (when you need them)
 
