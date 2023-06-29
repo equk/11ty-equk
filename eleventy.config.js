@@ -1,4 +1,5 @@
 const esbuild = require('esbuild')
+const fs = require('fs')
 
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItTaskLists = require('markdown-it-task-lists')
@@ -27,6 +28,42 @@ module.exports = function (eleventyConfig) {
       minify: true,
       sourcemap: false,
     })
+  })
+
+  // Run postcss (insert css to html later)
+  eleventyConfig.on('eleventy.before', async () => {
+    const cssInput = fs.readFileSync('src/_styles/_global.css', {
+      encoding: 'utf-8',
+    })
+    const cssOutDir = 'src/_assets/css/'
+    const cssOutFile = 'styles.css'
+    const cssOutput = cssOutDir + cssOutFile
+    if (!fs.existsSync(cssOutDir)) {
+      fs.mkdirSync(cssOutDir, { recursive: true })
+    }
+    const minified = await postcss([
+      tailwindcss(),
+      autoprefixer(),
+      postcssimport(),
+      cssnano({
+        preset: [
+          'lite',
+          {
+            discardComments: {
+              removeAll: true,
+            },
+          },
+        ],
+      }),
+    ])
+      .process(cssInput, { from: undefined })
+      .then((r) => {
+        fs.writeFile(cssOutput, r.css, (err) => {
+          if (err) throw err
+          console.log(`[11ty] Writing Postcss Output: ${cssOutput}`)
+        })
+      })
+    return minified
   })
 
   // Copy the contents of the `public` folder to the output folder
@@ -140,30 +177,6 @@ module.exports = function (eleventyConfig) {
       slugify: eleventyConfig.getFilter('slugify'),
     })
     mdLib.use(markdownItTaskLists, { label: true })
-  })
-
-  // PostCSS filter
-  eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
-    postcss([
-      tailwindcss(),
-      autoprefixer(),
-      postcssimport(),
-      cssnano({
-        preset: [
-          'lite',
-          {
-            discardComments: {
-              removeAll: true,
-            },
-          },
-        ],
-      }),
-    ])
-      .process(cssCode, { from: undefined })
-      .then(
-        (r) => done(null, r.css),
-        (e) => done(e, null)
-      )
   })
 
   // Features to make your build faster (when you need them)
