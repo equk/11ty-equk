@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
   // Run esbuild before anything else (using bundle for js)
   eleventyConfig.on('eleventy.before', async () => {
     await esbuild.build({
-      entryPoints: ['src/_scripts/darkmode.js'],
+      entryPoints: ['src/_scripts/darkmode.js', 'src/_scripts/mobilenav.js'],
       outdir: 'src/_assets/js',
       minify: true,
       sourcemap: false,

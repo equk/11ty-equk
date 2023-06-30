@@ -18,6 +18,7 @@
 
     {# Bundle esbuild generated output #}
     {%- js %}{% include "src/_assets/js/darkmode.js" %}{% endjs %}
+    {%- js %}{% include "src/_assets/js/mobilenav.js" %}{% endjs %}
     <script type="module">{% getBundle "js" %}</script>
   </head>
   <body>
