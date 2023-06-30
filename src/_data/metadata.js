@@ -1,6 +1,6 @@
 module.exports = {
   title: `equk's blog`,
-  url: 'https://equk.co.uk/',
+  url: 'https://equk.co.uk',
   language: 'en',
   description: 'writings of a coder + sysadmin',
   author: {
