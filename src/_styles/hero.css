@@ -63,11 +63,16 @@
 .social-blocks .fa {
   background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   padding: 8px;
   text-align: center;
-  margin-left: 5px;
+  margin: 0;
+}
+
+.social-blocks a {
+  display: inline-block;
+  width: 50px;
 }
 
 .social-blocks a .fa-twitter {
