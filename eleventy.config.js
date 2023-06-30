@@ -61,7 +61,9 @@ module.exports = function (eleventyConfig) {
     ])
       .process(cssInput, { from: undefined })
       .then((r) => {
-        fs.writeFile(cssOutput, r.css, (err) => {
+        let cleanCSS = r.css
+        cleanCSS = cleanCSS.replace(/,$\n/gm, ',')
+        fs.writeFile(cssOutput, cleanCSS, (err) => {
           if (err) throw err
           console.log(`[11ty] Writing Postcss Output: ${cssOutput}`)
         })
