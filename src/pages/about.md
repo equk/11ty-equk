@@ -18,3 +18,17 @@ permalink: about/index.html
         <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color ts"></span> Typescript <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
     </div>
 </div>
+
+---
+
+## About This Site
+
+This site is powered by eleventy.<br/>
+The source code can be found on github & the site is hosted on netlify.
+
+<img class="inline 11ty_logo" src="/media/logos/11ty-96x96.png" alt="11ty-logo" width="80px">
+<img class="inline netlify_logo" src="/media/logos/netlify.svg" alt="netlify-logo" width="80px">
+
+More info:
+
+📝<a href="/tag/eleventy">Posts Tagged eleventy</a>
