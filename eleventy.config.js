@@ -198,7 +198,10 @@ module.exports = function (eleventyConfig) {
       const minCSS = fs.readFileSync('src/_assets/css/styles.css', {
         encoding: 'utf-8',
       })
+      // inject postcss generated styles
       content = content.replace('</head>', `<style>${minCSS}</style></head>`)
+      // remove empty lines from html
+      content = content.replace(/^\s*\n/gm, '')
     }
     return content
   })
