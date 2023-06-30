@@ -26,6 +26,7 @@
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
     "cssnano-preset-lite": "^3.0.0",
+    "eleventy-plugin-seo": "^0.5.2",
     "esbuild": "^0.18.9",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
