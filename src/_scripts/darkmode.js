@@ -30,7 +30,6 @@ class ToggleDark extends HTMLElement {
     function setTheme(dark) {
       document.documentElement.classList.toggle('dark', dark)
       button.setAttribute('aria-pressed', String(dark))
-      console.log('button pressed')
     }
 
     button.addEventListener('click', () => setTheme(!this.isDark()))
