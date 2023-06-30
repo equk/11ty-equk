@@ -11,16 +11,18 @@ pagination:
 permalink: "{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}{% endif %}/index.html"
 ogtype: website
 ---
-<article class="content">
-  <section class="page-full-content">
-    <div class="post-content">
-      {% include "postslist.njk" %}
-      <div class="pagination flex justify-center border-t-2 border-slate-200 px-3 py-2 dark:border-slate-700/40">
-        <nav class="pagination flex items-center gap-x-8" role="navigation">
-          {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" rel="prev" class="mr-auto py-2 sm:hover:text-accent">Previous</a>{% endif %}
-          {% if pagination.href.next %}<a href="{{ pagination.href.next }}" rel="next" class="mr-auto py-2 sm:hover:text-accent">Next</a>{% endif %}
-        </nav>
+<main>
+  <article class="content">
+    <section class="page-full-content">
+      <div class="post-content">
+        {% include "postslist.njk" %}
+        <div class="pagination flex justify-center border-t-2 border-slate-200 px-3 py-2 dark:border-slate-700/40">
+          <nav class="pagination flex items-center gap-x-8" role="navigation">
+            {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" rel="prev" class="mr-auto py-2 sm:hover:text-accent">Previous</a>{% endif %}
+            {% if pagination.href.next %}<a href="{{ pagination.href.next }}" rel="next" class="mr-auto py-2 sm:hover:text-accent">Next</a>{% endif %}
+          </nav>
+        </div>
       </div>
-    </div>
-  </section>
-</article>
+    </section>
+  </article>
+</main>
