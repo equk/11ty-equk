@@ -15,6 +15,12 @@ templateEngineOverride: md
 
 ![11ty logo](../_media/images/11ty-200.png)
 
+<article class="message is-info">
+  <div class="message-body">
+    <i class="fa fa-info-circle"></i> More optimized implementation: <a href="/2023/06/29/11ty-postcss-integration-optimized/">11ty Postcss Integration Optimized</a>
+  </div>
+</article>
+
 At first I was using `npm-run-all` with scripts to run tailwindcss & 11ty as that seemed to be the standard for most eleventy sites using tailwindcss.<br/>
 This caused some issues in dev mode as I was using a inline css bundle which referenced the output of tailwindcss.
 

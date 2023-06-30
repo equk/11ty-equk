@@ -17,6 +17,12 @@ templateEngineOverride: md
 
 Previous Article: 📝[Integrating Tailwindcss With Eleventy](/2023/06/24/integrating-tailwindcss-with-eleventy/)
 
+<article class="message is-info">
+  <div class="message-body">
+    <i class="fa fa-info-circle"></i> More optimized implementation: <a href="/2023/06/29/11ty-postcss-integration-optimized/">11ty Postcss Integration Optimized</a>
+  </div>
+</article>
+
 In my previous post I wrote about using a nunjucks filter for integrating postcss (& tailwindcss) to eleventy.
 
 I have been playing around with eleventy transforms for html minification so thought why not use a transform to run postcss instead of using a nunjucks filter.
