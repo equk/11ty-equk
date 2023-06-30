@@ -24,10 +24,14 @@ permalink: about/index.html
 ## About This Site
 
 This site is powered by eleventy.<br/>
+
+<img class="inline javascript_logo" src="/media/logos/javascript.svg" alt="javascript-logo" width="80px">
+<img class="inline 11ty_logo" src="/media/logos/11ty-96x96.png" alt="11ty-logo" width="80px">
+<img class="inline nunjucks_logo" src="/media/logos/nunjucks.png" alt="nunjucks-logo" width="80px">
+
 The source code can be found on github & the site is hosted on netlify.
 
-<img class="inline 11ty_logo" src="/media/logos/11ty-96x96.png" alt="11ty-logo" width="80px">
-<img class="inline netlify_logo" src="/media/logos/netlify.svg" alt="netlify-logo" width="80px">
+<a href="https://www.netlify.com"><img src="/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify" class="inline" /> </a>
 
 More info:
 
