@@ -9,6 +9,7 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const pluginBundle = require('@11ty/eleventy-plugin-bundle')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const { EleventyHtmlBasePlugin } = require('@11ty/eleventy')
+const pluginSEO = require('eleventy-plugin-seo')
 
 const postcss = require('postcss')
 const tailwindcss = require('tailwindcss')
@@ -18,6 +19,8 @@ const cssnano = require('cssnano')
 
 const pluginDrafts = require('./eleventy.config.drafts.js')
 const pluginImages = require('./eleventy.config.images.js')
+
+const metadata = require('./src/_data/metadata.js')
 
 module.exports = function (eleventyConfig) {
   // Run esbuild before anything else (using bundle for js)
@@ -100,6 +103,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
   eleventyConfig.addPlugin(pluginBundle)
+
+  // Other plugins
+  eleventyConfig.addPlugin(pluginSEO, {
+    title: metadata.title,
+    description: metadata.description,
+    url: metadata.url,
+    author: metadata.author.name,
+    twitter: metadata.author.contacts.twitter,
+    image: metadata.url + '/media/social.png',
+  })
 
   // Filters
   eleventyConfig.addFilter('readableDate', (dateObj) => {
