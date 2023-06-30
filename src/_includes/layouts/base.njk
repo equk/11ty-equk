@@ -20,61 +20,17 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header class="mx-auto w-full flex-none duration-100 ease-in">
-        <div class="topbar mx-auto w-full max-w-6xl md:flex md:justify-between">
-          <div class="flex justify-between">
-            <a class="flex items-center" href="/"><span class="site-title text-gray-900 dark:text-white">EQUK</span></a>
-            <div class="flex items-center md:hidden">
-              <button class="ml-1.5 inline-flex items-center rounded-lg p-2.5 text-sm text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-700" id="toggle-navigation-menu" aria-label="Toggle Menu" type="button" data-aw-toggle-menu=""><svg astro-icon="tabler:menu" class="h-6 w-6" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g fill="none" class="icon-tabler" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M4 8h16"></path>
-                    <path d="M4 16h16"></path>
-                  </g>
-                </svg></button>
-            </div>
-          </div>
-          <nav aria-label="Main navigation" id="main-nav" class="hidden w-full items-center overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:w-auto md:overflow-visible">
-            <ul class="flex w-full flex-col text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
-              {%- for entry in collections.all | eleventyNavigation %}
-              <li class="nav-item"><a href="{{ entry.url }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
-              {%- endfor %}
-            </ul>
-            <toggle-dark>
-              <button
-              class="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-              aria-label="toggle dark mode"
-              type="button"
-              id="toggle-dark"
-              data-aw-toggle-color-scheme=""
-              ><svg class="h-5 w-5" viewBox="0 0 24 24"
-                ><g
-                  fill="none"
-                  class="icon-tabler"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  ><circle cx="12" cy="12" r="4"></circle><path
-                    d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7-.7.7m0 11.4.7.7m-12.1-.7-.7.7"
-                  ></path></g
-                ></svg
-              >
-            </button>
-          </toggle-dark>
-          </nav>
-        </div>
-      </header>
 
-    <main>
-      {{ content | safe }}
-    </main>
+      {% include "base/header.njk" %}
 
-    {% include "base/footer.njk" %}
+        {{ content | safe }}
 
-    {% if isdev %}
-    <!-- Current page: {{ page.url | htmlBaseUrl }} -->
-    {% endif %}
-  </div>
+      {% include "base/footer.njk" %}
+
+      {% if isdev %}
+      <!-- Current page: {{ page.url | htmlBaseUrl }} -->
+      {% endif %}
+    </div>
   </body>
 </html>
 {% if isdev %}
