@@ -22,7 +22,7 @@ permalink: /tag/{{ tag | slugify }}/
             <h1 class="text-center text-5xl font-bold dark:text-gray-100">Posts tagged with #{{ tag }}</h1>
           </div>
         </header>
-        {% set postslist = collections[ tag ] %}
+        {% set postslist = collections[ tag ] | reverse %}
         {% include "postslist.njk" %}
       </div>
     </section>
