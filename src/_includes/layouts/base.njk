@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}{{ title }} - {% endif %}{{ metadata.title }}{% if pagination.pageNumber %} - Page {{ pagination.pageNumber }}{% endif %}</title>
-    <meta name="description" content="{{ description or metadata.description }}">
-
     {#- Atom and JSON feeds included by default #}
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
     {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
     {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+
+    {# Add in seo items #}
+    {% seo "" %}
 
     {# Postcss transformer inserts generated styles inline automatically #}
 
