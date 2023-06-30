@@ -11,8 +11,12 @@
     {# Add in seo items #}
     {% seo "" %}
 
-    {# Postcss transformer inserts generated styles inline automatically #}
+    {# Bundle postcss generated output #}
+    {%- css %}{% include "src/_assets/css/styles.css" %}{% endcss %}
+    {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
+    <style>{% getBundle "css" %}</style>
 
+    {# Bundle esbuild generated output #}
     {%- js %}{% include "src/_assets/js/darkmode.js" %}{% endjs %}
     <script type="module">{% getBundle "js" %}</script>
   </head>

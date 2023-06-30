@@ -197,15 +197,9 @@ module.exports = function (eleventyConfig) {
     mdLib.use(markdownItTaskLists, { label: true })
   })
 
-  // PostCSS transform
-  eleventyConfig.addTransform('postcss', function (content) {
+  // Clean HTML output (just simple regex)
+  eleventyConfig.addTransform('clean-html', function (content) {
     if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {
-      const minCSS = fs.readFileSync('src/_assets/css/styles.css', {
-        encoding: 'utf-8',
-      })
-      // inject postcss generated styles
-      content = content.replace('</head>', `<style>${minCSS}</style></head>`)
-      // remove empty lines from html
       content = content.replace(/^\s*\n/gm, '')
     }
     return content
