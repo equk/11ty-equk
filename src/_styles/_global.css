@@ -76,6 +76,14 @@ nav a {
     @apply mx-auto;
   }
 
+  main .content {
+    min-height: 50vh;
+  }
+
+  main .post-full-content {
+    min-height: 60vh;
+  }
+
   main .post-content,
   main .post-footer,
   main .post-comments,
