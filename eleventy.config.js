@@ -114,6 +114,9 @@ module.exports = function (eleventyConfig) {
     author: metadata.author.name,
     twitter: metadata.author.contacts.twitter,
     image: metadata.url + '/media/social.png',
+    options: {
+      twitterCardType: 'summary_large_image',
+    },
   })
 
   // Filters
