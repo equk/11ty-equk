@@ -24,6 +24,8 @@ I have been thinking of redesigning my blog for a while & maybe even moving away
 I wanted to use a good starting point for the blog so am using the official starter `eleventy-base-blog`.<br/>
 This starter has a lot of features but also will hopefully allow me to learn & extend 11ty.
 
+<p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/11ty/eleventy-base-blog" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog on github</a></p>
+
 ### First Steps
 
 I did a few things to setup the initial workflow.
@@ -250,7 +252,7 @@ Output
 
 ---
 
-## Eleventy Posts
+## Related Posts
 
 ### 11ty Postcss Integration
 
