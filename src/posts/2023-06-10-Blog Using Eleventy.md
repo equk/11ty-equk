@@ -216,6 +216,24 @@ With `eleventy-base-blog` atom feed generation is done using a njk template with
 
 📝<a href="/2023/06/26/generating-summary-for-atom-feed-in-11ty/">Generating Summary For Atom Feed In 11ty</a>
 
+## Newpost Creation
+
+I moved my newpost script from Gatsby as an easy way to create posts.
+
+📝[Gatsby New Post CLI Script - Jul 6, 2019](/2019/07/06/gatsby-new-post-cli-script/)
+
+The script uses `readline` and `fs` which are both core nodejs functions.
+
+```js
+const fs = require('fs')
+const readline = require('readline')
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+})
+```
+
 ## Clean Builds
 
 Ensuring clean builds seemed quite important so I ended up creating a prebuild script to remove output dir before running 11ty build.
