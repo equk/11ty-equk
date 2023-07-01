@@ -102,7 +102,7 @@ The next task was to add tailwindcss.
 Most references suggested using `npm-run-all` to run `11ty` & `tailwindcss`.<br/>
 This comes with a few problems, especially if you are using inlined css.
 
-Building is ok as you can run it sequentially but in dev mode things really don't work well as 11ty is trying to reference generated css at the same time as tailwind is generating it.
+Building is ok as you can run it sequentially but in dev mode things really don't work well as 11ty is trying to reference generated css at the same time as tailwind generating it.
 
 <article class="message is-info">
   <div class="message-body">
@@ -131,7 +131,7 @@ Integrating `postcss` on this project has gone over a few iterations but I final
 
 📝[11ty Postcss Integration Optimized](2023/06/29/11ty-postcss-integration-optimized/)
 
-This is the final iteration I made which with only a few posts is more than 3x faster.
+This is the final iteration I made which is more than 3x faster with only a few posts.
 
 ```log
 [11ty] Copied 11 files / Wrote 27 files in 0.79 seconds (29.3ms each, v2.0.1)
@@ -163,7 +163,7 @@ This is the final iteration I made which with only a few posts is more than 3x f
 
 I wanted automatic markdown optimization to make things easier when writing blog posts & also to make it easier to transfer existing content over with minimal changes.
 
-To do this I neede to change the configuration of `markdown-it`. (`markdown.renderer.rules.image`)
+To do this I needed to change the configuration of `markdown-it`. (`markdown.renderer.rules.image`)
 
 I used `eleventyConfig.amendLibrary` (example of this was already in `eleventy.config.js`).<br/>
 I based the variables & code on the shortcode implementation already in `eleventy.config.images.js`.
@@ -204,7 +204,13 @@ Trying to keep clientside javascript to a minimum.
 
 ## Adding Pagination
 
+<p><i class="fa fa-link"></i> <a href="https://www.11ty.dev/docs/pagination/" target="_blank" rel="noopener noreferrer">Pagination - Eleventy Docs</a></p>
+
 ## Syndication Feed Generation
+
+I setup my syndication feed to display an excerpt for each post as most tech blogs I subscribe to do this.
+
+With `eleventy-base-blog` atom feed generation is done using a njk template with permalink set to `feed.xml` so I decided to create an excerpt njk `filter`.
 
 📝<a href="/2023/06/26/generating-summary-for-atom-feed-in-11ty/">Generating Summary For Atom Feed In 11ty</a>
 
