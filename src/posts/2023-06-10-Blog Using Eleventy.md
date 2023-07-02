@@ -15,7 +15,7 @@ templateEngineOverride: md
 
 ![11ty logo](../_media/images/11ty-200.png)
 
-Eleventy seems really popular among web tech bloggers so I wanted to give it a proper chance by attempting to move my blog to it.
+Eleventy seems really popular among web technology blogs so I wanted to give it a proper chance by attempting to move my blog to it.
 
 I have been thinking of redesigning my blog for a while & maybe even moving away from Gatsby.
 
@@ -24,7 +24,7 @@ I have been thinking of redesigning my blog for a while & maybe even moving away
 I wanted to use a good starting point for the blog so am using the official starter `eleventy-base-blog`.<br/>
 This starter has a lot of features but also will hopefully allow me to learn & extend 11ty.
 
-<p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/11ty/eleventy-base-blog" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog on github</a></p>
+<p><i class="fa fa-link"></i> <a href="https://github.com/11ty/eleventy-base-blog" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog on github</a></p>
 
 ### First Steps
 
@@ -55,8 +55,8 @@ I did a few things to setup the initial workflow.
 
 ### First Problem
 
-The first problem I came across related to me using `pnpm`.<br />
-`eleventy-base-blog` references `css` from a path in `node_modules` (`prismjs`).
+The first problem I came across related to using `pnpm`.<br />
+`eleventy-base-blog` references `css` from a path in `node_modules`.
 
 ```njk
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
@@ -99,9 +99,7 @@ Some added features also meant adding folders.<br/>
 
 ## Adding Tailwindcss
 
-The next task was to add tailwindcss.
-
-Most references suggested using `npm-run-all` to run `11ty` & `tailwindcss`.<br/>
+Most references suggest using `npm-run-all` to run `11ty` & `tailwindcss`.<br/>
 This comes with a few problems, especially if you are using inlined css.
 
 Building is ok as you can run it sequentially but in dev mode things really don't work well as 11ty is trying to reference generated css at the same time as tailwind generating it.
@@ -124,7 +122,7 @@ Building is ok as you can run it sequentially but in dev mode things really don'
 
 <p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/blob/f76d4e404fcc9ff0a08773bc93f4e06fda4fe7b3/package.json" target="_blank" rel="noopener noreferrer">11ty-equk/package.json on github (Jun 21, 2023)</a></p>
 
-Integrating `postcss` on this project has gone over a few iterations but I finally would get it working quickly with livereload & everything working.
+Integrating `postcss` & `tailwindcss` on this project has gone over a few iterations but I finally got it working quickly with livereload & everything working.
 
 📝[Integrating Tailwindcss With Eleventy](/2023/06/24/integrating-tailwindcss-with-eleventy/)<br/>
 📝[Postcss 11ty Integration Update](/2023/06/29/postcss-11ty-integration-update/)
@@ -238,7 +236,7 @@ const rl = readline.createInterface({
 
 Ensuring clean builds seemed quite important so I ended up creating a prebuild script to remove output dir before running 11ty build.
 
-The script checks if the output directory exists before cleaning & just returns a message if it does not exist.
+The script checks if the output directory exists before cleaning & returns a message if it does not exist.
 
 ```js
 async function preEleventy() {
@@ -259,8 +257,6 @@ async function preEleventy() {
   console.log('\n')
 }
 ```
-
-Output
 
 ```
 [pre-11ty] Starting Clean Build
