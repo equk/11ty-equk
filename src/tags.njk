@@ -17,9 +17,9 @@ permalink: /tag/{{ tag | slugify }}/
   <article class="content">
     <section class="page-full-content">
       <div class="post-content">
-        <header class="pb-16 pt-24">
+        <header class="pb-16">
           <div class="space-y-4">
-            <h1 class="text-center text-5xl font-bold dark:text-gray-100">Posts tagged with #{{ tag }}</h1>
+            <h2 class="text-center text-5xl font-bold dark:text-gray-100">Posts tagged with #{{ tag }}</h2>
           </div>
         </header>
         {% set postslist = collections[ tag ] | reverse %}
