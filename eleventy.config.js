@@ -136,6 +136,14 @@ module.exports = function (eleventyConfig) {
     })
   })
 
+  eleventyConfig.addFilter('readableDateShort', (dateObj) => {
+    return dateObj.toLocaleDateString('en-gb', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+    })
+  })
+
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return dateObj.toISOString().split('T')[0]
   })
