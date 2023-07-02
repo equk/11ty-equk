@@ -8,7 +8,6 @@ code[class*='language-'],
 pre[class*='language-'] {
   color: #ccc;
   background: none;
-  font-size: 1em;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -33,13 +32,13 @@ pre[class*='language-'] {
   overflow: auto;
 }
 
-:not(pre) > code[class*='language-'],
+:not(pre)>code[class*='language-'],
 pre[class*='language-'] {
   background: #2d2d2d;
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre)>code[class*='language-'] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
@@ -107,6 +106,7 @@ pre[class*='language-'] {
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }

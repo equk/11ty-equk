@@ -12,7 +12,7 @@
 @import 'src/_styles/fonts.css';
 @import 'src/_styles/hero.css';
 @import 'src/_styles/fa/fork-awesome.css';
-@import 'src/_styles/prism/prism-nord.css';
+@import 'src/_styles/prism/prism-tomorrow.css';
 @import 'src/_styles/prism/language-tabs.css';
 
 /* Base Styles */
@@ -122,6 +122,13 @@ nav a {
   }
 }
 
+/* Medium Text */
+
+.text-m {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
 /* Header */
 
 header .topbar {
@@ -202,6 +209,13 @@ footer nav li {
 pre:has(> code) {
   background-color: #011627;
   color: #fff;
+}
+
+/* Override Code Background */
+
+:not(pre)>code[class*='language-'],
+pre[class*='language-'] {
+  background: #011627;
 }
 
 /*
