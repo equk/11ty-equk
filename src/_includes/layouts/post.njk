@@ -52,11 +52,11 @@ layout: layouts/base.njk
               {{ metadata.author.name }}
             </a>
             <br />
-            <span class="mx-2 text-sm">{{ metadata.author.bio }}</span>
+            <span class="mx-2 text-m">{{ metadata.author.bio }}</span>
             <br />
-            <time class="mx-2 text-sm text-gray-600 dark:text-gray-300 uppercase" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+            <time class="mx-2 text-m text-gray-600 dark:text-gray-300 uppercase" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
           </div>
-          <div class="hidden md:flex items-center text-sm text-right">
+          <div class="hidden md:flex items-center text-m text-right">
             <div class="post-tags">
               <ul class="taglist">
                 {%- for tag in tags | filterTagList %}
