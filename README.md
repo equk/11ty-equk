@@ -5,8 +5,7 @@ equk.co.uk blog using eleventy v2.0
 <br />
 
 <p align="center">
-<img class="inline 11ty_logo" src="./public/media/logos/11ty-96x96.png" alt="11ty-logo" width="80px">
-<img class="inline nunjucks_logo" src="./public/media/logos/nunjucks.png" alt="nunjucks-logo" width="80px">
+<img class="inline 11ty_logo" src="./public/media/logos/11ty-96x96.png" alt="11ty-logo">
 </p>
 
 ## Features
@@ -43,9 +42,20 @@ Post permalinks are generated using `title` & `date` fields
 
 Resulting in `/YYYY/MM/DD/slugify-title`
 
+# Contact
+
+Website: https://equk.co.uk
+
+Mastodon: [@equilibriumuk@hachyderm.io](https://hachyderm.io/@equilibriumuk)
+
+# License
+
+Source Code: MIT License
+
+Content & Media: Copyright
+
+(You are **not** permitted to re-use the content publicly or commercially)
+
 ---
 
-#### based on eleventy-base-blog v8
-
-A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v2.0 release](https://www.11ty.dev/blog/eleventy-v2/)).
-
+based on eleventy-base-blog
