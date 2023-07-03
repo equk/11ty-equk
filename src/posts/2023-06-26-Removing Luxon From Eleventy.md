@@ -164,3 +164,10 @@ New
 ## 4MB Saved
 
 Replace the filters in `eleventy.config.js` & luxon can be removed as a dependency saving 4MB.
+
+
+## Source Code
+
+The source for my 11ty blog is available on github.
+
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>

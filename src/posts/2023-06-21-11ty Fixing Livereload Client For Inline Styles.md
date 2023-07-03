@@ -100,3 +100,9 @@ It should now be possible to access this using nunjucks.
 ```
 
 Now the script is only inserted on `dev` mode & not on `build` mode.
+
+## Source Code
+
+The source for my 11ty blog is available on github.
+
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>

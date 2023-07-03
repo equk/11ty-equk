@@ -78,3 +78,9 @@ The speed is similar to using the nunjucks filter.
 ```
 
 This could be useful for people not using nunjucks.
+
+## Source Code
+
+The source for my 11ty blog is available on github.
+
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>

@@ -90,3 +90,9 @@ I added cssnano with the default preset but this seems to slow things down a lot
 [11ty] Benchmark   1231ms  17%    22× (Configuration) "postcss" Nunjucks Async Filter
 [11ty] Copied 13 files / Wrote 25 files in 6.75 seconds (270.0ms each, v2.0.1)
 ```
+
+## Source Code
+
+The source for my 11ty blog is available on github.
+
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>

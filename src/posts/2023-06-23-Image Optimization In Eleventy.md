@@ -67,3 +67,10 @@ The generated `picture` element contains `loading="lazy" decoding="async"` to `i
 <blockquote><p>The <code>loading</code> attribute on an <code>img</code> element (or the loading attribute on an <code>iframe</code>) can be used to instruct the browser to defer loading of images/iframes that are off-screen until the user scrolls near them.</p>
 <br/>
 <cite><i class="fa fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes" target="_blank" rel="noopener noreferrer">Lazy loading - Web performance | MDN</a></cite></blockquote>
+
+
+## Source Code
+
+The source for my 11ty blog is available on github.
+
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>

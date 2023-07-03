@@ -98,3 +98,9 @@ Speed wise this is a lot faster.
 ## Related Posts
 
 📝[Integrating Tailwindcss With Eleventy](/2023/06/24/integrating-tailwindcss-with-eleventy/) | 📝[Postcss 11ty Integration Update](/2023/06/29/postcss-11ty-integration-update/)
+
+## Source Code
+
+The source for my 11ty blog is available on github.
+
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
