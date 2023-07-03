@@ -1,0 +1,41 @@
+[build.environment]
+  NODE_VERSION = "18"
+[build]
+  command = "pnpm run build"
+  publish = "dist"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+[[redirects]]
+  from = "/rss"
+  to = "/atom.xml"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/feed"
+  to = "/atom.xml"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/equk"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/gh"
+  to = "https://github.com/equk"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/twitter"
+  to = "https://twitter.com/equilibriumuk"
+  status = 301
+  force = true
