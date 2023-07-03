@@ -92,10 +92,13 @@ nav a {
     @apply mx-auto max-w-4xl;
   }
 
-  main .post-content,
   main .hero-image,
   main .post-full-content {
     @apply pb-8;
+  }
+
+  main .post-content {
+    @apply pt-8;
   }
 
   a {
@@ -476,12 +479,23 @@ span.gatsby-resp-image-wrapper,
 
 .post-title {
   margin: 1.65em 0 0.5em;
-  font-size: 1.65em;
+  font-size: 1.2em;
   font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .postlist-date {
   font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+}
+
+@screen md {
+  .post-title {
+    font-size: 1.65em;
+  }
+
+  .postlist-date {
+    font-size: 1.12rem;
+  }
 }
 
 /* Tags List */
