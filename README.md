@@ -2,21 +2,31 @@
 
 equk.co.uk blog using eleventy v2.0
 
+<br />
+
+<p align="center">
+<img class="inline 11ty_logo" src="./public/media/logos/11ty-96x96.png" alt="11ty-logo" width="80px">
+<img class="inline nunjucks_logo" src="./public/media/logos/nunjucks.png" alt="nunjucks-logo" width="80px">
+</p>
+
 ## Features
 
-- [x] tailwindcss with postcss
-- [x] eslint with prettier
+- [x] postcss integration
+- [x] esbuild integration
 - [x] image optimization
 - [x] syntax highlighting (zero JS output)
 - [x] atom feed generation
 - [x] sitemap generation
-- [x] markdown checklists
 - [x] post feature image
 - [x] image attribution link
 - [x] post list pagination
 - [x] darkmode support (`localStorage` & `prefers-color-scheme`)
-- [x] postcss & tailwindcss integrated with eleventy
 - [x] inlined css
+- [x] opengraph meta tags
+- [x] social media meta tags
+- [x] 11ty bundle support
+- [x] markdown checklists
+- [x] eslint with prettier
 
 ## Image Optimization
 
