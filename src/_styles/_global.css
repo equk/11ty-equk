@@ -46,7 +46,7 @@ nav a {
     --theme-text: #2c3e50;
     --theme-accent: #cc2a42;
     --theme-accent-2: #111;
-    --theme-quote: #cc2a42;
+    --theme-quote: #0282c9;
     --theme-menu-bg: rgb(250 250 250 / 0.85);
     --theme-footer-bg: #e5e7eb;
   }
@@ -54,12 +54,12 @@ nav a {
   :root.dark {
     color-scheme: dark;
     --theme-bg: #181820;
-    --theme-link: #0282c9;
-    --theme-hover: #d14;
+    --theme-link: #ffc962;
+    --theme-hover: #ff8762;
     --theme-text: #efefef;
     --theme-accent: #0282c9;
     --theme-accent-2: #eee;
-    --theme-quote: #0282c9;
+    --theme-quote: #ffc962;
     --theme-menu-bg: rgb(29 31 33 / 0.85);
     --theme-footer-bg: #020204;
   }
@@ -237,7 +237,7 @@ main .post-content {
 
 main blockquote {
   background-color: #eef9ff;
-  border-left: 5px solid #38bdf8;
+  border-left: 5px solid var(--theme-quote);
   padding: 1.25em 2.25em;
   margin: 0.5em 0;
   font-style: normal;
@@ -249,13 +249,13 @@ main blockquote p {
 }
 
 .dark main blockquote {
-  background-color: #334;
+  background-color: #223;
 }
 
 main blockquote::before {
   font-family: Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   content: "\201C";
-  color: #7fd1fe;
+  color: var(--theme-quote);
   font-size: 4em;
   position: absolute;
   left: 10px;
