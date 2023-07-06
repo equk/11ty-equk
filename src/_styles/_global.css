@@ -190,21 +190,14 @@ footer nav li {
 
 /* Pagination */
 
-.pagination p {
-  margin: 0;
-  color: #e2e8f0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .pagination a {
   color: var(--theme-text);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.dark .pagination p {
-  color: rgb(51 65 85);
+.pagination a:hover {
+  color: var(--theme-hover);
 }
 
 /* Fix Text Codeblock */
@@ -405,6 +398,16 @@ a.github:hover {
 
 .message.is-info>div {
   @apply border-0 border-sky-400 border-l-4 rounded bg-sky-50 text-sky-600;
+}
+
+.dark .message.is-info>div a,
+.dark .message.is-dark>div a {
+  color: var(--theme-hover);
+}
+
+.dark .message.is-info>div a:hover,
+.dark .message.is-dark>div a:hover {
+  color: var(--theme-link);
 }
 
 .message-body i {
