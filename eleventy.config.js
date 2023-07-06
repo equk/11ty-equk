@@ -148,6 +148,11 @@ module.exports = function (eleventyConfig) {
     return dateObj.toISOString().split('T')[0]
   })
 
+  // XML Formatting
+  eleventyConfig.addFilter('titleXML', (content) => {
+    return content.replace(/&/g, '&amp;')
+  })
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('head', (array, n) => {
     if (!Array.isArray(array) || array.length === 0) {
