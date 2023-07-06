@@ -7,21 +7,21 @@ eleventyExcludeFromCollections: true
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.description }}</subtitle>
   <link href="{{ permalink | htmlBaseUrl(metadata.url) }}" rel="self"/>
-  <link href="{{ metadata.url | addPathPrefixToFullUrl }}"/>
+  <link href="{{ metadata.url | addPathPrefixToFullUrl }}" rel="alternate"/>
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.url }}</id>
+  <id>{{ metadata.url | addPathPrefixToFullUrl }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
-    <uri>{{ metadata.url }}</uri>
+    <uri>{{ metadata.url | addPathPrefixToFullUrl }}</uri>
   </author>
   {%- for post in collections.posts | reverse %}
   {% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    <title type="html">{{ post.data.title | titleXML }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    <summary type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | excerpt | safe }}</summary>
+    <id>{{ absolutePostUrl | addPathPrefixToFullUrl }}</id>
+    <summary type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | excerpt }}</summary>
   </entry>
   {%- endfor %}
 </feed>
