@@ -1,12 +1,16 @@
 # 11ty-equk
 
-equk.co.uk blog using eleventy v2.0
+equk.co.uk blog using eleventy
 
 <br />
 
 <p align="center">
-<img class="inline 11ty_logo" src="./public/media/logos/11ty-96x96.png" alt="11ty-logo">
+<img src="./src/_media/images/11ty-200.png" alt="11ty-logo">
 </p>
+
+Deployed at: https://blog.equk.co.uk/
+
+<img src="./public/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify"/>
 
 ## Features
 
