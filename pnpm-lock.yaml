@@ -26,6 +26,9 @@ devDependencies:
   '@11ty/eleventy-plugin-syntaxhighlight':
     specifier: ^5.0.0
     version: 5.0.0
+  '@types/markdown-it':
+    specifier: ^12.2.3
+    version: 12.2.3
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.24)
@@ -49,10 +52,22 @@ devDependencies:
     version: 8.8.0(eslint@8.42.0)
   eslint-config-standard:
     specifier: ^17.1.0
-    version: 17.1.0(eslint-plugin-import@2.27.5)(eslint-plugin-n@16.0.0)(eslint-plugin-promise@6.1.1)(eslint@8.42.0)
+    version: 17.1.0(eslint-plugin-import@2.27.5)(eslint-plugin-n@16.0.1)(eslint-plugin-promise@6.1.1)(eslint@8.42.0)
+  eslint-plugin-import:
+    specifier: ^2.27.5
+    version: 2.27.5(eslint@8.42.0)
+  eslint-plugin-n:
+    specifier: ^16.0.1
+    version: 16.0.1(eslint@8.42.0)
   eslint-plugin-prettier:
     specifier: ^4.2.1
     version: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.42.0)(prettier@2.8.8)
+  eslint-plugin-promise:
+    specifier: ^6.1.1
+    version: 6.1.1(eslint@8.42.0)
+  markdown-it:
+    specifier: ^13.0.1
+    version: 13.0.1
   markdown-it-anchor:
     specifier: ^8.6.7
     version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
@@ -1472,7 +1487,7 @@ packages:
       eslint: 8.42.0
     dev: true
 
-  /eslint-config-standard@17.1.0(eslint-plugin-import@2.27.5)(eslint-plugin-n@16.0.0)(eslint-plugin-promise@6.1.1)(eslint@8.42.0):
+  /eslint-config-standard@17.1.0(eslint-plugin-import@2.27.5)(eslint-plugin-n@16.0.1)(eslint-plugin-promise@6.1.1)(eslint@8.42.0):
     resolution: {integrity: sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -1483,7 +1498,7 @@ packages:
     dependencies:
       eslint: 8.42.0
       eslint-plugin-import: 2.27.5(eslint@8.42.0)
-      eslint-plugin-n: 16.0.0(eslint@8.42.0)
+      eslint-plugin-n: 16.0.1(eslint@8.42.0)
       eslint-plugin-promise: 6.1.1(eslint@8.42.0)
     dev: true
 
@@ -1525,8 +1540,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-es-x@6.2.1(eslint@8.42.0):
-    resolution: {integrity: sha512-uR34zUhZ9EBoiSD2DdV5kHLpydVEvwWqjteUr9sXRgJknwbKZJZhdJ7uFnaTtd+Nr/2G3ceJHnHXrFhJ67n3Tw==}
+  /eslint-plugin-es-x@7.1.0(eslint@8.42.0):
+    resolution: {integrity: sha512-AhiaF31syh4CCQ+C5ccJA0VG6+kJK8+5mXKKE7Qs1xcPRg02CDPOj3mWlQxuWS/AYtg7kxrDNgW9YW3vc0Q+Mw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=8'
@@ -1568,8 +1583,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-n@16.0.0(eslint@8.42.0):
-    resolution: {integrity: sha512-akkZTE3hsHBrq6CwmGuYCzQREbVUrA855kzcHqe6i0FLBkeY7Y/6tThCVkjUnjhvRBAlc+8lILcSe5QvvDpeZQ==}
+  /eslint-plugin-n@16.0.1(eslint@8.42.0):
+    resolution: {integrity: sha512-CDmHegJN0OF3L5cz5tATH84RPQm9kG+Yx39wIqIwPR2C0uhBGMWfbbOtetR83PQjjidA5aXMu+LEFw1jaSwvTA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -1577,7 +1592,7 @@ packages:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.42.0)
       builtins: 5.0.1
       eslint: 8.42.0
-      eslint-plugin-es-x: 6.2.1(eslint@8.42.0)
+      eslint-plugin-es-x: 7.1.0(eslint@8.42.0)
       ignore: 5.2.4
       is-core-module: 2.12.1
       minimatch: 3.1.2
