@@ -17,6 +17,8 @@ const autoprefixer = require('autoprefixer')
 const postcssimport = require('postcss-import')
 const cssnano = require('cssnano')
 
+const sharp = require('sharp')
+
 const pluginDrafts = require('./eleventy.config.drafts.js')
 const pluginImages = require('./eleventy.config.images.js')
 
@@ -69,6 +71,18 @@ module.exports = function (eleventyConfig) {
         })
       })
     return minified
+  })
+
+  // Generate favicon from svg input
+  eleventyConfig.on('eleventy.before', async () => {
+    await sharp('src/_media/favicon.svg')
+      .png()
+      .resize(96, 96)
+      .toFile('public/img/icon-96x96.png')
+      .catch(function (err) {
+        console.log('[11ty] ERROR Generating favicon')
+        console.log(err)
+      })
   })
 
   // Copy the contents of the `public` folder to the output folder
