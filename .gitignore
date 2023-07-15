@@ -2,6 +2,9 @@
 _site/
 dist/
 
+# cached content
+_cache/
+
 # esbuild output
 src/_assets/js/
 
