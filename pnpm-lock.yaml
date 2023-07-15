@@ -38,6 +38,9 @@ devDependencies:
   cssnano-preset-lite:
     specifier: ^3.0.0
     version: 3.0.0(postcss@8.4.24)
+  dotenv:
+    specifier: ^16.3.1
+    version: 16.3.1
   eleventy-plugin-seo:
     specifier: ^0.5.2
     version: 0.5.2
@@ -65,6 +68,9 @@ devDependencies:
   eslint-plugin-promise:
     specifier: ^6.1.1
     version: 6.1.1(eslint@8.42.0)
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
@@ -1315,6 +1321,11 @@ packages:
       dom-serializer: 2.0.0
       domelementtype: 2.3.0
       domhandler: 5.0.3
+    dev: true
+
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
+    engines: {node: '>=12'}
     dev: true
 
   /ee-first@1.1.1:
