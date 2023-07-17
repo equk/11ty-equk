@@ -90,6 +90,7 @@ module.exports = function (eleventyConfig) {
         })
     })
   }
+  eleventyConfig.watchIgnores.add('public/img/icon-96x96.png')
 
   // Copy the contents of the `public` folder to the output folder
   // For example, `./public/css/` ends up in `dist/css/`

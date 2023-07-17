@@ -129,7 +129,7 @@ Integrating `postcss` & `tailwindcss` on this project has gone over a few iterat
 
 ### Optimized Postcss Integration
 
-📝[11ty Postcss Integration Optimized](2023/06/29/11ty-postcss-integration-optimized/)
+📝[11ty Postcss Integration Optimized](/2023/06/29/11ty-postcss-integration-optimized/)
 
 This is the final iteration I made which is more than 3x faster with only a few posts.
 
