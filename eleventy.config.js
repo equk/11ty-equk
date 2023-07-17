@@ -136,7 +136,8 @@ module.exports = function (eleventyConfig) {
   })
 
   // Filters
-  eleventyConfig.addFilter('readableDate', (dateObj) => {
+  eleventyConfig.addFilter('readableDate', (date) => {
+    const dateObj = new Date(date)
     return dateObj.toLocaleDateString('en-gb', {
       year: 'numeric',
       month: 'long',
@@ -144,7 +145,8 @@ module.exports = function (eleventyConfig) {
     })
   })
 
-  eleventyConfig.addFilter('readableDateUS', (dateObj) => {
+  eleventyConfig.addFilter('readableDateUS', (date) => {
+    const dateObj = new Date(date)
     return dateObj.toLocaleDateString('en-us', {
       year: 'numeric',
       month: 'long',
@@ -152,7 +154,8 @@ module.exports = function (eleventyConfig) {
     })
   })
 
-  eleventyConfig.addFilter('readableDateShort', (dateObj) => {
+  eleventyConfig.addFilter('readableDateShort', (date) => {
+    const dateObj = new Date(date)
     return dateObj.toLocaleDateString('en-gb', {
       year: 'numeric',
       month: 'short',
@@ -160,7 +163,8 @@ module.exports = function (eleventyConfig) {
     })
   })
 
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+  eleventyConfig.addFilter('htmlDateString', (date) => {
+    const dateObj = new Date(date)
     return dateObj.toISOString().split('T')[0]
   })
 
