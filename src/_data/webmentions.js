@@ -1,42 +1,39 @@
 // fetch webmentions & cache using netlify - original source: https://github.com/maxboeck/mxb
 const fs = require('fs')
+const fetch = require('node-fetch')
 const unionBy = require('lodash/unionBy')
 const metadata = require('./metadata.js')
 
 require('dotenv').config()
 
 const CACHE_DIR = '_cache'
-const API_ORIGIN = 'https://webmention.io/api/mentions.jf2'
+const API = 'https://webmention.io/api'
 const TOKEN = process.env.WEBMENTION_IO_TOKEN
 
-async function fetchWebmentions(since) {
+async function fetchWebmentions(since, perPage = 10000) {
   const { domain } = metadata
-
-  if (!domain || domain === 'myurl.com') {
+  if (!domain) {
     console.warn(
-      '[11ty] ERROR: unable to fetch webmentions: no domain specified in metadata.'
+      '[11ty] ERROR: Unable to fetch webmentions: no domain name specified in metadata.js'
     )
     return false
   }
+
   if (!TOKEN) {
     console.warn(
-      '[11ty] ERROR: unable to fetch webmentions: no access token specified in environment.'
+      '[11ty] ERROR: Unable to fetch webmentions: no access token specified in environment.'
     )
     return false
   }
 
-  let url = `${API_ORIGIN}?domain=${domain}&token=${TOKEN}`
-  if (since) {
-    url += `&per-page=100&&since=${since}`
-  } else {
-    url += `&per-page=999`
-  }
+  let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`
+  if (since) url += `&since=${since}`
 
   const response = await fetch(url)
   if (response.ok) {
     const feed = await response.json()
     console.log(
-      `${feed.children.length} webmentions fetched from ${API_ORIGIN}`
+      `[11ty] ${feed.children.length} New webmentions fetched from ${API}`
     )
     return feed
   }
@@ -51,14 +48,12 @@ function mergeWebmentions(a, b) {
 function writeToCache(data) {
   const filePath = `${CACHE_DIR}/webmentions.json`
   const fileContent = JSON.stringify(data, null, 2)
-
   if (!fs.existsSync(CACHE_DIR)) {
     fs.mkdirSync(CACHE_DIR)
   }
-
   fs.writeFile(filePath, fileContent, (err) => {
     if (err) throw err
-    console.log(`webmentions cached to ${filePath}`)
+    console.log(`[11ty] Webmentions saved to ${filePath}`)
   })
 }
 
@@ -69,6 +64,7 @@ function readFromCache() {
     const cacheFile = fs.readFileSync(filePath)
     return JSON.parse(cacheFile)
   }
+
   return {
     lastFetched: null,
     children: [],
@@ -77,11 +73,14 @@ function readFromCache() {
 
 module.exports = async function () {
   const cache = readFromCache()
-  const { lastFetched } = cache
 
-  if (process.env.ELEVENTY_ENV === 'production' || !lastFetched) {
-    const feed = await fetchWebmentions(lastFetched)
+  if (cache.children.length) {
+    console.log(`[11ty] ${cache.children.length} Webmentions loaded from cache`)
+  }
 
+  // fetch new mentions in production
+  if (process.env.ELEVENTY_ENV === 'production') {
+    const feed = await fetchWebmentions(cache.lastFetched)
     if (feed) {
       const webmentions = {
         lastFetched: new Date().toISOString(),
@@ -93,6 +92,5 @@ module.exports = async function () {
     }
   }
 
-  console.log(`${cache.children.length} webmentions loaded from cache`)
   return cache
 }
