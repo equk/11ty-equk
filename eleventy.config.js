@@ -19,6 +19,8 @@ const cssnano = require('cssnano')
 
 const sharp = require('sharp')
 
+const sanitizeHTML = require('sanitize-html')
+
 const pluginDrafts = require('./eleventy.config.drafts.js')
 const pluginImages = require('./eleventy.config.images.js')
 
@@ -207,6 +209,49 @@ module.exports = function (eleventyConfig) {
       .slice(0, 80)
       .join(' ')
     return content
+  })
+
+  // Webmentions
+  eleventyConfig.addFilter('webmentionsByUrl', function (webmentions, url) {
+    const allowedTypes = ['in-reply-to', 'like-of', 'repost-of']
+
+    const data = {
+      'like-of': [],
+      'repost-of': [],
+      'in-reply-to': [],
+    }
+
+    const hasRequiredFields = (entry) => {
+      const { author, published, content } = entry
+      return author.name && published && content
+    }
+
+    const filtered = webmentions
+      .filter((entry) => entry['wm-target'] === url)
+      .filter((entry) => allowedTypes.includes(entry['wm-property']))
+
+    filtered.forEach((m) => {
+      if (data[m['wm-property']]) {
+        const isReply = m['wm-property'] === 'in-reply-to'
+        const isValidReply = isReply && hasRequiredFields(m)
+        if (isReply) {
+          if (isValidReply) {
+            m.sanitized = sanitizeHTML(m.content.html)
+            data[m['wm-property']].unshift(m)
+          }
+
+          return
+        }
+
+        data[m['wm-property']].unshift(m)
+      }
+    })
+
+    data['in-reply-to'].sort((a, b) =>
+      a.published > b.published ? 1 : b.published > a.published ? -1 : 0
+    )
+
+    return data
   })
 
   // Customize Markdown library settings:
