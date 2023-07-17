@@ -2,7 +2,7 @@
   "name": "11ty-equk",
   "description": "Eleventy blog for equk",
   "scripts": {
-    "build": "NODE_ENV=production node ./prebuild.mjs && npx @11ty/eleventy",
+    "build": "node ./prebuild.mjs && NODE_ENV=production npx @11ty/eleventy",
     "dev": "npx @11ty/eleventy --serve --quiet",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "devdebug": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
