@@ -1,5 +1,5 @@
-{# webmentions taken from https://rknight.me/adding-webmentions-to-your-site/ #}
-<div class="post-comments webmentions mb-10 border-b border-gray-100 dark:border-slate-700/40">
+{# webmentions styles based on https://rknight.me/adding-webmentions-to-your-site/ #}
+<div class="post-comments webmentions mb-10">
 
   {%- set mentions = webmentions.children | webmentionsByUrl(webmentionUrl) -%}
 
@@ -27,16 +27,16 @@
   <h4>Comments</h4>
   <div class="webmentions-comments">
     {%- for mention in mentions['in-reply-to'] %}
-    <div class="webmentions-comment">
+    <div class="webmentions-comment border border-gray-200 dark:border-slate-700/40">
       <div class="webmentions-comment-header">
         <div class="webmentions-comment-header-name">
           <a target="_blank" rel="noopener" href="{{mention.author.url}}"><img src="{{mention.author.photo}}" title="{{mention.author.name}}"></a> {{mention.author.name}}
         </div>
-        <div>
+        <div class="webmentions-comment-header-date">
           <a target="_blank" rel="noopener" href="{{mention.url}}">{{ mention.published | readableDateUS }}</a>
         </div>
       </div>
-      <div class="webmentions-comment--content">
+      <div class="webmentions-comment-content">
         {{ mention.sanitized | safe }}
       </div>
     </div>

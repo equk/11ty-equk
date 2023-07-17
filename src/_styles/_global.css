@@ -47,6 +47,7 @@ nav a {
     --theme-quote: #0282c9;
     --theme-menu-bg: rgb(250 250 250 / 0.85);
     --theme-footer-bg: #e5e7eb;
+    --theme-comment-bg: #f2f3f5;
   }
 
   :root.dark {
@@ -60,6 +61,7 @@ nav a {
     --theme-quote: #ffc962;
     --theme-menu-bg: rgb(29 31 33 / 0.85);
     --theme-footer-bg: #020204;
+    --theme-comment-bg: #0a0a15;
   }
 
   html {
@@ -595,18 +597,20 @@ h2+.header-anchor {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  border: 3px solid white;
+  border: 2px solid white;
   transition: 0.2s linear;
 }
 
-.webmentions-boost img:hover,
-.webmentions-comment-header img:hover {
-  border: 3px solid #E93BBF;
+.webmentions-boost img:hover {
+  border: 2px solid var(--theme-link);
 }
 
 .webmentions-comment {
   display: flex;
   flex-direction: column;
+  padding: 15px;
+  margin-bottom: 5px;
+  background: var(--theme-comment-bg);
 }
 
 .webmentions-comment-header {
@@ -615,11 +619,9 @@ h2+.header-anchor {
 }
 
 .webmentions-comment-header img {
-  border: 3px solid white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  transition: 0.2s linear;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
 }
 
 .webmentions-comment-header-name {
@@ -630,6 +632,15 @@ h2+.header-anchor {
 
 .webmentions-comment-header-name img {
   margin-right: 10px;
+}
+
+.webmentions-comment-header-date {
+  display: flex;
+  align-items: center;
+}
+
+.webmentions-comment-content p {
+  margin: 0.5em 0;
 }
 
 /*
