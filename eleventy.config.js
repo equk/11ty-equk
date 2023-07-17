@@ -220,6 +220,12 @@ module.exports = function (eleventyConfig) {
   // Webmentions
   eleventyConfig.addFilter('webmentionsByUrl', function (webmentions, url) {
     const allowedTypes = ['in-reply-to', 'like-of', 'repost-of']
+    const allowedHTML = {
+      allowedTags: ['b', 'i', 'em', 'strong', 'a'],
+      allowedAttributes: {
+        a: ['href'],
+      },
+    }
 
     const data = {
       'like-of': [],
@@ -242,7 +248,7 @@ module.exports = function (eleventyConfig) {
         const isValidReply = isReply && hasRequiredFields(m)
         if (isReply) {
           if (isValidReply) {
-            m.sanitized = sanitizeHTML(m.content.html)
+            m.sanitized = sanitizeHTML(m.content.html, allowedHTML)
             data[m['wm-property']].unshift(m)
           }
           return
