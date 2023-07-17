@@ -575,6 +575,63 @@ h2+.header-anchor {
   font-size: 1.5em;
 }
 
+/* webmention styles */
+
+.webmentions h4 {
+  margin: 10px 0;
+}
+
+.webmentions-boost {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.webmentions-boost a {
+  margin-left: -10px;
+}
+
+.webmentions-boost img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid white;
+  transition: 0.2s linear;
+}
+
+.webmentions-boost img:hover,
+.webmentions-comment-header img:hover {
+  border: 3px solid #E93BBF;
+}
+
+.webmentions-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.webmentions-comment-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.webmentions-comment-header img {
+  border: 3px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  transition: 0.2s linear;
+}
+
+.webmentions-comment-header-name {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.webmentions-comment-header-name img {
+  margin-right: 10px;
+}
+
 /*
   -----------------------------------------
   Typography Styles

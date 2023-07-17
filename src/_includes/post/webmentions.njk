@@ -1,69 +1,13 @@
 {# webmentions taken from https://rknight.me/adding-webmentions-to-your-site/ #}
 <div class="post-comments webmentions mb-10 border-b border-gray-100 dark:border-slate-700/40">
 
-  <style>
-    .webmentions h4 {
-      margin: 10px 0;
-    }
-
-    .webmentions--likeboost {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .webmentions--likeboost a {
-      margin-left: -10px;
-    }
-
-    .webmentions--likeboost img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50px;
-      border: 3px solid white;
-      transition: 0.2s linear;
-    }
-
-    .webmentions--likeboost img:hover,
-    .webmentions--comment--header img:hover {
-      border: 3px solid #E93BBF;
-    }
-
-    .webmentions--comment {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .webmentions--comment--header {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .webmentions--comment--header img {
-      border: 3px solid white;
-      width: 50px;
-      height: 50px;
-      border-radius: 50px;
-      transition: 0.2s linear;
-    }
-
-    .webmentions--comment--header--name {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-    }
-
-    .webmentions--comment--header--name img {
-      margin-right: 10px;
-    }
-  </style>
-
   {%- set mentions = webmentions.children | webmentionsByUrl(webmentionUrl) -%}
 
   <h4 class="text-3xl font-bold">Webmentions</h4>
 
   {% if mentions['like-of']|length %}
   <h4>Likes</h4>
-  <div class="webmentions--likeboost">
+  <div class="webmentions-boost">
     {%- for like in mentions['like-of'] %}
     <a target="_blank" rel="noopener" href="{{like.author.url}}"><img src="{{like.author.photo}}" title="{{like.author.name}}"></a>
     {% endfor%}
@@ -72,7 +16,7 @@
 
   {% if mentions['repost-of']|length %}
   <h4>Boosts</h4>
-  <div class="webmentions--likeboost">
+  <div class="webmentions-boost">
     {%- for repost in mentions['repost-of'] %}
     <a target="_blank" rel="noopener" href="{{repost.author.url}}"><img src="{{repost.author.photo}}" title="{{repost.author.name}}"></a>
     {% endfor%}
@@ -81,18 +25,18 @@
 
   {% if mentions['in-reply-to']|length %}
   <h4>Comments</h4>
-  <div class="webmentions--comments">
+  <div class="webmentions-comments">
     {%- for mention in mentions['in-reply-to'] %}
-    <div class="webmentions--comment">
-      <div class="webmentions--comment--header">
-        <div class="webmentions--comment--header--name">
+    <div class="webmentions-comment">
+      <div class="webmentions-comment-header">
+        <div class="webmentions-comment-header-name">
           <a target="_blank" rel="noopener" href="{{mention.author.url}}"><img src="{{mention.author.photo}}" title="{{mention.author.name}}"></a> {{mention.author.name}}
         </div>
         <div>
-          <a target="_blank" rel="noopener" href="{{mention.url}}">{{ mention.published }}</a>
+          <a target="_blank" rel="noopener" href="{{mention.url}}">{{ mention.published | readableDateUS }}</a>
         </div>
       </div>
-      <div class="webmentions--comment--content">
+      <div class="webmentions-comment--content">
         {{ mention.sanitized | safe }}
       </div>
     </div>
