@@ -27,7 +27,7 @@ const pluginImages = require('./eleventy.config.images.js')
 const metadata = require('./src/_data/metadata.js')
 
 module.exports = function (eleventyConfig) {
-  // Run esbuild before anything else (using bundle for js)
+  // Run esbuild
   eleventyConfig.on('eleventy.before', async () => {
     await esbuild.build({
       entryPoints: ['src/_scripts/darkmode.js', 'src/_scripts/mobilenav.js'],
@@ -37,7 +37,7 @@ module.exports = function (eleventyConfig) {
     })
   })
 
-  // Run postcss (insert css to html later)
+  // Run postcss
   eleventyConfig.on('eleventy.before', async () => {
     const cssInput = fs.readFileSync('src/_styles/_global.css', {
       encoding: 'utf-8',
@@ -76,10 +76,10 @@ module.exports = function (eleventyConfig) {
   })
 
   // Generate favicon from svg input
-  // Only run in production builds
+  // Only run on production build
   if (process.env.NODE_ENV === 'production') {
     eleventyConfig.on('eleventy.before', async () => {
-      console.log('generating favicon')
+      console.log('[11ty] Generating Favicon')
       await sharp('src/_media/favicon.svg')
         .png()
         .resize(96, 96)
@@ -108,8 +108,6 @@ module.exports = function (eleventyConfig) {
   // Run Eleventy when these files change:
   // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
-  // Watch content images for the image pipeline.
-  // eleventyConfig.addWatchTarget('src/**/*.{svg,webp,png,jpeg}')
   // Watch for css changes.
   eleventyConfig.addWatchTarget('src/_styles/*.css')
   // Watch for js changes
@@ -247,10 +245,8 @@ module.exports = function (eleventyConfig) {
             m.sanitized = sanitizeHTML(m.content.html)
             data[m['wm-property']].unshift(m)
           }
-
           return
         }
-
         data[m['wm-property']].unshift(m)
       }
     })
@@ -262,7 +258,7 @@ module.exports = function (eleventyConfig) {
     return data
   })
 
-  // Customize Markdown library settings:
+  // Customize Markdown library settings
   eleventyConfig.amendLibrary('md', (mdLib) => {
     mdLib.use(markdownItAnchor, {
       permalink: markdownItAnchor.permalink.ariaHidden({
