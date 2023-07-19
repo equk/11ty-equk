@@ -10,13 +10,32 @@ permalink: about/index.html
     <div class="flex flex-col gap-1 text-center items-center">
         <img class="h-32 w-32 bg-white p-2 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
         <p class="text-2xl">equilibriumuk</p>
-        <div class="flex justify-center items-center">
-        Web Developer & Site Reliability Engineer
-        </div>
     </div>
     <div class="flex justify-center items-center gap-2 my-0">
         <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color ts"></span> Typescript <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
     </div>
+</div>
+
+## Contact
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+    <p class="mt-1 text-xl font-bold">Email Address</p>
+    <p>
+    <code class="language-text">equilibriumuk AT protonmail DOT com</code>
+    </p>
+</div>
+<div>
+    <p class="mt-1 text-xl font-bold">GPG Key</p>
+    <p>
+    <a href="https://keybase.io/equilibriumuk/pgp_keys.asc?fingerprint=25fc07669118b3b9b79beae40e53a3c22664d113" target="_blank" rel="noopener noreferrer">0E53 A3C2 2664 D113</a>
+    </p>
+</div>
+<div>
+    <p class="mt-1 text-xl font-bold">Social Media</p>
+    <p>Mastodon: <a href="https://{{ metadata.author.contacts.mastodon_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.mastodon }}</a></p>
+    <p>Github: <a href="https://github.com/{{ metadata.author.contacts.github }}" target="_blank" rel="noopener noreferrer">github.com/{{ metadata.author.contacts.github }}</a></p>
+</div>
 </div>
 
 ---
@@ -33,6 +52,6 @@ The source code can be found on github & the site is hosted on netlify.
 
 <a href="https://www.netlify.com"><img src="/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify" class="inline" /> </a>
 
-More info:
+### Comments
 
-📝<a href="/tag/eleventy">Posts Tagged eleventy</a>
+Comments are based on <a href="/2023/07/18/adding-webmentions-in-eleventy/" target="_blank" rel="noopener noreferrer">webmentions</a> using <a href="https://webmention.io/" target="_blank" rel="noopener noreferrer">webmention.io</a> & <a href="https://brid.gy/" target="_blank" rel="noopener noreferrer">brid.gy</a> to pull in mentions from mastodon.
