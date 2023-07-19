@@ -643,6 +643,17 @@ h2+.header-anchor {
   margin: 0.5em 0;
 }
 
+/* post footer */
+
+.author-info img {
+  border: 2px solid white;
+  transition: 0.2s linear;
+}
+
+.author-info img:hover {
+  border: 2px solid var(--theme-link);
+}
+
 /*
   -----------------------------------------
   Typography Styles
