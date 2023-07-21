@@ -96,7 +96,7 @@ module.exports = function (eleventyConfig) {
   // For example, `./public/css/` ends up in `dist/css/`
   eleventyConfig.addPassthroughCopy({
     './public/': '/',
-    './src/_media/images': '/images',
+    './src/_media/images': '/media/images',
     './src/_assets/fonts': '/fonts',
   })
 
