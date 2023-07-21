@@ -1,10 +1,9 @@
-{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
 <div class="post-list">
   <div class="xl:col-span-3 xl:row-span-2 xl:pb-0">
     <div class="prose lg:prose-lg mx-auto max-w-none">
       <ul class="postlist mb-6 list-none">
         {% for post in postslist %}
-        <li class="mt-4 postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+        <li class="mt-4 postlist-item">
           <span class="post-title mb-1 mt-0 font-normal">
             <a href="{{ post.url }}" class="post-title-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
           </span>
