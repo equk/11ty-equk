@@ -3,10 +3,10 @@
 
   {%- set mentions = webmentions.children | webmentionsByUrl(webmentionUrl) -%}
 
-  <h4 class="text-3xl font-bold">Webmentions</h4>
+  <p class="text-3xl title">Webmentions</p>
 
   {% if mentions['like-of']|length %}
-  <h4>Likes</h4>
+  <p class="title">Likes</p>
   <div class="webmentions-boost">
     {%- for like in mentions['like-of'] %}
     <a target="_blank" rel="noopener" href="{{like.author.url}}"><img loading="lazy" decoding="async" src="{{like.author.photo}}" title="{{like.author.name}}" alt="author photo"></a>
@@ -15,7 +15,7 @@
   {% endif %}
 
   {% if mentions['repost-of']|length %}
-  <h4>Boosts</h4>
+  <p class="title">Boosts</p>
   <div class="webmentions-boost">
     {%- for repost in mentions['repost-of'] %}
     <a target="_blank" rel="noopener" href="{{repost.author.url}}"><img loading="lazy" decoding="async" src="{{repost.author.photo}}" title="{{repost.author.name}}" alt="author photo"></a>
@@ -24,13 +24,13 @@
   {% endif %}
 
   {% if mentions['in-reply-to']|length %}
-  <h4>Comments</h4>
+  <p class="title">Comments</p>
   <div class="webmentions-comments">
     {%- for mention in mentions['in-reply-to'] %}
     <div class="webmentions-comment border border-gray-200 dark:border-slate-700/40">
       <div class="webmentions-comment-header">
         <div class="webmentions-comment-header-name">
-          <a target="_blank" rel="noopener" href="{{mention.author.url}}"><img loading="lazy" decoding="async" src="{{mention.author.photo}}" title="{{mention.author.name}}" alt="author photo"></a> {{mention.author.name}}
+          <a target="_blank" rel="noopener" href="{{mention.url}}"><img loading="lazy" decoding="async" src="{{mention.author.photo}}" title="{{mention.author.name}}" alt="author photo"> {{mention.author.name}}</a>
         </div>
         <div class="webmentions-comment-header-date">
           <a target="_blank" rel="noopener" href="{{mention.url}}">{{ mention.published | readableDateUS }}</a>
