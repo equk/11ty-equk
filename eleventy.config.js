@@ -279,6 +279,7 @@ module.exports = function (eleventyConfig) {
       slugify: eleventyConfig.getFilter('slugify'),
     })
     mdLib.use(markdownItTaskLists, { label: true })
+    mdLib.enable('code')
   })
 
   // Clean HTML output (just simple regex)
