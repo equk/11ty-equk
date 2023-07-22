@@ -5,11 +5,7 @@ tags:
   - linux
   - python
   - openwrt
-  - extroot
-  - firmware
-  - netgear
 title: Netgear wnr2200 OpenWrt USB Support
-slug: netgear-wnr2200-openwrt-usb-support/
 ---
 
 <p class="text-center"><img width="600px" src="/media/images/2015/07/wnr2200_head.jpg" alt="wnr2200_head"></p>
