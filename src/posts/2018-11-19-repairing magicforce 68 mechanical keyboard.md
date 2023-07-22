@@ -1,19 +1,12 @@
 ---
 author: equilibriumuk
-comments: true
 date: 2018-11-19T14:38:13Z
 draft: false
 image: ../_media/images/2018/11/19/magicforce68_top.jpg
-menu: ""
-share: true
 category: tech
 tags:
   - hardware
-  - repair
-  - keyboard
-  - mechanical
 title: Magicforce 68 Mechanical Keyboard
-url: ""
 ---
 
 I have a few mechanical keyboards including a tenkeyless but thought I'd give something smaller a try so in may I bought a magicforce 68 keyboard with brown switches.
