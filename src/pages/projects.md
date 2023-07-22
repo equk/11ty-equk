@@ -110,6 +110,8 @@ There are some GUI tools which do the same but are dependant on gnome-desktop & 
 
 </a>
 
+📝 [April 11, 2022 - Unlocking Plusnet Hub One](/2022/04/11/unlocking-plusnet-hub-one/)
+
 Hardware modifications to allow booting over serial connection.<br/>
 Requires custom LEDE boot image to unlock `u-boot` bootloader to allow OpenWRT install.
 
@@ -128,11 +130,11 @@ App whitelists `IPV4` & `IPV6` ranges using `CIDR` blocks.
 
 ## Acer Chromebook C7/C710 Coreboot
 
-Coreboot opensource firmware image, allowing the chromebook to boot into linux using different payloads eg: seabios, grub2, tianocore (UEFI).
+Coreboot opensource firmware image, allowing the chromebook to boot into linux using different payloads eg: `seabios`, `grub2`, `tianocore` (UEFI).
 
-<p class="text-center"><img class="border" src="/media/images/2014/Aug/arch_ssd_chromebook_sm.jpg" alt="arch_ssd_chromebook"></p>
+<img src="/media/logos/coreboot.svg" alt="coreboot-logo" class="dark-logo" width="200px">
 
 Building coreboot is pretty easy, the instructions on the wiki are quite clear.<br/>
 Just make sure you know what you are doing as you could brick your chromebook.
 
-For more info on building coreboot [Building Coreboot in 2020](/2020/04/19/building-coreboot-2020)
+More info on building coreboot 📝 [April 19, 2020 - Building Coreboot in 2020](/2020/04/19/building-coreboot-2020)
