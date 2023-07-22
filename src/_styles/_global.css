@@ -341,6 +341,10 @@ a.github:hover {
   background-color: #2b7489;
 }
 
+.language-color.lua {
+  background-color: #000080;
+}
+
 /* Color Highlight */
 
 .git-fork {
