@@ -9,12 +9,26 @@ permalink: about/index.html
 <div class="bg-gray-100 border border-gray-400 shadow rounded-lg p-5 dark:bg-gray-900 dark:border-gray-800">
     <div class="flex flex-col gap-1 text-center items-center">
         <img class="h-32 w-32 bg-white p-2 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
-        <p class="text-2xl">equilibriumuk</p>
+        <p class="text-3xl">equilibriumuk</p>
     </div>
     <div class="flex justify-center items-center gap-2 my-0">
-        <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color ts"></span> Typescript <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
+        <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color ts"></span> Typescript <span class="language-color rust"></span> Rust <span class="language-color lua"></span> Lua <span class="language-color go"></span> Go <br/><span class="language-color sh"></span> Bash <span class="language-color c"></span> C <span class="language-color py"></span> Python <span class="language-color ps"></span> Powershell</p>
     </div>
 </div>
+
+## Linux
+
+I use Archlinux as my desktop OS with a tiling wm.<br />
+Screenshots & info: <i class="fa fa-link"></i> <a href="https://github.com/equk/dotfiles" target="_blank" rel="noopener noreferrer">equk/dotfiles on GitHub</a>
+
+<p class="text-center"><img class="inline" src="/media/images/2019/05/gentoo-signet.svg" alt="gentoo" width="128px">
+<img class="inline" src="/media/images/2014/Feb/arch_128.png" alt="archlinux">
+<img class="inline" src="/media/logos/nixos.svg" alt="nixos" width="132px">
+<img class="inline" src="/media/images/2014/Feb/freebsd_128.png" alt="freebsd"></p>
+
+I started learning linux with Slackware then went on to Gentoo (stage 1 install) & then moved on to using Archlinux.
+
+Servers I work on use NixOS, Debian, Ubuntu, freebsd.
 
 ## Contact
 
