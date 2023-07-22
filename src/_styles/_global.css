@@ -643,6 +643,18 @@ h2+.header-anchor {
   align-items: center;
 }
 
+.webmentions-comment-header-date a {
+  color: var(--theme-text);
+}
+
+.dark .webmentions-comment-header-date a {
+  color: var(--theme-link);
+}
+
+.webmentions-comment-header-date a:hover {
+  color: var(--theme-hover);
+}
+
 .webmentions-comment-content p {
   margin: 0.5em 0;
 }
