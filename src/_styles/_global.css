@@ -583,8 +583,10 @@ h2+.header-anchor {
 
 /* webmention styles */
 
-.webmentions h4 {
+.webmentions .title {
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin: 10px 0;
+  font-weight: 700;
 }
 
 .webmentions-boost {
@@ -597,7 +599,8 @@ h2+.header-anchor {
   margin-left: -10px;
 }
 
-.webmentions-boost img {
+.webmentions-boost img,
+.webmentions-comment-header img {
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -605,37 +608,38 @@ h2+.header-anchor {
   transition: 0.2s linear;
 }
 
-.webmentions-boost img:hover {
+.webmentions-boost img:hover,
+.webmentions-comment-header img:hover {
   border: 2px solid var(--theme-link);
 }
 
 .webmentions-comment {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  position: relative;
+  padding: 10px;
   margin-bottom: 5px;
   background: var(--theme-comment-bg);
 }
 
-.webmentions-comment-header {
+.webmentions-comment-header,
+.webmentions-comment-content {
   display: flex;
   justify-content: space-between;
+  padding-left: 60px;
 }
 
 .webmentions-comment-header img {
-  width: 32px;
-  height: 32px;
-  border-radius: 32px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
 }
 
 .webmentions-comment-header-name {
   display: flex;
   align-items: center;
-  font-weight: bold;
-}
-
-.webmentions-comment-header-name img {
-  margin-right: 10px;
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
 }
 
 .webmentions-comment-header-date {
@@ -643,7 +647,8 @@ h2+.header-anchor {
   align-items: center;
 }
 
-.webmentions-comment-header-date a {
+.webmentions-comment-header-date a,
+.webmentions-comment-header-name a {
   color: var(--theme-text);
 }
 
@@ -651,12 +656,13 @@ h2+.header-anchor {
   color: var(--theme-link);
 }
 
-.webmentions-comment-header-date a:hover {
+.webmentions-comment-header-date a:hover,
+.webmentions-comment-header-name a:hover {
   color: var(--theme-hover);
 }
 
-.webmentions-comment-content p {
-  margin: 0.5em 0;
+.webmentions-comment-content {
+  margin: 0.2em 0;
 }
 
 /* post footer */
