@@ -9,6 +9,22 @@ layout: layouts/base.njk
       </div>
     </header>
 
+    {% if image %}
+    <div class="hero-image">
+      <div class="hero-w">
+        {% image image, "" %}
+        {% if imgAuthor %}
+        <div class="hero-link text-right text-sm italic">
+          Photo by
+          <a href={{ imgAuthorURL }} target="_blank" rel="noreferrer">
+            {{ imgAuthor }}
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
     <section class="post-full-content xl:relative">
       <div class="post-content">
         <div class="xl:col-span-3 xl:row-span-2 xl:pb-0">
