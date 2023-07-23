@@ -103,7 +103,6 @@ nav a {
 
   a {
     color: var(--theme-link);
-    transition: color 0.7s ease;
   }
 
   a:hover {
