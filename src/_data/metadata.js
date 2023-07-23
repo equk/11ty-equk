@@ -1,7 +1,7 @@
 module.exports = {
   title: `equk's blog`,
-  url: 'https://blog.equk.co.uk',
-  domain: 'blog.equk.co.uk',
+  url: 'https://equk.co.uk',
+  domain: 'equk.co.uk',
   language: 'en',
   description: 'writings of a coder + sysadmin',
   author: {
@@ -9,7 +9,7 @@ module.exports = {
     photo: '/users/equilibriumuk.jpg',
     bio: 'Web Developer & SRE',
     email: 'equk@users.noreply.github.com',
-    url: 'https://blog.equk.co.uk/about/',
+    url: 'https://equk.co.uk/about/',
     contacts: {
       twitter: 'equilibriumuk',
       github: 'equk',
