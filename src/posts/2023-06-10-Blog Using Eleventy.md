@@ -287,6 +287,11 @@ async function preEleventy() {
 📝<a href="/2023/06/21/11ty-fixing-livereload-client-for-inline-styles/">11ty Fixing Livereload Client For Inline Styles</a><br/>
 📝<a href="/2023/06/20/generating-slug-using-date-and-title-in-11ty/">Generating Slug Using Date &amp; Title In 11ty</a><br/>
 
+### 11ty Additional Features
+
+📝<a href="/2023/07/14/favicon-generation-in-eleventy/">Favicon Generation In Eleventy</a><br/>
+📝<a href="/2023/07/18/adding-webmentions-in-eleventy/">Adding Webmentions in Eleventy</a><br/>
+
 
 ## Source Code
 
