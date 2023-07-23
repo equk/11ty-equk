@@ -8,7 +8,7 @@ equk.co.uk blog using eleventy
 <img src="./src/_media/images/11ty-200.png" alt="11ty-logo">
 </p>
 
-Deployed at: https://blog.equk.co.uk/
+Deployed at: https://equk.co.uk/
 
 <img src="./public/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify"/>
 
@@ -30,6 +30,9 @@ Deployed at: https://blog.equk.co.uk/
 - [x] 11ty bundle support
 - [x] markdown checklists
 - [x] eslint with prettier
+- [x] favicon generation
+- [x] webmentions
+- [x] blog post commenting using mastodon
 
 ## Image Optimization
 
