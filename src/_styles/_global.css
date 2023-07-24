@@ -506,6 +506,35 @@ span.gatsby-resp-image-wrapper,
 
 /* Tags List */
 
+.tagslist {
+  padding: 0;
+}
+
+.tagslist-item {
+  display: flex;
+  align-items: center;
+}
+
+.taglist-title {
+  font-size: 1.375rem;
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+}
+
+.taglist-date {
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.1rem;
+  color: var(--theme-link);
+  display: block;
+  padding-right: 1rem;
+  width: 9rem;
+  flex: 0 0 9rem;
+  text-align: right;
+  order: -1;
+}
+
+/* Post Footer Tags */
+
 .post-tags a {
   display: inline-block;
   margin: 0 .625rem 0 0
