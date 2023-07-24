@@ -24,6 +24,11 @@ permalink: /tag/{{ tag | slugify }}/
         </header>
         {% set tagslist = collections[ tag ] | reverse %}
         {% include "tagslist.njk" %}
+        <div class="pagination flex justify-center border-t-2 border-slate-200 px-3 py-2 dark:border-slate-700/40">
+          <nav class="pagination flex items-center gap-x-8" role="navigation">
+            <a href="/" rel="home" class="mr-auto py-2">Home</a>
+          </nav>
+        </div>
       </div>
     </section>
   </article>
