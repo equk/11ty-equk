@@ -1,8 +1,7 @@
 ---
 date: 2015-07-25T11:19:03Z
 tags:
-- postfix
-- dovecot
+- mail
 - linux
 - python
 title: Mail Console

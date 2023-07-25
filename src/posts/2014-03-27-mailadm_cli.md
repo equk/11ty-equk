@@ -2,12 +2,11 @@
 date: 2014-03-27T15:00:27Z
 tags:
 - github
-- postfix
-- dovecot
+- mail
 - linux
 - python
 title: mailadm_cli
-slug: mailadm_cli/
+slug:
 ---
 
 <p class="text-center"><img src="/media/images/2014/Feb/postfix_logo.png" alt="postfix"><img src="/media/images/2014/Feb/dovecot_logo.png" alt="dovecot"></p>
