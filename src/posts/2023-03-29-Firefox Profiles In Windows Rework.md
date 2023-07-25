@@ -9,6 +9,7 @@ tags:
   - firefox
   - javascript
   - powershell
+  - windows
 image: ../_media/images/2018/09/mozilla_header.jpg
 ---
 
