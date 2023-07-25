@@ -139,6 +139,29 @@ module.exports = function (eleventyConfig) {
     },
   })
 
+  // Collections
+  // Listing of top used tags
+  eleventyConfig.addCollection('tagList', (collection) => {
+    const tagsObject = {}
+    collection.getFilteredByGlob('src/posts/*.md').forEach((item) => {
+      if (!item.data.tags) return
+      item.data.tags
+        .filter((tag) => !['posts', 'all', 'github', 'gatsby'].includes(tag))
+        .forEach((tag) => {
+          if (typeof tagsObject[tag] === 'undefined') {
+            tagsObject[tag] = 1
+          } else {
+            tagsObject[tag] += 1
+          }
+        })
+    })
+    const tagList = []
+    Object.keys(tagsObject).forEach((tag) => {
+      tagList.push({ tagName: tag, tagCount: tagsObject[tag] })
+    })
+    return tagList.sort((a, b) => b.tagCount - a.tagCount).slice(0, 4)
+  })
+
   // Filters
   eleventyConfig.addFilter('readableDate', (date) => {
     const dateObj = new Date(date)
