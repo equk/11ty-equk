@@ -21,6 +21,7 @@ ogtype: website
             {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" rel="prev" class="mr-auto py-2">Previous</a>{% endif %}
             {% if pagination.href.next %}<a href="{{ pagination.href.next }}" rel="next" class="mr-auto py-2">Next</a>{% endif %}
           </nav>
+          {% include "toptags.njk" %}
         </div>
       </div>
     </section>
