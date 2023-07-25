@@ -191,6 +191,39 @@ footer nav li {
   list-style: none
 }
 
+footer nav ul {
+  padding-left: 0;
+}
+
+/* Top Tags */
+
+main .content .top-tags {
+  text-align: right;
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  align-items: center;
+  font-size: 1rem;
+}
+
+main .content .top-tags li {
+  display: inline-block;
+  list-style: none;
+}
+
+main .content .top-tags ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+main .content .top-tags a {
+  color: var(--theme-link);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+main .content .top-tags a:hover {
+  color: var(--theme-hover);
+}
+
 /* Pagination */
 
 .pagination a {
