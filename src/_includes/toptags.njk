@@ -1,0 +1,9 @@
+<div class="top-tags hidden md:flex">
+  <ul>
+    {% for tag in collections.tagList %}
+    <li>
+      <a href="{{ '/tag/' | url }}{{ tag.tagName | slugify }}">#{{ tag.tagName | lower }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
