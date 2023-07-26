@@ -6,6 +6,7 @@ tags:
 - handlebars
 title: basic setup for express + handlebars
 slug: basic-setup-for-express-handlebars/
+permalink: /2014/03/11/basic-setup-for-express-handlebars/
 ---
 
 <p class="text-center"><img src="/media/images/2014/Mar/nodejs_logo_w_128.png" width="277px" alt=""><img src="/media/images/2014/Mar/express_loog_w_128.png" width="267px" alt=""></p>

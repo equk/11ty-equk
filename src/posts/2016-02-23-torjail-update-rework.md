@@ -10,6 +10,7 @@ tags:
   - cli
 title: torjail - update & rework
 slug: torjail-update-rework/
+permalink: /2016/02/23/torjail-update-rework/
 ---
 
 <p class="text-center"><img src="/media/images/2016/01/tor_screen_sm.jpg" alt="tor_screen_small"></p>

@@ -8,6 +8,7 @@ tags:
 - chromium
 title: Running Neverware Cloudready on Virtualbox
 slug: cloudready-virtualbox/
+permalink: /2016/02/19/cloudready-virtualbox/
 ---
 
 neverware provide a raw image of their chromiumos build <a href="http://www.neverware.com/freedownload" target="_blank">free on their website</a>
