@@ -6,6 +6,7 @@ tags:
 - windows
 title: Lenovo - It's a trust issue
 slug: lenovo-its-a-trust-issue/
+permalink: /2015/02/21/lenovo-its-a-trust-issue/
 ---
 
 <p class="text-center"><img class="len_fish_head" src="/media/images/2015/02/len_fish_head.jpg"></p>

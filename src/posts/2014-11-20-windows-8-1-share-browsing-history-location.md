@@ -6,6 +6,7 @@ tags:
 - microsoft
 title: Windows 8.1 - share browsing history & location
 slug: windows-8-1-share-browsing-history-location/
+permalink: /2014/11/20/windows-8-1-share-browsing-history-location/
 ---
 
 <p class="text-center"><img src="/media/images/2014/Nov/win8_privacy_banner.jpg" alt=""></p>

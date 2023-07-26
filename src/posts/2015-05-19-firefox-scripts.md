@@ -8,6 +8,7 @@ tags:
 - firefox
 title: Firefox Tweaks & Scripts
 slug: firefox-scripts/
+permalink: /2015/05/19/firefox-scripts/
 ---
 
 <p class="text-center"><img src="/media/images/2015/05/firefox_wordmark-logo.png" alt=""></p>

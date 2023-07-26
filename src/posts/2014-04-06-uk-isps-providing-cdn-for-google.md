@@ -7,6 +7,7 @@ tags:
 - infosec
 title: UK ISP's providing cdn for google
 slug: uk-isps-providing-cdn-for-google/
+permalink: /2014/04/07/uk-isps-providing-cdn-for-google/
 ---
 
 I read a post this morning regarding virgin media using their own hosted cdn servers for google.com (and related domains/subdomains)

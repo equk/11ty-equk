@@ -4,7 +4,7 @@ tags:
   - tor
   - kickstarter
 title: eBlocker - anonabox style magicbox - with added MITM
-slug: eblocker-kickstarter/
+permalink: /2016/02/14/eblocker-kickstarter/
 ---
 
 I'm going to start by saying this project came to my attention when they followed me on twitter.

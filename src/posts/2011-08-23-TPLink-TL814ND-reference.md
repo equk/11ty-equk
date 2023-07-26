@@ -12,6 +12,7 @@ tags:
 
 title: TP-Link TL-841ND Reference USB + TTL Serial
 slug: tplink-tl841nd-reference
+permalink: /2011/08/23/tplink-tl841nd-reference/
 ---
 
 ![tplink tl841nd reference](../../src/_media/images/2011/tplink-tl841nd.jpg)
