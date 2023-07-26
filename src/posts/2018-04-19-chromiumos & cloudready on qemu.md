@@ -11,11 +11,8 @@ tags:
   - google
   - chromeos
   - chromebook
-  - chromiumos
-  - kvm
-  - qemu
 title: Chromium OS & Cloudready on QEMU
-url: ""
+permalink: /2018/04/19/chromium-os-cloudready-on-qemu/
 ---
 
 After reading about some new features relating to running linux applications coming to Chrome OS I thought it was time to revisit the possibility of running Chromium OS in a virtual environment.
