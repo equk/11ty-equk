@@ -3,23 +3,23 @@ layout: layouts/base.njk
 ---
 
 <section class="top-banner">
-  <div class="topbanner-body relative overflow-hidden">
-    <div class="topbanner-bg absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed">
-      <div class="flex h-full items-center justify-center">
-        <div class="px-6 text-center text-white md:px-12">
-          <h1 class="text-5xl font-bold uppercase tracking-tight md:text-6xl">
-            {{ title or metadata.title }}
-          </h1>
-          <p class="social-blocks">
-            <a href="{{ 'https://github.com/' + metadata.author.contacts.github }}" target="_blank" aria-label="go to github" rel="noopener noreferrer">
-              <i class="fa fa-github"></i>
-            </a>
-            <a href="{{ 'https://' + metadata.author.contacts.mastodon_url }}" target="_blank" aria-label="go to mastodon" rel="noopener noreferrer">
-              <i class="fa fa-mastodon"></i>
-            </a>
-          </p>
-        </div>
-      </div>
+  <div class="top-banner_image-wrapper">
+    {% image '../src/_media/images/spkr-white.webp', "", ['400', '800', '1200', '1400', '1900'], '(max-width: 1900px) 100vw, 1900px' %}
+  </div>
+  <div class="top-banner_overlay"></div>
+  <div class="top-banner_container flex h-full items-center justify-center">
+    <div class="px-6 text-center text-white md:px-12">
+      <h1 class="text-5xl font-bold uppercase tracking-tight md:text-6xl">
+        {{ title or metadata.title }}
+      </h1>
+      <p class="social-blocks">
+        <a href="{{ 'https://github.com/' + metadata.author.contacts.github }}" target="_blank" aria-label="go to github" rel="noopener noreferrer">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="{{ 'https://' + metadata.author.contacts.mastodon_url }}" target="_blank" aria-label="go to mastodon" rel="noopener noreferrer">
+          <i class="fa fa-mastodon"></i>
+        </a>
+      </p>
     </div>
   </div>
 </section>
