@@ -28,7 +28,7 @@ module.exports = (eleventyConfig) => {
       // TODO loading=eager and fetchpriority=high
       const imageAttributes = {
         alt,
-        sizes: '(max-width: 1200px) 100vw, 1200px',
+        sizes: sizes || '(max-width: 1200px) 100vw, 1200px',
         loading: 'lazy',
         decoding: 'async',
       }
