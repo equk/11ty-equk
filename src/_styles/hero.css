@@ -19,6 +19,21 @@
   min-width: 100%;
 }
 
+.col-line {
+  position: relative;
+  min-width: 100%;
+}
+
+.col-line:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(128, 100%, 77%, 1) 50%, hsla(197, 100%, 64%, 1) 100%);
+}
+
 .top-banner_image-wrapper {
   position: absolute;
   top: 0;
