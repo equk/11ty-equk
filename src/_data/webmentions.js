@@ -1,6 +1,5 @@
 // fetch webmentions & cache using netlify - original source: https://github.com/maxboeck/mxb
 const fs = require('fs')
-const fetch = require('node-fetch')
 const unionBy = require('lodash/unionBy')
 const metadata = require('./metadata.js')
 
