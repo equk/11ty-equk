@@ -1,0 +1,42 @@
+/*
+  -----------------------------------------
+  Table CSS Styles
+  -----------------------------------------
+  equk 11ty blog
+  https://github.com/equk/
+ */
+
+table {
+    border: none !important;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 600 !important;
+    border: 0px !important;
+    text-align: left;
+    background-color: var(--table-header);
+    color: #e2e8f0;
+}
+
+td {
+    border-left: 1px solid var(--table-border) !important;
+    border-right: 1px solid var(--table-border) !important;
+    border-bottom: 1px solid var(--table-border) !important;
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-row-even)
+}
+
+tr:nth-child(odd) {
+    background-color: var(--table-row-odd)
+}
+
+tr:hover {
+    background-color: var(--table-hover);
+}
+
+thead {
+    border-bottom: 2px solid var(--background-modifier-border) !important;
+}
