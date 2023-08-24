@@ -14,6 +14,7 @@
 @import 'src/_styles/fa/fork-awesome.css';
 @import 'src/_styles/prism/prism-tomorrow.css';
 @import 'src/_styles/prism/language-tabs.css';
+@import 'src/_styles/table.css';
 
 /* Base Styles */
 
@@ -48,6 +49,11 @@ nav a {
     --theme-menu-bg: rgb(250 250 250 / 0.85);
     --theme-footer-bg: #e5e7eb;
     --theme-comment-bg: #f2f3f5;
+    --table-header: hsl(218, 27%, 48%);
+    --table-row-even: hsl(220, 16%, 94%);
+    --table-row-odd: hsl(220, 16%, 98%);
+    --table-hover: #e5e9f0;
+    --table-border: #e2e8f0;
   }
 
   :root.dark {
@@ -62,6 +68,11 @@ nav a {
     --theme-menu-bg: rgb(29 31 33 / 0.85);
     --theme-footer-bg: #020204;
     --theme-comment-bg: #0a0a15;
+    --table-header: hsl(220, 16%, 16%);
+    --table-row-even: hsl(220, 16%, 20%);
+    --table-row-odd: hsl(220, 16%, 24%);
+    --table-hover: #4c566a;
+    --table-border: rgb(51 65 85/0.4);
   }
 
   html {
@@ -857,7 +868,7 @@ table {
 
 td,
 th {
-  padding: 0.625em 1em;
+  padding: 0 0.5em;
 }
 
 abbr {
