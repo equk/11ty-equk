@@ -244,6 +244,15 @@ Set vscode to use wayland (archlinux). `visual-studio-code-bin`
 --ozone-platform=wayland
 ```
 
+<article class="message is-info">
+  <div class="message-body">
+  <p class="pb-4"><i class="fa fa-info-circle"></i> Update: 19-09-2023</p>
+    <p>There is a problem with using wayland platform with native titlebar in Visual Studio Code</p>
+    <p>Setting <code>window.titleBarStyle</code> to <code>custom</code> seems to work as a workaround this problem for now.</p>
+    <p class="pt-4"><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/dotfiles/commit/2a50740755c8f3fc941cf8d634e8aec213b2f9a0" target="_blank" rel="noopener noreferrer">vscode: added workaround to fix crashing on wayland</a></p>
+  </div>
+</article>
+
 ## Notes
 
 I have been using hyprland over the weekend & after doing a system update I rebooted to find hyprland would not start.<br/>
