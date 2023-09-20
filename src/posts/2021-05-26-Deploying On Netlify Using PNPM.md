@@ -58,11 +58,9 @@ I thought the easiest & cleanest way was to add `pnpm i` to `netlify.toml`.
 <p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/commit/c713c72b359fc7584d8a8ccb744d536ab68137d0#diff-ab8f79b68b7adff7a07db953bf453f3c5aa6ade98d2b1b67d8432b36392489ed" target="_blank" rel="noopener noreferrer">equk/equk-gatsby@<tt>c713c72</tt></a>
 </p>
 
-<article class="message is-warning">
-  <div class="message-body">
-    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> You will probably want to tell netlify to clear the cache before building if switching from npm or yarn.
-  </div>
-</article>
+::: important
+You will probably want to tell netlify to clear the cache before building if switching from `npm` or `yarn`.
+:::
 
 ---
 
