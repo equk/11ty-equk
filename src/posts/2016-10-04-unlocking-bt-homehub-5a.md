@@ -29,18 +29,15 @@ _All of these can be added to OpenWrt_
 <p>For developers, OpenWrt provides a framework to build an application without having to create a complete firmware image and distribution around it.</p>
 <p>For users, this means the freedom of full customization, allowing the use of an embedded device in ways the vendor never envisioned.</p></blockquote>
 
+::: note
 _Disclaimer: I have been modding routers, switches & embedded devices for years.<br/>
 This article is just a writeup & not really meant as a guide. (info is intentionally missing)<br/>
 I would not recommend anyone try this without previous experience in soldering & hardware modification._
+:::
 
-<article class="message is-warning">
-  <div class="message-header">
-    <p>Warning</p>
-  </div>
-  <div class="message-body">
-    BT HomeHub 5a is only supported by the trunk (testing/dev) build of OpenWrt
-  </div>
-</article>
+::: warning
+BT HomeHub 5a is only supported by the trunk (testing/dev) build of OpenWrt
+:::
 
 ## HomeHub 5a Spec
 
