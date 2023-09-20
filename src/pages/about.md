@@ -64,7 +64,9 @@ This site is powered by eleventy.<br/>
 
 The source code can be found on github & the site is hosted on netlify.
 
-<a href="https://www.netlify.com"><img src="/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify" class="inline" /> </a>
+<a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer"><img src="/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify" class="inline" /> </a>
+
+More info on the features of this site can be <a href="/2023/07/13/11ty-site-now-live/" target="_blank" rel="noopener noreferrer">found here</a>.
 
 ### Comments
 
