@@ -244,14 +244,15 @@ Set vscode to use wayland (archlinux). `visual-studio-code-bin`
 --ozone-platform=wayland
 ```
 
-<article class="message is-info">
-  <div class="message-body">
-  <p class="pb-4"><i class="fa fa-info-circle"></i> Update: 19-09-2023</p>
-    <p>There is a problem with using wayland platform with native titlebar in Visual Studio Code</p>
-    <p>Setting <code>window.titleBarStyle</code> to <code>custom</code> seems to work as a workaround this problem for now.</p>
-    <p class="pt-4"><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/dotfiles/commit/2a50740755c8f3fc941cf8d634e8aec213b2f9a0" target="_blank" rel="noopener noreferrer">vscode: added workaround to fix crashing on wayland</a></p>
-  </div>
-</article>
+::: note
+*Update: 19-09-2023*
+
+There is a problem with using wayland platform with native titlebar in Visual Studio Code.
+
+Setting `window.titleBarStyle` to `custom` seems to work as a workaround this problem for now.
+
+<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/dotfiles/commit/2a50740755c8f3fc941cf8d634e8aec213b2f9a0" target="_blank" rel="noopener noreferrer">vscode: added workaround to fix crashing on wayland</a>
+:::
 
 ## Notes
 
@@ -260,12 +261,10 @@ On searching online I found some tickets relating to issues with hyprland v0.29 
 
 There are some tickets on wlroots gitlab saying they found the commit causing the problem.
 
-<article class="message is-info">
-  <div class="message-body">
-    <p><i class="fa fa-info-circle"></i> There seems to be a problem with hyprland v0.29 with both AMD & NVIDIA drivers</p>
-    <p><i class="fa fa-cog"></i> Downgrading to v0.28 fixes the problem</p>
-  </div>
-</article>
+::: important
+There seems to be a problem with hyprland v0.29 with both AMD & NVIDIA drivers<br/>
+Downgrading to v0.28 fixes the problem
+:::
 
 ## Source
 
