@@ -247,9 +247,8 @@ Set vscode to use wayland (archlinux). `visual-studio-code-bin`
 ::: note
 *Update: 19-09-2023*
 
-There is a problem with using wayland platform with native titlebar in Visual Studio Code.
-
-Setting `window.titleBarStyle` to `custom` seems to work as a workaround this problem for now.
+There is a problem with using wayland platform with native titlebar in Visual Studio Code.<br/>
+Setting `window.titleBarStyle` to `custom` seems to work as a workaround for now.
 
 <i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/dotfiles/commit/2a50740755c8f3fc941cf8d634e8aec213b2f9a0" target="_blank" rel="noopener noreferrer">vscode: added workaround to fix crashing on wayland</a>
 :::
