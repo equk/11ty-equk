@@ -466,6 +466,98 @@ a.github:hover {
   padding: 0 10px;
 }
 
+/* Callout Blocks */
+
+.callout-block {
+  padding: 0 0.8em;
+}
+
+.callout-block.info {
+  @apply border-gray-400 border-l-4;
+}
+
+.callout-block.info .callout-block-title {
+  @apply text-gray-600;
+}
+
+.dark .callout-block.info .callout-block-title {
+  @apply text-gray-400;
+}
+
+.callout-block.tip,
+.callout-block.note {
+  @apply border-sky-400 border-l-4;
+}
+
+.callout-block.tip .callout-block-title,
+.callout-block.note .callout-block-title {
+  @apply text-sky-600;
+}
+
+.dark .callout-block.tip .callout-block-title,
+.dark .callout-block.note .callout-block-title {
+  @apply text-sky-400;
+}
+
+.callout-block.warning {
+  @apply border-yellow-200 border-l-4;
+}
+
+.callout-block.warning .callout-block-title {
+  @apply text-yellow-400;
+}
+
+.dark .callout-block.warning .callout-block-title {
+  @apply text-yellow-200;
+}
+
+.callout-block.danger {
+  @apply border-red-400 border-l-4;
+}
+
+.callout-block.danger .callout-block-title {
+  @apply text-red-600;
+}
+
+.dark .callout-block.danger .callout-block-title {
+  @apply text-red-400;
+}
+
+.callout-block.important {
+  @apply border-purple-400 border-l-4;
+}
+
+.callout-block.important .callout-block-title {
+  @apply text-purple-600;
+}
+
+.dark .callout-block.important .callout-block-title {
+  @apply text-purple-400;
+}
+
+.callout-block.details {
+  @apply border-gray-400 border-l-4 bg-gray-100 text-gray-700;
+}
+
+.callout-block-title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.callout-block p+p {
+  margin: 8px 0;
+}
+
+.callout-block.details summary {
+  margin: 0 0 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.callout-block.details summary+p {
+  margin: 8px 0;
+}
+
 /* Task Lists */
 
 li.task-list-item {
