@@ -91,11 +91,9 @@ Make sure you understand these steps before proceeding.
 - [ ] Reboot router to LEDE
 - [ ] Install OpenWrt using sysupgrade
 
-<article class="message is-danger">
-  <div class="message-body">
-    Backup current firmware to a FAT32 formatted USB stick using the install image before writing new firmware. <em>(filesize of backup should be ~128MiB)</em>
-  </div>
-</article>
+::: danger
+Backup current firmware to a FAT32 formatted USB stick using the install image before writing new firmware. <em>(filesize of backup should be ~128MiB)</em>
+:::
 
 #### Related
 
