@@ -23,6 +23,7 @@ const sanitizeHTML = require('sanitize-html')
 
 const pluginDrafts = require('./eleventy.config.drafts.js')
 const pluginImages = require('./eleventy.config.images.js')
+const containerPlugin = require('./eleventy.md.container.js')
 
 const metadata = require('./src/_data/metadata.js')
 
@@ -301,6 +302,7 @@ module.exports = function (eleventyConfig) {
       level: [1, 2, 3, 4],
       slugify: eleventyConfig.getFilter('slugify'),
     })
+    mdLib.use(containerPlugin)
     mdLib.use(markdownItTaskLists, { label: true })
     mdLib.enable('code')
   })
