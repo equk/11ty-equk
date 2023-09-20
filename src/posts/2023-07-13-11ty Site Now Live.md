@@ -44,6 +44,7 @@ I have added:
 - [x] `eslint` with `prettier`
 - [x] favicon generation
 - [x] webmentions (comment using `mastodon`)
+- [x] custom callouts plugin for `markdown-it`
 
 Info on how development has gone so far can be seen in blog post
 
@@ -130,6 +131,36 @@ Image optimization is automatic in `markdown` & image `shortcode` is used in tem
 - output: `dist/img/`
 
 The site is setup to output optimized `webp` images as well as the original input format.
+
+## Callouts
+
+::: info
+This is an info box
+:::
+
+::: tip
+This is a tip
+:::
+
+::: warning
+This is a warning
+:::
+
+::: danger
+This is a dangerous warning
+:::
+
+::: note
+This is a note
+:::
+
+::: important
+This is a important block
+:::
+
+::: details
+This is a details block
+:::
 
 ## Commenting
 
