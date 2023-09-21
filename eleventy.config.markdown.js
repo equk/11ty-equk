@@ -10,7 +10,6 @@ module.exports = (md) => {
     .use(...createContainer('danger', 'Danger', md))
     .use(...createContainer('note', 'Note', md))
     .use(...createContainer('important', 'Important', md))
-    .use(...createContainer('details', 'Details', md))
 }
 
 function createContainer(conClass, defaultTitle, md) {
@@ -24,10 +23,8 @@ function createContainer(conClass, defaultTitle, md) {
         const attrs = md.renderer.renderAttrs(token)
         if (token.nesting === 1) {
           const title = md.renderInline(info || defaultTitle)
-          if (conClass === 'details')
-            return `<details class="${conClass} callout-block"${attrs}><summary>${title}</summary>\n`
           return `<div class="${conClass} callout-block"${attrs}><p class="callout-block-title">${title}</p>\n`
-        } else return conClass === 'details' ? `</details>\n` : `</div>\n`
+        } else return `</div>\n`
       },
     },
   ]

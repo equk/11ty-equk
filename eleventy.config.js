@@ -23,7 +23,7 @@ const sanitizeHTML = require('sanitize-html')
 
 const pluginDrafts = require('./eleventy.config.drafts.js')
 const pluginImages = require('./eleventy.config.images.js')
-const containerPlugin = require('./eleventy.md.container.js')
+const containerPlugin = require('./eleventy.config.markdown.js')
 
 const metadata = require('./src/_data/metadata.js')
 
