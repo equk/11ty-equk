@@ -132,7 +132,12 @@ Image optimization is automatic in `markdown` & image `shortcode` is used in tem
 
 The site is setup to output optimized `webp` images as well as the original input format.
 
+📝<a href="/2023/06/24/markdown-image-optimization-in-eleventy/" target="_blank" rel="noopener noreferrer">Markdown Image Optimization In Eleventy</a><br/>
+📝<a href="/2023/06/23/image-optimization-in-eleventy/" target="_blank" rel="noopener noreferrer">Image Optimization In Eleventy</a><br/>
+
 ## Callouts
+
+Custom callout elements using custom `markdown-it` plugin.
 
 ::: info
 This is an info box
@@ -158,19 +163,19 @@ This is a note
 This is a important block
 :::
 
-::: details
-This is a details block
-:::
-
 ## Commenting
 
-Comments are based on <a href="/2023/07/18/adding-webmentions-in-eleventy/" target="_blank" rel="noopener noreferrer">webmentions</a> using <a href="https://webmention.io/" target="_blank" rel="noopener noreferrer">webmention.io</a> & <a href="https://brid.gy/" target="_blank" rel="noopener noreferrer">brid.gy</a> to pull in mentions from mastodon.
+Comments are based on webmentions using <a href="https://webmention.io/" target="_blank" rel="noopener noreferrer">webmention.io</a> & <a href="https://brid.gy/" target="_blank" rel="noopener noreferrer">brid.gy</a> to pull in mentions from mastodon.
 
 This includes `likes` & `boosts` received via mastodon.
+
+📝<a href="/2023/07/18/adding-webmentions-in-eleventy/">Adding Webmentions in Eleventy</a>
 
 ## Syndication Feed
 
 Syndication feed generation is setup to output an `excerpt` of the latest `10` posts.
+
+📝<a href="/2023/06/26/generating-summary-for-atom-feed-in-11ty/" target="_blank" rel="noopener noreferrer">Generating Summary For Atom Feed In 11ty</a>
 
 ## Sitemap
 
