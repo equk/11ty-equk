@@ -3,6 +3,11 @@ sitemap: https://equk.co.uk/sitemap.xml
 User-agent: *
 Disallow: /tag/
 
+# Block Google Bard and Vertex Generative AI
+# (https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers#google-extended)
+User-agent: Google-Extended
+Disallow: /
+
 # Block Ethically Questionable Bots
 # (http://www.turnitin.com/robot/crawlerinfo.html)
 User-Agent: TurnitinBot
