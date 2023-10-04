@@ -11,6 +11,7 @@ permalink: projects/index.html
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> <i class="fa fa-github"></i> reset usb devices in linux cli (`usbreset` in `c`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `postcss` integration with `11ty`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `gatsby` integrated atom feed generation
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `nodejs` atom feed generation script
