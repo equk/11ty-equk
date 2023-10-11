@@ -253,6 +253,13 @@ Setting `window.titleBarStyle` to `custom` seems to work as a workaround for now
 <i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/dotfiles/commit/2a50740755c8f3fc941cf8d634e8aec213b2f9a0" target="_blank" rel="noopener noreferrer">vscode: added workaround to fix crashing on wayland</a>
 :::
 
+::: warning
+*Update: 20-09-2023*
+
+VSCode crashes when opening more than one window with `--ozone-platform=wayland`.<br/>
+Removed `code-flags.conf` for now.
+:::
+
 ## Notes
 
 I have been using hyprland over the weekend & after doing a system update I rebooted to find hyprland would not start.<br/>
