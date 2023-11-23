@@ -20,18 +20,21 @@ The idea would be to have something to travel with that is cheap & also has the 
 
 ## Chromebook Security
 
-Chromebooks have some advantages over PC laptops as both the hardware & software is designed to be secure.<br/>
-*Installing ChromeOS onto a PC will not give you these advantages.*
+Chromebooks have some advantages over PC laptops as both the hardware & software is designed to be secure.
 
-Security advantages:
+::: important
+Installing ChromiumOS onto a PC will not give you these advantages.
+:::
 
-* U2F for user login
-* User data encrypted (per user)
-* Verified Boot
-* TPM
-* Secure Boot
+### Security Advantages
 
-<p class="text-center"><iframe width="640" height="360" src="https://www.youtube.com/embed/maCSmdy3an4" frameborder="0" allowfullscreen></iframe></p>
+- [x] U2F for user login
+- [x] User data encrypted (per user)
+- [x] Verified Boot
+- [x] TPM
+- [x] Secure Boot
+
+<i class="fa fa-youtube-play yt-red"></i> <a href="https://www.youtube.com/watch?v=maCSmdy3an4" target="_blank" rel="noopener noreferrer">Chrome OS Security Guide</a>
 
 I <a href="https://twitter.com/equilibriumuk/status/477061149918502912" target="_blank">noted in 2014</a> that I really like the design of ChromeOS due to the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format" target="_blank">structure of the filesystem</a>, the bootloader & the <a href="https://www.chromium.org/developers/design-documents/tpm-usage" target="_blank">use of TPM</a>.
 
@@ -66,8 +69,11 @@ Also to point out that I had upgraded the RAM & installed a SSD on the C710 ( *t
 Being of a low spec brings up the issue with software developers wanting to use chromebooks.<br />
 The operating system could be really nice to use if the hardware was there to support it.
 
-Also in order to setup a working environment for developing terminal based linux/unix apps you would need to have some sort of chroot which would require installing something like <a href="https://github.com/termux" target="_blank">termux</a>.<br />
-DO NOT USE DEVELOPER MODE / CROUTON to achieve chroot as this means you will have to disable most security features of the chromebook.
+Also in order to setup a working environment for developing terminal based linux/unix apps you would need to have some sort of `chroot` which would require installing something like <a href="https://github.com/termux" target="_blank">termux</a>.
+
+::: warning
+**DO NOT USE DEVELOPER MODE / CROUTON** to achieve `chroot` as you will have to disable most security features of the chromebook.
+:::
 
 I understand chromebooks being something you might take on a flight etc as they are cheap & data is encrypted but you still need to be able to use them for your work.
 
@@ -80,10 +86,10 @@ This can be seen as a positive & a negative as it provides more app options but 
 
 A lot of what I said in <a href="/2014/06/18/new-linux-netbook/" target="_blank">my previous article from 2014</a> *when I bought the Chromebook C710* still stands which is a little disappointing.
 
-<blockquote>I tried using chromeos for a while and I really like a lot of the design behind it.<br />
-The whole <a href="https://twitter.com/equilibriumuk/status/477061149918502912" target="_blank">filesystem / partition layout</a> seems really nice and the use of <a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/protecting-cached-user-data" target="_blank">eCryptfs for cached userdata</a> is nice.<br />
-
-<em>For someone who just wants to browse or doesn't want/need to know much about computers chromeos seems pretty perfect.</em></blockquote>
+<blockquote><p>I tried using chromeos for a while and I really like a lot of the design behind it.</p>
+<p>The whole <a href="https://twitter.com/equilibriumuk/status/477061149918502912" target="_blank">filesystem / partition layout</a> seems really nice and the use of <a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/protecting-cached-user-data" target="_blank">eCryptfs for cached userdata</a> is nice.</p>
+<br/>
+<p><em>For someone who just wants to browse or doesn't want/need to know much about computers chromeos seems pretty perfect.</em></p></blockquote>
 
 ## Notes
 
