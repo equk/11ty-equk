@@ -9,6 +9,7 @@
 table {
     border: none !important;
     border-collapse: collapse;
+    padding-left: 1px !important;
 }
 
 th {
@@ -17,6 +18,9 @@ th {
     text-align: left;
     background-color: var(--table-header);
     color: #e2e8f0;
+    border-left: 1px solid var(--table-header) !important;
+    border-right: 1px solid var(--table-header) !important;
+    border-bottom: 1px solid var(--table-header) !important;
 }
 
 td {
@@ -35,8 +39,4 @@ tr:nth-child(odd) {
 
 tr:hover {
     background-color: var(--table-hover);
-}
-
-thead {
-    border-bottom: 2px solid var(--background-modifier-border) !important;
 }
