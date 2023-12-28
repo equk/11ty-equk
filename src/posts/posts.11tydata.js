@@ -1,6 +1,6 @@
-const slugify = require('slugify')
+import slugify from 'slugify'
 
-module.exports = {
+export default {
   tags: ['posts'],
   layout: 'layouts/post.njk',
   eleventyComputed: {
