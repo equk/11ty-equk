@@ -1,9 +1,9 @@
-const container = require('markdown-it-container')
+import container from 'markdown-it-container'
 
 // Custom Callout Blocks Plugin For Markdown-it
 // equk.co.uk
 
-module.exports = (md) => {
+export default (md) => {
   md.use(...createContainer('tip', 'Tip', md))
     .use(...createContainer('info', 'Info', md))
     .use(...createContainer('warning', 'Warning', md))
