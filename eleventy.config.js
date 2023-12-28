@@ -1,33 +1,26 @@
-const esbuild = require('esbuild')
-const fs = require('fs')
+import esbuild from 'esbuild'
+import fs from 'fs'
+import markdownItAnchor from 'markdown-it-anchor'
+import markdownItTaskLists from 'markdown-it-task-lists'
+import pluginRss from '@11ty/eleventy-plugin-rss'
+import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
+import pluginBundle from '@11ty/eleventy-plugin-bundle'
+import pluginNavigation from '@11ty/eleventy-navigation'
+import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
+import pluginSEO from 'eleventy-plugin-seo'
+import postcss from 'postcss'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
+import postcssimport from 'postcss-import'
+import cssnano from 'cssnano'
+import sharp from 'sharp'
+import sanitizeHTML from 'sanitize-html'
+import pluginDrafts from './eleventy.config.drafts.js'
+import pluginImages from './eleventy.config.images.js'
+import containerPlugin from './eleventy.config.markdown.js'
+import metadata from './src/_data/metadata.js'
 
-const markdownItAnchor = require('markdown-it-anchor')
-const markdownItTaskLists = require('markdown-it-task-lists')
-
-const pluginRss = require('@11ty/eleventy-plugin-rss')
-const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const pluginBundle = require('@11ty/eleventy-plugin-bundle')
-const pluginNavigation = require('@11ty/eleventy-navigation')
-const { EleventyHtmlBasePlugin } = require('@11ty/eleventy')
-const pluginSEO = require('eleventy-plugin-seo')
-
-const postcss = require('postcss')
-const tailwindcss = require('tailwindcss')
-const autoprefixer = require('autoprefixer')
-const postcssimport = require('postcss-import')
-const cssnano = require('cssnano')
-
-const sharp = require('sharp')
-
-const sanitizeHTML = require('sanitize-html')
-
-const pluginDrafts = require('./eleventy.config.drafts.js')
-const pluginImages = require('./eleventy.config.images.js')
-const containerPlugin = require('./eleventy.config.markdown.js')
-
-const metadata = require('./src/_data/metadata.js')
-
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // Run esbuild
   eleventyConfig.on('eleventy.before', async () => {
     await esbuild.build({
