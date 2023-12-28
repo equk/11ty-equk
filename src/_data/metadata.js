@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   title: `equk's blog`,
   url: 'https://equk.co.uk',
   domain: 'equk.co.uk',
