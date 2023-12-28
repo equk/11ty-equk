@@ -1,8 +1,8 @@
-const path = require('path')
-const eleventyImage = require('@11ty/eleventy-img')
+import path from 'path'
+import eleventyImage from '@11ty/eleventy-img'
 const postsPath = './src/posts/'
 
-module.exports = (eleventyConfig) => {
+export default (eleventyConfig) => {
   function relativeToInputPath(inputPath, relativeFilePath) {
     const split = inputPath.split('/')
     split.pop()
