@@ -1,7 +1,8 @@
 // fetch webmentions & cache using netlify - original source: https://github.com/maxboeck/mxb
-const fs = require('fs')
-const unionBy = require('lodash/unionBy')
-const metadata = require('./metadata.js')
+import fs from 'fs'
+
+import unionBy from 'lodash'
+import metadata from './metadata.js'
 
 require('dotenv').config()
 
@@ -70,7 +71,7 @@ function readFromCache() {
   }
 }
 
-module.exports = async function () {
+export default async function () {
   const cache = readFromCache()
 
   if (cache.children.length) {
