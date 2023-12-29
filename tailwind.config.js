@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
-const { fontFamily } = require('tailwindcss/defaultTheme')
+import defaultTheme from 'tailwindcss/defaultTheme'
 
-module.exports = {
+export default {
   content: ['src/**/*.{js,md,njk,svg}'],
   darkMode: 'class',
   corePlugins: {
@@ -25,9 +25,9 @@ module.exports = {
       },
       fontFamily: {
         // Add any custom fonts here
-        sans: ['Inter', ...fontFamily.sans],
-        serif: [...fontFamily.serif],
-        mono: ['Fira Mono', ...fontFamily.mono],
+        sans: ['Inter', defaultTheme.fontFamily.sans],
+        serif: [defaultTheme.fontFamily.serif],
+        mono: ['Fira Mono', defaultTheme.fontFamily.mono],
       },
     },
   },
