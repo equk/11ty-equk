@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   async onPreBuild({ utils }) {
     console.log('Restoring ./_cache/ folder')
     await utils.cache.restore('./_cache')
