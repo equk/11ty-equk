@@ -37,7 +37,7 @@
   status = 301
   force = true
 [[redirects]]
-  from = "/twitter"
-  to = "https://twitter.com/equilibriumuk"
+  from = "/mastodon"
+  to = "https://hachyderm.io/@equilibriumuk"
   status = 301
   force = true
