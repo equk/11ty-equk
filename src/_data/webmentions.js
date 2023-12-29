@@ -4,7 +4,7 @@ import fs from 'fs'
 import unionBy from 'lodash'
 import metadata from './metadata.js'
 
-require('dotenv').config()
+import 'dotenv/config'
 
 const CACHE_DIR = '_cache'
 const API = 'https://webmention.io/api'
