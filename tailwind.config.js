@@ -25,9 +25,9 @@ export default {
       },
       fontFamily: {
         // Add any custom fonts here
-        sans: ['Inter', defaultTheme.fontFamily.sans],
-        serif: [defaultTheme.fontFamily.serif],
-        mono: ['Fira Mono', defaultTheme.fontFamily.mono],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        serif: [...defaultTheme.fontFamily.serif],
+        mono: ['Fira Mono', ...defaultTheme.fontFamily.mono],
       },
     },
   },
