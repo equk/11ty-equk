@@ -1,7 +1,7 @@
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 [build]
-  command = "pnpm run build"
+  command = "pnpm build"
   publish = "dist"
 [[plugins]]
   package = "./netlify/cache-plugin"
