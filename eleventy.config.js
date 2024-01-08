@@ -189,6 +189,11 @@ export default function (eleventyConfig) {
     return dateObj.toISOString().split('T')[0]
   })
 
+  eleventyConfig.addFilter('htmlDateYear', (date) => {
+    const dateObj = new Date(date)
+    return dateObj.getFullYear()
+  })
+
   // XML Formatting
   eleventyConfig.addFilter('titleXML', (content) => {
     return content.replace(/&/g, '&amp;')
