@@ -11,6 +11,9 @@ permalink: projects/index.html
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-code"></i> `archlinux` automatic builds from `git` releases
+<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> <i class="fa fa-github"></i> `hyprland` capture selection using `grim` & `slurp`
+<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> <i class="fa fa-github"></i> `hyprland` capture active monitor / window using `grim`
 <br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> <i class="fa fa-github"></i> reset usb devices in linux cli (`usbreset` in `c`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `postcss` integration with `11ty`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `gatsby` integrated atom feed generation
@@ -80,6 +83,20 @@ permalink: projects/index.html
     <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color ts"></span> Typescript <span class="language-color php"></span> PHP <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
   </div>
 </article>
+
+## Archlinux Custom Package Automation
+
+Automation script to update custom package builds from `git` releases.
+
+- [x] Check PKGBUILD exists
+- [x] Get latest version using git
+- [x] Insert latest version to PKGBUILD
+- [x] Exit if already at latest version
+- [x] Download files from PKGBUILD
+- [x] Update sha256sums for downloaded files
+- [x] Build package
+
+There is also an option to automatically push changes to the `git` repo once the package is built.
 
 ## Rust Logout Menu
 
