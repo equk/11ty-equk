@@ -12,8 +12,8 @@ permalink: projects/index.html
 <br/><i class="fa fa-github"></i> Opensource
 
 <br/><i class="fa fa-code"></i> `archlinux` automatic builds from `git` releases
-<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> <i class="fa fa-github"></i> `hyprland` capture selection using `grim` & `slurp`
-<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> <i class="fa fa-github"></i> `hyprland` capture active monitor / window using `grim`
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `hyprland` capture selection using `grim` & `slurp`
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `hyprland` capture active monitor / window using `grim`
 <br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> <i class="fa fa-github"></i> reset usb devices in linux cli (`usbreset` in `c`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `postcss` integration with `11ty`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `gatsby` integrated atom feed generation
@@ -88,13 +88,14 @@ permalink: projects/index.html
 
 Automation script to update custom package builds from `git` releases.
 
-- [x] Check PKGBUILD exists
-- [x] Get latest version using git
-- [x] Insert latest version to PKGBUILD
+- [x] Check `PKGBUILD` exists
+- [x] Get latest version using `git`
+- [x] Insert latest version to `PKGBUILD`
 - [x] Exit if already at latest version
-- [x] Download files from PKGBUILD
-- [x] Update sha256sums for downloaded files
+- [x] Download files from `PKGBUILD`
+- [x] Update `sha256sums` for downloaded files
 - [x] Build package
+- [x] Give user feedback on build
 
 There is also an option to automatically push changes to the `git` repo once the package is built.
 
