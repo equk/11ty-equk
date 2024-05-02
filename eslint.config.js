@@ -1,6 +1,7 @@
 import js from '@eslint/js'
 import nodePlugin from 'eslint-plugin-n'
 import prettierPlugin from 'eslint-plugin-prettier/recommended'
+import globals from 'globals'
 
 export default [
   js.configs.recommended,
@@ -15,6 +16,9 @@ export default [
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
+      globals: {
+        ...globals.browser,
+      },
     },
   },
   {
