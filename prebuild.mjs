@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /*!
  * 11ty prebuild script
  *
