@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   arrowParens: 'always',
   printWidth: 80,
   singleQuote: true,
@@ -9,3 +9,5 @@ module.exports = {
   bracketSpacing: true,
   endOfLine: 'lf',
 }
+
+export default config
