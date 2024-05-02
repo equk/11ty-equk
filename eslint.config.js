@@ -9,6 +9,7 @@ export default [
   {
     rules: {
       'n/exports-style': ['error', 'module.exports'],
+      'n/no-process-exit': ['off', false],
     },
   },
   prettierPlugin,
