@@ -17,6 +17,9 @@
   "author": "equk <equk@users.noreply.github.com>",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.10",
     "@11ty/eleventy-img": "^4.0.2",
