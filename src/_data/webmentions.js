@@ -1,7 +1,8 @@
 // fetch webmentions & cache using netlify - original source: https://github.com/maxboeck/mxb
 import fs from 'fs'
 
-import unionBy from 'lodash'
+import unionBy from 'lodash/unionBy.js'
+import { fetch } from 'undici'
 import metadata from './metadata.js'
 
 import 'dotenv/config'
