@@ -11,7 +11,7 @@ Personal blog powered by eleventy
 Deployed at: https://equk.co.uk/
 
 <p align="center">
-<img src="./public/media/logos/11ty-96x96.png" alt="11ty-logo" width="80px"><br/>
+<img src="./public/media/logos/11ty-96x96.png" alt="11ty-logo"><br/>
 <img src="https://img.shields.io/badge/sharp-9C0?logo=sharp&logoColor=fff&style=for-the-badge" alt="sharp Badge"> <img src="https://img.shields.io/badge/esbuild-FFCF00?logo=esbuild&logoColor=000&style=for-the-badge" alt="esbuild Badge"> <img src="https://img.shields.io/badge/PostCSS-DD3A0A?logo=postcss&logoColor=fff&style=for-the-badge" alt="PostCSS Badge"> <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=fff&style=for-the-badge" alt="ESLint Badge"> <img src="https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=fff&style=for-the-badge" alt="Prettier Badge"> <img src="https://img.shields.io/badge/ATOM-FFA500?logo=rss&logoColor=fff&style=for-the-badge" alt="ATOM Badge">
 </p>
 
@@ -40,6 +40,7 @@ This is my own personal blog and shouldn't be used as a starter template or them
 - [x] favicon generation
 - [x] webmentions
 - [x] blog post commenting using mastodon
+- [x] esm support (11ty 3.0.x)
 
 ## Image Optimization
 
