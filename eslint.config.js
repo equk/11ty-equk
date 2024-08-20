@@ -25,4 +25,11 @@ export default [
   {
     ignores: ['_site/**/*', 'dist/**/*', 'public/**/*', 'src/_assets/**/*'],
   },
+  // browser scripts
+  {
+    files: ['src/_scripts/**/*'],
+    rules: {
+      'n/no-unsupported-features/node-builtins': ['off', false],
+    },
+  },
 ]
