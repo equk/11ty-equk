@@ -3,6 +3,72 @@ sitemap: https://equk.co.uk/sitemap.xml
 User-agent: *
 Disallow: /tag/
 
+# bytespider
+User-agent: Bytespider
+Disallow: /
+
+# ccbot
+User-agent: CCBot
+Disallow: /
+
+# claudebot
+User-agent: ClaudeBot
+Disallow: /
+
+# claudeweb
+User-agent: Claude-Web
+Disallow: /
+
+# diffbot
+User-agent: Diffbot
+Disallow: /
+
+# meta-externalagent
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# omgili
+User-agent: omgili
+Disallow: /
+
+# timpibot
+User-agent: Timpibot
+Disallow: /
+
+# anthropic-ai
+User-agent: anthropic-ai
+Disallow: /
+
+# claude-web
+User-agent: Claude-Web
+Disallow: /
+
+# cohere-ai
+User-agent: cohere-ai
+Disallow: /
+
+# perplexitybot (ai search crawler)
+User-agent: PerplexityBot
+Disallow: /
+
+# youbot (ai search crawler)
+User-agent: YouBot
+Disallow: /
+
+# (https://developers.facebook.com/docs/sharing/bot/)
+User-agent: FacebookBot
+Disallow: /
+
+# (https://developer.amazon.com/support/amazonbot)
+User-agent: Amazonbot
+Disallow: /
+
+# (http://apple.com/go/applebot)
+User-agent: Applebot
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+
 # Block Google Bard and Vertex Generative AI
 # (https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers#google-extended)
 User-agent: Google-Extended
