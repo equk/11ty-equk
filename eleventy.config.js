@@ -4,7 +4,6 @@ import markdownItAnchor from 'markdown-it-anchor'
 import markdownItTaskLists from 'markdown-it-task-lists'
 import pluginRss from '@11ty/eleventy-plugin-rss'
 import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
-import pluginBundle from '@11ty/eleventy-plugin-bundle'
 import pluginNavigation from '@11ty/eleventy-navigation'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import pluginSEO from 'eleventy-plugin-seo'
@@ -101,6 +100,10 @@ export default function (eleventyConfig) {
     domDiff: false,
   })
 
+  // Enable Eleventy Bundle for JS + CSS
+  eleventyConfig.addBundle('css')
+  eleventyConfig.addBundle('js')
+
   // Run Eleventy when these files change:
   // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
@@ -118,7 +121,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
-  eleventyConfig.addPlugin(pluginBundle)
 
   // Other plugins
   eleventyConfig.addPlugin(pluginSEO, {
