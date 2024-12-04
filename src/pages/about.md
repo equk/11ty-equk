@@ -49,6 +49,7 @@ Servers I work on use NixOS, Debian, Ubuntu, freebsd.
     <p class="mt-1 text-xl font-bold">Social Media</p>
     <p>Mastodon: <a href="https://{{ metadata.author.contacts.mastodon_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.mastodon }}</a></p>
     <p>Github: <a href="https://github.com/{{ metadata.author.contacts.github }}" target="_blank" rel="noopener noreferrer">github.com/{{ metadata.author.contacts.github }}</a></p>
+    <p>Bluesky: <a href="https://{{ metadata.author.contacts.bluesky_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.bluesky }}</a></p>
 </div>
 </div>
 
