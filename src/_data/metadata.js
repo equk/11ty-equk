@@ -15,6 +15,8 @@ export default {
       github: 'equk',
       mastodon: '@equilibriumuk@hachyderm.io',
       mastodon_url: 'hachyderm.io/@equilibriumuk',
+      bluesky: '@equilibriumuk.bsky.social',
+      bluesky_url: 'bsky.app/profile/equilibriumuk.bsky.social',
     },
   },
 }
