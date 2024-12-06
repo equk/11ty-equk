@@ -15,6 +15,14 @@ templateEngineOverride: md
 
 ![11ty logo](../_media/images/11ty-200.png)
 
+::: important
+This workaround doesn't seem to work on 11ty 3.x
+
+See new blog post below for how to fix inline css & livereload with eleventy 3.x
+
+<p><i class="fa fa-link"></i> <a href="/2024/12/06/11ty-fix-inline-styles-livereload/" target="_blank" rel="noopener noreferrer">11ty Fix Inline Styles Livereload</a></p>
+:::
+
 While working on the site I noticed livereload seemed to be quirky on css changes.
 
 When changing CSS the page would not reload despite the client working.
