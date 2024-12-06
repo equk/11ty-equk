@@ -93,6 +93,12 @@ export default function (eleventyConfig) {
     './src/_assets/fonts': '/fonts',
   })
 
+  if (process.env.NODE_ENV !== 'production') {
+    eleventyConfig.addPassthroughCopy({
+      './src/_assets/css/styles.css': '/css/styles.css',
+    })
+  }
+
   // Disable livereload injection (use patched instead)
   // This fixes inlined CSS (default changes style link elements)
   eleventyConfig.setServerOptions({
