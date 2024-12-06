@@ -99,10 +99,9 @@ export default function (eleventyConfig) {
     })
   }
 
-  // Disable livereload injection (use patched instead)
-  // This fixes inlined CSS (default changes style link elements)
+  // Enable livereload injection
   eleventyConfig.setServerOptions({
-    liveReload: false,
+    liveReload: true,
     domDiff: false,
   })
 
