@@ -82,7 +82,8 @@
   text-align: center;
 }
 
-.social-blocks .fa {
+.social-blocks .fa,
+.social-blocks svg {
   background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
   width: 55px;
@@ -113,12 +114,19 @@
   background-color: #36465d;
 }
 
-.social-blocks a .fa-github {
+.social-blocks a .fa-github,
+.social-blocks a .github {
   background-color: #333;
 }
 
-.social-blocks a .fa-mastodon {
+.social-blocks a .fa-mastodon,
+.social-blocks a .mastodon {
   background-color: #563acc;
+}
+
+.social-blocks a .fa-bluesky,
+.social-blocks a .bluesky {
+  background-color: #0085ff;
 }
 
 /* Hero Image */
