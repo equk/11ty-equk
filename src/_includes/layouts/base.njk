@@ -25,10 +25,15 @@
     <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/fa.woff2" as="font" type="font/woff2" crossorigin>
 
+    {# Reference css as link in devmode to fix livreload #}
+    {% if isdev %}
+    <link rel="stylesheet" href="/css/styles.css">
+    {% else %}
     {# Bundle postcss generated output #}
     {%- css %}{% include "src/_assets/css/styles.css" %}{% endcss %}
     {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
     <style>{% getBundle "css" %}</style>
+    {% endif %}
 
     {# Bundle esbuild generated output #}
     {%- js %}{% include "src/_assets/js/darkmode.js" %}{% endjs %}
