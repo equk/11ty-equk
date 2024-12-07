@@ -36,9 +36,9 @@ To fix the problem I had to create a workaround.
 
 The basic idea is to have css referenced as a link in development mode while also keeping inline css styles on production builds.
 
-### Copy ESBuild Output
+### Copy PostCSS Output
 
-My site uses ESBuild to output minified css to `src/_assets/styles.css` so I had to add that to `addPassthroughCopy` in the main config but only when not in production.
+My site uses postcss to output minified css to `src/_assets/styles.css` so I had to add that to `addPassthroughCopy` in the main config but only when not in production.
 
 ```js
   if (process.env.NODE_ENV !== 'production') {
@@ -76,3 +76,9 @@ I found a few issues posted on the eleventy project github referencing the same 
 You can find the full pull request for these changes on github.
 
 <i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/pull/14" target="_blank" rel="noopener noreferrer">Eleventy CSS Livereload Workaround pull request on github</a>
+
+## Source Code
+
+The source for my 11ty blog is available on github.
+
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
