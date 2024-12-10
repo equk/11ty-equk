@@ -5,7 +5,8 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.language }}">
   <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.description }}</subtitle>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <description>{{ metadata.description }}</description>
   <link href="{{ permalink | htmlBaseUrl(metadata.url) }}" rel="self"/>
   <link href="{{ metadata.url | addPathPrefixToFullUrl }}" rel="alternate"/>
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
@@ -21,6 +22,9 @@ eleventyExcludeFromCollections: true
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl | addPathPrefixToFullUrl }}</id>
+    {% if post.data.excerpt %}
+    <description>{{ post.data.excerpt }}</description>
+    {% endif %}
     <summary type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | excerpt }}</summary>
   </entry>
   {%- endfor %}
