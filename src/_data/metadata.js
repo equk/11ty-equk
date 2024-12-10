@@ -3,7 +3,8 @@ export default {
   url: 'https://equk.co.uk',
   domain: 'equk.co.uk',
   language: 'en',
-  description: 'writings of a coder + sysadmin',
+  subtitle: 'writings of a coder + sysadmin',
+  description: `I'm equilibriumuk, a software engineer. I write about programming & computer related topics`,
   author: {
     name: 'equilibriumuk',
     photo: '/users/equilibriumuk.jpg',
