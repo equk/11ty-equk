@@ -11,6 +11,7 @@ image:
 imgAuthor:
 imgAuthorURL:
 templateEngineOverride: md
+excerpt: "Fixing inline styles in 11ty devmode using a workaround"
 ---
 
 ![11ty logo](../_media/images/11ty-200.png)

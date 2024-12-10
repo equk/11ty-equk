@@ -10,6 +10,7 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
+excerpt: "Switching to 11ty canary v3 for ECMAScript support"
 ---
 
 ![11ty logo](../_media/images/11ty-200.png)
