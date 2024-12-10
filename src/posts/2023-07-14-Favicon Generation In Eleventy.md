@@ -10,6 +10,7 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
+excerpt: "Generating favicon from svg in 11ty using sharp"
 ---
 
 ![11ty logo](../_media/images/11ty-200.png)

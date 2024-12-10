@@ -13,6 +13,7 @@ image:
 imgAuthor:
 imgAuthorURL:
 templateEngineOverride: md
+excerpt: "Adding webmentions support to 11ty using netlify hooks"
 ---
 
 ![11ty logo](../_media/images/11ty-200.png)
