@@ -9,6 +9,7 @@ tags:
   - javascript
   - linux
 image: ../_media/images/2018/09/mozilla_header.jpg
+excerpt: "Get DNS Over HTTPS Support Using Firefox Nightly on Android"
 ---
 
 <blockquote><p>DNS over HTTPS (DoH) is a protocol for performing remote Domain Name System (DNS) resolution via the HTTPS protocol. A goal of the method is to increase user privacy and security by preventing eavesdropping and manipulation of DNS data by man-in-the-middle attacks by using the HTTPS protocol to encrypt the data between the DoH client and the DoH-based DNS resolver.</p>

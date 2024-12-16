@@ -9,6 +9,7 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
+excerpt: "Configuration Changes & Tips on Switching to Hyprland"
 ---
 
 <p class="text-center"><img class="inline" src="/media/logos/wayland.svg" alt="wayland-logo" width="25%"></p>

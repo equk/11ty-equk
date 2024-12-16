@@ -11,6 +11,7 @@ image:
 imgAuthor:
 imgAuthorURL:
 templateEngineOverride: md
+excerpt: "Tweaking and Improving Book Search Plugin for Obsidian"
 ---
 
 <p class="text-center"><img src="/media/logos/obsidian.svg" alt="obsidian logo" width="250px" class="inline"></p>

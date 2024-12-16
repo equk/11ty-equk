@@ -9,6 +9,7 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
+excerpt: "Capture Selection, Window or Monitor Using Grim & Hyprland"
 ---
 
 I made some basic scripts for capturing screenshots in `hyprland` using `grim` as `scrot` doesn't have support for wayland.

@@ -9,6 +9,7 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
+excerpt: "Reset Any USB Device in Linux Using Vendor ID & Product ID"
 ---
 
 <img src="/media/logos/usb.svg" alt="usb-logo" class="dark-logo" width="400px">
