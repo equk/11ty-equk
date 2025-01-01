@@ -12,7 +12,7 @@
 .top-banner {
   position: relative;
   height: 350px;
-  --color-overlay: #000028;
+  --color-overlay: #300028;
   color: #ffffff;
   overflow: hidden;
   --overlay-opacity: 0.7;
@@ -31,7 +31,7 @@
   width: 100%;
   left: 0;
   height: 2px;
-  background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(128, 100%, 77%, 1) 50%, hsla(197, 100%, 64%, 1) 100%);
+  background: linear-gradient(90deg, hsla(128, 100%, 77%, 1) 0%, hsla(197, 100%, 64%, 1) 50%, hsla(339, 100%, 55%, 1) 100%);
 }
 
 .top-banner_image-wrapper {
