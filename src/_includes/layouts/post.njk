@@ -68,6 +68,10 @@ layout: layouts/base.njk
       </div>
     </section>
   </article>
-  {%- set webmentionUrl -%}{{ page.url | url | absoluteUrl( metadata.url ) }}{%- endset -%}
-  {% include 'post/webmentions.njk' %}
+    {%- if mastodonPostId %}
+    <div class="post-comments mb-10">
+      <p class="text-3xl title">Comments</p>
+      {% include 'post/mastopost.njk' %}
+    </div>
+    {% endif %}
 </main>
