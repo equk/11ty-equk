@@ -23,7 +23,11 @@ export default function (eleventyConfig) {
   // Run esbuild
   eleventyConfig.on('eleventy.before', async () => {
     await esbuild.build({
-      entryPoints: ['src/_scripts/darkmode.js', 'src/_scripts/mobilenav.js'],
+      entryPoints: [
+        'src/_scripts/darkmode.js',
+        'src/_scripts/mobilenav.js',
+        'src/_scripts/mastodon.js',
+      ],
       outdir: 'src/_assets/js',
       minify: true,
       sourcemap: false,
