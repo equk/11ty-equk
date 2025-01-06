@@ -844,6 +844,66 @@ h2+.header-anchor {
   border: 2px solid var(--theme-link);
 }
 
+/* mastodon post */
+
+.masto-post {
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.masto-post a {
+  text-decoration: none;
+  color: var(--theme-text);
+}
+
+.masto-post a:hover {
+  text-decoration: none;
+  color: var(--theme-hover);
+}
+
+.mastodon-title {
+  margin-bottom: 0.25rem;
+}
+
+.mastodon-text {
+  margin: 0.75rem 0 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.mastodon-name {
+  font-weight: 700;
+  display: flex;
+}
+
+.mastodon-icon {
+  width: 20px;
+  height: auto;
+  margin: 0 4px;
+  color: #563ACC;
+}
+
+.mastodon-data {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.mastodon-data-icon {
+  display: inline-flex;
+  width: 2rem;
+  height: 1rem;
+}
+
+.mastodon-data-count {
+  display: inline-flex;
+  padding: 0 1rem;
+}
+
 /*
   -----------------------------------------
   Typography Styles
