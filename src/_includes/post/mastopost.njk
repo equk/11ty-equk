@@ -21,20 +21,20 @@
         <div data-key="replyCount"></div>
       </div>
     </a>
-    <a href="{{ 'https://' + metadata.author.contacts.mastodon_url + '/' + mastodonPostId }}/favourites" target="_blank" rel="noopener noreferrer">
-      <div class="mastodon-data-count">
-        <svg class="mastodon-data-icon" aria-hidden="true">
-          <use href="#like-icon" />
-        </svg>
-        <div data-key="likeCount"></div>
-      </div>
-    </a>
     <a href="{{ 'https://' + metadata.author.contacts.mastodon_url + '/' + mastodonPostId }}/reblogs" target="_blank" rel="noopener noreferrer">
       <div class="mastodon-data-count">
         <svg class="mastodon-data-icon" aria-hidden="true">
           <use href="#boost-icon" />
         </svg>
         <div data-key="repostCount"></div>
+      </div>
+    </a>
+    <a href="{{ 'https://' + metadata.author.contacts.mastodon_url + '/' + mastodonPostId }}/favourites" target="_blank" rel="noopener noreferrer">
+      <div class="mastodon-data-count">
+        <svg class="mastodon-data-icon" aria-hidden="true">
+          <use href="#like-icon" />
+        </svg>
+        <div data-key="likeCount"></div>
       </div>
     </a>
   </div>
