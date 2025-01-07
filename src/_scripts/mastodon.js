@@ -12,6 +12,9 @@ class MastodonPost extends HTMLElement {
     const data = { ...(await this.postData()) }
 
     if (data) {
+      node.querySelector('[data-key="postText"]').innerHTML = data.content
+        .replace(/<a.*?>/gi, '')
+        .replace(/<\/a>/gi, '')
       node.querySelector('[data-key="likeCount"]').textContent =
         data.favourites_count
       node.querySelector('[data-key="replyCount"]').textContent =
