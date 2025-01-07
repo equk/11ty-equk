@@ -879,6 +879,11 @@ h2+.header-anchor {
   padding-left: 0.25rem;
 }
 
+.mastodon-text .ellipsis,
+.mastodon-text .invisible {
+  display:none
+}
+
 .mastodon-name {
   font-weight: 700;
   display: flex;
