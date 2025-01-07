@@ -6,12 +6,12 @@
         {{ metadata.author.contacts.mastodon }}
       </div>
     </a>
-    <div class="mastodon-text">{{ excerpt }}</div>
     <mastodon-post postId={{mastodonPostId}}></mastodon-post>
   </div>
 </div>
 
 <template id="mastodon-template">
+  <div class="mastodon-text" data-key="postText"></div>
   <div class="mastodon-data">
     <a href="{{ 'https://' + metadata.author.contacts.mastodon_url + '/' + mastodonPostId }}" target="_blank" rel="noopener noreferrer">
       <div class="mastodon-data-count">
