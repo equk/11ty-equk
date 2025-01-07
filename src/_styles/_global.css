@@ -849,10 +849,15 @@ h2+.header-anchor {
 .masto-post {
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: flex;
   align-items: flex-start;
   text-decoration: none;
+}
+
+.masto-post p {
+  margin: 0.6em 0;
+  line-height: 1.2rem;
 }
 
 .masto-post a {
@@ -870,7 +875,7 @@ h2+.header-anchor {
 }
 
 .mastodon-text {
-  margin: 0.75rem 0 0.25rem;
+  margin: 0.5rem 0 0.25rem;
   padding-left: 0.25rem;
 }
 
