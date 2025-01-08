@@ -10,6 +10,8 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
+mastodonPostId: "110708471291394897"
+excerpt: "Building a blog using eleventy with esbuild, tailwindcss, postcss, eslint"
 templateEngineOverride: md
 ---
 
