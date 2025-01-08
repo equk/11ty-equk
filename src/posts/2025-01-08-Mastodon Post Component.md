@@ -11,7 +11,7 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
-mastodonPostId:
+mastodonPostId: "113794024107668987"
 excerpt: "Web component which uses the mastodon api to display a single post"
 ---
 
