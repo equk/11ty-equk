@@ -13,6 +13,7 @@ image:
 imgAuthor:
 imgAuthorURL:
 templateEngineOverride: md
+mastodonPostId: "110736573586565935"
 excerpt: "Adding webmentions support to 11ty using netlify hooks"
 ---
 
