@@ -846,12 +846,15 @@ h2+.header-anchor {
 
 /* mastodon post */
 
+.masto-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
 .masto-post {
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 0.9rem;
-  display: flex;
-  align-items: flex-start;
   text-decoration: none;
 }
 
