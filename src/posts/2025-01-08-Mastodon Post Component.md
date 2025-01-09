@@ -12,6 +12,7 @@ image:
 imgAuthor:
 imgAuthorURL:
 mastodonPostId: "113794024107668987"
+blueskyPostId: "3lfaqewcqbk2x"
 excerpt: "Web component which uses the mastodon api to display a single post"
 ---
 
