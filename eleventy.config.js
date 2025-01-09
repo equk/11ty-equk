@@ -13,7 +13,6 @@ import autoprefixer from 'autoprefixer'
 import postcssimport from 'postcss-import'
 import cssnano from 'cssnano'
 import sharp from 'sharp'
-import sanitizeHTML from 'sanitize-html'
 import pluginDrafts from './eleventy.config.drafts.js'
 import pluginImages from './eleventy.config.images.js'
 import containerPlugin from './eleventy.config.markdown.js'
@@ -250,53 +249,6 @@ export default function (eleventyConfig) {
       .slice(0, 80)
       .join(' ')
     return content
-  })
-
-  // Webmentions
-  eleventyConfig.addFilter('webmentionsByUrl', function (webmentions, url) {
-    const allowedTypes = ['in-reply-to', 'like-of', 'repost-of']
-    const allowedHTML = {
-      allowedTags: ['b', 'i', 'em', 'strong', 'a'],
-      allowedAttributes: {
-        a: ['href'],
-      },
-    }
-
-    const data = {
-      'like-of': [],
-      'repost-of': [],
-      'in-reply-to': [],
-    }
-
-    const hasRequiredFields = (entry) => {
-      const { author, published, content } = entry
-      return author.name && published && content
-    }
-
-    const filtered = webmentions
-      .filter((entry) => entry['wm-target'] === url)
-      .filter((entry) => allowedTypes.includes(entry['wm-property']))
-
-    filtered.forEach((m) => {
-      if (data[m['wm-property']]) {
-        const isReply = m['wm-property'] === 'in-reply-to'
-        const isValidReply = isReply && hasRequiredFields(m)
-        if (isReply) {
-          if (isValidReply) {
-            m.sanitized = sanitizeHTML(m.content.html, allowedHTML)
-            data[m['wm-property']].unshift(m)
-          }
-          return
-        }
-        data[m['wm-property']].unshift(m)
-      }
-    })
-
-    data['in-reply-to'].sort((a, b) =>
-      a.published > b.published ? 1 : b.published > a.published ? -1 : 0
-    )
-
-    return data
   })
 
   // Customize Markdown library settings
