@@ -21,9 +21,8 @@ excerpt: "Web component which uses the mastodon api to display a single post"
 
 <br/>
 
-This is a web component which allows embedding mastodon posts with details on favourites, replies & boosts.
-
-I am using it to provide a way for users to provide reactions to blog posts using mastodon / fediverse.
+This is a web component which allows embedding mastodon posts with details on favourites, replies & boosts.<br/>
+I am using it to provide reactions to blog posts using mastodon / fediverse.
 
 ## Moving From Webmentions
 
