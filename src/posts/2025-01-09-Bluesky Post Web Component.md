@@ -11,8 +11,8 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
-mastodonPostId:
-blueskyPostId:
+mastodonPostId: "113799896392150715"
+blueskyPostId: "3lfddtkmevs2i"
 excerpt: "Web component using the bluesky api to display a single post with count of likes, replies, reposts"
 ---
 
