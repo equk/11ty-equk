@@ -846,10 +846,17 @@ h2+.header-anchor {
 
 /* mastodon & bsky post */
 
+.post-reactions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
 .masto-flex,
 .bsky-flex {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
 }
 
 .masto-post,
@@ -921,7 +928,7 @@ h2+.header-anchor {
 }
 
 .bluesky-text {
-  margin: 0.5rem 0 0.25rem;
+  margin: 1rem 0 0rem;
   padding-left: 0.25rem;
 }
 

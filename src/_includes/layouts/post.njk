@@ -71,12 +71,14 @@ layout: layouts/base.njk
   {%- if blueskyPostId or mastodonPostId %}
   <div class="post-comments mb-10">
     <p class="text-3xl title">Reactions</p>
-    {%- if mastodonPostId %}
-    {% include 'post/mastopost.njk' %}
-    {% endif %}
-    {%- if blueskyPostId %}
-    {% include 'post/bskypost.njk' %}
-    {% endif %}
+    <div class="post-reactions sm:grid-cols-1 md:grid-cols-2">
+      {%- if mastodonPostId %}
+        {% include 'post/mastopost.njk' %}
+      {% endif %}
+      {%- if blueskyPostId %}
+        {% include 'post/bskypost.njk' %}
+      {% endif %}
+    </div>
   </div>
   {% endif %}
   {%- if blueskyPostId or mastodonPostId %}
