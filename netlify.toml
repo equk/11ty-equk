@@ -3,8 +3,6 @@
 [build]
   command = "pnpm build"
   publish = "dist"
-[[plugins]]
-  package = "./netlify/cache-plugin"
 [[headers]]
   for = "/*"
   [headers.values]
