@@ -1,10 +1,10 @@
 <div class="bsky-flex">
   <div class="bsky-post post-comments border border-slate-200 dark:border-slate-700/40">
     <div class="bluesky-content">
-      <a href="{{ 'https://' + metadata.author.contacts.mastodon_url + '/' + mastodonPostId }}" target="_blank" rel="noopener noreferrer">
+      <a href="{{ 'https://' + metadata.author.contacts.bluesky_url + '/post/' + blueskyPostId }}" target="_blank" rel="noopener noreferrer">
         <div class="bluesky-name">
           <svg class="bluesky-icon" viewBox="0 0 64 57" aria-hidden="true"><path fill="currentColor" d="M13.9 3.8A75.1 75.1 0 0 1 32 26.6v15.8c0-.3-.1 0-.4.9-1.5 4.5-7.4 21.8-21 8-7-7.4-3.8-14.7 9.2-17-7.4 1.4-15.7-.7-18-9A193 193 0 0 1 0 6.6C0-3.3 8.6-.1 13.9 3.9Zm36.2 0A75.1 75.1 0 0 0 32 26.6v15.8c0-.3.1 0 .4.9 1.5 4.5 7.4 21.8 21 8 7-7.4 3.8-14.7-9.2-17 7.4 1.4 15.7-.7 18-9A193 193 0 0 0 64 6.6c0-9.8-8.6-6.7-13.9-2.7Z"></path></svg>
-          {{ metadata.author.contacts.mastodon }}
+          {{ metadata.author.contacts.bluesky }}
         </div>
       </a>
       <bluesky-post postId={{blueskyPostId}}></bluesky-post>
@@ -15,7 +15,7 @@
 <template id="bluesky-template">
   <div class="bluesky-text" data-key="postText"></div>
   <div class="bluesky-data">
-    <a href="{{ 'https://' + metadata.author.contacts.mastodon_url + '/' + mastodonPostId }}" target="_blank" rel="noopener noreferrer">
+    <a href="{{ 'https://' + metadata.author.contacts.bluesky_url + '/post/' + blueskyPostId }}" target="_blank" rel="noopener noreferrer">
       <div class="bluesky-data-count">
         <svg class="bluesky-data-icon" aria-hidden="true">
           <use href="#reply-icon" />
@@ -23,7 +23,7 @@
         <div data-key="replyCount"></div>
       </div>
     </a>
-    <a href="{{ 'https://' + metadata.author.contacts.mastodon_url + '/' + mastodonPostId }}/reblogs" target="_blank" rel="noopener noreferrer">
+    <a href="{{ 'https://' + metadata.author.contacts.bluesky_url + '/post/' + blueskyPostId }}/reblogs" target="_blank" rel="noopener noreferrer">
       <div class="bluesky-data-count">
         <svg class="bluesky-data-icon" aria-hidden="true">
           <use href="#boost-icon" />
@@ -31,7 +31,7 @@
         <div data-key="repostCount"></div>
       </div>
     </a>
-    <a href="{{ 'https://' + metadata.author.contacts.mastodon_url + '/' + mastodonPostId }}/favourites" target="_blank" rel="noopener noreferrer">
+    <a href="{{ 'https://' + metadata.author.contacts.bluesky_url + '/post/' + blueskyPostId }}/favourites" target="_blank" rel="noopener noreferrer">
       <div class="bluesky-data-count">
         <svg class="bluesky-data-icon" aria-hidden="true">
           <use href="#like-icon" />
