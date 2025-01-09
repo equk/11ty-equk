@@ -844,31 +844,30 @@ h2+.header-anchor {
   border: 2px solid var(--theme-link);
 }
 
-/* mastodon post */
+/* mastodon & bsky post */
 
-.masto-flex {
+.masto-flex,
+.bsky-flex {
   display: flex;
   align-items: flex-start;
 }
 
-.masto-post {
+.masto-post,
+.bsky-post {
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 0.9rem;
   text-decoration: none;
 }
 
-.masto-post p {
-  margin: 0.6em 0;
-  line-height: 1.2rem;
-}
-
-.masto-post a {
+.masto-post a,
+.bsky-post a {
   text-decoration: none;
   color: var(--theme-text);
 }
 
-.masto-post a:hover {
+.masto-post a:hover,
+.bsky-post a:hover {
   text-decoration: none;
   color: var(--theme-hover);
 }
@@ -913,6 +912,50 @@ h2+.header-anchor {
 }
 
 .mastodon-data-count {
+  display: inline-flex;
+  padding: 0 1rem;
+}
+
+.bluesky-title {
+  margin-bottom: 0.25rem;
+}
+
+.bluesky-text {
+  margin: 0.5rem 0 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.bluesky-text .ellipsis,
+.bluesky-text .invisible {
+  display:none
+}
+
+.bluesky-name {
+  font-weight: 700;
+  display: flex;
+}
+
+.bluesky-icon {
+  width: 20px;
+  height: auto;
+  margin: 0 4px;
+  color: #0085ff;
+}
+
+.bluesky-data {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.bluesky-data-icon {
+  display: inline-flex;
+  width: 2rem;
+  height: 1rem;
+}
+
+.bluesky-data-count {
   display: inline-flex;
   padding: 0 1rem;
 }
