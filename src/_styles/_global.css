@@ -289,7 +289,7 @@ main blockquote p {
 }
 
 .dark main blockquote {
-  background-color: #223;
+  background-color: var(--theme-bg);
 }
 
 main blockquote::before {
