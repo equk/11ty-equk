@@ -18,7 +18,7 @@
 [[headers]]
   for = "/img/*"
   [headers.values]
-    Cache-Control = "max-age=2592000, public"
+    Cache-Control = "max-age=2592000, private"
 [[redirects]]
   from = "/rss"
   to = "/atom.xml"
@@ -42,5 +42,15 @@
 [[redirects]]
   from = "/mastodon"
   to = "https://hachyderm.io/@equilibriumuk"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/bluesky"
+  to = "https://bsky.app/profile/equilibriumuk.bsky.social"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/bsky"
+  to = "https://bsky.app/profile/equilibriumuk.bsky.social"
   status = 301
   force = true
