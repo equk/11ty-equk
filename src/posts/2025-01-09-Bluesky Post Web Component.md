@@ -81,10 +81,14 @@ The effect is the same as if the nodes were deeply cloned into a non-exposed DOM
 
 ### Non JS
 
-If javascript is disabled a element is still shown with a link allowing users to react to the post on mastodon.
+If javascript is disabled a element is still shown with a link allowing users to react to the post on bluesky.
 
 ## Source Code
 
 Info on the code changes made to implement this component can be seen on Github.
 
 <i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/pull/18" target="_blank" rel="noopener noreferrer">Bluesky Post Web Component pull request on github</a>
+
+The source for my 11ty blog is available on github.
+
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
