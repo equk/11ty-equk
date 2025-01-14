@@ -8,7 +8,7 @@ permalink: about/index.html
 ---
 <div class="bg-gray-100 border border-gray-400 shadow rounded-lg p-5 dark:bg-gray-900 dark:border-gray-800">
     <div class="flex flex-col gap-1 text-center items-center">
-        <img class="h-32 w-32 bg-white p-2 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
+        <img class="h-32 w-32 bg-white p-1 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
         <p class="text-3xl">equilibriumuk</p>
     </div>
     <div class="flex justify-center items-center gap-2 my-0">
@@ -32,26 +32,21 @@ Servers I work on use NixOS, Debian, Ubuntu, freebsd.
 
 ## Contact
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div>
-    <p class="mt-1 text-xl font-bold">Email Address</p>
-    <p>
-    <code class="language-text">equilibriumuk AT protonmail DOT com</code>
-    </p>
-</div>
-<div>
-    <p class="mt-1 text-xl font-bold">GPG Key</p>
-    <p>
-    <a href="https://keybase.io/equilibriumuk/pgp_keys.asc?fingerprint=25fc07669118b3b9b79beae40e53a3c22664d113" target="_blank" rel="noopener noreferrer">0E53 A3C2 2664 D113</a>
-    </p>
-</div>
-<div>
-    <p class="mt-1 text-xl font-bold">Social Media</p>
-    <p>Mastodon: <a href="https://{{ metadata.author.contacts.mastodon_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.mastodon }}</a></p>
-    <p>Github: <a href="https://github.com/{{ metadata.author.contacts.github }}" target="_blank" rel="noopener noreferrer">github.com/{{ metadata.author.contacts.github }}</a></p>
-    <p>Bluesky: <a href="https://{{ metadata.author.contacts.bluesky_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.bluesky }}</a></p>
-</div>
-</div>
+### Email Address
+
+`equilibriumuk AT protonmail DOT com`
+
+### GPG Key
+
+<a href="https://keybase.io/equilibriumuk/pgp_keys.asc?fingerprint=25fc07669118b3b9b79beae40e53a3c22664d113" target="_blank" rel="noopener noreferrer">0E53 A3C2 2664 D113</a>
+
+### Social Media
+
+Mastodon: <a href="https://{{ metadata.author.contacts.mastodon_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.mastodon }}</a>
+
+Bluesky: <a href="https://{{ metadata.author.contacts.bluesky_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.bluesky }}</a>
+
+Github: <a href="https://github.com/{{ metadata.author.contacts.github }}" target="_blank" rel="noopener noreferrer">github.com/{{ metadata.author.contacts.github }}</a>
 
 ---
 
@@ -69,6 +64,9 @@ The source code can be found on github & the site is hosted on netlify.
 
 More info on the features of this site can be <a href="/2023/07/13/11ty-site-now-live/" target="_blank" rel="noopener noreferrer">found here</a>.
 
-### Comments
+## Reactions
 
-Comments are based on <a href="/2023/07/18/adding-webmentions-in-eleventy/" target="_blank" rel="noopener noreferrer">webmentions</a> using <a href="https://webmention.io/" target="_blank" rel="noopener noreferrer">webmention.io</a> & <a href="https://brid.gy/" target="_blank" rel="noopener noreferrer">brid.gy</a> to pull in mentions from mastodon.
+Reactions to blog posts use social media sites mastodon & bluesky.<br/>
+These <a href="/2025/01/09/bluesky-post-web-component/" target="_blank" rel="noopener noreferrer">web components</a> fetch data from the relevant api using client-side javascript.
+
+_This site was previously using <a href="/2023/07/18/adding-webmentions-in-eleventy/" target="_blank" rel="noopener noreferrer">webmentions</a> for comments._
