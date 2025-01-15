@@ -22,8 +22,6 @@ body {
   margin: auto;
   padding: 0;
   text-align: left;
-  font-size: 1.12rem;
-  line-height: 1.5rem;
 }
 
 nav a {
@@ -85,6 +83,7 @@ nav a {
 
   main {
     @apply mx-auto;
+    padding: 0 1rem;
   }
 
   main .content {
@@ -182,7 +181,10 @@ footer .powered-by img {
 }
 
 footer .footer-title p {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   margin: 0;
+  padding-left: 1rem;
 }
 
 footer .footer-title {
@@ -229,6 +231,7 @@ main .content .top-tags a {
   color: var(--theme-link);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 main .content .top-tags a:hover {
@@ -271,6 +274,19 @@ pre[class*='language-'] {
 
 main .post-content {
   grid-template-rows: auto 1fr
+}
+
+/* Content Head */
+
+main .content-title {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+main .content-date {
+  text-align: center;
+  font-size: var(--size-base);
 }
 
 /* Blockquote */
@@ -626,6 +642,7 @@ span.gatsby-resp-image-wrapper,
 .post-title {
   margin: 1.65em 0 0.5em;
   font-size: 1.2em;
+  line-height: 1.3rem;
   font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -677,7 +694,8 @@ span.gatsby-resp-image-wrapper,
 
 .post-tags a {
   display: inline-block;
-  margin: 0 .625rem 0 0
+  margin: 0 .625rem 0 0;
+  font-size: 1rem;
 }
 
 .post-tags a:before {
@@ -863,8 +881,12 @@ h2+.header-anchor {
 .bsky-post {
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 0.9rem;
   text-decoration: none;
+}
+
+.masto-post p,
+.bsky-post p {
+  font-size: 1rem;
 }
 
 .masto-post a,
@@ -890,7 +912,7 @@ h2+.header-anchor {
 
 .mastodon-text .ellipsis,
 .mastodon-text .invisible {
-  display:none
+  display: none
 }
 
 .mastodon-name {
@@ -906,7 +928,7 @@ h2+.header-anchor {
 }
 
 .mastodon-data {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   padding-top: 10px;
@@ -934,7 +956,7 @@ h2+.header-anchor {
 
 .bluesky-text .ellipsis,
 .bluesky-text .invisible {
-  display:none
+  display: none
 }
 
 .bluesky-name {
@@ -950,7 +972,7 @@ h2+.header-anchor {
 }
 
 .bluesky-data {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   padding-top: 10px;
@@ -979,7 +1001,6 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  line-height: 1.25;
   font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -988,7 +1009,6 @@ ul,
 ol,
 pre {
   margin: 1em 0;
-  line-height: 1.5rem;
 }
 
 blockquote {
@@ -1109,4 +1129,48 @@ summary {
 
 main ul {
   list-style-type: disc;
+}
+
+/* font scaling */
+
+h1 {
+  font-size: var(--size-xxxl)
+}
+
+h2 {
+  font-size: var(--size-xxl)
+}
+
+h3 {
+  font-size: var(--size-xl)
+}
+
+h4 {
+  font-size: var(--size-lg)
+}
+
+h5 {
+  font-size: var(--size-md)
+}
+
+h6 {
+  font-size: var(--size-base)
+}
+
+p,
+ul,
+ol,
+pre,
+blockquote {
+  font-size: var(--size-base)
+}
+
+:root {
+  --size-xxxl: clamp(1.6875rem, 1.2177rem + 2.349vi, 3.4375rem);
+  --size-xxl: clamp(1.5625rem, 1.2773rem + 1.4262vi, 2.625rem);
+  --size-xl: clamp(1.4375rem, 1.2865rem + 0.755vi, 2rem);
+  --size-lg: clamp(1.3125rem, 1.1951rem + 0.5872vi, 1.75rem);
+  --size-md: clamp(1.1875rem, 1.1036rem + 0.4195vi, 1.5rem);
+  --size-base: clamp(1.0625rem, 0.9954rem + 0.3356vi, 1.3125rem);
+  --size-sm: 1rem;
 }
