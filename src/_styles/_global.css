@@ -1171,6 +1171,6 @@ blockquote {
   --size-xl: clamp(1.4375rem, 1.2865rem + 0.755vi, 2rem);
   --size-lg: clamp(1.3125rem, 1.1951rem + 0.5872vi, 1.75rem);
   --size-md: clamp(1.1875rem, 1.1036rem + 0.4195vi, 1.5rem);
-  --size-base: clamp(1.0625rem, 0.9954rem + 0.3356vi, 1.3125rem);
+  --size-base: clamp(1.13rem, 0.13vi + 1.09rem, 1.25rem);
   --size-sm: 1rem;
 }
