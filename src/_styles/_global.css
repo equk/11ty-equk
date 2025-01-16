@@ -683,9 +683,8 @@ span.gatsby-resp-image-wrapper,
   font-size: 1.1rem;
   color: var(--theme-link);
   display: block;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
   width: 9rem;
-  flex: 0 0 9rem;
   text-align: right;
   order: -1;
 }
