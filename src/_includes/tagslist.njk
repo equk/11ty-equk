@@ -1,9 +1,9 @@
 <div class="post-list">
   <ul class="tagslist mb-6 list-none">
     {% for post in tagslist %}
-    <li class="mb-1 tagslist-item">
+    <li class="tagslist-item">
       <time class="taglist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDateShort }}</time>
-      <span class="taglist-title mb-1 mt-0 font-normal">
+      <span class="taglist-title mt-0 font-normal">
         <a href="{{ post.url }}" class="post-title-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
       </span>
     </li>
