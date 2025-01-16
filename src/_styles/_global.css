@@ -601,7 +601,6 @@ li.task-list-item {
 @media only screen and (min-width: 960px) {
 
   .wide-img,
-  span.gatsby-resp-image-wrapper,
   blockquote,
   pre,
   article.message {
@@ -626,7 +625,6 @@ li.task-list-item {
 /* Image Borders */
 
 .wide-img,
-span.gatsby-resp-image-wrapper,
 .post-content img.border {
   border: 1px solid #020204;
 }
@@ -709,30 +707,6 @@ span.gatsby-resp-image-wrapper,
 ul.taglist {
   margin: 0;
   padding: 0
-}
-
-/* Table of Contents */
-
-@media only screen and (min-width: 1700px) {
-
-  .toc {
-    display: block
-  }
-}
-
-.toc ul {
-  list-style: none;
-  margin: 0;
-}
-
-.toc p {
-  margin: 0;
-  line-height: inherit;
-  font-family: "Open Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.toc a {
-  text-align: right;
 }
 
 /*
@@ -1161,6 +1135,11 @@ ol,
 pre,
 blockquote {
   font-size: var(--size-base)
+}
+
+table {
+  font-size: var(--size-base);
+  line-height: 2rem;
 }
 
 :root {
