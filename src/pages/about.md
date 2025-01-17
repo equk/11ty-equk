@@ -52,11 +52,11 @@ Github: <a href="https://github.com/{{ metadata.author.contacts.github }}" targe
 
 ## About This Site
 
-This site is powered by eleventy.<br/>
+This site is powered by eleventy.
 
-<img class="inline javascript_logo" src="/media/logos/javascript.svg" alt="javascript-logo" width="80px">
+<p><img class="inline javascript_logo" src="/media/logos/javascript.svg" alt="javascript-logo" width="80px">
 <img class="inline 11ty_logo" src="/media/logos/11ty-96x96.png" alt="11ty-logo" width="80px">
-<img class="inline nunjucks_logo" src="/media/logos/nunjucks.png" alt="nunjucks-logo" width="80px">
+<img class="inline nunjucks_logo" src="/media/logos/nunjucks.png" alt="nunjucks-logo" width="80px"></p>
 
 The source code can be found on github & the site is hosted on netlify.
 
