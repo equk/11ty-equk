@@ -276,11 +276,14 @@ main .post-content {
   grid-template-rows: auto 1fr
 }
 
+main .content-body {
+  margin-block-end: var(--space-md);
+}
+
 /* Content Head */
 
 main .content-title {
   text-align: center;
-  font-size: 3rem;
   line-height: 1;
 }
 
@@ -486,6 +489,7 @@ a.github:hover {
 
 .callout-block {
   padding: 0 0.8em;
+  margin-block-start: var(--space-s);
 }
 
 .callout-block.info {
@@ -976,39 +980,6 @@ h6 {
   font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-p,
-ul,
-ol,
-pre {
-  margin: 1em 0;
-}
-
-blockquote {
-  margin: 1em 0;
-  padding-left: 1em;
-  font-style: italic;
-}
-
-h1 {
-  margin: 1rem 0;
-  font-size: 2.25em;
-}
-
-h2 {
-  margin: 1.75em 0 0.5em;
-  font-size: 1.75em;
-}
-
-h3 {
-  margin: 1.5em 0 0.5em;
-  font-size: 1.375em;
-}
-
-h4 {
-  margin: 1em 0;
-  font-size: 1.125em;
-}
-
 img,
 video {
   max-width: 100%;
@@ -1103,30 +1074,39 @@ main ul {
   list-style-type: disc;
 }
 
-/* font scaling */
+/*
+  Font Scaling + Spacing (clamp)
+  -----------------------------------------
+*/
 
 h1 {
-  font-size: var(--size-xxxl)
+  font-size: var(--size-xxxl);
+  margin-block-start: var(--space-xxxl);
 }
 
 h2 {
-  font-size: var(--size-xxl)
+  font-size: var(--size-xxl);
+  margin-block-start: var(--space-xxl);
 }
 
 h3 {
-  font-size: var(--size-xl)
+  font-size: var(--size-xl);
+  margin-block-start: var(--space-xl);
 }
 
 h4 {
-  font-size: var(--size-lg)
+  font-size: var(--size-lg);
+  margin-block-start: var(--space-lg);
 }
 
 h5 {
-  font-size: var(--size-md)
+  font-size: var(--size-md);
+  margin-block-start: var(--space-md);
 }
 
 h6 {
-  font-size: var(--size-base)
+  font-size: var(--size-base);
+  margin-block-start: var(--space-s);
 }
 
 p,
@@ -1134,7 +1114,8 @@ ul,
 ol,
 pre,
 blockquote {
-  font-size: var(--size-base)
+  font-size: var(--size-base);
+  margin-block-start: var(--space-s);
 }
 
 table {
@@ -1150,4 +1131,12 @@ table {
   --size-md: clamp(1.1875rem, 1.1036rem + 0.4195vi, 1.5rem);
   --size-base: clamp(1.13rem, 0.13vi + 1.09rem, 1.25rem);
   --size-sm: 1rem;
+  --space-xs: clamp(0.5625rem, 0.5122rem + 0.2517vi, 0.75rem);
+  --space-s: clamp(0.75rem, 0.6829rem + 0.3356vi, 1rem);
+  --space-md: clamp(1.125rem, 1.0243rem + 0.5034vi, 1.5rem);
+  --space-l: clamp(1.5rem, 1.3658rem + 0.6711vi, 2rem);
+  --space-xl: clamp(1.875rem, 1.7072rem + 0.8389vi, 2.5rem);
+  --space-xxl: clamp(3rem, 2.7315rem + 1.3423vi, 4rem);
+  --space-xxxl: clamp(3.75rem, 3.4144rem + 1.6779vi, 5rem);
+  --space-xxxxl: clamp(5.625rem, 5.1216rem + 2.5168vi, 7.5rem);
 }
