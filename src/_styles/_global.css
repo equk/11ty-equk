@@ -507,6 +507,11 @@ a.github:hover {
   -----------------------------------------
  */
 
+article.message {
+  margin-block-start: var(--space-s);
+  font-size: var(--size-base);
+}
+
 .message-header {
   @apply bg-black text-white font-bold rounded-t px-4 py-2;
   background-color: #1a252f;
@@ -520,20 +525,20 @@ a.github:hover {
 }
 
 .message-body {
-  @apply border border-t-0 border-gray-400 rounded-b bg-gray-100 px-6 py-6 text-gray-700;
+  @apply border border-t-0 border-gray-400 bg-gray-100 px-6 py-6 text-gray-700;
   margin-bottom: 1em;
 }
 
 .message.is-warning>div {
-  @apply border-0 border-yellow-200 border-l-4 rounded bg-yellow-50 text-yellow-600;
+  @apply border-0 border-yellow-200 border-l-4 bg-yellow-50 text-yellow-600;
 }
 
 .message.is-danger>div {
-  @apply border-0 border-red-400 border-l-4 rounded bg-red-50 text-red-600;
+  @apply border-0 border-red-400 border-l-4 bg-red-50 text-red-600;
 }
 
 .message.is-info>div {
-  @apply border-0 border-sky-400 border-l-4 rounded bg-sky-50 text-sky-600;
+  @apply border-0 border-sky-400 border-l-4 bg-sky-50 text-sky-600;
 }
 
 .dark .message.is-info>div a,
