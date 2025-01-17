@@ -68,11 +68,6 @@
   transform: translate3d(0, 0, 0);
 }
 
-.top-banner h1,
-.top-banner h2 {
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .top-banner h2 {
   color: #0282c9;
 }
