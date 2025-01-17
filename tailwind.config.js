@@ -31,5 +31,9 @@ export default {
       },
     },
   },
+  // Enable optimization (removes 1K on output)
+  experimental: {
+    optimizeUniversalDefaults: true,
+  },
   plugins: [],
 }
