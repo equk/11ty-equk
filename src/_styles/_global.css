@@ -38,6 +38,30 @@ nav a {
 
 /*
   -----------------------------------------
+  Font Styles
+  -----------------------------------------
+ */
+
+body {
+  font-family: var(--font-base);
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--font-mono);
+}
+
+:root {
+  --font-base: Inter, var(--font-system);
+  --font-header: Open Sans, var(--font-system);
+  --font-mono: Fira Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*
+  -----------------------------------------
   TailwindCSS Styles
   -----------------------------------------
  */
@@ -180,7 +204,7 @@ header .site-title {
   line-height: 2.25rem;
   text-transform: uppercase;
   align-self: center;
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
 }
 
 /*
@@ -212,7 +236,7 @@ footer .footer-title {
   line-height: 2.25rem;
   text-transform: uppercase;
   align-self: center;
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
 }
 
 footer nav a {
@@ -236,7 +260,7 @@ footer nav ul {
 
 main .content .top-tags {
   text-align: right;
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
   align-items: center;
   font-size: 1rem;
 }
@@ -516,7 +540,7 @@ article.message {
   @apply bg-black text-white font-bold rounded-t px-4 py-2;
   background-color: #1a252f;
   color: #fff;
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
 }
 
 .message-header p,
@@ -698,11 +722,11 @@ article.message {
   margin: 1.65em 0 0.5em;
   font-size: 1.2em;
   line-height: 1.3rem;
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
 }
 
 .postlist-date {
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
   font-size: 1rem;
 }
 
@@ -729,12 +753,12 @@ article.message {
 
 .taglist-title {
   font-size: 1.375rem;
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
   display: block;
 }
 
 .taglist-date {
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
   font-size: 1.1rem;
   color: var(--theme-link);
   display: block;
@@ -951,7 +975,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-header);
 }
 
 img,
