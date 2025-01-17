@@ -7,7 +7,11 @@
  */
 
 
-/* imports */
+/*
+  -----------------------------------------
+  Imports
+  -----------------------------------------
+ */
 
 @import 'src/_styles/fonts.css';
 @import 'src/_styles/hero.css';
@@ -16,7 +20,11 @@
 @import 'src/_styles/prism/language-tabs.css';
 @import 'src/_styles/table.css';
 
-/* Base Styles */
+/*
+  -----------------------------------------
+  Base Styles
+  -----------------------------------------
+ */
 
 body {
   margin: auto;
@@ -28,7 +36,11 @@ nav a {
   margin-right: 10px;
 }
 
-/* TailwindCSS Styles */
+/*
+  -----------------------------------------
+  TailwindCSS Styles
+  -----------------------------------------
+ */
 
 @tailwind base;
 @tailwind components;
@@ -145,7 +157,11 @@ nav a {
   line-height: 1.25rem;
 }
 
-/* Header */
+/*
+  -----------------------------------------
+  Header
+  -----------------------------------------
+ */
 
 header .topbar {
   min-height: 50px;
@@ -167,7 +183,11 @@ header .site-title {
   font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* Footer */
+/*
+  -----------------------------------------
+  Footer
+  -----------------------------------------
+ */
 
 footer {
   background-color: var(--theme-footer-bg);
@@ -208,7 +228,11 @@ footer nav ul {
   padding-left: 0;
 }
 
-/* Top Tags */
+/*
+  -----------------------------------------
+  Top Tags
+  -----------------------------------------
+ */
 
 main .content .top-tags {
   text-align: right;
@@ -238,7 +262,11 @@ main .content .top-tags a:hover {
   color: var(--theme-hover);
 }
 
-/* Pagination */
+/*
+  -----------------------------------------
+  Pagination
+  -----------------------------------------
+ */
 
 .pagination a {
   color: var(--theme-text);
@@ -250,18 +278,46 @@ main .content .top-tags a:hover {
   color: var(--theme-hover);
 }
 
-/* Fix Text Codeblock */
+/*
+  -----------------------------------------
+  Code Blocks
+  -----------------------------------------
+ */
+
+/* Text Codeblock */
 
 pre:has(> code) {
   background-color: #011627;
   color: #fff;
 }
 
-/* Override Code Background */
+/* Code Background */
 
 :not(pre)>code[class*='language-'],
 pre[class*='language-'] {
   background: #011627;
+}
+
+/* Task Lists */
+
+li.task-list-item {
+  list-style: none;
+  margin-left: 0px;
+}
+
+/* inline code */
+
+:not(pre)>code {
+  background-color: #eef9ff !important;
+  border-radius: 0.3125rem !important;
+  color: #0175b4 !important;
+  padding: 0.2rem 0.4rem !important;
+  font-weight: normal !important;
+}
+
+.dark :not(pre)>code {
+  background-color: #011627 !important;
+  color: #cc99cd !important;
 }
 
 /*
@@ -324,6 +380,12 @@ main blockquote::before {
 main blockquote::after {
   content: '';
 }
+
+/*
+  -----------------------------------------
+  Post Elements
+  -----------------------------------------
+ */
 
 /* Github Button */
 
@@ -439,7 +501,11 @@ a.github:hover {
   display: inline;
 }
 
-/* Message Blocks */
+/*
+  -----------------------------------------
+  Message Blocks
+  -----------------------------------------
+ */
 
 .message-header {
   @apply bg-black text-white font-bold rounded-t px-4 py-2;
@@ -485,7 +551,11 @@ a.github:hover {
   padding: 0 10px;
 }
 
-/* Callout Blocks */
+/*
+  -----------------------------------------
+  Callout Blocks
+  -----------------------------------------
+ */
 
 .callout-block {
   padding: 0 0.8em;
@@ -576,28 +646,6 @@ a.github:hover {
 
 .callout-block.details summary+p {
   margin: 8px 0;
-}
-
-/* Task Lists */
-
-li.task-list-item {
-  list-style: none;
-  margin-left: 0px;
-}
-
-/* inline code */
-
-:not(pre)>code {
-  background-color: #eef9ff !important;
-  border-radius: 0.3125rem !important;
-  color: #0175b4 !important;
-  padding: 0.2rem 0.4rem !important;
-  font-weight: normal !important;
-}
-
-.dark :not(pre)>code {
-  background-color: #011627 !important;
-  color: #cc99cd !important;
 }
 
 /* Wide Elements */
@@ -744,90 +792,6 @@ h2+.header-anchor {
   font-size: 1.5em;
 }
 
-/* webmention styles */
-
-.webmentions .title {
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin: 10px 0;
-  font-weight: 700;
-}
-
-.webmentions-boost {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 15px;
-}
-
-.webmentions-boost a {
-  margin-left: -10px;
-}
-
-.webmentions-boost img,
-.webmentions-comment-header img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  border: 2px solid white;
-  transition: 0.2s linear;
-}
-
-.webmentions-boost img:hover,
-.webmentions-comment-header img:hover {
-  border: 2px solid var(--theme-link);
-}
-
-.webmentions-comment {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 10px;
-  margin-bottom: 5px;
-  background: var(--theme-comment-bg);
-}
-
-.webmentions-comment-header,
-.webmentions-comment-content {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 60px;
-}
-
-.webmentions-comment-header img {
-  position: absolute;
-  top: 12px;
-  left: 10px;
-}
-
-.webmentions-comment-header-name {
-  display: flex;
-  align-items: center;
-  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-}
-
-.webmentions-comment-header-date {
-  display: flex;
-  align-items: center;
-}
-
-.webmentions-comment-header-date a,
-.webmentions-comment-header-name a {
-  color: var(--theme-text);
-}
-
-.dark .webmentions-comment-header-date a {
-  color: var(--theme-link);
-}
-
-.webmentions-comment-header-date a:hover,
-.webmentions-comment-header-name a:hover {
-  color: var(--theme-hover);
-}
-
-.webmentions-comment-content {
-  margin: 0.2em 0;
-}
-
 /* post footer */
 
 .author-info img {
@@ -839,7 +803,11 @@ h2+.header-anchor {
   border: 2px solid var(--theme-link);
 }
 
-/* mastodon & bsky post */
+/*
+  -----------------------------------------
+  Social Media Reactions
+  -----------------------------------------
+ */
 
 .post-reactions {
   display: grid;
@@ -970,6 +938,7 @@ h2+.header-anchor {
   Typography Styles
   -----------------------------------------
  */
+
 h1,
 h2,
 h3,
@@ -1134,7 +1103,7 @@ table {
   --space-xs: clamp(0.5625rem, 0.5122rem + 0.2517vi, 0.75rem);
   --space-s: clamp(0.75rem, 0.6829rem + 0.3356vi, 1rem);
   --space-md: clamp(1.125rem, 1.0243rem + 0.5034vi, 1.5rem);
-  --space-l: clamp(1.5rem, 1.3658rem + 0.6711vi, 2rem);
+  --space-lg: clamp(1.5rem, 1.3658rem + 0.6711vi, 2rem);
   --space-xl: clamp(1.875rem, 1.7072rem + 0.8389vi, 2.5rem);
   --space-xxl: clamp(3rem, 2.7315rem + 1.3423vi, 4rem);
   --space-xxxl: clamp(3.75rem, 3.4144rem + 1.6779vi, 5rem);
