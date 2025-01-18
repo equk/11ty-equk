@@ -719,25 +719,27 @@ article.message {
 /* Post List */
 
 .post-title {
-  margin: 1.65em 0 0.5em;
-  font-size: 1.2em;
+  font-size: var(--size-xxl);
   line-height: 1.3rem;
   font-family: var(--font-header);
 }
 
 .postlist-date {
   font-family: var(--font-header);
-  font-size: 1rem;
+  font-size: var(--size-base);
 }
 
-@screen md {
-  .post-title {
-    font-size: 1.65em;
-  }
+.postlist-item {
+  margin-block-start: var(--space-md);
+}
 
-  .postlist-date {
-    font-size: 1.12rem;
-  }
+.postlist {
+  margin-bottom: 1.5rem;
+  list-style-type: none;
+}
+
+.postlist-meta {
+  text-transform: uppercase;
 }
 
 /* Tags List */
