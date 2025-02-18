@@ -14,7 +14,7 @@
         <nav aria-label="Main navigation" id="main-nav" class="hidden w-full items-center overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:w-auto md:overflow-visible">
           <ul class="flex w-full flex-col text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
             {%- for entry in collections.all | eleventyNavigation %}
-            <li class="nav-item"><a href="{{ entry.url }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
+            <li class="nav-item"><a href="{{ entry.url }}" aria-label="{{ entry.title }}" title="{{ entry.title }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
             {%- endfor %}
           </ul>
           <toggle-dark>

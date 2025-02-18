@@ -10,7 +10,7 @@
           <nav aria-label="Footer navigation" class="gap-x-2 text-center sm:gap-x-0">
             <ul class="md:self-center">
               {%- for entry in collections.all | eleventyNavigation %}
-              <li class="nav-item"><a href="{{ entry.url }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
+              <li class="nav-item"><a href="{{ entry.url }}" aria-label="{{ entry.title }}" title="{{ entry.title }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
               {%- endfor %}
             </ul>
           </nav>
