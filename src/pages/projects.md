@@ -11,6 +11,8 @@ permalink: projects/index.html
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `bluesky` post `web component`
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `mastodon` post `web component`
 <br/><i class="fa fa-code"></i> `archlinux` automatic builds from `git` releases
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `hyprland` capture selection using `grim` & `slurp`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `hyprland` capture active monitor / window using `grim`
@@ -151,7 +153,7 @@ App whitelists `IPV4` & `IPV6` ranges using `CIDR` blocks.
 
 Coreboot opensource firmware image, allowing the chromebook to boot into linux using different payloads eg: `seabios`, `grub2`, `tianocore` (UEFI).
 
-<img src="/media/logos/coreboot.svg" alt="coreboot-logo" class="dark-logo" width="200px">
+<p><img src="/media/logos/coreboot.svg" alt="coreboot-logo" class="dark-logo" width="200px"></p>
 
 Building coreboot is pretty easy, the instructions on the wiki are quite clear.<br/>
 Just make sure you know what you are doing as you could brick your chromebook.
