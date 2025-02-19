@@ -6,7 +6,7 @@ eleventyNavigation:
 title: About
 permalink: about/index.html
 ---
-<div class="bg-gray-100 border border-gray-400 shadow rounded-lg p-5 dark:bg-gray-900 dark:border-gray-800">
+<div>
     <div class="flex flex-col gap-1 text-center items-center">
         <img class="h-32 w-32 bg-white p-1 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
         <p class="text-3xl">equilibriumuk</p>
