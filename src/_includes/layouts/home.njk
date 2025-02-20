@@ -4,12 +4,12 @@ layout: layouts/base.njk
 
 <section class="top-banner">
   <div class="top-banner_image-wrapper">
-    {% image '../src/_media/images/hero/9bf82782a7e634452baa3d37c4aa109c.jpg', "", ['400', '800', '1200', '1400', '1900'], '(max-width: 1900px) 100vw, 1900px' %}
+    {% image '../src/_media/images/hero/9bf82782a7e634452baa3d37c4aa109c.jpg', "top banner", ['400', '800', '1200', '1400', '1900'], '(max-width: 1900px) 100vw, 1900px' %}
   </div>
   <div class="top-banner_overlay"></div>
-  <div class="top-banner_container flex h-full items-center justify-center">
-    <div class="px-6 text-center text-white md:px-12">
-      <h1 class="text-5xl font-bold uppercase tracking-tight md:text-6xl">
+  <div class="top-banner_container">
+    <div class="top-banner_title">
+      <h1>
         {{ title or metadata.title }}
       </h1>
       <p class="social-blocks">
