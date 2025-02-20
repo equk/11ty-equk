@@ -251,19 +251,15 @@ footer .powered-by img {
   display: inline;
 }
 
-footer .footer-title p {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  margin: 0;
-  padding-left: 1rem;
-}
-
 footer .footer-title {
-  font-size: 1.875rem;
+  font-size: var(--size-xl);
   line-height: 2.25rem;
   text-transform: uppercase;
   align-self: center;
   font-family: var(--font-header);
+  padding-left: 10px;
+  text-align: center;
+  font-weight: 600;
 }
 
 footer nav a {
