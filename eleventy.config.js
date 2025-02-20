@@ -27,6 +27,7 @@ export default function (eleventyConfig) {
         'src/_scripts/mobilenav.js',
         'src/_scripts/mastodon.js',
         'src/_scripts/bsky.js',
+        'src/_scripts/scrolltop.js',
       ],
       outdir: 'src/_assets/js',
       minify: true,
