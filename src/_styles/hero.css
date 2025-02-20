@@ -75,10 +75,18 @@
 }
 
 .top-banner_title h1 {
-  font-size: 3.75rem;
+  font-size: 3rem;
   text-transform: uppercase;
-  margin-block-start: 65px;
+  margin-block-start: 45px;
   letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
+  .top-banner_title h1 {
+    font-size: 3.75rem;
+    margin-block-start: 65px;
+    letter-spacing: -0.025em;
+  }
 }
 
 .top-banner h2 {
