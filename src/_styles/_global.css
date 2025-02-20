@@ -561,6 +561,18 @@ a.github:hover {
   pointer-events: all;
 }
 
+@media (min-width: 768px) {
+  .scroll-to-top {
+    bottom: 50%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .scroll-to-top {
+    right: 20vw;
+  }
+}
+
 /*
   -----------------------------------------
   Message Blocks
