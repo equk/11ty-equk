@@ -532,6 +532,37 @@ a.github:hover {
 
 /*
   -----------------------------------------
+  Scroll To Top
+  -----------------------------------------
+ */
+
+.scroll-to-top {
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 3px;
+  background-color: var(--theme-link);
+  color: var(--theme-bg);
+  padding: 3px;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 300ms ease;
+  z-index: 999;
+}
+
+.scroll-to-top:hover {
+  color: var(--theme-bg);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*
+  -----------------------------------------
   Message Blocks
   -----------------------------------------
  */
