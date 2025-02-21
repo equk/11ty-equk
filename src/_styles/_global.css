@@ -208,6 +208,45 @@ header nav ul {
   margin: 0;
 }
 
+.main-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.main-nav ul {
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  align-self: center;
+  padding-left: 0;
+}
+
+.main-nav li {
+  align-self: center;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    text-align: left;
+    width: auto;
+  }
+
+  .main-nav ul {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .main-nav li {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
 header .site-title {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -220,7 +259,6 @@ header .site-title {
 button.nav {
   padding: 10px;
   margin-top: 5px;
-  display: flex;
   align-items: center;
 }
 
@@ -577,7 +615,7 @@ a.github:hover {
 }
 
 .dark .scroll-to-top {
-  background-color: rgba(66, 66, 66, 0.5);
+  background-color: rgba(44, 50, 66, 0.8);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
 }
 

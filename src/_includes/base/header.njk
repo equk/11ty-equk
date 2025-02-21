@@ -4,7 +4,7 @@
           <a class="site-title" href="/">EQUK</a>
           <div class="md:hidden">
             <button class="nav" id="toggle-navigation-menu" aria-label="Toggle Menu" type="button" data-aw-toggle-menu="">
-              <svg astro-icon="tabler:menu" class="h-6 w-6" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                   <path d="M4 8h16"></path>
                   <path d="M4 16h16"></path>
@@ -13,10 +13,10 @@
             </button>
           </div>
         </div>
-        <nav aria-label="Main navigation" id="main-nav" class="hidden w-full md:mx-5 md:flex md:w-auto md:overflow-visible">
-          <ul class="flex w-full flex-col md:flex-row self-center md:text-base">
+        <nav aria-label="Main navigation" id="main-nav" class="main-nav hidden">
+          <ul>
             {%- for entry in collections.all | eleventyNavigation %}
-            <li class="nav-item"><a href="{{ entry.url }}" aria-label="{{ entry.title }}" title="{{ entry.title }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
+            <li><a href="{{ entry.url }}" aria-label="{{ entry.title }}" title="{{ entry.title }}" {% if entry.url==page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a></li>
             {%- endfor %}
           </ul>
           <toggle-dark>
