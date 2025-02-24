@@ -16,6 +16,7 @@ import sharp from 'sharp'
 import pluginDrafts from './eleventy.config.drafts.js'
 import pluginImages from './eleventy.config.images.js'
 import containerPlugin from './eleventy.config.markdown.js'
+import githubAlerts from './eleventy.config.githubalerts.js'
 import metadata from './src/_data/metadata.js'
 
 export default function (eleventyConfig) {
@@ -266,6 +267,7 @@ export default function (eleventyConfig) {
       slugify: eleventyConfig.getFilter('slugify'),
     })
     mdLib.use(containerPlugin)
+    mdLib.use(githubAlerts)
     mdLib.use(markdownItTaskLists, { label: true })
     mdLib.enable('code')
   })
