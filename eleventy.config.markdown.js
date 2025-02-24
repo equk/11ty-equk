@@ -10,6 +10,7 @@ export default (md) => {
     .use(...createContainer('danger', 'Danger', md))
     .use(...createContainer('note', 'Note', md))
     .use(...createContainer('important', 'Important', md))
+    .use(...createContainer('caution', 'Caution', md))
 }
 
 function createContainer(conClass, defaultTitle, md) {
