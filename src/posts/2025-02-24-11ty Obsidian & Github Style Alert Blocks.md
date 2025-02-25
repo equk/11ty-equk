@@ -11,8 +11,8 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
-mastodonPostId:
-blueskyPostId:
+mastodonPostId: "114065404598767638"
+blueskyPostId: "3lizavzci2k2d"
 excerpt: "Adding Obsidian & Github Style Alert / Callout Blocks Using 11ty and markdown-it Plugins"
 ---
 
