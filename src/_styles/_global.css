@@ -472,6 +472,19 @@ main blockquote::after {
   -----------------------------------------
  */
 
+/* External Links */
+
+a.ext-link:before {
+  display: inline-flex;
+  content: '🔗';
+  overflow: hidden;
+  color: var(--theme-text);
+  height: fit-content;
+  width: fit-content;
+  margin-right: 0.3em;
+  font-size: 16px;
+}
+
 /* Github Button */
 
 a.github {
