@@ -247,6 +247,22 @@ header nav ul {
   }
 }
 
+#social-nav {
+  margin-left: 10px;
+}
+
+#social-nav svg {
+  height: 1rem;
+  width: 1rem;
+  display: inline;
+  max-height: fit-content;
+}
+
+#social-nav a:hover svg {
+  transform: scale(1.2);
+  color: var(--theme-text);
+}
+
 header .site-title {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -254,6 +270,10 @@ header .site-title {
   align-self: center;
   font-family: var(--font-header);
   margin-left: 10px;
+}
+
+header a.site-title:hover {
+  color: var(--theme-text);
 }
 
 button.nav {
