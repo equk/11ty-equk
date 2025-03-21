@@ -1,0 +1,158 @@
+---
+permalink: /atom.xsl
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:atom="http://www.w3.org/2005/Atom" exclude-result-prefixes="atom">
+  <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes" />
+  <xsl:template match="/">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <title>Web Feed • <xsl:value-of select="atom:feed/atom:title" /></title>
+      <style type="text/css">
+        :root {
+          --white: #faf5f6;
+          --black: #252525;
+          --theme-link: #d14;
+          --theme-hover: #0282c9;
+        }
+
+        html,
+        body {
+          margin: auto;
+          padding: 20px;
+          max-width: 56rem;
+          background-color: var(--white);
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          color: var(--black);
+          line-height: 1.2;
+        }
+
+        html,
+        body,
+        button,
+        code,
+        input {
+          font-family: monospace;
+        }
+
+        h1 {
+          font-size: 2em;
+          margin: .67em 0;
+          line-height: 1.125em;
+        }
+
+        h2 {
+          font-size: 1.75em;
+        }
+
+        h3 {
+          margin-bottom: 0;
+          padding: 0;
+          font-size: 1.6em;
+          font-weight: 400;
+        }
+
+        a {
+          color: var(--theme-link);
+        }
+
+        a:hover {
+          color: var(--theme-hover);
+        }
+
+        p {
+          font-size: 1.4em;
+        }
+
+        time {
+          margin-top: 5px;
+          font-size: 1.2em;
+        }
+
+        nav p {
+          margin-top: 20px;
+        }
+
+        .feed-title {
+          font-size: 3.75rem;
+          font-family: Sans, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .feed-ico {
+          width: 22px;
+          height: 22px;
+          display: inline-block;
+          vertical-align: middle;
+          background-color: orange;
+          border-radius: 5px;
+          color: var(--white);
+          padding: 5px;
+        }
+      </style>
+    </head>
+
+    <body>
+      <h1 class="feed-title">EQUK'S BLOG</h1>
+      <hr />
+      <nav>
+        <p>
+          <strong>This is a web feed,</strong> also known as an RSS feed.<br />
+          You can <strong>subscribe</strong> by copying the URL from the address bar into your newsreader.
+        </p>
+        <p>
+          Visit <a href="https://aboutfeeds.com" target="_blank" rel="noopener noreferrer">About Feeds</a> to get started with newsreaders and subscribing. It’s free!
+        </p>
+      </nav>
+
+      <hr />
+      <section>
+        <xsl:apply-templates select="atom:feed" />
+      </section>
+      <section>
+        <h2>Recent Items</h2>
+        <xsl:apply-templates select="atom:feed/atom:entry" />
+      </section>
+    </body>
+
+    </html>
+  </xsl:template>
+
+  <xsl:template match="atom:feed">
+    <h1><svg class="feed-ico" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"></path>
+      </svg> Web Feed Preview</h1>
+    <p>This RSS feed provides the latest posts from <xsl:value-of select="atom:title" />.
+    </p>
+    <p>
+      <a class="head_link" target="_blank">
+        <xsl:attribute name="href">
+          <xsl:value-of select="atom:link[@rel='alternate']/@href" />
+        </xsl:attribute>
+        Visit Website &#x2192;
+      </a>
+    </p>
+
+  </xsl:template>
+
+  <xsl:template match="atom:entry">
+    <div class="entry">
+      <h3>
+        <a target="_blank">
+          <xsl:attribute name="href">
+            <xsl:value-of select="atom:id" />
+          </xsl:attribute>
+          <xsl:value-of select="atom:title" />
+        </a>
+      </h3>
+      <time>
+        <xsl:value-of select="atom:updated" />
+      </time>
+    </div>
+  </xsl:template>
+
+</xsl:stylesheet>
