@@ -492,6 +492,15 @@ main blockquote::after {
   -----------------------------------------
  */
 
+.feed-ico {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgb(255, 165, 0);
+  border-radius: 5%;
+  color: #fff;
+  padding: 5%;
+}
+
 /* External Links */
 
 a.ext-link:before {
