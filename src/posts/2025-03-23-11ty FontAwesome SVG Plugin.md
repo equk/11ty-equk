@@ -10,8 +10,8 @@ tags:
 image:
 imgAuthor:
 imgAuthorURL:
-mastodonPostId:
-blueskyPostId:
+mastodonPostId: "114213530741737509"
+blueskyPostId: "3ll2zty2suc2m"
 excerpt: "Using 11ty plugin for font awesome svg icons with no clientside javascript"
 ---
 
