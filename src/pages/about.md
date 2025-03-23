@@ -19,7 +19,7 @@ permalink: about/index.html
 ## Linux
 
 I use Archlinux as my desktop OS with a tiling wm.<br />
-Screenshots & info: <i class="fa fa-link"></i> <a href="https://github.com/equk/dotfiles" target="_blank" rel="noopener noreferrer">equk/dotfiles on GitHub</a>
+Screenshots & info: <i class="fa-solid fa-link"></i> <a href="https://github.com/equk/dotfiles" target="_blank" rel="noopener noreferrer">equk/dotfiles on GitHub</a>
 
 <p class="text-center"><img class="inline" src="/media/images/2019/05/gentoo-signet.svg" alt="gentoo" width="128px">
 <img class="inline" src="/media/images/2014/Feb/arch_128.png" alt="archlinux">
