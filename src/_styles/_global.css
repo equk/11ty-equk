@@ -15,7 +15,6 @@
 
 @import 'src/_styles/fonts.css';
 @import 'src/_styles/hero.css';
-@import 'src/_styles/fa/fork-awesome.css';
 @import 'src/_styles/prism/prism-catppuccin.css';
 @import 'src/_styles/prism/language-tabs.css';
 @import 'src/_styles/table.css';
@@ -491,6 +490,19 @@ main blockquote::after {
   Post Elements
   -----------------------------------------
  */
+
+/* Font Awesome */
+
+.icon-svg {
+  display: inline;
+  vertical-align: middle;
+  height: 1em;
+  width: 1em;
+  max-height: fit-content;
+  max-width: fit-content;
+}
+
+/* Feed Icon */
 
 .feed-ico {
   display: inline-block;
