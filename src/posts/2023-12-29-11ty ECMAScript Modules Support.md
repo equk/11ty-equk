@@ -18,7 +18,7 @@ excerpt: "Switching to 11ty canary v3 for ECMAScript support"
 Eleventy v3.0 has a lot of changes including ESM support.<br/>
 This is a feature many have been looking forward to.
 
-<i class="fa fa-link"></i> <a href="https://www.11ty.dev/blog/canary-eleventy-v3/" target="_blank" rel="noopener noreferrer">Calling all courageous canary testers for Eleventy v3.0</a>
+<i class="fa-solid fa-link"></i> <a href="https://www.11ty.dev/blog/canary-eleventy-v3/" target="_blank" rel="noopener noreferrer">Calling all courageous canary testers for Eleventy v3.0</a>
 
 They already converted the main 11ty site to v3.0 & report there were no problems.
 
@@ -46,7 +46,7 @@ There are a few other changes required but that's the two main changes.
 
 More information on the changes made to the site can be found on Github.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/pull/6" target="_blank" rel="noopener noreferrer">Eleventy v3 with ECMAScript Modules pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/pull/6" target="_blank" rel="noopener noreferrer">Eleventy v3 with ECMAScript Modules pull request on github</a>
 
 ### Using Commonjs
 
@@ -60,11 +60,11 @@ ESLint does not support ESM at the moment & requires commonjs
 use `.eslintrc.cjs` when running ESLint in JavaScript packages that specify `"type":"module"` in their `package.json`
 :::
 
-<i class="fa fa-link"></i> <a href="https://eslint.org/docs/latest/use/configure/configuration-files" target="_blank" rel="noopener noreferrer">Configuration Files - ESLint</a>
+<i class="fa-solid fa-link"></i> <a href="https://eslint.org/docs/latest/use/configure/configuration-files" target="_blank" rel="noopener noreferrer">Configuration Files - ESLint</a>
 
 ## Example Diff
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/commit/30784c1b5731833812b45f0221b38218d7f7c142" target="_blank" rel="noopener noreferrer">commit 30784c1 - eleventy.config.js</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/commit/30784c1b5731833812b45f0221b38218d7f7c142" target="_blank" rel="noopener noreferrer">commit 30784c1 - eleventy.config.js</a>
 
 ```diff
 -const esbuild = require('esbuild')
@@ -124,5 +124,5 @@ use `.eslintrc.cjs` when running ESLint in JavaScript packages that specify `"ty
 
 ## References
 
-<i class="fa fa-link"></i> <a href="https://www.zachleat.com/web/eleventy-v3-alpha/" target="_blank" rel="noopener noreferrer">Eleventy v3 with ESM support now on the canary channel</a><br/>
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/11ty/eleventy/pull/3074" target="_blank" rel="noopener noreferrer">Big v3.0.0 Project Slipstream Changes</a>
+<i class="fa-solid fa-link"></i> <a href="https://www.zachleat.com/web/eleventy-v3-alpha/" target="_blank" rel="noopener noreferrer">Eleventy v3 with ESM support now on the canary channel</a><br/>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/11ty/eleventy/pull/3074" target="_blank" rel="noopener noreferrer">Big v3.0.0 Project Slipstream Changes</a>

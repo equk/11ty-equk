@@ -23,7 +23,7 @@ The site is now running Gatsby v3 🎉
 
 Upgrading was relatively easy
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/2" target="_blank">Gatsby v3 pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/2" target="_blank">Gatsby v3 pull request on github</a>
 
 ## New Features
 
@@ -88,4 +88,4 @@ Looking at the plugin it's probably not that useful & a workaround would be to a
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>

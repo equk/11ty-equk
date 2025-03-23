@@ -64,4 +64,4 @@ Add domain to whitelist
 
 The project can be viewed and downloaded from github.
 
-<a class="github" href="https://github.com/equk/spf_list/" aria-label="Download on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> Download</a>
+<a class="github" href="https://github.com/equk/spf_list/" aria-label="Download on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Download</a>

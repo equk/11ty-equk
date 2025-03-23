@@ -42,7 +42,7 @@ pnpm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 #### Add a Typescript Config
 
-<i class="fa fa-file-code-o git-fork"></i> tsconfig.json
+<i class="fa-solid fa-code git-fork"></i> tsconfig.json
 
 ```json
 {
@@ -74,7 +74,7 @@ pnpm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> You may want to start with <code class="language-text">strict: false</code> then work towards enabling strict mode later.
+    <i class="fa-solid fa-info-circle"></i> You may want to start with <code class="language-text">strict: false</code> then work towards enabling strict mode later.
   </div>
 </article>
 
@@ -88,7 +88,7 @@ Update ESLint config to use Typescript.
 - [x] enable `.tsx` file extension in `react/jsx-filename-extension`
 - [x] add `.ts, .tsx` to `import/resolver`
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/8/commits/a68e9076b4dbf57ccedf0fa2a8d47832854154f0" target="_blank" rel="noopener noreferrer">updated eslint config with typescript presets</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/8/commits/a68e9076b4dbf57ccedf0fa2a8d47832854154f0" target="_blank" rel="noopener noreferrer">updated eslint config with typescript presets</a>
 
 ## Rename Files
 
@@ -99,7 +99,7 @@ This can be achieved using bash to rename all `js` & `jsx` files in `src/` which
 
 <br />
 
-<i class="fa fa-file-code-o git-fork"></i> rename_tsx.sh
+<i class="fa-solid fa-code git-fork"></i> rename_tsx.sh
 
 ```bash
 #!/bin/bash
@@ -167,7 +167,7 @@ This should make converting the site a bit quicker.
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> It is possible to automate this process using a tool like jscodeshift.
+    <i class="fa-solid fa-info-circle"></i> It is possible to automate this process using a tool like jscodeshift.
   </div>
 </article>
 
@@ -175,8 +175,8 @@ This should make converting the site a bit quicker.
 
 You can find the full pull request for the above changes of this site on github.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/8" target="_blank" rel="noopener noreferrer">Add Typescript to Components</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/8" target="_blank" rel="noopener noreferrer">Add Typescript to Components</a>
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>

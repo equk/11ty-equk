@@ -97,5 +97,5 @@ Backup current firmware to a FAT32 formatted USB stick using the install image b
 
 #### Related
 
-<i class="fa fa-link"></i>  <a href="/2015/07/13/netgear-wnr2200-openwrt-usb-support/" target="_blank" rel="noopener noreferrer">Netgear wnr2200 OpenWrt USB Support</a><br>
-<i class="fa fa-link"></i>  <a href="/2016/10/04/unlocking-bt-homehub-5a/" target="_blank" rel="noopener noreferrer">Unlocking BT HomeHub 5a</a>
+<i class="fa-solid fa-link"></i>  <a href="/2015/07/13/netgear-wnr2200-openwrt-usb-support/" target="_blank" rel="noopener noreferrer">Netgear wnr2200 OpenWrt USB Support</a><br>
+<i class="fa-solid fa-link"></i>  <a href="/2016/10/04/unlocking-bt-homehub-5a/" target="_blank" rel="noopener noreferrer">Unlocking BT HomeHub 5a</a>

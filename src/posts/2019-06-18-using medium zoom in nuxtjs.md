@@ -42,7 +42,7 @@ Install `medium-zoom` using yarn or npm
 
 Next create a plugin file
 
-<i class="fa fa-file-code-o"></i> `plugins/medium-zoom.js`
+<i class="fa-solid fa-code"></i> `plugins/medium-zoom.js`
 
 ```javascript
 import Vue from 'vue'
@@ -76,4 +76,4 @@ Optionally you could change this to whatever you like as <a href="https://github
 
 The medium-zoom nuxtjs plugin can downloaded from github.
 
-<a class="github" href="https://github.com/equk/nuxt-medium-zoom" aria-label="Download on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> Download</a>
+<a class="github" href="https://github.com/equk/nuxt-medium-zoom" aria-label="Download on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Download</a>

@@ -20,7 +20,7 @@ I recently started using Obsidian for note taking & the plugin community is real
 
 One useful community plugin is Book Search.
 
-<i class="fa fa-link"></i> <a target="_blank" rel="noopener noreferrer" href="https://github.com/anpigon/obsidian-book-search-plugin">Obsidian Book Search Plugin</a>
+<i class="fa-solid fa-link"></i> <a target="_blank" rel="noopener noreferrer" href="https://github.com/anpigon/obsidian-book-search-plugin">Obsidian Book Search Plugin</a>
 
 While creating templates I noticed this plugin returns small thumbnail images over http.<br/>
 I added some javascript to fix these problems.
@@ -41,13 +41,13 @@ The plugin returns images using `thumbnail` size.
   }
 ```
 
-<i class="fa fa-link"></i> <a target="_blank" rel="noopener noreferrer" href="https://github.com/anpigon/obsidian-book-search-plugin/blob/master/src/apis/google_books_api.ts">src/apis/google_books_api.ts · anpigon/obsidian-book-search-plugin · GitHub</a>
+<i class="fa-solid fa-link"></i> <a target="_blank" rel="noopener noreferrer" href="https://github.com/anpigon/obsidian-book-search-plugin/blob/master/src/apis/google_books_api.ts">src/apis/google_books_api.ts · anpigon/obsidian-book-search-plugin · GitHub</a>
 
 ### Google Books API Documentation
 
 > volumeInfo.imageLinks.thumbnail (string) Image link for thumbnail size (width of ~128 pixels)
 
-<i class="fa fa-link"></i> <a target="_blank" rel="noopener noreferrer" href="https://developers.google.com/books/docs/v1/reference/volumes">Volume | Google Books API</a>
+<i class="fa-solid fa-link"></i> <a target="_blank" rel="noopener noreferrer" href="https://developers.google.com/books/docs/v1/reference/volumes">Volume | Google Books API</a>
 
 ## Book Search Tweaks
 
@@ -60,7 +60,7 @@ The plugin returns images using `thumbnail` size.
 I have a template for book notes using the templater community plugin.<br/>
 This plugin allows use of javascript when creating new notes with templates.
 
-<i class="fa fa-link"></i> <a target="_blank" rel="noopener noreferrer" href="https://github.com/SilentVoid13/Templater">Obsidian Templater Plugin</a>
+<i class="fa-solid fa-link"></i> <a target="_blank" rel="noopener noreferrer" href="https://github.com/SilentVoid13/Templater">Obsidian Templater Plugin</a>
 
 ## Book Template
 

@@ -45,4 +45,4 @@ The script uses `Invoke-WebRequest` to download the latest build of firefox avai
 
 The full script can be downloaded from my windows repo on github.
 
-<p><a class="github" href="https://github.com/equk/windows/blob/master/windows_10/firefox-inst.ps1" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> firefox-inst.ps1</a> <a class="github" href="https://github.com/equk/windows/" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> windows</a></p>
+<p><a class="github" href="https://github.com/equk/windows/blob/master/windows_10/firefox-inst.ps1" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> firefox-inst.ps1</a> <a class="github" href="https://github.com/equk/windows/" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> windows</a></p>

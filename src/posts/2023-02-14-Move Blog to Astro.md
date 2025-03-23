@@ -136,7 +136,7 @@ I decided to seperate the feed to `/posts` & have the most recent posts on the f
 
 Pagination in Astro is really easy as there is a function which pretty much does all the work.
 
-<i class="fa fa-link"></i> <a href="https://docs.astro.build/en/core-concepts/routing/#pagination" target="_blank" rel="noopener noreferrer">Routing 🚀 Astro Documentation</a>
+<i class="fa-solid fa-link"></i> <a href="https://docs.astro.build/en/core-concepts/routing/#pagination" target="_blank" rel="noopener noreferrer">Routing 🚀 Astro Documentation</a>
 
 The only problem I had was related to types which was fixed by setting posts to `CollectionEntry<'blog'>` & `typeof posts` when mapping over the array.
 
@@ -159,14 +159,14 @@ There are two problems with this:
 - [ ] Astro does not have atom support
 - [ ] MDX is not supported
 
-<i class="fa fa-link"></i> <a href="https://docs.astro.build/en/guides/rss/#including-full-post-content" target="_blank" rel="noopener noreferrer">RSS 🚀 Astro Documentation</a>
+<i class="fa-solid fa-link"></i> <a href="https://docs.astro.build/en/guides/rss/#including-full-post-content" target="_blank" rel="noopener noreferrer">RSS 🚀 Astro Documentation</a>
 
 ### RSS v Atom
 
 Looking into syndication feed generation it's like everyone is using rss 2.0 instead of atom.<br />
 Atom seems to fit better with syndication & seems to have more features.
 
-<i class="fa fa-link"></i> <a href="https://www.intertwingly.net/wiki/pie/Rss20AndAtom10Compared" target="_blank" rel="noopener noreferrer">Comparison of RSS and Atom Web Feed Formats</a>
+<i class="fa-solid fa-link"></i> <a href="https://www.intertwingly.net/wiki/pie/Rss20AndAtom10Compared" target="_blank" rel="noopener noreferrer">Comparison of RSS and Atom Web Feed Formats</a>
 
 ## Screenshots
 
@@ -184,7 +184,7 @@ A lot of time was spent on CSS & there were a few problems with tailwindcss.
 
 Using Astro 2.0 changed my view, previously I only really used Astro for simplistic sites where content doesn't really change but with the addition of content collections & type schemas it really is nice to work with.
 
-<i class="fa fa-link"></i> <a href="https://astro.build/blog/astro-2/" target="_blank" rel="noopener noreferrer">Astro Blog - Introducing Astro 2.0</a>
+<i class="fa-solid fa-link"></i> <a href="https://astro.build/blog/astro-2/" target="_blank" rel="noopener noreferrer">Astro Blog - Introducing Astro 2.0</a>
 
 I started porting the site over to Astro as a weekend project but ended up working on it in my spare time in the week as it was so interesting to work with.
 
@@ -198,7 +198,7 @@ Things I like:
 I have not used any advanced features like islands architecture yet.<br />
 This will be a useful feature for adding things like dynamic comment components.
 
-<i class="fa fa-link"></i> <a href="https://docs.astro.build/en/concepts/islands/" target="_blank" rel="noopener noreferrer">Astro Islands 🚀 Astro Documentation</a>
+<i class="fa-solid fa-link"></i> <a href="https://docs.astro.build/en/concepts/islands/" target="_blank" rel="noopener noreferrer">Astro Islands 🚀 Astro Documentation</a>
 
 It still feels like I've only scratched the surface so far.
 
@@ -212,4 +212,4 @@ I first used `UnoCSS` which was so much faster than `tailwind` + `postcss` but I
 
 The source for my astro blog is available on github.
 
-<a class="github" href="https://github.com/equk/blog-astro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> blog-astro</a>
+<a class="github" href="https://github.com/equk/blog-astro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> blog-astro</a>

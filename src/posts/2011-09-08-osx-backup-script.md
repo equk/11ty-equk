@@ -47,4 +47,4 @@ Any suggestions on how to improve the script etc are appreciated as I’ve only 
 
 ~~View/Download the script at <a title="equk osx github" href="https://github.com/equk/osx" target="_blank">github</a>~~
 
-Updated link: <a href="https://github.com/equk/macos/blob/master/old/osx_user_backup.sh" target="_blank"><i class="fa fa-github-alt"></i> github</a>
+Updated link: <a href="https://github.com/equk/macos/blob/master/old/osx_user_backup.sh" target="_blank"><i class="fa-brands fa-github"></i> github</a>

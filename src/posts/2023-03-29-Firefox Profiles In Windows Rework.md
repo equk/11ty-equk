@@ -42,7 +42,7 @@ It also uses the same preset settings & userChrome styles for each.
 
 Clone or download the repo
 
-<a class="github" href="https://github.com/equk/ffox_profiles_win" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> ffox_profiles_win</a>
+<a class="github" href="https://github.com/equk/ffox_profiles_win" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> ffox_profiles_win</a>
 
 Edit `ffox_profiles.ps1` & add profiles you require to the `profiles` array
 

@@ -22,7 +22,7 @@ Esbuild only needs to run once on each build as it's just bundling our page java
 
 <blockquote><p>Our current build tools for the web are 10-100x slower than they could be.<br/>The main goal of the esbuild bundler project is to bring about a new era of build tool performance, and create an easy-to-use modern bundler along the way.</p>
 <br/>
-<cite><i class="fa fa-link"></i> <a href="https://esbuild.github.io/" target="_blank" rel="noopener noreferrer">esbuild - An extremely fast bundler for the web</a></cite></blockquote>
+<cite><i class="fa-solid fa-link"></i> <a href="https://esbuild.github.io/" target="_blank" rel="noopener noreferrer">esbuild - An extremely fast bundler for the web</a></cite></blockquote>
 
 ## Run esbuild Before Build
 
@@ -40,7 +40,7 @@ Run esbuild before eleventy by using `eleventy.before`.
   })
 ```
 
-<i class="fa fa-link"></i> <a href="https://www.11ty.dev/docs/events/#eleventy.before" target="_blank" rel="noopener noreferrer">Eleventy Documentation - Configuration - Events - eleventy.before</a>
+<i class="fa-solid fa-link"></i> <a href="https://www.11ty.dev/docs/events/#eleventy.before" target="_blank" rel="noopener noreferrer">Eleventy Documentation - Configuration - Events - eleventy.before</a>
 
 ## Reference Javascript
 
@@ -83,4 +83,4 @@ src/_assets/js/
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

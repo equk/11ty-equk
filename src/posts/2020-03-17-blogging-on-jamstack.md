@@ -85,4 +85,4 @@ cache-control: public,max-age=2592000
 ```
 All scripts & configs mentioned in this article are available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>

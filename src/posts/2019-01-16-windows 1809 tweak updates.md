@@ -19,7 +19,7 @@ url: ""
 
 <p class="text-center"><img src="/media/images/2015/09/Windows10Logo.png" alt="win10logo"></p><br/>
 
-As it's the new year I've updated my windows tweak scripts on <a href="https://github.com/equk/windows" target="_blank"><i class="fa fa-github-alt"></i> github</a> to reflect changes in Windows 10 1809.
+As it's the new year I've updated my windows tweak scripts on <a href="https://github.com/equk/windows" target="_blank"><i class="fa-brands fa-github"></i> github</a> to reflect changes in Windows 10 1809.
 
 ## Changes
 
@@ -63,4 +63,4 @@ _It is possible to remove cortana after removing msedge._
 
 _Some windows updates reinstall Cortana & Edge (they can be removed again with scripts)_
 
-More information regarding the scripts can be found on <a href="https://github.com/equk/windows" target="_blank"><i class="fa fa-github-alt"></i> github</a>.
+More information regarding the scripts can be found on <a href="https://github.com/equk/windows" target="_blank"><i class="fa-brands fa-github"></i> github</a>.

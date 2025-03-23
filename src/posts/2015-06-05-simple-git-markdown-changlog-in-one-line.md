@@ -35,7 +35,7 @@ On running the script you get empty newlines (oh noes, must regex in python/ruby
 git log --pretty=format:"* %aD %s  %n%b" --date=short | sed '/^\s*$/d'
 ```
 
-example (4 lines from my <a href="https://github.com/equk/linux" target="_blank">linux repo on <i class="fa fa-github-alt"></i>github</a>)
+example (4 lines from my <a href="https://github.com/equk/linux" target="_blank">linux repo on <i class="fa-brands fa-github"></i>github</a>)
 
     * Thu, 4 Jun 2015 22:22:08 +0100 updated README - new custom kernel etc
     * Sun, 24 May 2015 22:11:25 +0100 added more firefox about:config tweaks

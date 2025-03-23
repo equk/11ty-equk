@@ -28,11 +28,11 @@ Configuring Dnscrypt
 ---------------
 
 Changing dnscrypt is pretty easy.
-Details of various providers can be found on <a href="http://dnscrypt.org/" target="_blank">dnscrypt.org</a> & <a href="https://github.com/jedisct1/dnscrypt-proxy/blob/master/dnscrypt-resolvers.csv" target="_blank"><i class="fa fa-github-alt"></i> dnscrypt-proxy github</a>
+Details of various providers can be found on <a href="http://dnscrypt.org/" target="_blank">dnscrypt.org</a> & <a href="https://github.com/jedisct1/dnscrypt-proxy/blob/master/dnscrypt-resolvers.csv" target="_blank"><i class="fa-brands fa-github"></i> dnscrypt-proxy github</a>
 
-It's also possible to setup dnscrypt on your own nameserver using <a href="https://github.com/Cofyc/dnscrypt-wrapper" target="_blank"><i class="fa fa-github-alt"></i> dnscrypt-wrapper</a>.
+It's also possible to setup dnscrypt on your own nameserver using <a href="https://github.com/Cofyc/dnscrypt-wrapper" target="_blank"><i class="fa-brands fa-github"></i> dnscrypt-wrapper</a>.
 
-**<i class="fa fa-linux"></i> setup dnscrypt on linux**
+**<i class="fa-brands fa-linux"></i> setup dnscrypt on linux**
 
 If you installed dnscrypt using the default package manager there should be a config file within conf.d.
 All you need to do is edit this file and replace the relevant lines.
@@ -63,7 +63,7 @@ You can also see the status of dnscrypt with 'systemctl status dnscrypt-proxy' o
     Apr 07 15:58:50 dnscrypt-proxy[377]: [INFO] Proxying from 127.0.0.1:53 to 178.216.201.222:2053
 
 
-**<i class="fa fa-windows"></i> setup dnscrypt on windows**
+**<i class="fa-brands fa-windows"></i> setup dnscrypt on windows**
 
 <a href="https://github.com/jedisct1/dnscrypt-proxy/blob/master/README-WINDOWS.markdown" target="_blank">The best guide for windows setup can be found on the dnscrypt-proxy github.</a>
 

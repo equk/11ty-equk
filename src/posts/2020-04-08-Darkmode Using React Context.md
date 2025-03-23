@@ -109,4 +109,4 @@ const ToggleTheme = () => {
 
 This project can be downloaded from github.
 
-<a class="github" href="https://github.com/equk/darkmode-react-context" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> Download</a>
+<a class="github" href="https://github.com/equk/darkmode-react-context" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Download</a>

@@ -17,7 +17,7 @@ image:
 
 I have been using neovim for a while & was excited about the new features coming in 0.5 so started thinking about changing my config to lua a while ago.
 
-Initially I installed neovim 0.5 beta & used it for `rust` using `rust-analyzer` with `nvim_lsp`. ( 11 Apr 2021 <i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/neovim-lua/commit/fd8701e56638a00ff00fa7181dfdb39fa169357b" target="_blank">/equk/neovim-lua/</a> )
+Initially I installed neovim 0.5 beta & used it for `rust` using `rust-analyzer` with `nvim_lsp`. ( 11 Apr 2021 <i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/neovim-lua/commit/fd8701e56638a00ff00fa7181dfdb39fa169357b" target="_blank">/equk/neovim-lua/</a> )
 
 I was really happy with how it worked but held off of converting my full config to lua until 0.5 was officially released.
 
@@ -32,13 +32,13 @@ I was really happy with how it worked but held off of converting my full config 
 > The Language Server Protocol (LSP) is an open, JSON-RPC-based protocol for use between source code editors or integrated development environments (IDEs) and servers that provide programming language-specific features.<br />
 > LSP was originally developed for Microsoft Visual Studio Code and is now an open standard.
 
-<i class="fa fa-link"></i> <a href="https://github.com/Microsoft/language-server-protocol" target="_blank" rel="noopener noreferrer">Language Server Protocol on Github</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/Microsoft/language-server-protocol" target="_blank" rel="noopener noreferrer">Language Server Protocol on Github</a>
 
 ### Tree-sitter
 
 > Tree-sitter is a parser generator tool and an incremental parsing library. It can build a concrete syntax tree for a source file and efficiently update the syntax tree as the source file is edited.
 
-<i class="fa fa-link"></i> <a href="https://github.com/tree-sitter/tree-sitter" target="_blank" rel="noopener noreferrer">Tree-sitter on Github</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/tree-sitter/tree-sitter" target="_blank" rel="noopener noreferrer">Tree-sitter on Github</a>
 
 
 ## Improvements
@@ -114,9 +114,9 @@ So far I have key mappings setup for
 - [x] live grep (search within files)
 - [x] git files (without preview)
 
-<i class="fa fa-youtube-play yt-red"></i> <a href="https://www.youtube.com/watch?v=8SqFt5h2Lsg" target="_blank" rel="noopener noreferrer">tjdevries - Why Telescope?</a><br />
-<i class="fa fa-youtube-play yt-red"></i> <a href="https://www.youtube.com/watch?v=2tO2sT7xX2k" target="_blank" rel="noopener noreferrer">Vim Telescope: The Ultimate Fuzzy Finder</a><br />
-<i class="fa fa-github-alt"></i> <a href="https://github.com/nvim-telescope/telescope.nvim" target="_blank" rel="noopener noreferrer">nvim-telescope/telescope.nvim</a>
+<i class="fa-brands fa-youtube yt-red"></i> <a href="https://www.youtube.com/watch?v=8SqFt5h2Lsg" target="_blank" rel="noopener noreferrer">tjdevries - Why Telescope?</a><br />
+<i class="fa-brands fa-youtube yt-red"></i> <a href="https://www.youtube.com/watch?v=2tO2sT7xX2k" target="_blank" rel="noopener noreferrer">Vim Telescope: The Ultimate Fuzzy Finder</a><br />
+<i class="fa-brands fa-github"></i> <a href="https://github.com/nvim-telescope/telescope.nvim" target="_blank" rel="noopener noreferrer">nvim-telescope/telescope.nvim</a>
 
 ### Linting
 
@@ -139,14 +139,14 @@ I notice there are people looking into adding linting using language servers etc
 
 Most of the configuration was simple using the documentation provided on github by plugin developers but I did read a few articles & browsed other users configs which helped.
 
-<i class="fa fa-link"></i> <a href="https://github.com/tjdevries/config_manager" target="_blank" rel="noopener noreferrer">tjdevries - config_manager</a><br />
-<i class="fa fa-link"></i> <a href="https://github.com/nanotee/nvim-lua-guide" target="_blank" rel="noopener noreferrer">nanotee - neovim lua guide</a><br />
-<i class="fa fa-link"></i> <a href="https://sharksforarms.dev/posts/neovim-rust/" target="_blank" rel="noopener noreferrer">sharksforarms  - Neovim and Rust</a><br />
-<i class="fa fa-link"></i> <a href="https://github.com/neovim/neovim" target="_blank" rel="noopener noreferrer">Neovim on Github</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/tjdevries/config_manager" target="_blank" rel="noopener noreferrer">tjdevries - config_manager</a><br />
+<i class="fa-solid fa-link"></i> <a href="https://github.com/nanotee/nvim-lua-guide" target="_blank" rel="noopener noreferrer">nanotee - neovim lua guide</a><br />
+<i class="fa-solid fa-link"></i> <a href="https://sharksforarms.dev/posts/neovim-rust/" target="_blank" rel="noopener noreferrer">sharksforarms  - Neovim and Rust</a><br />
+<i class="fa-solid fa-link"></i> <a href="https://github.com/neovim/neovim" target="_blank" rel="noopener noreferrer">Neovim on Github</a>
 
 ## Neovim Configs
 
 You can find my dotfiles on github.<br />
 I also have a seperate neovim-lua repo which shows how the configs took shape over time while I was testing new features.
 
-<a class="github" href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> dotfiles</a>  <a class="github" href="https://github.com/equk/neovim-lua" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> neovim-lua</a>
+<a class="github" href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> dotfiles</a>  <a class="github" href="https://github.com/equk/neovim-lua" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> neovim-lua</a>

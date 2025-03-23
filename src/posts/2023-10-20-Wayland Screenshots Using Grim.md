@@ -38,7 +38,7 @@ The scripts save to `$HOME/Pictures/screenshots/` with unique filename `dd-mm-YY
 
 These scripts are available in the `bin` directory in my `dotfiles` repo on github.
 
-<a class="github" href="https://github.com/equk/dotfiles/tree/master/configs/bin" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> dotfiles/config/bin</a>
+<a class="github" href="https://github.com/equk/dotfiles/tree/master/configs/bin" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> dotfiles/config/bin</a>
 
 
 ### Using hyprctl
@@ -47,7 +47,7 @@ hyprland has a utility (`hyprctl`) which allows a user to get information & give
 
 <blockquote>
 <p>hyprctl is a utility for controlling some parts of the compositor from a CLI or a script</p><br/>
-<cite><i class="fa fa-link"></i> <a href="https://wiki.hyprland.org/Configuring/Using-hyprctl/" target="_blank" rel="noopener noreferrer">Hyprland Wiki - Using hyprctl</a></cite>
+<cite><i class="fa-solid fa-link"></i> <a href="https://wiki.hyprland.org/Configuring/Using-hyprctl/" target="_blank" rel="noopener noreferrer">Hyprland Wiki - Using hyprctl</a></cite>
 </blockquote>
 
 I am using this with `jq` in the scripts to get the active monitor & active window.
@@ -56,4 +56,4 @@ I am using this with `jq` in the scripts to get the active monitor & active wind
 
 The source for my hyprland config is available in my dotfiles repo on github.
 
-<a class="github" href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> dotfiles</a>
+<a class="github" href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> dotfiles</a>

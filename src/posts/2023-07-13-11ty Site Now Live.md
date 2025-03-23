@@ -22,7 +22,7 @@ I'm hoping to move everything over in the future and use this site as my main bl
 
 I used `eleventy-base-blog` as a start which has a large number of features already.
 
-<i class="fa fa-link"></i> <a href="https://github.com/11ty/eleventy-base-blog/" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog - Github</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/11ty/eleventy-base-blog/" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog - Github</a>
 
 I have added:
 
@@ -185,4 +185,4 @@ Sitemap generation is based on `posts` & `pages` only _(ignores pagination & tag
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

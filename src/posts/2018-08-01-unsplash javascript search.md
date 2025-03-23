@@ -20,7 +20,7 @@ url: ""
 ---
 
 I thought I'd make this project to show how much you can do with vanilla javascript without any frameworks or templating engines (eg: react, vuejs, ember, jsx)<br/>
-All code for this project is on <a href="https://github.com/equk/unsplash-js-search" target="_blank"><i class="fa fa-github-alt"></i> github</a>
+All code for this project is on <a href="https://github.com/equk/unsplash-js-search" target="_blank"><i class="fa-brands fa-github"></i> github</a>
 
 ## Getting an API Key
 
@@ -53,13 +53,13 @@ Things we will need:
 </body>
 ```
 
-<p class="git-commit"><i class="fa fa-code-fork"></i> created basic html sructure with some css styles <a href="https://github.com/equk/unsplash-js-search/commit/a279fd7e423198acdf210d117fa7c42149ab4073" target="_blank">a279fd7</a></p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> created basic html sructure with some css styles <a href="https://github.com/equk/unsplash-js-search/commit/a279fd7e423198acdf210d117fa7c42149ab4073" target="_blank">a279fd7</a></p>
 
 ## Adding Javascript
 
 Start with some basic consts for using the unsplash API & the selector for the output div.
 
-<i class="fa fa-file-code-o"></i> **public/js/app.js**
+<i class="fa-solid fa-code"></i> **public/js/app.js**
 
 ```javascript
 const API_CLIENTID = "-insert-your-api-key-";
@@ -69,7 +69,7 @@ const imageSection = document.querySelector(".images");
 const API_URL = `https://api.unsplash.com/search/photos?page=1&per_page=20&client_id=${API_CLIENTID}`;
 ```
 
-<p class="git-commit"><i class="fa fa-code-fork"></i> added js file with some basic const variables <a href="https://github.com/equk/unsplash-js-search/commit/40692d7a70fccf09222ed0b93825d1c74bef01dd" target="_blank">40692d7</a></p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added js file with some basic const variables <a href="https://github.com/equk/unsplash-js-search/commit/40692d7a70fccf09222ed0b93825d1c74bef01dd" target="_blank">40692d7</a></p>
 
 ## First API Request
 
@@ -105,7 +105,7 @@ const API_URL = `https://api.unsplash.com/search/photos?page=1&per_page=20&clien
 + }
 ```
 
-<p class="git-commit"><i class="fa fa-code-fork"></i> setup a fetch request to pull in json & log to console <a href="https://github.com/equk/unsplash-js-search/commit/3b4106e9a260fb6cb57ddb66a2b854ba5529c009" target="_blank">3b4106e</a></p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> setup a fetch request to pull in json & log to console <a href="https://github.com/equk/unsplash-js-search/commit/3b4106e9a260fb6cb57ddb66a2b854ba5529c009" target="_blank">3b4106e</a></p>
 
 So far we have javascript which sends a request using the `fetch()` API which creates a `promise` that resolves a `response` & writes it to the `console`.
 
@@ -148,11 +148,11 @@ function search(searchTerm) {
 + }
 ```
 
-<p class="git-commit"><i class="fa fa-code-fork"></i> added function to display images using DOM manipulation <a href="https://github.com/equk/unsplash-js-search/commit/cdaf1410aaae60bfb56028cd8fa0a676eb1f438c" target="_blank">cdaf141</a></p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added function to display images using DOM manipulation <a href="https://github.com/equk/unsplash-js-search/commit/cdaf1410aaae60bfb56028cd8fa0a676eb1f438c" target="_blank">cdaf141</a></p>
 
 We now have some images appearing in the output div but they are all over the place so lets set some CSS for each item turning them into a grid of square images.
 
-<i class="fa fa-file-code-o"></i> **public/css/app.css**
+<i class="fa-solid fa-code"></i> **public/css/app.css**
 
 ```diff
 + img {
@@ -163,7 +163,7 @@ We now have some images appearing in the output div but they are all over the pl
 + }
 ```
 
-<p class="git-commit"><i class="fa fa-code-fork"></i> styled images to be small boxes 350px with grid padding <a href="https://github.com/equk/unsplash-js-search/commit/2813e4d01e434d00aab830963f7b67e6a4e25927" target="_blank">2813e4d</a></p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> styled images to be small boxes 350px with grid padding <a href="https://github.com/equk/unsplash-js-search/commit/2813e4d01e434d00aab830963f7b67e6a4e25927" target="_blank">2813e4d</a></p>
 
 ## Unsplash API Terms
 
@@ -177,7 +177,7 @@ Looking into the Unsplash API Terms there are some rules regarding attribution.
 
 Lets parse more data from the API response and add in more fields (unsplash link, user, profile link).
 
-<i class="fa fa-file-code-o"></i> **public/js/app.js**
+<i class="fa-solid fa-code"></i> **public/js/app.js**
 
 ```javascript
 function displayImages(images) {
@@ -192,7 +192,7 @@ function displayImages(images) {
 }
 ```
 
-<p class="git-commit"><i class="fa fa-code-fork"></i> re-structured displayImages using innerHTML <a href="https://github.com/equk/unsplash-js-search/commit/bbda79bd9125ca0d75e0cbc9a81b37fb84b3a03c" target="_blank">bbda79b</a></p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> re-structured displayImages using innerHTML <a href="https://github.com/equk/unsplash-js-search/commit/bbda79bd9125ca0d75e0cbc9a81b37fb84b3a03c" target="_blank">bbda79b</a></p>
 
 ## Final Design
 
@@ -201,6 +201,6 @@ This is all done in vanilla javascript without the need of any frameworks (jquer
 
 <img src="/media/images/2018/08/unsplash_js_search.jpg" alt="unsplash_js_search_ss">
 
-View the project on <a href="https://github.com/equk/unsplash-js-search" target="_blank"><i class="fa fa-github-alt"></i> github</a>.
+View the project on <a href="https://github.com/equk/unsplash-js-search" target="_blank"><i class="fa-brands fa-github"></i> github</a>.
 
 <p class="text-right"><em>References: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch()</a> / <a href="http://vanilla-js.com/" target="_blank">vanillajs</a>  / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">promises</a> / <a href="https://developer.mozilla.org/en-US/docs/Glossary/DOM" target="_blank">DOM</a>  /  <a href="https://unsplash.com/developers" target="_blank">Unsplash API</a></em></p>

@@ -29,7 +29,7 @@ I am using it to provide reactions to blog posts using bluesky.
 
 Fetching post data requires the dynamic id of the user.
 
-<i class="fa fa-link"></i> <a href="https://docs.bsky.app/docs/advanced-guides/resolving-identities" target="_blank" rel="noopener noreferrer">Resolving Identities | Bluesky</a>
+<i class="fa-solid fa-link"></i> <a href="https://docs.bsky.app/docs/advanced-guides/resolving-identities" target="_blank" rel="noopener noreferrer">Resolving Identities | Bluesky</a>
 
 A users `did` can be found via `/xrpc/app.bsky.actor.getProfile`
 
@@ -50,7 +50,7 @@ Fetch post data via `/xrpc/app.bsky.feed.getPosts`
   }
 ```
 
-<i class="fa fa-link"></i> <a href="https://docs.bsky.app/docs/api/app-bsky-feed-get-posts" target="_blank" rel="noopener noreferrer">app.bsky.feed.getPosts | Bluesky</a>
+<i class="fa-solid fa-link"></i> <a href="https://docs.bsky.app/docs/api/app-bsky-feed-get-posts" target="_blank" rel="noopener noreferrer">app.bsky.feed.getPosts | Bluesky</a>
 
 ## Implementing in Eleventy
 
@@ -76,7 +76,7 @@ The buttons are `svg` images referenced using svg `use` element.
 <blockquote><p>The <strong><code>&lt;use&gt;</code></strong> element takes nodes from within the SVG document, and duplicates them somewhere else.
 The effect is the same as if the nodes were deeply cloned into a non-exposed DOM, then pasted where the <code>use</code> element is.</p>
 <br/>
-<cite><i class="fa fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use" target="_blank" rel="noopener noreferrer">use - SVG: Scalable Vector Graphics | MDN</a></cite>
+<cite><i class="fa-solid fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use" target="_blank" rel="noopener noreferrer">use - SVG: Scalable Vector Graphics | MDN</a></cite>
 </blockquote>
 
 ### Non JS
@@ -87,8 +87,8 @@ If javascript is disabled a element is still shown with a link allowing users to
 
 Info on the code changes made to implement this component can be seen on Github.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/pull/18" target="_blank" rel="noopener noreferrer">Bluesky Post Web Component pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/pull/18" target="_blank" rel="noopener noreferrer">Bluesky Post Web Component pull request on github</a>
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

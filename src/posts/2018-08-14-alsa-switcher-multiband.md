@@ -38,4 +38,4 @@ The USB DAC (speakers) has no EQ & the USB Headset has a Multiband EQ (based on 
 
 ## View & Download
 
-<a href="https://github.com/equk/alsa-sw-eq" target="_blank" rel="noopener noreferrer" aria-label="view alsa-sw-eq on github"><i class="fa fa-github-alt"></i> github repo for alsa-sw-eq</a>
+<a href="https://github.com/equk/alsa-sw-eq" target="_blank" rel="noopener noreferrer" aria-label="view alsa-sw-eq on github"><i class="fa-brands fa-github"></i> github repo for alsa-sw-eq</a>

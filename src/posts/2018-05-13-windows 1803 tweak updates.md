@@ -66,5 +66,5 @@ On a default install windows will attempt to force you to install applications v
 
 *note: install chrome, brave or firefox before you remove microsoft edge browser*
 
-More information regarding the scripts can be found on <a href="https://github.com/equk/windows" target="_blank"><i class="fa fa-github-alt"></i> github</a>.
+More information regarding the scripts can be found on <a href="https://github.com/equk/windows" target="_blank"><i class="fa-brands fa-github"></i> github</a>.
 

@@ -52,7 +52,7 @@ permalink: /2015/05/19/firefox-scripts/
 I made these scripts to utilize multiple profiles while also keeping the tweaks listed above.
 All of these scripts are on my github, if anyone has any suggestions for improvements please leave a comment.
 
-**<i class="fa fa-github-alt"></i> Scripts:**
+**<i class="fa-brands fa-github"></i> Scripts:**
 
 * <a href="https://github.com/equk/linux/blob/master/bin/ffox" target="_blank">ffox</a> - default profile script
 * <a href="https://github.com/equk/linux/blob/master/bin/ffoxdev" target="_blank">ffoxdev</a> - example secondary profile script

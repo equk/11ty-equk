@@ -17,7 +17,7 @@ Image optimization using `@11ty/eleventy-img`
 <blockquote><p>Low level utility to perform build-time image transformations for both vector and raster images.<br/>
 Output multiple sizes, save multiple formats, cache remote images locally. Uses the sharp image processor.</p>
 <br/>
-<cite><i class="fa fa-link"></i> <a href="https://www.11ty.dev/docs/plugins/image/" target="_blank" rel="noopener noreferrer">Image - Eleventy Documentation</a></cite></blockquote>
+<cite><i class="fa-solid fa-link"></i> <a href="https://www.11ty.dev/docs/plugins/image/" target="_blank" rel="noopener noreferrer">Image - Eleventy Documentation</a></cite></blockquote>
 
 ## Features
 
@@ -66,11 +66,11 @@ The generated `picture` element contains `loading="lazy" decoding="async"` to `i
 
 <blockquote><p>The <code>loading</code> attribute on an <code>img</code> element (or the loading attribute on an <code>iframe</code>) can be used to instruct the browser to defer loading of images/iframes that are off-screen until the user scrolls near them.</p>
 <br/>
-<cite><i class="fa fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes" target="_blank" rel="noopener noreferrer">Lazy loading - Web performance | MDN</a></cite></blockquote>
+<cite><i class="fa-solid fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes" target="_blank" rel="noopener noreferrer">Lazy loading - Web performance | MDN</a></cite></blockquote>
 
 
 ## Source Code
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

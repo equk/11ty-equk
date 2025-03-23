@@ -11,7 +11,7 @@ title: torjail - sandboxed torbrowser
 slug: torjail-sandboxed-torbrowser/
 ---
 
-I have decided to opensource this project & it is now available on <a href="https://github.com/equk/torjail" target="_blank"><i class="fa fa-github-alt"></i> github</a>.
+I have decided to opensource this project & it is now available on <a href="https://github.com/equk/torjail" target="_blank"><i class="fa-brands fa-github"></i> github</a>.
 
 **tl-dr:** *this script downloads & runs torbrowser in a sandbox within a seperate windowed X session using Xephyr*
 
@@ -40,4 +40,4 @@ If anything doesn't pass the checksum or GPG checks it tells the user, removes t
     torbrowser https://www.torproject.org/projects/torbrowser.html.en
 
 The script is released under MIT license. (other components have various licenses)
-You can download it from <a href="https://github.com/equk/torjail" target="_blank"><i class="fa fa-github-alt"></i> github</a>
+You can download it from <a href="https://github.com/equk/torjail" target="_blank"><i class="fa-brands fa-github"></i> github</a>

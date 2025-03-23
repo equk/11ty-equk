@@ -26,7 +26,7 @@ I have been thinking of redesigning my blog for a while & maybe even moving away
 I wanted to use a good starting point for the blog so am using the official starter `eleventy-base-blog`.<br/>
 This starter has a lot of features but also will hopefully allow me to learn & extend 11ty.
 
-<p><i class="fa fa-link"></i> <a href="https://github.com/11ty/eleventy-base-blog" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog on github</a></p>
+<p><i class="fa-solid fa-link"></i> <a href="https://github.com/11ty/eleventy-base-blog" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog on github</a></p>
 
 ### First Steps
 
@@ -53,7 +53,7 @@ I did a few things to setup the initial workflow.
   endOfLine: 'lf',
 ```
 
-<p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/blob/1727be315274790934d197d520f8f67fc1bf2869/.prettierrc.js" target="_blank" rel="noopener noreferrer">11ty-equk/.prettierrc.js on github (Jun 10, 2023)</a></p>
+<p><i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/blob/1727be315274790934d197d520f8f67fc1bf2869/.prettierrc.js" target="_blank" rel="noopener noreferrer">11ty-equk/.prettierrc.js on github (Jun 10, 2023)</a></p>
 
 ### First Problem
 
@@ -108,8 +108,8 @@ Building is ok as you can run it sequentially but in dev mode things really don'
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> There is also another problem where livereload doesn't do a full page reload on css changes<br/>
-    <i class="fa fa-link"></i> <a href="/2023/06/21/11ty-fixing-livereload-client-for-inline-styles/">11ty Fixing Livereload Client For Inline Styles</a>
+    <i class="fa-solid fa-info-circle"></i> There is also another problem where livereload doesn't do a full page reload on css changes<br/>
+    <i class="fa-solid fa-link"></i> <a href="/2023/06/21/11ty-fixing-livereload-client-for-inline-styles/">11ty Fixing Livereload Client For Inline Styles</a>
   </div>
 </article>
 
@@ -122,7 +122,7 @@ Building is ok as you can run it sequentially but in dev mode things really don'
     "dev:html": "npx @11ty/eleventy --serve --quiet",
 ```
 
-<p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/blob/f76d4e404fcc9ff0a08773bc93f4e06fda4fe7b3/package.json" target="_blank" rel="noopener noreferrer">11ty-equk/package.json on github (Jun 21, 2023)</a></p>
+<p><i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/blob/f76d4e404fcc9ff0a08773bc93f4e06fda4fe7b3/package.json" target="_blank" rel="noopener noreferrer">11ty-equk/package.json on github (Jun 21, 2023)</a></p>
 
 Integrating `postcss` & `tailwindcss` on this project has gone over a few iterations but I finally got it working quickly with livereload & everything working.
 
@@ -174,7 +174,7 @@ I based the variables & code on the shortcode implementation already in `elevent
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> Consider where images are stored & generated when using automatic optimization<br/>
+    <i class="fa-solid fa-info-circle"></i> Consider where images are stored & generated when using automatic optimization<br/>
   </div>
 </article>
 
@@ -206,7 +206,7 @@ Trying to keep clientside javascript to a minimum.
 
 ## Adding Pagination
 
-<p><i class="fa fa-link"></i> <a href="https://www.11ty.dev/docs/pagination/" target="_blank" rel="noopener noreferrer">Pagination - Eleventy Docs</a></p>
+<p><i class="fa-solid fa-link"></i> <a href="https://www.11ty.dev/docs/pagination/" target="_blank" rel="noopener noreferrer">Pagination - Eleventy Docs</a></p>
 
 ## Syndication Feed Generation
 
@@ -299,4 +299,4 @@ async function preEleventy() {
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

@@ -43,7 +43,7 @@ Dec 2, 2024 - 📦🔒 update eslint related packages to fix CVE-2024-21539
 ::: note
 I wrote a blogpost about using pnpm to create package version overrides to fix security issues
 
-<p><i class="fa fa-link"></i> <a href="/2021/05/27/fix-security-issues-using-overrides/" target="_blank" rel="noopener noreferrer">May 27, 2021 - Fix Security Issues Using PNPM Overrides</a></p>
+<p><i class="fa-solid fa-link"></i> <a href="/2021/05/27/fix-security-issues-using-overrides/" target="_blank" rel="noopener noreferrer">May 27, 2021 - Fix Security Issues Using PNPM Overrides</a></p>
 :::
 
 ## 11ty Updates
@@ -57,4 +57,4 @@ Oct 2, 2024 - 📦 switch eleventy to 3.0.0 release
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

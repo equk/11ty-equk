@@ -34,8 +34,8 @@ There are a few options on implementing webmentions, some have opted to use clie
 
 After reading a few articles I opted to have eleventy fetch the webmentions on build.
 
-<i class="fa fa-link"></i> <a href="https://mxb.dev/blog/using-webmentions-on-static-sites/" target="_blank" rel="noopener noreferrer">Using Webmentions in Eleventy - Max Böck</a><br/>
-<i class="fa fa-link"></i> <a href="https://rknight.me/adding-webmentions-to-your-site/" target="_blank" rel="noopener noreferrer">Adding Webmentions to Your Site - Robb Knight</a>
+<i class="fa-solid fa-link"></i> <a href="https://mxb.dev/blog/using-webmentions-on-static-sites/" target="_blank" rel="noopener noreferrer">Using Webmentions in Eleventy - Max Böck</a><br/>
+<i class="fa-solid fa-link"></i> <a href="https://rknight.me/adding-webmentions-to-your-site/" target="_blank" rel="noopener noreferrer">Adding Webmentions to Your Site - Robb Knight</a>
 
 In order to implement this <a href="https://webmention.io/" target="_blank" rel="noopener noreferrer">webmention.io</a> & <a href="https://brid.gy/" target="_blank" rel="noopener noreferrer">brid.gy</a> need to be setup.
 
@@ -134,13 +134,13 @@ The final fetch implementation involves saving all webmentions to `_cache` & the
 
 The final filter implementation filters by `url` & uses `sanitize-html` on the content of comments, only allowing a few specific html tags (no iframes etc).
 
-<i class="fa fa-link"></i> <a href="https://mxb.dev/blog/using-webmentions-on-static-sites/" target="_blank" rel="noopener noreferrer">Using Webmentions in Eleventy - Max Böck</a><br/>
+<i class="fa-solid fa-link"></i> <a href="https://mxb.dev/blog/using-webmentions-on-static-sites/" target="_blank" rel="noopener noreferrer">Using Webmentions in Eleventy - Max Böck</a><br/>
 
 ## Design
 
 The most used design seems to have originated from Robb Knight & was inspired by Zach Leatherman.
 
-<i class="fa fa-link"></i> <a href="https://rknight.me/adding-webmentions-to-your-site/" target="_blank" rel="noopener noreferrer">Adding Webmentions to Your Site - Robb Knight</a>
+<i class="fa-solid fa-link"></i> <a href="https://rknight.me/adding-webmentions-to-your-site/" target="_blank" rel="noopener noreferrer">Adding Webmentions to Your Site - Robb Knight</a>
 
 I tweaked the styles slightly but the core design comes directly from that article.<br/>
 Grouping of different mentions (likes, boosts, comments) was also taken from the article.
@@ -232,4 +232,4 @@ Deployed in 19s
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

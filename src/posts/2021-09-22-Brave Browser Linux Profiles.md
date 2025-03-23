@@ -58,4 +58,4 @@ I personally use a different profile for Google services to keep things seperate
 
 You can download my linux brave profile scripts from Github.
 
-<a class="github" href="https://github.com/equk/brave-profiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> brave-profiles</a>
+<a class="github" href="https://github.com/equk/brave-profiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> brave-profiles</a>

@@ -16,4 +16,4 @@ I don't really want symlinks everywhere so decided to copy the files instead.*
 
 The script is just a simple bash script with a few variables, it might be useful for other people so I have <a href="https://github.com/equk/linux/blob/master/scripts/dot_copy.sh" target="_blank">uploaded it to github</a> in my linux/scripts repo.
 
-<a href="https://github.com/equk/linux/blob/master/scripts/dot_copy.sh" target="_blank"><i class="fa fa-github-alt"></i> view dot_copy on github</a>
+<a href="https://github.com/equk/linux/blob/master/scripts/dot_copy.sh" target="_blank"><i class="fa-brands fa-github"></i> view dot_copy on github</a>

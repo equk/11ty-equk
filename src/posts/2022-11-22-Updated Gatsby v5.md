@@ -20,7 +20,7 @@ image:
 
 The site is now running Gatsby v5 🎉
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/18" target="_blank">Gatsby v5 pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/18" target="_blank">Gatsby v5 pull request on github</a>
 
 ## New Features
 
@@ -29,7 +29,7 @@ The site is now running Gatsby v5 🎉
 - [x] GraphiQL v2
 
 <blockquote>Gatsby 5 introduces the Slices API and Partial Hydration (Beta). Slices unlock up to 90% reduction in build duration for content changes in highly shared components, Partial Hydration allows you to ship only the necessary JavaScript to the browser.<br /><br />
-<i class="fa fa-link"></i>  <a href="https://www.gatsbyjs.com/docs/reference/release-notes/v5.0/" target="_blank" rel="noopener noreferrer">Gatsby v5 Release Notes</a></blockquote>
+<i class="fa-solid fa-link"></i>  <a href="https://www.gatsbyjs.com/docs/reference/release-notes/v5.0/" target="_blank" rel="noopener noreferrer">Gatsby v5 Release Notes</a></blockquote>
 
 ## Dependency Changes
 
@@ -38,7 +38,7 @@ The site is now running Gatsby v5 🎉
 
 ## Migration from v4
 
-<i class="fa fa-link"></i>  <a href="https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v4-to-v5/" target="_blank" rel="noopener noreferrer">Migrating from v4 to v5 guide</a>
+<i class="fa-solid fa-link"></i>  <a href="https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v4-to-v5/" target="_blank" rel="noopener noreferrer">Migrating from v4 to v5 guide</a>
 
 There seem to be a few breaking changes to v5 but the only one this site seemed to be effected by was the graphql changes.
 
@@ -100,8 +100,8 @@ As you can see from the diff the changes are relatively simple.
 
 You can find the full pull request for Gatsby v5 update on github.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/18" target="_blank">Gatsby v5 pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/18" target="_blank">Gatsby v5 pull request on github</a>
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>
