@@ -20,7 +20,7 @@ This workaround doesn't seem to work on 11ty 3.x
 
 See new blog post below for how to fix inline css & livereload with eleventy 3.x
 
-<p><i class="fa fa-link"></i> <a href="/2024/12/06/11ty-fix-inline-styles-livereload/" target="_blank" rel="noopener noreferrer">11ty Fix Inline Styles Livereload</a></p>
+<p><i class="fa-solid fa-link"></i> <a href="/2024/12/06/11ty-fix-inline-styles-livereload/" target="_blank" rel="noopener noreferrer">11ty Fix Inline Styles Livereload</a></p>
 :::
 
 While working on the site I noticed livereload seemed to be quirky on css changes.
@@ -113,4 +113,4 @@ Now the script is only inserted on `dev` mode & not on `build` mode.
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

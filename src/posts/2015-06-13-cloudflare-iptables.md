@@ -58,7 +58,7 @@ ip6tables -A INPUT -p tcp --dport http -j DROP
 ip6tables -A INPUT -p tcp --dport https -j DROP
 ```
 
-The script is also available <a href="https://github.com/equk/linux/blob/master/scripts/cf_iptables.sh" target="_blank">on my <i class="fa fa-github-alt"></i>github</a>.
+The script is also available <a href="https://github.com/equk/linux/blob/master/scripts/cf_iptables.sh" target="_blank">on my <i class="fa-brands fa-github"></i>github</a>.
 
 I also also posted this script <a href="https://www.reddit.com/r/webdev/comments/2i7wa9/behind_proxy_cloudflare_cdn_just_give_me_the/" target="_blank">last year (Oct 2014) on reddit as a response</a> to a PHP library.
 I've been using it on servers since 2013.

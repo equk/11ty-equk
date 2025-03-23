@@ -14,7 +14,7 @@ I stumbled upon an app which seems out of place & has many strange permissions.
 
 <article class="message is-info">
   <div class="message-body">
-    <p><i class="fa fa-info-circle"></i> The app is advertised as a way to check your user profile for a website.</p>
+    <p><i class="fa-solid fa-info-circle"></i> The app is advertised as a way to check your user profile for a website.</p>
   </div>
 </article>
 
@@ -38,7 +38,7 @@ This raises some questions regarding Google Play.
 
 <article class="message is-danger">
   <div class="message-body">
-    <p><i class="fa fa-exclamation-triangle"></i> I reported this to Google Play on 11th May 2021, App is still available for users to download</p>
+    <p><i class="fa-solid fa-exclamation-triangle"></i> I reported this to Google Play on 11th May 2021, App is still available for users to download</p>
   </div>
 </article>
 
@@ -81,7 +81,7 @@ Looking at the quotes above it seems these libraries allow the app to
 
 In addition there are entries relating to `faceMesh`
 
-<blockquote><strong><i class="fa fa-link"></i>  <a href="https://github.com/tensorflow/tfjs-models/tree/master/facemesh" target="_blank" rel="noopener noreferrer">Google Tensorflow Face Mesh</a></strong><br /><br />
+<blockquote><strong><i class="fa-solid fa-link"></i>  <a href="https://github.com/tensorflow/tfjs-models/tree/master/facemesh" target="_blank" rel="noopener noreferrer">Google Tensorflow Face Mesh</a></strong><br /><br />
 MediaPipe Facemesh is a lightweight machine learning pipeline predicting 486 3D facial landmarks to infer the approximate surface geometry of a human face</blockquote>
 
 ### Cryptocurrency
@@ -92,7 +92,7 @@ Here is an example of a push notification found in the code.
 
 <article class="message is-success">
   <div class="message-body">
-    <p><strong><i class="fa fa-btc"></i>  AppName</strong></p>
+    <p><strong><i class="fa-brands fa-btc"></i>  AppName</strong></p>
     <p>inviting you to join $XXX Offering up to 18 different types of currencies,<br /> $XXX’s crypto wallet is fast, safe, and secure</p>
   </div>
 </article>
@@ -116,7 +116,7 @@ A few observations / opinions
 
 I would think biometric libraries relating to KYC like 3D facemap should trigger <a href="https://developers.google.com/android/play-protect/" target="_blank" rel="noopener noreferrer">Google's Play Protect</a> if the app is not in the banking category.
 
-<blockquote><strong><i class="fa fa-link"></i>  <a href="https://en.wikipedia.org/wiki/Know_your_customer" target="_blank" rel="noopener noreferrer">Know your customer</a></strong><br /><br />
+<blockquote><strong><i class="fa-solid fa-link"></i>  <a href="https://en.wikipedia.org/wiki/Know_your_customer" target="_blank" rel="noopener noreferrer">Know your customer</a></strong><br /><br />
 The know your customer or know your client (KYC) guidelines in financial services require that professionals make an effort to verify the identity, suitability, and risks involved with maintaining a business relationship</blockquote>
 
 ## Tools Used

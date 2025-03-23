@@ -33,5 +33,5 @@ torbrowser.sh
 +TORJAIL_HOME="${TORJAIL_RAM}/tor-browser_en-US/Browser"
 ```
 
-The main features are <a href="https://equk.co.uk/2016/01/13/torjail-sandboxed-torbrowser/" target="_blank">still as before</a> (<a href="https://www.torproject.org/docs/verifying-signatures.html.en" target="_blank"><i class="fa fa-lock"></i>GPG verification</a>, auto-update etc).
-You can download the updated version from <a href="https://github.com/equk/torjail" target="_blank"><i class="fa fa-github-alt"></i> github</a>
+The main features are <a href="https://equk.co.uk/2016/01/13/torjail-sandboxed-torbrowser/" target="_blank">still as before</a> (<a href="https://www.torproject.org/docs/verifying-signatures.html.en" target="_blank"><i class="fa-solid fa-lock"></i>GPG verification</a>, auto-update etc).
+You can download the updated version from <a href="https://github.com/equk/torjail" target="_blank"><i class="fa-brands fa-github"></i> github</a>

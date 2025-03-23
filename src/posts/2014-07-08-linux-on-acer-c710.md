@@ -73,4 +73,4 @@ You may need to setup the keyboard mapping using ***setxkbmap*** (dependant on l
 
 I use ***wicd*** for wifi configuration
 
-I have a dotfiles style repo on <a href="https://github.com/equk/c710" target="_blank"><i class="fa fa-github-alt"></i> github for linux on the c710</a>
+I have a dotfiles style repo on <a href="https://github.com/equk/c710" target="_blank"><i class="fa-brands fa-github"></i> github for linux on the c710</a>

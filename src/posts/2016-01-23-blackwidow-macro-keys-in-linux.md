@@ -17,7 +17,7 @@ If you really wanted you could also rebind keys to existing keyboard functions u
 
 The init code was taken from the windows drivers using <a href="https://wiki.wireshark.org/CaptureSetup/USB" target="_blank" rel="noopener noreferrer">wireshark usb capture</a>.
 
-The source code is available on <a href="https://github.com/equk/blackwidow_macro" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt"></i> github</a> under MIT license.
+The source code is available on <a href="https://github.com/equk/blackwidow_macro" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> github</a> under MIT license.
 
 ::: note
 The program requires root access due to using <a href="http://libusb.info/" target="_blank" rel="noopener noreferrer">libusb</a> to send to the device over USB.<br/>
@@ -76,4 +76,4 @@ Razer BlackWidow keyboards from 2014 onwards also use cheaper cherry clone switc
 
 The source for this project is available on github.
 
-<a class="github" href="https://github.com/equk/blackwidow_macro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> blackwidow_macro</a>
+<a class="github" href="https://github.com/equk/blackwidow_macro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> blackwidow_macro</a>

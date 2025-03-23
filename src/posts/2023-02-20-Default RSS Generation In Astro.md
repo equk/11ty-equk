@@ -23,7 +23,7 @@ There are two problems with this:
 - [ ] Astro does not have atom support
 - [ ] MDX is not supported
 
-<i class="fa fa-link"></i> <a href="https://docs.astro.build/en/guides/rss/#including-full-post-content" target="_blank" rel="noopener noreferrer">RSS 🚀 Astro Documentation</a>
+<i class="fa-solid fa-link"></i> <a href="https://docs.astro.build/en/guides/rss/#including-full-post-content" target="_blank" rel="noopener noreferrer">RSS 🚀 Astro Documentation</a>
 
 I personally don't have any mdx content in posts so using `post.body` with `markdown-it` should be ok.
 
@@ -46,7 +46,7 @@ export const rssSchema = z.object({
 });
 ```
 
-<i class="fa fa-link"></i> <a href="https://github.com/withastro/astro/blob/81dce94f2a6db598bd9e47fc2a4b9d713e58f286/packages/astro-rss/src/schema.ts" target="_blank" rel="noopener noreferrer">withastro/astro/packages/astro-rss/src/schema.ts on Github</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/withastro/astro/blob/81dce94f2a6db598bd9e47fc2a4b9d713e58f286/packages/astro-rss/src/schema.ts" target="_blank" rel="noopener noreferrer">withastro/astro/packages/astro-rss/src/schema.ts on Github</a>
 
 - [ ] Output has no CDATA for HTML
 
@@ -54,7 +54,7 @@ The output does not use CDATA sections for HTML.
 
 > CDATA sections may occur anywhere character data may occur; they are used to escape blocks of text containing characters which would otherwise be recognized as markup.
 
-<i class="fa fa-link"></i> <a href="https://www.w3.org/TR/REC-xml/#sec-cdata-sect" target="_blank" rel="noopener noreferrer">W3C Extensible Markup Language (XML) 1.0 (Fifth Edition)</a>
+<i class="fa-solid fa-link"></i> <a href="https://www.w3.org/TR/REC-xml/#sec-cdata-sect" target="_blank" rel="noopener noreferrer">W3C Extensible Markup Language (XML) 1.0 (Fifth Edition)</a>
 
 ## Adding Content
 
@@ -139,7 +139,7 @@ Update February 22, 2023
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> I am now using a script to generate atom feeds & do not recommend using <code>@astrojs/rss</code>
+    <i class="fa-solid fa-info-circle"></i> I am now using a script to generate atom feeds & do not recommend using <code>@astrojs/rss</code>
   </div>
 </article>
 
@@ -149,7 +149,7 @@ Update February 22, 2023
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> April 26, 2023 - More fields were added to the astro-rss schema & the documentation was updated<br/>
-    <i class="fa fa-link"></i> <a href="https://github.com/withastro/astro/commit/4ea716e5692d23361e9301330ce52733b3d05b01" target="_blank" rel="noopener noreferrer">Commit 4ea716e - withastro/astro on Github</a>
+    <i class="fa-solid fa-info-circle"></i> April 26, 2023 - More fields were added to the astro-rss schema & the documentation was updated<br/>
+    <i class="fa-solid fa-link"></i> <a href="https://github.com/withastro/astro/commit/4ea716e5692d23361e9301330ce52733b3d05b01" target="_blank" rel="noopener noreferrer">Commit 4ea716e - withastro/astro on Github</a>
   </div>
 </article>

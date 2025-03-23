@@ -55,7 +55,7 @@ I thought the easiest & cleanest way was to add `pnpm i` to `netlify.toml`.
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 ```
 
-<p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/commit/c713c72b359fc7584d8a8ccb744d536ab68137d0#diff-ab8f79b68b7adff7a07db953bf453f3c5aa6ade98d2b1b67d8432b36392489ed" target="_blank" rel="noopener noreferrer">equk/equk-gatsby@<tt>c713c72</tt></a>
+<p><i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/commit/c713c72b359fc7584d8a8ccb744d536ab68137d0#diff-ab8f79b68b7adff7a07db953bf453f3c5aa6ade98d2b1b67d8432b36392489ed" target="_blank" rel="noopener noreferrer">equk/equk-gatsby@<tt>c713c72</tt></a>
 </p>
 
 ::: important
@@ -118,6 +118,6 @@ Update `netlify.toml` with `pnpm run build`
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>
 
 

@@ -34,7 +34,7 @@ Installing ChromiumOS onto a PC will not give you these advantages.
 - [x] TPM
 - [x] Secure Boot
 
-<i class="fa fa-youtube-play yt-red"></i> <a href="https://www.youtube.com/watch?v=maCSmdy3an4" target="_blank" rel="noopener noreferrer">Chrome OS Security Guide</a>
+<i class="fa-brands fa-youtube yt-red"></i> <a href="https://www.youtube.com/watch?v=maCSmdy3an4" target="_blank" rel="noopener noreferrer">Chrome OS Security Guide</a>
 
 I <a href="https://twitter.com/equilibriumuk/status/477061149918502912" target="_blank">noted in 2014</a> that I really like the design of ChromeOS due to the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format" target="_blank">structure of the filesystem</a>, the bootloader & the <a href="https://www.chromium.org/developers/design-documents/tpm-usage" target="_blank">use of TPM</a>.
 

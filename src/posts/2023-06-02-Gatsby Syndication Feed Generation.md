@@ -45,11 +45,11 @@ Gatsby provides `excerpt` with graphql so returning an excerpt should be no prob
 
 Looking in Gatsby docs it seems the best way to implement a script is to use `onPostBuild` node API.
 
-<i class="fa fa-link"></i> <a href="https://www.gatsbyjs.org/docs/node-apis/#onPostBuild" target="_blank" rel="noopener noreferrer">Gatsby Node APIs - onPostBuild</a>
+<i class="fa-solid fa-link"></i> <a href="https://www.gatsbyjs.org/docs/node-apis/#onPostBuild" target="_blank" rel="noopener noreferrer">Gatsby Node APIs - onPostBuild</a>
 
 I decided to use `jpmonette/feed` as it worked well with my atom feed generation script.
 
-<i class="fa fa-link"></i> <a href="https://github.com/jpmonette/feed" target="_blank" rel="noopener noreferrer">Github - jpmonette/feed: A RSS, Atom and JSON Feed generator for Node.js</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/jpmonette/feed" target="_blank" rel="noopener noreferrer">Github - jpmonette/feed: A RSS, Atom and JSON Feed generator for Node.js</a>
 
 As most of the work is done by graphql & gatsby there are very few imports required & the only extra dependency is `feed`.
 
@@ -73,7 +73,7 @@ excerpt(format: PLAIN, pruneLength: 450, truncate: false)
 
 I also used `excerpt` to return a snippet for the `summary` field in the atom output.
 
-<i class="fa fa-link"></i> <a href="https://www.gatsbyjs.com/docs/graphql-reference/#excerpt" target="_blank" rel="noopener noreferrer">Gatsby - GraphQL Query Options</a>
+<i class="fa-solid fa-link"></i> <a href="https://www.gatsbyjs.com/docs/graphql-reference/#excerpt" target="_blank" rel="noopener noreferrer">Gatsby - GraphQL Query Options</a>
 
 ## Feed Generation
 
@@ -112,8 +112,8 @@ Write output files async.
 
 You can find the full pull request for these changes on github.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/22" target="_blank" rel="noopener noreferrer">Valid Syndication Feed Generation pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/22" target="_blank" rel="noopener noreferrer">Valid Syndication Feed Generation pull request on github</a>
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>

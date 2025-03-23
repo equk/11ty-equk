@@ -147,8 +147,8 @@ I also used the same code to create a canonical link element.
 
 You can find the full pull request for these changes on github.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/21" target="_blank" rel="noopener noreferrer">Site Updates May 2023 pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/21" target="_blank" rel="noopener noreferrer">Site Updates May 2023 pull request on github</a>
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>

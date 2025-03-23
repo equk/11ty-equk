@@ -25,10 +25,10 @@ I have followed svelte for a while & like the idea of no virtual DOM.
 
 The sveltekit project is really interesting as it takes a lot of modern tools (eg: Vite HMR) & provides a framework to take advantage of modern features like mixing SSR with CSR & prefetching.
 
-<i class="fa fa-youtube-play yt-red"></i> <a href="https://www.youtube.com/watch?v=AdNJ3fydeao" target="_blank" rel="noopener noreferrer">Rich Harris - Rethinking reactivity (2019)</a><br />
-<i class="fa fa-youtube-play yt-red"></i> <a href="https://www.youtube.com/watch?v=860d8usGC0o" target="_blank" rel="noopener noreferrer">Have Single-Page Apps Ruined the Web? (2021)</a><br />
-<i class="fa fa-youtube-play yt-red"></i> <a href="https://www.youtube.com/watch?v=uQntFkK8Z54" target="_blank" rel="noopener noreferrer">The Future of Svelte (Interview with Rich Harris)</a><br />
-<i class="fa fa-link"></i> <a href="https://svelte.dev/blog/whats-new-in-svelte-september-2022" target="_blank" rel="noopener noreferrer">SvelteKit's new filesystem-based router (Sep 2022)</a><br />
+<i class="fa-brands fa-youtube yt-red"></i> <a href="https://www.youtube.com/watch?v=AdNJ3fydeao" target="_blank" rel="noopener noreferrer">Rich Harris - Rethinking reactivity (2019)</a><br />
+<i class="fa-brands fa-youtube yt-red"></i> <a href="https://www.youtube.com/watch?v=860d8usGC0o" target="_blank" rel="noopener noreferrer">Have Single-Page Apps Ruined the Web? (2021)</a><br />
+<i class="fa-brands fa-youtube yt-red"></i> <a href="https://www.youtube.com/watch?v=uQntFkK8Z54" target="_blank" rel="noopener noreferrer">The Future of Svelte (Interview with Rich Harris)</a><br />
+<i class="fa-solid fa-link"></i> <a href="https://svelte.dev/blog/whats-new-in-svelte-september-2022" target="_blank" rel="noopener noreferrer">SvelteKit's new filesystem-based router (Sep 2022)</a><br />
 
 ### Svelte Code
 
@@ -109,6 +109,6 @@ PUBLIC_API_CLIENTID = "insert-api-key-here";
 
 The source for this project is available on github.
 
-<a class="github" href="https://github.com/equk/unsplash-svkit" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> unsplash-svkit</a>
+<a class="github" href="https://github.com/equk/unsplash-svkit" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> unsplash-svkit</a>
 
 <p class="text-right"><em>References: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch()</a> / <a href="https://kit.svelte.dev/" target="_blank">sveltekit</a> / <a href="https://vitejs.dev/" target="_blank">vite</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">promises</a> / <a href="https://unsplash.com/developers" target="_blank">Unsplash API</a></em></p>

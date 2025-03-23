@@ -26,7 +26,7 @@ After converting all my react components on the site to Typescript I looked arou
 
 The most insightful thing I found was a gist.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://gist.github.com/JohnAlbin/2fc05966624dffb20f4b06b4305280f9" target="_blank" rel="noopener noreferrer">Github Gist - JohnAlbin - TypeScript + Gatsby config and node API</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://gist.github.com/JohnAlbin/2fc05966624dffb20f4b06b4305280f9" target="_blank" rel="noopener noreferrer">Github Gist - JohnAlbin - TypeScript + Gatsby config and node API</a>
 
 
 
@@ -42,7 +42,7 @@ It JIT transforms TypeScript into JavaScript, enabling you to directly execute T
 This is accomplished by hooking node's module loading APIs, enabling it to be used seamlessly alongside other Node.js tools and libraries.
 </blockquote>
 
-<i class="fa fa-link"></i> <a href="https://github.com/TypeStrong/ts-node" target="_blank" rel="noopener noreferrer">TypeStrong/ts-node on Github</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/TypeStrong/ts-node" target="_blank" rel="noopener noreferrer">TypeStrong/ts-node on Github</a>
 
 ### Implementing ts-node in gatsby-config
 
@@ -54,7 +54,7 @@ This is accomplished by hooking node's module loading APIs, enabling it to be us
 
 <br />
 
-<i class="fa fa-file-code-o git-fork"></i> gatsby-config.js
+<i class="fa-solid fa-code git-fork"></i> gatsby-config.js
 
 ```js
 require('ts-node').register()
@@ -66,7 +66,7 @@ Gatsby should now reference typescript based config files. (eg: `gatsby-node.ts`
 
 <article class="message is-danger">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> You may need to refactor some existing code depending on how you have Typescript configured.
+    <i class="fa-solid fa-info-circle"></i> You may need to refactor some existing code depending on how you have Typescript configured.
   </div>
 </article>
 
@@ -74,7 +74,7 @@ Gatsby should now reference typescript based config files. (eg: `gatsby-node.ts`
 
 <br />
 
-<i class="fa fa-file-code-o git-fork"></i> tsconfig.json
+<i class="fa-solid fa-code git-fork"></i> tsconfig.json
 
 ```json
 {
@@ -107,7 +107,7 @@ Gatsby should now reference typescript based config files. (eg: `gatsby-node.ts`
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> You may want to start with <code class="language-text">strict: false</code> then work towards enabling strict mode later.
+    <i class="fa-solid fa-info-circle"></i> You may want to start with <code class="language-text">strict: false</code> then work towards enabling strict mode later.
   </div>
 </article>
 
@@ -115,8 +115,8 @@ Gatsby should now reference typescript based config files. (eg: `gatsby-node.ts`
 
 You can find the full pull request for the above changes of this site on github.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/9" target="_blank" rel="noopener noreferrer">Using Typescript For Gatsby Config & Node API</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/9" target="_blank" rel="noopener noreferrer">Using Typescript For Gatsby Config & Node API</a>
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>

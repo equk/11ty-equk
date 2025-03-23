@@ -57,7 +57,7 @@ In archlinux this is `/usr/share/hyprland/hyprland.conf`.
 
 The hyprland wiki has a lot of information on configuring hyprland.
 
-<i class="fa fa-link"></i> <a href="https://wiki.hyprland.org/Configuring/Configuring-Hyprland/" target="_blank" rel="noopener noreferrer">Hyprland Wiki - Configuring Hyprland</a>
+<i class="fa-solid fa-link"></i> <a href="https://wiki.hyprland.org/Configuring/Configuring-Hyprland/" target="_blank" rel="noopener noreferrer">Hyprland Wiki - Configuring Hyprland</a>
 
 ## Mouse Acceleration
 
@@ -173,7 +173,7 @@ bind = SUPER,up,resizeactive,0 -80
 
 <blockquote>
 <p>An XDG Desktop Portal (later called XDP) is a program that lets other applications communicate swiftly with the compositor through D-Bus</p><br/>
-<cite><i class="fa fa-link"></i> <a href="https://wiki.hyprland.org/hyprland-wiki/pages/Useful-Utilities/Hyprland-desktop-portal/" target="_blank" rel="noopener noreferrer">Hyprland Wiki - Hyprland Desktop Portal</a></cite>
+<cite><i class="fa-solid fa-link"></i> <a href="https://wiki.hyprland.org/hyprland-wiki/pages/Useful-Utilities/Hyprland-desktop-portal/" target="_blank" rel="noopener noreferrer">Hyprland Wiki - Hyprland Desktop Portal</a></cite>
 </blockquote>
 
 
@@ -220,7 +220,7 @@ env = ECORE_EVAS_ENGINE,wayland_egl
 env = ELM_ENGINE,wayland_egl
 ```
 
-<i class="fa fa-link"></i> <a href="https://github.com/swaywm/sway/wiki/Running-programs-natively-under-wayland" target="_blank" rel="noopener noreferrer">Sway Wiki - Running programs natively under Wayland</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/swaywm/sway/wiki/Running-programs-natively-under-wayland" target="_blank" rel="noopener noreferrer">Sway Wiki - Running programs natively under Wayland</a>
 
 
 ### Electron Apps
@@ -251,7 +251,7 @@ Set vscode to use wayland (archlinux). `visual-studio-code-bin`
 There is a problem with using wayland platform with native titlebar in Visual Studio Code.<br/>
 Setting `window.titleBarStyle` to `custom` seems to work as a workaround for now.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/dotfiles/commit/2a50740755c8f3fc941cf8d634e8aec213b2f9a0" target="_blank" rel="noopener noreferrer">vscode: added workaround to fix crashing on wayland</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/dotfiles/commit/2a50740755c8f3fc941cf8d634e8aec213b2f9a0" target="_blank" rel="noopener noreferrer">vscode: added workaround to fix crashing on wayland</a>
 :::
 
 ::: warning
@@ -277,4 +277,4 @@ Downgrading to v0.28 fixes the problem
 
 The source for my hyprland config is available in my dotfiles repo on github.
 
-<a class="github" href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> dotfiles</a>
+<a class="github" href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> dotfiles</a>

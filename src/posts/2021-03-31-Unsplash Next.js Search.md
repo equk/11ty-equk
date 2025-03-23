@@ -50,7 +50,7 @@ NEXT_PUBLIC_API_CLIENTID = "insert-api-key-here";
 
 The source for this project is available on github.
 
-<a class="github" href="https://github.com/equk/unsplash-nextjs" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> unsplash-nextjs</a>
+<a class="github" href="https://github.com/equk/unsplash-nextjs" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> unsplash-nextjs</a>
 
 ---
 
@@ -66,4 +66,4 @@ This allows the images to be viewed using the original aspect ratio.
 
 The source for this project is available on github.
 
-<a class="github" href="https://github.com/equk/unsplash-nextjs" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> unsplash-nextjs</a>
+<a class="github" href="https://github.com/equk/unsplash-nextjs" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> unsplash-nextjs</a>

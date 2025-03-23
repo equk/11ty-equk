@@ -89,4 +89,4 @@ hidden.example.com
 
 The project can be viewed and downloaded from github.
 
-<a class="github" href="https://github.com/equk/tls-altnames/" aria-label="Download on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> Download</a>
+<a class="github" href="https://github.com/equk/tls-altnames/" aria-label="Download on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Download</a>

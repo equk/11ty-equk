@@ -36,16 +36,16 @@ Chromium OS seems to run really well on QEMU & there are none of the <a href="/2
 <div class="columns">
     <div class="column">
         <h3 id="Chrome OS">Chrome OS</h3>
-        <p><i class="fa fa-thumbs-o-up"></i> Playstore for Android Apps<br/>
-        <i class="fa fa-thumbs-o-up"></i> Verified Boot<br/>
-        <i class="fa fa-thumbs-o-up"></i> Security Updates
+        <p><i class="fa-solid fa-thumbs-up"></i> Playstore for Android Apps<br/>
+        <i class="fa-solid fa-thumbs-up"></i> Verified Boot<br/>
+        <i class="fa-solid fa-thumbs-up"></i> Security Updates
         </p>
     </div>
     <div class="column">
         <h3 id="Chromium OS">Chromium OS</h3>
-        <p><i class="fa fa-thumbs-o-down"></i> No Playstore for Android Apps<br/>
-<i class="fa fa-thumbs-o-down"></i> No Verified Boot<br/>
-<i class="fa fa-unlock"></i> Default shell account has no password & can <code>sudo</code>
+        <p><i class="fa-solid fa-thumbs-down"></i> No Playstore for Android Apps<br/>
+<i class="fa-solid fa-thumbs-down"></i> No Verified Boot<br/>
+<i class="fa-solid fa-unlock"></i> Default shell account has no password & can <code>sudo</code>
     </div>
 </div>
 

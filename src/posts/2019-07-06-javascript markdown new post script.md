@@ -80,4 +80,4 @@ You can add the script to `package.json` to run the script using `yarn` or `npm`
 
 The full script can be downloaded from github.
 
-<a class="github" href="https://github.com/equk/gatsby-new-post-cli" aria-label="Download on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> Download</a>
+<a class="github" href="https://github.com/equk/gatsby-new-post-cli" aria-label="Download on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Download</a>

@@ -17,7 +17,7 @@ templateEngineOverride: md
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> luxon is over 4MB, you could probably do the same with built in javascript features.
+    <i class="fa-solid fa-info-circle"></i> luxon is over 4MB, you could probably do the same with built in javascript features.
   </div>
 </article>
 
@@ -63,7 +63,7 @@ eleventyConfig.addFilter('htmlDateString', (dateObj) => {
 <li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
 ```
 
-<i class="fa fa-link"></i> <a href="https://github.com/11ty/eleventy-base-blog/blob/5ec08b9765304f1690ffc9d33300adf752b00a9a/eleventy.config.js#L41" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog/eleventy.config.js - Github</a>
+<i class="fa-solid fa-link"></i> <a href="https://github.com/11ty/eleventy-base-blog/blob/5ec08b9765304f1690ffc9d33300adf752b00a9a/eleventy.config.js#L41" target="_blank" rel="noopener noreferrer">11ty/eleventy-base-blog/eleventy.config.js - Github</a>
 
 ### Using Node To Check Output
 
@@ -115,7 +115,7 @@ dateObj.toLocaleDateString('en-gb', {
 })
 ```
 
-<i class="fa fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString" target="_blank" rel="noopener noreferrer">Date.prototype.toLocaleDateString() - Javascript | MDN</a>
+<i class="fa-solid fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString" target="_blank" rel="noopener noreferrer">Date.prototype.toLocaleDateString() - Javascript | MDN</a>
 
 ### Example Node Script
 
@@ -170,4 +170,4 @@ Replace the filters in `eleventy.config.js` & luxon can be removed as a dependen
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

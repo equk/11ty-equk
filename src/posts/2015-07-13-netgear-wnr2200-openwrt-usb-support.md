@@ -17,7 +17,7 @@ I fully support what OpenWrt are about and that so many projects have been forke
 
 As the main purpose for this router requires usb storage I decided to compile a custom openwrt image for it.
 For info about compiling OpenWrt from source <a href="http://wiki.openwrt.org/doc/howto/buildroot.exigence" target="_blank">see their wiki.</a>
-The wnr2200 USB patch can be found on <a href="https://github.com/equk/openwrt" target="_blank">my <i class="fa fa-github-alt"></i> github repo</a>.
+The wnr2200 USB patch can be found on <a href="https://github.com/equk/openwrt" target="_blank">my <i class="fa-brands fa-github"></i> github repo</a>.
 
 On making my first image (took 2hours to compile a base image without luci etc) I found USB worked.
 
@@ -67,7 +67,7 @@ After another compile I put the image onto the router and found it now initializ
     [   16.090000] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts:
     [   16.100000] mount_root: switched to extroot
 
-The patch and the script can be found on <a href="https://github.com/equk/openwrt" target="_blank">my <i class="fa fa-github-alt"></i> github repo</a>.
+The patch and the script can be found on <a href="https://github.com/equk/openwrt" target="_blank">my <i class="fa-brands fa-github"></i> github repo</a>.
 <br/><br/>
 **Installing Custom Build Packages**
 

@@ -28,7 +28,7 @@ The project also uses the `fetch()` api which provides asynchronous requests wit
 The design & layout is based on my previous vanillajs project unsplash-js-search.<br/>
 My <a href="/2018/08/01/unsplash-javascript-search/" target="_blank">blog post for unsplash-js-search</a> has more information regarding design aspects & working with the unsplash api.
 
-All code for this project is on <a href="https://github.com/equk/unsplash-react" target="_blank"><i class="fa fa-github-alt"></i> github</a>
+All code for this project is on <a href="https://github.com/equk/unsplash-react" target="_blank"><i class="fa-brands fa-github"></i> github</a>
 
 ## Main Features
 
@@ -59,24 +59,24 @@ REACT_APP_API_CLIENTID = "insert-api-key-here";
 
 ### Commit History
 
-<p class="git-commit"><i class="fa fa-code-fork"></i> new react app - first commit :ship:</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> installed eslint with babel and required plugins for jsx + react</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added eslint config for babel, airbnb, prettier & react</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added basic README with references to unsplash api</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> cleaned up App.js and set serviceworker for offline mode in Index.js</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added main css and removed app.css reference in App.js</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added basic structure for page</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added constructor for basic state of search form</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added basic unsplash api call which logs output to console</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added API KEY to seperate .env file</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added loading animation with loading state on form submit / api request</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added images array to state & map over the array to display img + stop loading image</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added attribution links & css styles for image results</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added screenshot to repo and README</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added info regarding unsplash API key to .env file</p>
-<p class="git-commit"><i class="fa fa-code-fork"></i> added checklist of features to README</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> new react app - first commit :ship:</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> installed eslint with babel and required plugins for jsx + react</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added eslint config for babel, airbnb, prettier & react</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added basic README with references to unsplash api</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> cleaned up App.js and set serviceworker for offline mode in Index.js</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added main css and removed app.css reference in App.js</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added basic structure for page</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added constructor for basic state of search form</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added basic unsplash api call which logs output to console</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added API KEY to seperate .env file</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added loading animation with loading state on form submit / api request</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added images array to state & map over the array to display img + stop loading image</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added attribution links & css styles for image results</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added screenshot to repo and README</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added info regarding unsplash API key to .env file</p>
+<p class="git-commit"><i class="fa-solid fa-code-fork"></i> added checklist of features to README</p>
 
-View the project on <a href="https://github.com/equk/unsplash-react" target="_blank"><i class="fa fa-github-alt"></i> github</a>.
+View the project on <a href="https://github.com/equk/unsplash-react" target="_blank"><i class="fa-brands fa-github"></i> github</a>.
 
 <p class="text-right"><em>References: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch()</a> / <a href="http://reactjs.org/" target="_blank">reactjs</a>  / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">promises</a>  /  <a href="https://unsplash.com/developers" target="_blank">Unsplash API</a></em></p>
 

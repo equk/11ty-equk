@@ -108,9 +108,9 @@ I added redirects to my github & twitter profiles. (`/gh`, `/github`, `/twitter`
 
 **Pull Requests**
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/4" target="_blank" rel="noopener noreferrer">Dependency Cleanup & Quicker Build Tweaks</a><br />
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/3" target="_blank" rel="noopener noreferrer">Netlify Tweaks (Header Rules & Redirects)</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/4" target="_blank" rel="noopener noreferrer">Dependency Cleanup & Quicker Build Tweaks</a><br />
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/3" target="_blank" rel="noopener noreferrer">Netlify Tweaks (Header Rules & Redirects)</a>
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>

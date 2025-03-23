@@ -23,4 +23,4 @@ I am already using this on a few live servers and it currently has functions to 
 
 So far I have only pushed the initial commit which has the query functions.
 
-<a href="https://github.com/equk/mailadm_cli" target="_blank"><i class="fa fa-github-alt"></i>  view mailadm_cli on github</a>
+<a href="https://github.com/equk/mailadm_cli" target="_blank"><i class="fa-brands fa-github"></i>  view mailadm_cli on github</a>

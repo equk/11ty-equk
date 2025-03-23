@@ -52,7 +52,7 @@ I have changed some of the default styling of firefox using a `userChrome.css` f
 
 ## Usage
 
-Download or clone <a href="https://github.com/equk/ffox_profiles_win" target="_blank">repo from <i class="fa fa-github-alt"></i> github</a>.
+Download or clone <a href="https://github.com/equk/ffox_profiles_win" target="_blank">repo from <i class="fa-brands fa-github"></i> github</a>.
 
 Edit `ffox_profiles.ps1` & add profiles you require to the profiles array<br/>
 Run the script as an administrator<br/>

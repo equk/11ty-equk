@@ -27,7 +27,7 @@ This can also be useful for resetting a usb device after updating the firmware.
 
 ## Basic Example (usbfs)
 
-<i class="fa fa-link"></i> <a href="https://marc.info/?l=linux-usb&m=121459435621262" target="_blank" rel="noopener noreferrer">Fri, 27 Jun 2008 - linux-usb - Re: re-enumerating the device</a>
+<i class="fa-solid fa-link"></i> <a href="https://marc.info/?l=linux-usb&m=121459435621262" target="_blank" rel="noopener noreferrer">Fri, 27 Jun 2008 - linux-usb - Re: re-enumerating the device</a>
 
 To use this example you need to:
 
@@ -54,7 +54,7 @@ I wanted to use the `vendor id` + `product id` to make it easier & also to elimi
 
 `libusb` allows connecting to usb devices using `vendor id` & `product id`.
 
-<i class="fa fa-link"></i> <a href="https://libusb.sourceforge.io/api-1.0/group__libusb__dev.html" target="_blank" rel="noopener noreferrer">libusb: Device handling and enumeration</a>
+<i class="fa-solid fa-link"></i> <a href="https://libusb.sourceforge.io/api-1.0/group__libusb__dev.html" target="_blank" rel="noopener noreferrer">libusb: Device handling and enumeration</a>
 
 ### Test App
 
@@ -157,7 +157,7 @@ USB Device reset [045e:028e]
 
 The source for this project is available on github.
 
-<a class="github" href="https://github.com/equk/usbreset" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> usbreset</a>
+<a class="github" href="https://github.com/equk/usbreset" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> usbreset</a>
 
 ## Related
 
@@ -168,7 +168,7 @@ The source for this project is available on github.
 On Archlinux startup the controller blinks all 4 LEDs & does not work.<br/>
 An example can be seen on the external site below (Slow Blink).
 
-<i class="fa fa-link"></i> <a href="https://www.partsnotincluded.com/xbox-360-controller-led-animations-info/" target="_blank" rel="noopener noreferrer">Xbox 360 Controller LED Animations Information - Parts Not Included</a>
+<i class="fa-solid fa-link"></i> <a href="https://www.partsnotincluded.com/xbox-360-controller-led-animations-info/" target="_blank" rel="noopener noreferrer">Xbox 360 Controller LED Animations Information - Parts Not Included</a>
 
 On resetting the controller LED1 blinks 3 times, then stays illuminated.<br/>
 The controller then works as exprected.

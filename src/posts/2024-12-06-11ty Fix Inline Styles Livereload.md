@@ -21,7 +21,7 @@ While working on the site recently I noticed livereload seemed to be quirky on c
 ::: note
 I wrote a blogpost regarding a similar issue with livereload & 11ty v2.x
 
-<p><i class="fa fa-link"></i> <a href="/2023/06/21/11ty-fixing-livereload-client-for-inline-styles/" target="_blank" rel="noopener noreferrer">11ty Fixing Livereload Client For Inline Styles</a></p>
+<p><i class="fa-solid fa-link"></i> <a href="/2023/06/21/11ty-fixing-livereload-client-for-inline-styles/" target="_blank" rel="noopener noreferrer">11ty Fixing Livereload Client For Inline Styles</a></p>
 :::
 
 ## Problem
@@ -76,10 +76,10 @@ I found a few issues posted on the eleventy project github referencing the same 
 
 You can find the full pull request for these changes on github.
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/pull/14" target="_blank" rel="noopener noreferrer">Eleventy CSS Livereload Workaround pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/11ty-equk/pull/14" target="_blank" rel="noopener noreferrer">Eleventy CSS Livereload Workaround pull request on github</a>
 
 ## Source Code
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

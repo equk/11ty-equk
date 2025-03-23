@@ -17,7 +17,7 @@ templateEngineOverride: md
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> More optimized implementation: <a href="/2023/06/29/11ty-postcss-integration-optimized/">11ty Postcss Integration Optimized</a>
+    <i class="fa-solid fa-info-circle"></i> More optimized implementation: <a href="/2023/06/29/11ty-postcss-integration-optimized/">11ty Postcss Integration Optimized</a>
   </div>
 </article>
 
@@ -30,7 +30,7 @@ I found it is possible to integrate postcss with eleventy using a filter with nu
 
 This fixes a lot of issues & means scripts in `package.json` are cleaner.
 
-<i class="fa fa-link"></i> <a href="https://zenzes.me/eleventy-postcss-und-tailwind-css-integrieren/" target="_blank" rel="noopener noreferrer">Eleventy: PostCSS und Tailwind CSS integrieren</a>
+<i class="fa-solid fa-link"></i> <a href="https://zenzes.me/eleventy-postcss-und-tailwind-css-integrieren/" target="_blank" rel="noopener noreferrer">Eleventy: PostCSS und Tailwind CSS integrieren</a>
 
 Slight modification of above & you can have `postcss` & `tailwindcss` integrated with eleventy.
 
@@ -95,4 +95,4 @@ I added cssnano with the default preset but this seems to slow things down a lot
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

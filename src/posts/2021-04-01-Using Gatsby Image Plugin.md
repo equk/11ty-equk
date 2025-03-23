@@ -40,7 +40,7 @@ Fix bug introduced by `gatsby-plugin-image`
 
 - [x] fix problem with gatsby-plugin-image & webpack 5
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/5" target="_blank" rel="noopener noreferrer">Gatsby Image Plugin pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/5" target="_blank" rel="noopener noreferrer">Gatsby Image Plugin pull request on github</a>
 
 ### GraphQL Queries
 
@@ -97,11 +97,11 @@ Everything should now be working, including plugins & components referencing `gl
   <p>📦 Update</p>
   <p>The global bug is now fixed in <code class="language-text">gatsby-plugin-image@1.2.1</code><br />
   There should be no need to define <code class="language-text">window.global</code> in <code class="language-text">gatsby-browser.js</code>.</p>
-  <p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/gatsbyjs/gatsby/commit/a5869e3d26ed0a45f7543ffaf45da9ca4b89ff45#diff-de69e0ec64bc53d10152bc6147ae6c5b76e4a1269bb6d79d578246a1e79bb1c2" target="_blank" rel="noopener noreferrer">gatsbyjs/gatsby@<tt>a5869e3</tt></a>
+  <p><i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/gatsbyjs/gatsby/commit/a5869e3d26ed0a45f7543ffaf45da9ca4b89ff45#diff-de69e0ec64bc53d10152bc6147ae6c5b76e4a1269bb6d79d578246a1e79bb1c2" target="_blank" rel="noopener noreferrer">gatsbyjs/gatsby@<tt>a5869e3</tt></a>
   </p>
   </div>
 </article>
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>

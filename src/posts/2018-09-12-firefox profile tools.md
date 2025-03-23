@@ -52,7 +52,7 @@ I have changed some of the default styling of firefox using a `userChrome.css` f
 
 ## Usage
 
-Download or clone <a href="https://github.com/equk/ffox_profile_tools" target="_blank">repo from <i class="fa fa-github-alt"></i> github</a>.
+Download or clone <a href="https://github.com/equk/ffox_profile_tools" target="_blank">repo from <i class="fa-brands fa-github"></i> github</a>.
 
 You can then rename/copy the script to the profile name required *(script filename = profile name)*.<br/>
 Optionally you may also want to change the `profile_folder` variable *(default is ~/.ffox_profiles)*.
@@ -61,4 +61,4 @@ The full path for the default profile is `~/.ffox_profiles/firefox`
 
 ## Download
 
-The project can be downloaded from the <a href="https://github.com/equk/ffox_profile_tools" target="_blank">ffox_profile_tools repo on my <i class="fa fa-github-alt"></i> github</a>.
+The project can be downloaded from the <a href="https://github.com/equk/ffox_profile_tools" target="_blank">ffox_profile_tools repo on my <i class="fa-brands fa-github"></i> github</a>.

@@ -82,7 +82,7 @@ Once configured & tweaked it is ok to use on a laptop.<br/>
 Setting up keyboard shortcuts for Spotlight & Mission Control makes desktop management a lot easier.<br/>
 _I also had to swap around the modifier keys as I am used to CTRL+C etc._
 
-I have a <a href="https://github.com/equk/macos" target="_blank"><i class="fa fa-github-alt"></i> github repository</a> with my configs and scripts along with my old scripts from 2010.<br/>
+I have a <a href="https://github.com/equk/macos" target="_blank"><i class="fa-brands fa-github"></i> github repository</a> with my configs and scripts along with my old scripts from 2010.<br/>
 _I also added [some old apple related articles from my old blog](/tag/apple)_
 
 If anyone has any suggestions for apps or feedback on fixes to problems I have posted, please leave a comment below.

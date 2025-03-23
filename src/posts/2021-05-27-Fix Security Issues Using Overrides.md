@@ -31,7 +31,7 @@ Sometimes there are multiple dependencies referencing outdated or unpatched vers
 
 NPM, Yarn & PNPM all have the ability to do a security audit of dependencies.
 
-<blockquote><strong><i class="fa fa-link"></i>  <a href="https://docs.npmjs.com/cli/v6/commands/npm-audit" target="_blank" rel="noopener noreferrer">npm audit</a></strong><br /><br />
+<blockquote><strong><i class="fa-solid fa-link"></i>  <a href="https://docs.npmjs.com/cli/v6/commands/npm-audit" target="_blank" rel="noopener noreferrer">npm audit</a></strong><br /><br />
 
 The audit command submits a description of the dependencies configured in your project to your default registry and asks for a report of known vulnerabilities.<br />
 The report returned includes instructions on how to act on this information.</blockquote>
@@ -46,7 +46,7 @@ This can be hard to keep track of & can even cause problems in the future when p
 One example I had was with my `unsplash-nextjs` project.<br />
 I had to remove the lockfile & create a new clean lockfile in order to fix CVEs.
 
-<p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/unsplash-nextjs/commit/2dcb36d9e04dda0d17b10c1e1d4cfbfc7b7fc9aa" target="_blank" rel="noopener noreferrer">clean package lock - fixes for CVE-2021-23368 & CVE-2021-23362</a>
+<p><i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/unsplash-nextjs/commit/2dcb36d9e04dda0d17b10c1e1d4cfbfc7b7fc9aa" target="_blank" rel="noopener noreferrer">clean package lock - fixes for CVE-2021-23368 & CVE-2021-23362</a>
 </p>
 
 ### Yarn
@@ -66,11 +66,11 @@ rm package-lock.json
 This seems like a lot of work as it installs all dependencies using npm, npm then installs fixes & it then removes `yarn.lock` before running `yarn import`.<br />
 *(`npm audit fix` runs `npm install`)*
 
-<blockquote><strong><i class="fa fa-link"></i>  <a href="https://docs.npmjs.com/cli/v6/commands/npm-audit#description" target="_blank" rel="noopener noreferrer">npm audit fix</a></strong><br /><br />
+<blockquote><strong><i class="fa-solid fa-link"></i>  <a href="https://docs.npmjs.com/cli/v6/commands/npm-audit#description" target="_blank" rel="noopener noreferrer">npm audit fix</a></strong><br /><br />
 Note that some vulnerabilities cannot be fixed automatically and will require manual intervention or review.<br />
 Also note that since npm audit fix runs a full-fledged npm install under the hood, all configs that apply to the installer will also apply to npm install</blockquote>
 
-<i class="fa fa-link"></i> <a href="https://dev.to/antongolub/yarn-audit-fix-workaround-i2a" target="_blank" rel="noopener noreferrer">Yarn audit fix: workaround | dev.to</a>
+<i class="fa-solid fa-link"></i> <a href="https://dev.to/antongolub/yarn-audit-fix-workaround-i2a" target="_blank" rel="noopener noreferrer">Yarn audit fix: workaround | dev.to</a>
 
 ### PNPM
 
@@ -81,7 +81,7 @@ One thing with pnpm is the overrides feature which allows you to match package v
 
 This feature gives you the ability to patch depdendencies before developers update dependent projects (eg: Gatsby).
 
-<blockquote><strong><i class="fa fa-link"></i> <a href="https://pnpm.io/package_json#pnpmoverrides" target="_blank" rel="noopener noreferrer">pnpm.overrides</a></strong><br /><br />
+<blockquote><strong><i class="fa-solid fa-link"></i> <a href="https://pnpm.io/package_json#pnpmoverrides" target="_blank" rel="noopener noreferrer">pnpm.overrides</a></strong><br /><br />
 This field allows you to instruct pnpm to override any dependency in the dependency graph.<br />
 This is useful to enforce all your packages to use a single version of a dependency, backport a fix, or replace a dependency with a fork.</blockquote>
 
@@ -120,4 +120,4 @@ CVEs fixed by these overrides
 - [x] <a title="CVE-2020-28168" target="_blank" rel="noopener noreferrer" href="https://github.com/advisories/GHSA-4w2v-q235-vp99">CVE-2020-28168</a>
 - [x] <a title="CVE-2020-7753" target="_blank" rel="noopener noreferrer" href="https://github.com/advisories/GHSA-w5p7-h5w8-2hfq">CVE-2020-7753</a>
 
-<i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/7" target="_blank" rel="noopener noreferrer">Security fixes pull request on github</a>
+<i class="fa-solid fa-code-fork git-fork"></i> <a href="https://github.com/equk/equk-gatsby/pull/7" target="_blank" rel="noopener noreferrer">Security fixes pull request on github</a>

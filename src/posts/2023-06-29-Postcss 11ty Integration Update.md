@@ -19,7 +19,7 @@ Previous Article: 📝[Integrating Tailwindcss With Eleventy](/2023/06/24/integr
 
 <article class="message is-info">
   <div class="message-body">
-    <i class="fa fa-info-circle"></i> More optimized implementation: <a href="/2023/06/29/11ty-postcss-integration-optimized/">11ty Postcss Integration Optimized</a>
+    <i class="fa-solid fa-info-circle"></i> More optimized implementation: <a href="/2023/06/29/11ty-postcss-integration-optimized/">11ty Postcss Integration Optimized</a>
   </div>
 </article>
 
@@ -83,4 +83,4 @@ This could be useful for people not using nunjucks.
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

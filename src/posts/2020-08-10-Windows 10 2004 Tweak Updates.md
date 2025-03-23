@@ -78,4 +78,4 @@ Set-MpPreference -PUAProtection 0
 
 The tweak scripts can be downloaded from my windows repo on github.
 
-<p><a class="github" href="https://github.com/equk/windows/" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> windows</a></p>
+<p><a class="github" href="https://github.com/equk/windows/" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> windows</a></p>

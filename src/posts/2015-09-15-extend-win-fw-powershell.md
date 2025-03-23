@@ -56,4 +56,4 @@ Here is how the rules screen should look in the Windows Firewall with Advanced S
 
 To remove a blocklist simply use the remove action, this will remove the IP addresses listed within the blocklist you provide.
 
-The scripts can be downloaded from <a href="https://github.com/equk/windows/tree/master/windows_10" target="_blank">my windows <i class="fa fa-github-alt"></i> github repo</a>.
+The scripts can be downloaded from <a href="https://github.com/equk/windows/tree/master/windows_10" target="_blank">my windows <i class="fa-brands fa-github"></i> github repo</a>.

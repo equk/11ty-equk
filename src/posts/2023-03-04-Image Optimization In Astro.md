@@ -20,7 +20,7 @@ It does however support using image components within pages & mdx content.
 <p>Images play a big role in overall site performance and usability. Serving properly sized images makes all the difference but is often tricky to automate.</p>
 <p>This integration provides <code>&lt;Image /&gt;</code> and <code>&lt;Picture&gt;</code> components as well as a basic image transformer, with full support for static sites and server-side rendering. The built-in image transformer is also replaceable, opening the door for future integrations that work with your favorite hosted image service.</p>
 <br/>
-<cite><i class="fa fa-link"></i> <a href="https://docs.astro.build/en/guides/integrations-guide/image/" target="_blank" rel="noopener noreferrer">@astrojs/image 🚀 Astro Documentation</a></cite>
+<cite><i class="fa-solid fa-link"></i> <a href="https://docs.astro.build/en/guides/integrations-guide/image/" target="_blank" rel="noopener noreferrer">@astrojs/image 🚀 Astro Documentation</a></cite>
 </blockquote>
 
 ## Features
@@ -99,10 +99,10 @@ The component also adds `loading="lazy" decoding="async"` to `img` utilizing bro
 
 <blockquote><p>The <code>loading</code> attribute on an <code><</code><code>img</code><code>></code> element (or the loading attribute on an <code><</code><code>iframe</code><code>></code>) can be used to instruct the browser to defer loading of images/iframes that are off-screen until the user scrolls near them.</p>
 <br/>
-<cite><i class="fa fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes" target="_blank" rel="noopener noreferrer">Lazy loading - Web performance | MDN</a></cite></blockquote>
+<cite><i class="fa-solid fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes" target="_blank" rel="noopener noreferrer">Lazy loading - Web performance | MDN</a></cite></blockquote>
 
 ## Source
 
 The source for this site is available on github.
 
-<a class="github" href="https://github.com/equk/blog-astro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> blog-astro</a>
+<a class="github" href="https://github.com/equk/blog-astro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> blog-astro</a>

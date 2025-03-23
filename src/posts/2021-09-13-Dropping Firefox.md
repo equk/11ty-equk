@@ -78,7 +78,7 @@ Comparing the two screenshots above you can see that tabs went from square with 
 Mozilla want to remove the compact layout in firefox & so far have removed the option from the browser, stating they will not support it.<br />
 *There is a thread on bugzilla showing there are no real benefits in doing this*
 
-<i class="fa fa-link"></i> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1693028" target="_blank" rel="noopener noreferrer">Bugzilla: Remove compact mode inside Density menu of customize palette</a>
+<i class="fa-solid fa-link"></i> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1693028" target="_blank" rel="noopener noreferrer">Bugzilla: Remove compact mode inside Density menu of customize palette</a>
 
 The OP does a good job of showing how bad their UX is without even realizing suggesting the customize option is *'fairly hard to discover'*.
 
@@ -92,7 +92,7 @@ Mozilla have now added adverts in the address bar with Firefox Suggest (version 
 
 This feature is enabled by default meaning users need to opt out.
 
-<i class="fa fa-link"></i> <a href="https://blog.mozilla.org/data/2021/09/15/data-and-firefox-suggest/" target="_blank" rel="noopener noreferrer">Mozilla Blog: Data and Firefox Suggest</a><br /><i class="fa fa-link"></i> <a href="https://support.mozilla.org/en-US/kb/navigate-web-faster-firefox-suggest" target="_blank" rel="noopener noreferrer">Mozilla Support: Firefox Suggest</a>
+<i class="fa-solid fa-link"></i> <a href="https://blog.mozilla.org/data/2021/09/15/data-and-firefox-suggest/" target="_blank" rel="noopener noreferrer">Mozilla Blog: Data and Firefox Suggest</a><br /><i class="fa-solid fa-link"></i> <a href="https://support.mozilla.org/en-US/kb/navigate-web-faster-firefox-suggest" target="_blank" rel="noopener noreferrer">Mozilla Support: Firefox Suggest</a>
 
 
 ## Conclusion
@@ -107,6 +107,6 @@ As a user I feel like I shouldn't be trying to fix GUI changes over and over so 
 
 I have scripts for creating profiles with fixes for most of the GUI changes & settings overrides available on github.
 
-<a class="github" href="https://github.com/equk/ffox_profile_tools" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> ffox_profile_tools</a>
+<a class="github" href="https://github.com/equk/ffox_profile_tools" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> ffox_profile_tools</a>
 
 I recently added a fix for the bookmark spacing *(there are still rounded corners on the dropdown so it still looks bad)*.

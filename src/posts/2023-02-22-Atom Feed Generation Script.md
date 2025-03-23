@@ -202,4 +202,4 @@ As `feed` is used, it's also possible to output to `json` or `rss` with little m
 
 The source for my astro blog is available on github.
 
-<a class="github" href="https://github.com/equk/blog-astro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> blog-astro</a> <a class="github" href="https://github.com/equk/blog-astro/blob/main/generate-feed.ts" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> generate-feed.ts</a>
+<a class="github" href="https://github.com/equk/blog-astro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> blog-astro</a> <a class="github" href="https://github.com/equk/blog-astro/blob/main/generate-feed.ts" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> generate-feed.ts</a>

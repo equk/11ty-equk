@@ -39,7 +39,7 @@ Generating `YYYY/MM/DD` can be done using `toISOString()` with a combination of 
   },
 ```
 
-<i class="fa fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString" target="_blank" rel="noopener noreferrer">Date.prototype.toISOString() - Javascript | MDN</a>
+<i class="fa-solid fa-link"></i> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString" target="_blank" rel="noopener noreferrer">Date.prototype.toISOString() - Javascript | MDN</a>
 
 ## Using Title
 
@@ -79,4 +79,4 @@ module.exports = {
 
 The source for my 11ty blog is available on github.
 
-<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> 11ty-equk</a>
+<a class="github" href="https://github.com/equk/11ty-equk" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> 11ty-equk</a>

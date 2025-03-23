@@ -23,7 +23,7 @@ My main desktop window manager [since 2014 has been i3wm](/2014/05/29/switching-
 <p>awesome is a highly configurable, next generation framework window manager for X. It is very fast, extensible and licensed under the GNU GPLv2 license.</p>
 <p>It is primarily targeted at power users, developers and any people dealing with every day computing tasks and who want to have fine-grained control on their graphical environment.</p>
 <br/>
-<cite><i class="fa fa-link"></i> <a href="https://awesomewm.org/" target="_blank" rel="noopener noreferrer">about - awesome window manager</a></cite>
+<cite><i class="fa-solid fa-link"></i> <a href="https://awesomewm.org/" target="_blank" rel="noopener noreferrer">about - awesome window manager</a></cite>
 </blockquote>
 
 ## Configuring Awesome
@@ -111,4 +111,4 @@ I will probably look into fixing/scripting when I have spare time as it has some
 
 The source for awesome config is available in my dotfiles repo on github.
 
-<a class="github" href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> dotfiles</a>
+<a class="github" href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> dotfiles</a>

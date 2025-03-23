@@ -14,7 +14,7 @@ tags:
 image:
 ---
 
-<p class="text-center"><i class="fa fa-github-alt fa-5x"></i><br /><img src="/media/logos/gitalk.svg" alt="gitalk logo" width="150px" class="inline"></p>
+<p class="text-center"><i class="fa-brands fa-github fa-5x"></i><br /><img src="/media/logos/gitalk.svg" alt="gitalk logo" width="150px" class="inline"></p>
 
 I decided to change the comment system on the site to something based on Github as it seems more fitting to the continuous deployment with JAMstack.
 
@@ -55,4 +55,4 @@ I use `useSiteMetadata` hooks for the GraphQL queries.
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> equk-gatsby</a>
