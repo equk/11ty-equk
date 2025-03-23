@@ -5,6 +5,7 @@ import markdownItTaskLists from 'markdown-it-task-lists'
 import pluginRss from '@11ty/eleventy-plugin-rss'
 import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import pluginNavigation from '@11ty/eleventy-navigation'
+import pluginFontAwesome from '@11ty/font-awesome'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import pluginSEO from 'eleventy-plugin-seo'
 import postcss from 'postcss'
@@ -133,6 +134,16 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
+
+  // FontAwesome plugin
+  eleventyConfig.addPlugin(pluginFontAwesome, {
+    transform: 'i[class]',
+    shortcode: false,
+    failOnError: true,
+    defaultAttributes: {
+      class: 'icon-svg',
+    },
+  })
 
   // Other plugins
   eleventyConfig.addPlugin(pluginSEO, {
