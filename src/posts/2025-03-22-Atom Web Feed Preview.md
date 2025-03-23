@@ -94,12 +94,6 @@ I created a template for entries using the example above along with references f
   </xsl:template>
 ```
 
-Then referenced `atom.xsl` in `atom.njk`.
-
-```xml
-<?xml-stylesheet href="/atom.xsl" type="text/xsl"?>
-```
-
 ## Adding Styles
 
 I added some basic CSS using colors from my site & used `monospace` as the main font to keep things looking simple.
@@ -149,6 +143,12 @@ eleventyExcludeFromCollections: true
   <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes" />
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml">
+```
+
+Then referenced `atom.xsl` in `atom.njk`.
+
+```xml
+<?xml-stylesheet href="/atom.xsl" type="text/xsl"?>
 ```
 
 ## Source Code
