@@ -53,10 +53,10 @@
     U+FEFF, U+FFFD;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'ForkAwesome';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url('/fonts/fa.woff2') format('woff2');
-}
+} */
