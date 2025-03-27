@@ -4,9 +4,9 @@ pre[class*='language-'] {
 }
 
 pre[class*='language-'] {
-  border-left: 1px solid #1a252f;
-  border-right: 1px solid #1a252f;
-  border-bottom: 1px solid #1a252f;
+  border-left: 1px solid #140d40;
+  border-right: 1px solid #140d40;
+  border-bottom: 1px solid #140d40;
   border-radius: 0;
 }
 
@@ -140,7 +140,7 @@ pre[class*='language-']::after {
   position: absolute;
   top: 0;
   left: 0;
-  background: #1a252f;
+  background: #140d40;
 }
 
 pre[class='language-javascript']::after {
