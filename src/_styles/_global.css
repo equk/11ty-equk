@@ -91,7 +91,7 @@ pre {
 
   :root.dark {
     color-scheme: dark;
-    --theme-bg: #101218;
+    --theme-bg: #0e092d;
     --theme-link: #ffc962;
     --theme-hover: #ff8762;
     --theme-text: #efefef;
@@ -462,7 +462,7 @@ main .content .top-tags a:hover {
 /* Text Codeblock */
 
 pre:has(> code) {
-  background-color: #011627;
+  background-color: #0d0828;
   color: #fff;
 }
 
@@ -470,7 +470,7 @@ pre:has(> code) {
 
 :not(pre)>code[class*='language-'],
 pre[class*='language-'] {
-  background: #011627;
+  background: #0d0828;
 }
 
 /* Task Lists */
