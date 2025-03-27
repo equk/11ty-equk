@@ -98,7 +98,6 @@
   text-align: center;
 }
 
-.social-blocks .fa,
 .social-blocks svg {
   background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
@@ -107,6 +106,7 @@
   padding: 8px;
   text-align: center;
   margin: 0;
+  display: inline;
 }
 
 .social-blocks a {
