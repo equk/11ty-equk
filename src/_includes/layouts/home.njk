@@ -2,11 +2,11 @@
 layout: layouts/base.njk
 ---
 
-<section class="top-banner">
-  <div class="top-banner_image-wrapper">
-    {% image '../src/_media/images/hero/9bf82782a7e634452baa3d37c4aa109c.jpg', "top banner", ['400', '800', '1200', '1400', '1900'], '(max-width: 1900px) 100vw, 1900px' %}
-  </div>
-  <div class="top-banner_overlay"></div>
+<section class="home-top">
+  <div class="top-banner">
+    <div class="gradient-wrapper">
+    </div>
+    <div class="gradient_overlay"></div>
   <div class="top-banner_container">
     <div class="top-banner_title">
       <h1>
@@ -25,7 +25,7 @@ layout: layouts/base.njk
       </p>
     </div>
   </div>
+</div>
 </section>
-<div class="col-line"></div>
 
 {{ content | safe }}
