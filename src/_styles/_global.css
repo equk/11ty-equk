@@ -1141,6 +1141,10 @@ h2+.header-anchor {
  */
 
 .post-reactions {
+  margin-block-start: var(--space-s);
+}
+
+.post-reactions {
   display: grid;
   grid-auto-rows: 1fr;
   grid-column-gap: 5px;
