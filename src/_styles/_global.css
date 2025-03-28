@@ -482,15 +482,15 @@ li.task-list-item {
 
 :not(pre)>code {
   background-color: #eef9ff !important;
-  border-radius: 0.3125rem !important;
+  border-radius: 0.3125em !important;
   color: #0175b4 !important;
-  padding: 0.2rem 0.4rem !important;
+  padding: 0.1em 0.2em !important;
   font-weight: normal !important;
 }
 
 .dark :not(pre)>code {
-  background-color: #011627 !important;
-  color: #cc99cd !important;
+  background-color: #1f1b41 !important;
+  color: #9dfc7c !important;
 }
 
 /*
