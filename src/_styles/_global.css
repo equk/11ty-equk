@@ -353,12 +353,10 @@ footer .copyright-c {
   padding: 0 1rem;
   padding-bottom: 1px;
   background: var(--theme-bg);
-  margin: 15px auto;
+  margin-top: 15px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   max-width: 72rem;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 footer .copyright-content {
