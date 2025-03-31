@@ -6,15 +6,10 @@ eleventyNavigation:
 title: About
 permalink: about/index.html
 ---
-<div>
-    <div class="flex flex-col gap-1 text-center items-center">
-        <img class="h-32 w-32 bg-white p-1 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
-        <p class="text-3xl">equilibriumuk</p>
-    </div>
-    <div class="flex justify-center items-center gap-2 my-0">
-        <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color ts"></span> Typescript <span class="language-color rust"></span> Rust <span class="language-color lua"></span> Lua <span class="language-color go"></span> Go <br/><span class="language-color sh"></span> Bash <span class="language-color c"></span> C <span class="language-color py"></span> Python <span class="language-color ps"></span> Powershell</p>
-    </div>
-</div>
+
+<img class="h-32 w-32 bg-white p-1 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
+
+<p class="text-center text-5xl">equilibriumuk</p>
 
 ## Linux
 
@@ -42,11 +37,11 @@ Servers I work on use NixOS, Debian, Ubuntu, freebsd.
 
 ### Social Media
 
-Mastodon: <a href="https://{{ metadata.author.contacts.mastodon_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.mastodon }}</a>
+<i class="fa-brands fa-mastodon"></i> Mastodon: <a href="https://{{ metadata.author.contacts.mastodon_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.mastodon }}</a>
 
-Bluesky: <a href="https://{{ metadata.author.contacts.bluesky_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.bluesky }}</a>
+<i class="fa-brands fa-bluesky"></i> Bluesky: <a href="https://{{ metadata.author.contacts.bluesky_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.bluesky }}</a>
 
-Github: <a href="https://github.com/{{ metadata.author.contacts.github }}" target="_blank" rel="noopener noreferrer">github.com/{{ metadata.author.contacts.github }}</a>
+<i class="fa-brands fa-github"></i> Github: <a href="https://github.com/{{ metadata.author.contacts.github }}" target="_blank" rel="noopener noreferrer">github.com/{{ metadata.author.contacts.github }}</a>
 
 ---
 
