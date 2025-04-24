@@ -23,11 +23,11 @@ importers:
         specifier: 3.1.0-beta.1
         version: 3.1.0-beta.1
       '@11ty/eleventy-img':
-        specifier: ^6.0.1
-        version: 6.0.1
+        specifier: ^6.0.2
+        version: 6.0.2
       '@11ty/eleventy-navigation':
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: ^1.0.4
+        version: 1.0.4
       '@11ty/eleventy-plugin-rss':
         specifier: ^2.0.3
         version: 2.0.3
@@ -136,12 +136,12 @@ packages:
     resolution: {integrity: sha512-yu7oZ5iv7zvFDawSYcN19cz7ddJB7OXPGZ47z/MzYmLa2LkpJm0KnZW2xGwpKvVrXd+tyb96ts6AqlkJT/ibwQ==}
     engines: {node: '>=18'}
 
-  '@11ty/eleventy-img@6.0.1':
-    resolution: {integrity: sha512-Ktr1C42cu7rHR7M0lT+JfMjWaOIwS2rXqzrXkNfKAEljgJxCPVg2vsWr5iyPBg2IL7OY8ipPCr5jbovMAz6B9w==}
+  '@11ty/eleventy-img@6.0.2':
+    resolution: {integrity: sha512-7JYo4CX8J2jLW3Bzw7RuwLiUIr2NRPtwbspZkng0/4Hr6SaVPA7P7ZSbJcZl+K4jCpw8MCss4XoGcBZ2XejRjg==}
     engines: {node: '>=18'}
 
-  '@11ty/eleventy-navigation@1.0.1':
-    resolution: {integrity: sha512-Im4KPmn6GlOtOr5RwDOcp+mrySp815RAIJXNKzhIMbM4QxQfhLGfw2abzaus2ceM5NV0JlWyPcJeDuclY12ROg==}
+  '@11ty/eleventy-navigation@1.0.4':
+    resolution: {integrity: sha512-FgIfKiFP1e3plQdIvSRph1tFV44bbCXcYs+AWcwnsfrn5I6Gf0t3hBq9IrR4JdnZ06hlEKq8qRbnbb0nfEZg3A==}
 
   '@11ty/eleventy-plugin-bundle@3.0.1':
     resolution: {integrity: sha512-mskptUoN7PY+rv7DCH3ZwnvMc9aFBGEHHBjmlu+WGde6ySaa43qsLqjseX6RRijDILxp3EiYQ9XnDmmsSnoqIw==}
@@ -2543,7 +2543,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@11ty/eleventy-img@6.0.1':
+  '@11ty/eleventy-img@6.0.2':
     dependencies:
       '@11ty/eleventy-fetch': 5.0.2
       '@11ty/eleventy-utils': 2.0.1
@@ -2556,7 +2556,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@11ty/eleventy-navigation@1.0.1':
+  '@11ty/eleventy-navigation@1.0.4':
     dependencies:
       dependency-graph: 1.0.0
 
