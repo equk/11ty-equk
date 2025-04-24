@@ -34,7 +34,7 @@
     "cssnano-preset-lite": "^4.0.3",
     "dotenv": "^16.4.7",
     "eleventy-plugin-seo": "^0.5.2",
-    "esbuild": "^0.25.1",
+    "esbuild": "^0.25.3",
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-config-standard": "^17.1.0",
