@@ -530,6 +530,11 @@ main .content-title {
 main .content-date {
   text-align: center;
   font-size: var(--size-base);
+  color: rgb(107, 114, 128);
+}
+
+.dark main .content-date {
+  color: rgb(156, 163, 175);
 }
 
 /* Blockquote */
