@@ -1419,6 +1419,13 @@ h1 {
   margin-block-start: 80px;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 38px;
+    margin-block-start: 40px;
+  }
+}
+
 h2 {
   font-size: var(--size-xxl);
   margin-block-start: var(--space-xxl);
