@@ -132,6 +132,11 @@ pre[class='language-ts']::before {
   color: #fff;
 }
 
+pre[class='language-rust']::before {
+  content: 'rust';
+  background: #dea584;
+}
+
 pre[class*='language-']::after {
   content: '';
   display: block;
@@ -141,6 +146,10 @@ pre[class*='language-']::after {
   top: 0;
   left: 0;
   background: #140d40;
+}
+
+pre[class='language-rust']::after {
+  background: #dea584;
 }
 
 pre[class='language-javascript']::after {
@@ -207,4 +216,12 @@ pre[class='language-lua']::after {
 
 pre[class='language-ts']::after {
   background: #3178c6;
+}
+
+pre[class='language-shell']::after {
+  background: #ddd;
+}
+
+pre[class='language-sh']::after {
+  background: #ddd;
 }
