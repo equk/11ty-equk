@@ -166,20 +166,22 @@ main .hero-w .hero-link {
 }
 
 main .hero-image img {
-  -webkit-box-shadow: 5px 5px 20px rgba(39, 44, 49, .6), 1px 3px 8px rgba(39, 44, 49, .3);
-  box-shadow: 5px 5px 20px rgba(39, 44, 49, .6), 1px 3px 8px rgba(39, 44, 49, .3);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  border-radius: 9px;
   max-height: 500px;
-}
-
-.dark main .hero-image img {
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, .6), 1px 3px 8px rgba(0, 0, 0, .3);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6), 1px 3px 8px rgba(0, 0, 0, .3);
+  aspect-ratio: 12/5;
 }
 
 main .hero-image img {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  main .hero-image img {
+    aspect-ratio: 8/5;
+  }
 }
 
 section.home-top {
