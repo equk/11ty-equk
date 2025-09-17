@@ -1404,9 +1404,14 @@ main ul {
   -----------------------------------------
 */
 
-h1 {
+/* h1 {
   font-size: var(--size-xxxl);
   margin-block-start: var(--space-xxxl);
+} */
+
+h1 {
+  font-size: 55px;
+  margin-block-start: 80px;
 }
 
 h2 {
