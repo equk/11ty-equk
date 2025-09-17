@@ -150,10 +150,6 @@ pre {
     @apply pb-8;
   }
 
-  main .post-content {
-    @apply pt-8;
-  }
-
   a {
     color: var(--theme-link);
   }
@@ -573,6 +569,15 @@ main blockquote cite {
   font-size: var(--size-base);
   margin-block-start: var(--space-s);
   display: block;
+}
+
+/* Article Header */
+
+@media (max-width: 768px) {
+  main .content header {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
 }
 
 /*
