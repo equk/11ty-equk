@@ -462,6 +462,21 @@ main .content .top-tags a:hover {
 pre:has(> code) {
   background-color: #0d0828;
   color: #fff;
+  border-left: 1px solid #140d40;
+  border-right: 1px solid #140d40;
+  border-bottom: 1px solid #140d40;
+  border-radius: 0;
+}
+
+pre:has(> code)::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #140d40;
 }
 
 /* Code Background */
