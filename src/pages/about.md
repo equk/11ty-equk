@@ -7,10 +7,6 @@ title: About
 permalink: about/index.html
 ---
 
-<img class="h-32 w-32 bg-white p-1 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
-
-<p class="text-center text-5xl">equilibriumuk</p>
-
 ## Linux
 
 I use Archlinux as my desktop OS with a tiling wm.<br />
