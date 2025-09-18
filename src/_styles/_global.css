@@ -1185,7 +1185,7 @@ h2+.header-anchor {
 }
 
 .author-link {
-  font-size: var(--size-base);
+  font-size: var(--size-md);
   font-family: var(--font-header);
   color: var(--theme-text);
   font-weight: bold;
