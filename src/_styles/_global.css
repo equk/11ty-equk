@@ -150,6 +150,10 @@ pre {
     @apply pb-8;
   }
 
+  main .post-content {
+    @apply pt-8;
+  }
+
   a {
     color: var(--theme-link);
   }
