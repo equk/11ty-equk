@@ -41,14 +41,12 @@ layout: layouts/base.njk
       <div class="post-footer border-t border-b border-slate-200 px-3 py-2 dark:border-slate-700/40">
         <div class="flex items-center">
           <div class="flex items-center author-info">
-            <a href="/about"><img class="object-cover h-20 rounded-full" src={{ metadata.author.photo }} alt={{ metadata.author.name }} /></a>
+            <a href="/about"><img class="object-cover h-10 rounded-full" src={{ metadata.author.photo }} alt={{ metadata.author.name }} /></a>
           </div>
-          <div class="mx-5 flex-1 items-center text-left">
-            <a href="/about" class="mx-2 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+          <div class="flex-1">
+            <a href="/about" class="mx-2 items-center author-link">
               {{ metadata.author.name }}
             </a>
-            <br />
-            <time class="mx-2 text-m text-gray-600 dark:text-gray-300 uppercase" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
           </div>
           <div class="hidden md:flex items-center text-m text-right">
             <div class="post-tags">
