@@ -18,7 +18,6 @@ import pluginImages from './eleventy.config.images.js'
 import containerPlugin from './eleventy.config.markdown.js'
 import githubAlerts from './eleventy.config.githubalerts.js'
 import extLinks from './eleventy.config.extlinks.js'
-import metadata from './src/_data/metadata.js'
 
 export default function (eleventyConfig) {
   // Run esbuild
