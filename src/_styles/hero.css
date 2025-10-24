@@ -167,7 +167,7 @@ main .hero-w .hero-link {
 
 main .hero-image img {
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
-  border-radius: 9px;
+  border-radius: 15px;
   max-height: 500px;
   aspect-ratio: 12/5;
 }
