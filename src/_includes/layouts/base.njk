@@ -6,6 +6,8 @@
 
     {% if title %}
     <title>{{ title + " - " + metadata.title }}</title>
+    {% elif pagination.pageNumber %}
+    <title>{{ metadata.title + " - Page " + pagination.pageNumber }}</title>
     {% else %}
     <title>{{ metadata.title }}</title>
     {% endif %}
