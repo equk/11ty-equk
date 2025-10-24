@@ -1,14 +1,14 @@
 ---
 date: 2016-01-23T13:30:28Z
-image:
+image: ../_media/images/hero/cherry_blues_w.jpg
+imgAuthor: equilibriumuk
+imgAuthorURL: https://equk.co.uk/about
 tags:
   - github
   - linux
 title: BlackWidow Macro Keys In Linux
 slug: blackwidow-macro-keys-in-linux
 ---
-
-<p class="text-center"><img src="/media/images/2016/01/bwidow_header_white.jpg" alt="bwidow_header"></p>
 
 This is a C program which sends the init code from Razer windows proprietary drivers to initialize the 'macro' keys on Razer BlackWidow keyboards on Linux.
 
