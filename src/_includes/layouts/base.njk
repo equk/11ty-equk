@@ -15,8 +15,26 @@
     {# Forward pingbacks to webmentions #}
     <link rel="pingback" href="https://webmention.io/webmention?forward=https://webmention.io/equk.co.uk/webmention" />
 
-    {# Add in seo items #}
-    {% seo "" %}
+    {# Meta tags #}
+    <meta name="description" content="{{ metadata.description }}">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="{{ metadata.author.name }}">
+    <link rel="canonical" href="{{ metadata.url + page.url }}">
+
+    {# OpenGraph tags #}
+    {% if title %}
+    <meta property="og:title" content="{{ title + " - " + metadata.title }}">
+    {% else %}
+    <meta property="og:title" content="{{ metadata.title }}">
+    {% endif %}
+    {% if ogtype %}
+    <meta property="og:type" content="{{ ogtype }}">
+    {% else %}
+    <meta property="og:type" content="article">
+    {% endif %}
+    <meta property="og:url" content="{{ metadata.url + page.url }}">
+    <meta property="og:description" content="{{ metadata.description }}">
+    <meta property="og:image" content="{{ metadata.url + '/media/social.png' }}">
 
     {# Fediverse creator info #}
     <meta name="fediverse:creator" content="@equilibriumuk@hachyderm.io" />
