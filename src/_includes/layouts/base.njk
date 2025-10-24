@@ -11,7 +11,7 @@
     {% if title %}
     <title>{{ title + " - " + metadata.title }}</title>
     {% elif pagination.pageNumber %}
-    <title>{{ metadata.title + " - Page " + pagination.pageNumber }}</title>
+    <title>{{ metadata.title + " - Page " + currentPage }}</title>
     {% else %}
     <title>{{ metadata.title }}</title>
     {% endif %}
@@ -37,6 +37,8 @@
     {# OpenGraph tags #}
     {% if title %}
     <meta property="og:title" content="{{ title + " - " + metadata.title }}">
+    {% elif pagination.pageNumber %}
+    <meta property="og:title" content="{{ metadata.title + " - Page " + currentPage }}">
     {% else %}
     <meta property="og:title" content="{{ metadata.title }}">
     {% endif %}
