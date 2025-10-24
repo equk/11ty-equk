@@ -7,7 +7,6 @@ import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import pluginNavigation from '@11ty/eleventy-navigation'
 import pluginFontAwesome from '@11ty/font-awesome'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
-import pluginSEO from 'eleventy-plugin-seo'
 import postcss from 'postcss'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
@@ -142,19 +141,6 @@ export default function (eleventyConfig) {
     failOnError: true,
     defaultAttributes: {
       class: 'icon-svg',
-    },
-  })
-
-  // Other plugins
-  eleventyConfig.addPlugin(pluginSEO, {
-    title: metadata.title,
-    description: metadata.description,
-    url: metadata.url,
-    author: metadata.author.name,
-    twitter: metadata.author.contacts.twitter,
-    image: metadata.url + '/media/social.png',
-    options: {
-      twitterCardType: 'summary_large_image',
     },
   })
 
