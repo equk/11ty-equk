@@ -57,9 +57,6 @@ importers:
       dotenv:
         specifier: ^17.2.2
         version: 17.2.2
-      eleventy-plugin-seo:
-        specifier: ^0.5.2
-        version: 0.5.2
       esbuild:
         specifier: ^0.25.9
         version: 0.25.9
@@ -1067,9 +1064,6 @@ packages:
   electron-to-chromium@1.5.220:
     resolution: {integrity: sha512-TWXijEwR1ggr4BdAKrb1nMNqYLTx1/4aD1fkeZU+FVJGTKu53/T7UyHKXlqEX3Ub02csyHePbHmkvnrjcaYzMA==}
 
-  eleventy-plugin-seo@0.5.2:
-    resolution: {integrity: sha512-saAWnrQrMc/dP6nimCbvAlumohfBrDI7IrpkN/OJoxvLxcOsyWrA+XMR+3lWLVAkuwC1SyA5cbunr1u8jkFK/A==}
-
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
@@ -1536,9 +1530,6 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  html-entities@1.4.0:
-    resolution: {integrity: sha512-8nxjcBcd8wovbeKx7h3wTji4e6+rhaVuPNpMqwWgnHh+N9ToqsCs6XztWRBPQ+UtzsoMAdKZtUENoVzU/EMtZA==}
-
   htmlparser2@7.2.0:
     resolution: {integrity: sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==}
 
@@ -1841,9 +1832,6 @@ packages:
 
   lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
-
-  lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
@@ -3760,11 +3748,6 @@ snapshots:
 
   electron-to-chromium@1.5.220: {}
 
-  eleventy-plugin-seo@0.5.2:
-    dependencies:
-      html-entities: 1.4.0
-      lodash: 4.17.21
-
   emoji-regex@8.0.0: {}
 
   emoji-regex@9.2.2: {}
@@ -4384,8 +4367,6 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  html-entities@1.4.0: {}
-
   htmlparser2@7.2.0:
     dependencies:
       domelementtype: 2.3.0
@@ -4684,8 +4665,6 @@ snapshots:
   lodash.merge@4.6.2: {}
 
   lodash.uniq@4.5.0: {}
-
-  lodash@4.17.21: {}
 
   lru-cache@10.4.3: {}
 
