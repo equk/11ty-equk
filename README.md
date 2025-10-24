@@ -4,7 +4,7 @@
 <img src="./public/media/social.png" alt="equks blog"/>
 </p>
 
-Personal blog powered by eleventy
+Personal blog powered by 🎈 eleventy
 
 <img src="./public/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify"/>
 
@@ -33,7 +33,6 @@ This is my own personal blog and shouldn't be used as a starter template or them
 - [x] darkmode support (`localStorage` & `prefers-color-scheme`)
 - [x] inlined css
 - [x] opengraph meta tags
-- [x] social media meta tags
 - [x] 11ty bundle support
 - [x] markdown checklists
 - [x] eslint with prettier
@@ -63,6 +62,7 @@ Website: https://equk.co.uk
 
 Mastodon: [@equilibriumuk@hachyderm.io](https://hachyderm.io/@equilibriumuk)
 
+Bluesky: [@equilibriumuk.bsky.social](https://bsky.app/profile/equilibriumuk.bsky.social)
 
 # License
 
