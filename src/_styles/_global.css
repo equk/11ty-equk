@@ -765,7 +765,7 @@ a.github .icon-svg {
   height: 50px;
   border-radius: 50%;
   color: var(--theme-text);
-  background-color: rgba(66, 66, 66, 0.1);
+  background-color: rgba(200, 200, 200, 0.8);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
   padding: 3px;
   pointer-events: none;
