@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {% if pagination.pageNumber %}
+    {% set currentPage = pagination.pageNumber + 1 %}
+    {% endif %}
+
     {% if title %}
     <title>{{ title + " - " + metadata.title }}</title>
     {% elif pagination.pageNumber %}
