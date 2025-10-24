@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if title %}
+    <title>{{ title + " - " + metadata.title }}</title>
+    {% else %}
+    <title>{{ metadata.title }}</title>
+    {% endif %}
+
     <link rel="alternate" href="/atom.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
     {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
