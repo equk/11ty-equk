@@ -19,15 +19,9 @@ Mozilla has been adding in llm & ai related features to Firefox for a while, ena
 
 The main problem with this is users are having this forced on them with no gui option to disable these features.
 
-In addition to having annoying unused options in context menus, dialog options & link previews users also have to contend with problems relating to high cpu usage draining battery power on laptops when navigating tabs.
+There have been reports of high cpu & ram usage with firefox local ai features.
 
-[New local AI integration into Firefox spurs complaints of CPU going nuts](https://www.tomshardware.com/tech-industry/artificial-intelligence/new-local-ai-integration-into-firefox-spurs-complaints-of-cpu-going-nuts-chip-and-power-spikes-plague-new-version-141-x)
-
-This follows Mozilla changing the terms of service then revising those terms after huge criticism earlier this year.
-
-[Mozilla is already revising its new Firefox terms to clarify how it handles user data](https://www.theverge.com/news/622080/mozilla-revising-firefox-terms-of-use-data)
-
-Mozilla also [removed a question](https://github.com/mozilla/bedrock/commit/d459addab846d8144b61939b7f4310eb80c5470e) about selling data suggesting they do now sell user data.
+Mozilla also had some trouble with their wording in their ToS relating to user data which seems to tie in to these ai features being pushed.
 
 ## Disable LLM
 
@@ -85,8 +79,6 @@ Mozilla Firefox share of the browser market is already tiny.
 My firefox profile scripts are available on github with a default `prefs.js` included.
 
 <a class="github" href="https://github.com/equk/ffox_profile_tools" aria-label="View ffox_profile_tools on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> ffox_profile_tools</a> <a class="github" href="https://github.com/equk/ffox_profile_tools/blob/master/ffox_data/def_prefs.js" aria-label="View def_prefs.js on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> def_prefs.js</a>
-
-
 
 ## Related
 
