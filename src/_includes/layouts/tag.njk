@@ -28,7 +28,11 @@
     <link rel="canonical" href="{{ metadata.url + page.url }}">
 
     {# OpenGraph tags #}
-    <meta property="og:title" content="{{ title }}">
+    {% if tag %}
+    <meta property="og:title" content="{{ "Posts tagged with " + tag + " - " + metadata.title }}">
+    {% else %}
+    <meta property="og:title" content="{{ "Posts tagged with - " + metadata.title }}">
+    {% endif %}
     {% if ogtype %}
     <meta property="og:type" content="{{ ogtype }}">
     {% else %}
