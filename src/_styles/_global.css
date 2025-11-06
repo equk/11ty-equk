@@ -1327,6 +1327,20 @@ h2+.header-anchor {
 
 /*
   -----------------------------------------
+  Page Transitions
+  -----------------------------------------
+ */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(*) {
+  animation-duration: .5s;
+}
+
+/*
+  -----------------------------------------
   Typography Styles
   -----------------------------------------
  */
