@@ -48,7 +48,7 @@ user_pref("browser.ml.linkPreview.enabled", false);
 user_pref("browser.ml.pageAssist.enabled", false);
 
 user_pref("browser.tabs.groups.smart.enabled", false);
-user_pref("browser.tabs.groups.smart.userEnable", false);
+user_pref("browser.tabs.groups.smart.userEnabled", false);
 
 user_pref("extensions.ml.enabled", false);
 ```
