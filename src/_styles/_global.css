@@ -1176,19 +1176,31 @@ h2+.header-anchor {
 /* post footer */
 
 .author-info img {
-  border: 2px solid white;
+  object-fit: cover;
+  height: 40px;
+  border-radius: 15px;
   transition: 0.2s linear;
 }
 
-.author-info img:hover {
-  border: 2px solid var(--theme-link);
-}
-
 .author-link {
-  font-size: var(--size-md);
+  font-size: 20px;
   font-family: var(--font-header);
   color: var(--theme-text);
   font-weight: bold;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  margin-block-start: 0;
+}
+
+.author-bio {
+  font-size: 16px;
+  font-family: var(--font-header);
+  color: var(--theme-text);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  margin-block-start: 0;
 }
 
 /*

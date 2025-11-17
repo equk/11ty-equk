@@ -41,10 +41,10 @@ layout: layouts/base.njk
       <div class="post-footer border-t border-b border-slate-200 px-3 py-2 dark:border-slate-700/40">
         <div class="flex items-center">
           <div class="flex items-center author-info">
-            <a href="/about"><img class="object-cover h-10 rounded-full" src={{ metadata.author.photo }} alt={{ metadata.author.name }} /></a>
+            <img src={{ metadata.author.photo }} alt={{ metadata.author.name }} />
           </div>
           <div class="flex-1">
-            <a href="/about" class="mx-2 items-center author-link">
+            <a href="/about" class="author-link">
               {{ metadata.author.name }}
             </a>
           </div>
