@@ -93,12 +93,12 @@
   color: #0282c9;
 }
 
-.social-blocks {
+.soc-blk {
   font-size: 37px;
   text-align: center;
 }
 
-.social-blocks svg {
+.soc-blk svg {
   background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
   width: 55px;
@@ -109,39 +109,39 @@
   display: inline;
 }
 
-.social-blocks a {
+.soc-blk a {
   display: inline-block;
   width: 50px;
 }
 
-.social-blocks a .fa-twitter {
+.soc-blk a .fa-twitter {
   background-color: #55acee;
 }
 
-.social-blocks a .fa-facebook {
+.soc-blk a .fa-facebook {
   background-color: #3b5998;
 }
 
-.social-blocks a .fa-google-plus {
+.soc-blk a .fa-google-plus {
   background-color: #d34836;
 }
 
-.social-blocks a .fa-tumblr {
+.soc-blk a .fa-tumblr {
   background-color: #36465d;
 }
 
-.social-blocks a .fa-github,
-.social-blocks a .github {
+.soc-blk a .fa-github,
+.soc-blk a .github {
   background-color: #333;
 }
 
-.social-blocks a .fa-mastodon,
-.social-blocks a .mastodon {
+.soc-blk a .fa-mastodon,
+.soc-blk a .mastodon {
   background-color: #563acc;
 }
 
-.social-blocks a .fa-bluesky,
-.social-blocks a .bluesky {
+.soc-blk a .fa-bluesky,
+.soc-blk a .bluesky {
   background-color: #0085ff;
 }
 
