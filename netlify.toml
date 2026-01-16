@@ -1,5 +1,5 @@
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "lts/*"
 [build]
   command = "pnpm build"
   publish = "dist"
