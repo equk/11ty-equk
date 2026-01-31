@@ -1053,9 +1053,28 @@ article.message {
 
 /* Post List */
 
+.postlist-item {
+    display: flex;
+    position: relative;
+    padding-top: 0.5rem;
+}
+
+.postlist-content {
+    flex: 1;
+}
+
+.post-list .post-icon {
+    padding-right: 10px;
+    display: flex;
+}
+
+.post-list .post-icon img {
+    width: 85px;
+    border-radius: 15px;
+}
+
 .post-title {
   font-size: var(--size-xl);
-  line-height: 1.3rem;
   font-family: var(--font-header);
 }
 
@@ -1064,11 +1083,7 @@ article.message {
   font-size: var(--size-base);
 }
 
-.postlist-item {
-  margin-block-start: var(--space-s);
-}
-
-.postlist {
+.post-list {
   margin-bottom: 1.5rem;
   list-style-type: none;
 }

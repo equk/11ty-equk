@@ -1,14 +1,14 @@
 <div class="post-list">
-  <ul class="postlist">
-    {% for post in postslist %}
-    <li class="postlist-item">
-      <span class="post-title">
-        <a href="{{ post.url }}" class="post-title-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-      </span>
-      <div class="postlist-meta">
-        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDateShort }}</time>
+  {% for post in postslist %}
+    <article class="postlist-item">
+      <div class="postlist-content">
+        <div class="post-title">
+          <a href="{{ post.url }}" class="post-title-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+        </div>
+        <div class="postlist-meta">
+          <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDateShort }}</time>
+        </div>
       </div>
-    </li>
-    {% endfor %}
-  </ul>
+    </article>
+  {% endfor %}
 </div>
