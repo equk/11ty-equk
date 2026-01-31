@@ -246,18 +246,18 @@ header nav ul {
   }
 }
 
-#social-nav {
+#soc-nav {
   margin-left: 10px;
 }
 
-#social-nav svg {
+#soc-nav svg {
   height: 1rem;
   width: 1rem;
   display: inline;
   max-height: fit-content;
 }
 
-#social-nav a:hover svg {
+#soc-nav a:hover svg {
   transform: scale(1.2);
   color: var(--theme-text);
 }
