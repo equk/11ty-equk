@@ -11,6 +11,9 @@ permalink: projects/index.html
 <br/><i class="fa-solid fa-code"></i> Software
 <br/><i class="fa-brands fa-github"></i> Opensource
 
+<br/><i class="fa-solid fa-code"></i> <i class="fa-brands fa-github"></i> `sway` capture selection using `grim` & `slurp`
+<br/><i class="fa-solid fa-code"></i> <i class="fa-brands fa-github"></i> `sway` capture active monitor / window using `grim`
+<br/><i class="fa-solid fa-microchip"></i> <i class="fa-solid fa-code"></i> <i class="fa-brands fa-github"></i> blackwidow macro keys rewrite (`libusb` in `c`)
 <br/><i class="fa-solid fa-code"></i> <i class="fa-brands fa-github"></i> `bluesky` post `web component`
 <br/><i class="fa-solid fa-code"></i> <i class="fa-brands fa-github"></i> `mastodon` post `web component`
 <br/><i class="fa-solid fa-code"></i> `archlinux` automatic builds from `git` releases
