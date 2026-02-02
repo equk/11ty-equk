@@ -141,7 +141,8 @@ pre {
     @apply mx-auto max-w-4xl;
   }
 
-  main .tags-list {
+  main .tags-list,
+  main .post-list {
     @apply mx-auto max-w-2xl;
   }
 
@@ -1090,6 +1091,7 @@ article.message {
 
 .postlist-meta {
   text-transform: uppercase;
+  margin-top: -0.3rem;
 }
 
 /* Tags List */
