@@ -107,6 +107,7 @@
   text-align: center;
   margin: 0;
   display: inline;
+  border-radius: 5px;
 }
 
 .soc-blk a {
