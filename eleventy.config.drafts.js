@@ -1,3 +1,5 @@
+import color from 'kleur'
+
 function eleventyComputedPermalink() {
   // When using `addGlobalData` and you *want* to return a function, you must nest functions like this.
   // `addGlobalData` acts like a global data file and runs the top level function it receives.
@@ -39,16 +41,16 @@ export default (eleventyConfig) => {
 
   let logged = false
   eleventyConfig.on('eleventy.before', ({ runMode }) => {
-    let text = 'Excluding'
+    let text = 'Excluding Drafts'
     // Only show drafts in serve/watch modes
     if (runMode === 'serve' || runMode === 'watch') {
       process.env.BUILD_DRAFTS = true
-      text = 'Including'
+      text = 'Including Drafts'
     }
 
     // Only log once.
     if (!logged) {
-      console.log(`[11ty/eleventy-base-blog] ${text} drafts.`)
+      console.log(`${color.gray('[11ty]')} ${text}`)
     }
 
     logged = true
