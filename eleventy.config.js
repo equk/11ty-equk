@@ -81,13 +81,17 @@ export default function (eleventyConfig) {
   // Only run on production build
   if (process.env.NODE_ENV === 'production') {
     eleventyConfig.on('eleventy.before', async () => {
-      console.log('[11ty] Generating Favicon')
-      await sharp('src/_media/favicon.svg')
+      const iconInput = './src/_media/favicon.svg'
+      const iconOutput = './public/img/icon-96x96.png'
+      console.log(
+        `${color.gray('[11ty]')} Generating Favicon ${iconOutput} ${color.gray(`from ${iconInput}`)}`
+      )
+      await sharp(iconInput)
         .png()
         .resize(96, 96)
-        .toFile('public/img/icon-96x96.png')
+        .toFile(iconOutput)
         .catch(function (err) {
-          console.log('[11ty] ERROR Generating favicon')
+          console.log(`${color.gray('[11ty]')} ERROR Generating Favicon`)
           console.log(err)
         })
     })
