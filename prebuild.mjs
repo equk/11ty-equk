@@ -11,25 +11,32 @@
  *
  */
 import fs from 'fs'
+import color from 'kleur'
 
 const outputDir = 'dist'
 
 async function preEleventy() {
   // Start time for cli stats
   const start = +new Date()
-  console.log('[pre-11ty] Starting Clean Build')
+  console.log(
+    `${color.bold().gray('[pre-11ty]')} ${color.bold().green('Starting Clean Build')}`
+  )
   // Clean output if exists
   if (fs.existsSync(outputDir)) {
     fs.rmSync(outputDir, { recursive: true })
-    console.log(`[pre-11ty] Cleaning Old Build From ${outputDir}`)
+    console.log(
+      `${color.gray('[pre-11ty]')} Cleaning Old Build From '${outputDir}'`
+    )
     const end = +new Date()
     console.log(
-      `[pre-11ty] Build Output: '${outputDir}' Removed (+${end - start}ms)`
+      `${color.gray('[pre-11ty]')} Build Output: '${outputDir}' Removed (+${end - start}ms)`
     )
   } else {
-    console.log(`[pre-11ty] Build Output: '${outputDir}' is clean`)
+    console.log(
+      `${color.gray('[pre-11ty]')} Build Output: '${outputDir}' is clean`
+    )
   }
-  console.log('\n')
+  console.log('')
 }
 
 /*
