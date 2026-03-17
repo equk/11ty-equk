@@ -13,6 +13,7 @@ import autoprefixer from 'autoprefixer'
 import postcssimport from 'postcss-import'
 import cssnano from 'cssnano'
 import sharp from 'sharp'
+import color from 'kleur'
 import pluginDrafts from './eleventy.config.drafts.js'
 import pluginImages from './eleventy.config.images.js'
 import containerPlugin from './eleventy.config.markdown.js'
@@ -41,7 +42,7 @@ export default function (eleventyConfig) {
     const cssInput = fs.readFileSync('src/_styles/_global.css', {
       encoding: 'utf-8',
     })
-    const cssOutDir = 'src/_assets/css/'
+    const cssOutDir = './src/_assets/css/'
     const cssOutFile = 'styles.css'
     const cssOutput = cssOutDir + cssOutFile
     if (!fs.existsSync(cssOutDir)) {
@@ -68,7 +69,9 @@ export default function (eleventyConfig) {
         cleanCSS = cleanCSS.replace(/,$\n/gm, ',')
         fs.writeFile(cssOutput, cleanCSS, (err) => {
           if (err) throw err
-          console.log(`[11ty] Writing Postcss Output: ${cssOutput}`)
+          console.log(
+            `${color.gray('[11ty]')} Writing ${cssOutput} ${color.bold().gray(`from PostCSS`)}`
+          )
         })
       })
     return minified
