@@ -11,7 +11,11 @@ Personal blog powered by 🎈 eleventy
 Deployed at: https://equk.co.uk/
 
 <p align="center">
-<img src="./public/media/logos/11ty-96x96.png" alt="11ty-logo"><br/>
+<img src="./public/media/logos/11ty-96x96.png" alt="11ty-logo">
+</p>
+
+<p align="center">
+<img src="./public/media/build.png" alt="11ty-equk-build">
 </p>
 
 ## ⚠️ not a starter template or theme
