@@ -18,7 +18,7 @@
   "private": true,
   "license": "MIT",
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
