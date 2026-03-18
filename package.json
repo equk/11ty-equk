@@ -8,8 +8,8 @@
     "debug": "DEBUG=Eleventy* pnpm exec eleventy",
     "devdebug": "DEBUG=Eleventy* pnpm exec eleventy --serve --quiet",
     "bench": "DEBUG=Eleventy:Benchmark* pnpm exec eleventy",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "newpost": "node newpost.js"
