@@ -14,7 +14,6 @@ import postcssimport from 'postcss-import'
 import cssnano from 'cssnano'
 import sharp from 'sharp'
 import color from 'kleur'
-import pluginDrafts from './eleventy.config.drafts.js'
 import pluginImages from './eleventy.config.images.js'
 import containerPlugin from './eleventy.config.markdown.js'
 import githubAlerts from './eleventy.config.githubalerts.js'
@@ -132,7 +131,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget('src/_scripts/*.js')
 
   // App plugins
-  eleventyConfig.addPlugin(pluginDrafts)
   eleventyConfig.addPlugin(pluginImages)
 
   // Official plugins
