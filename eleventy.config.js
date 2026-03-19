@@ -20,6 +20,7 @@ import containerPlugin from './eleventy.config.markdown.js'
 import githubAlerts from './eleventy.config.githubalerts.js'
 import extLinks from './eleventy.config.extlinks.js'
 
+/** @param {import("@11ty/eleventy/src/UserConfig").default} eleventyConfig */
 export default function (eleventyConfig) {
   // Run esbuild
   eleventyConfig.on('eleventy.before', async () => {
