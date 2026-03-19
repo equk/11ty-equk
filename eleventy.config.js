@@ -98,6 +98,13 @@ export default function (eleventyConfig) {
   }
   eleventyConfig.watchIgnores.add('public/img/icon-96x96.png')
 
+  // Only build drafts in dev mode (serve, watch)
+  eleventyConfig.addPreprocessor('drafts', '*', (data) => {
+    if (data.draft && process.env.ELEVENTY_RUN_MODE === 'build') {
+      return false
+    }
+  })
+
   // Copy the contents of the `public` folder to the output folder
   // For example, `./public/css/` ends up in `dist/css/`
   eleventyConfig.addPassthroughCopy({
