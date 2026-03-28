@@ -38,11 +38,13 @@ This is my own personal blog and shouldn't be used as a starter template or them
 - [x] opengraph meta tags
 - [x] 11ty bundle support
 - [x] markdown checklists
-- [x] eslint with prettier
+- [x] prettier ruleset
 - [x] favicon generation
 - [x] webmentions
 - [x] blog post commenting using mastodon
-- [x] esm support (11ty 3.0.x)
+- [x] esm support
+- [x] oxlint for linting
+- [x] data schema with type validation for posts
 
 ## Image Optimization
 
