@@ -9,6 +9,7 @@ import fs from 'fs/promises'
 import fg from 'fast-glob'
 import z from 'zod'
 import { simplematter } from 'simplematter'
+import color from 'kleur'
 
 const postSchema = z.object({
   title: z.string(),
@@ -29,6 +30,7 @@ const postSchema = z.object({
 
 async function CheckSchema() {
   const start = +new Date()
+  console.log(`${color.bold().green('\n    Starting Schema Check\n')}`)
   const files = await fg('./src/posts/*.md')
   const posts = await Promise.all(
     files.map(async (file_in) => {
@@ -45,7 +47,12 @@ async function CheckSchema() {
       console.log(postIn.file_in) & postSchema.parse(postIn.frontmatter)
   )
   const end = +new Date()
-  console.log(`\n    ${posts.length} files checked in ${end - start}ms\n`)
+  const postsLength = posts.length
+  const checkTime = end - start
+  console.log(`${color.bold('\n    Schema Check Complete')}`)
+  console.log(
+    `${color.bold().green('    ' + postsLength + ' files checked in ' + checkTime + 'ms\n')}`
+  )
 }
 
 CheckSchema()
