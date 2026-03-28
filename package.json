@@ -12,7 +12,8 @@
     "lint:fix": "oxlint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "newpost": "node newpost.js"
+    "newpost": "node ./newpost.js",
+    "schema": "node ./schema.js"
   },
   "author": "equk <equk@users.noreply.github.com>",
   "private": true,
