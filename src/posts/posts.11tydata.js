@@ -3,7 +3,7 @@ import z from 'zod'
 
 export default {
   eleventyDataSchema: function (data) {
-    let schemaTest = z
+    const postSchema = z
       .object({
         title: z.string(),
         date: z
@@ -21,7 +21,7 @@ export default {
         excerpt: z.string().nullish(),
       })
       .parse(data)
-    return schemaTest
+    return postSchema
   },
   tags: ['posts'],
   layout: 'layouts/post.njk',
