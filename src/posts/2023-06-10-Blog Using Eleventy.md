@@ -184,7 +184,7 @@ Esbuild only needs to run once on each build as it's just bundling our page java
 
 Run esbuild before eleventy by using `eleventy.before`.
 
-Javascript input `src/_scripts/js` output `src/_addets/js`.
+Javascript input `src/_scripts/js` output `src/_assets/js`.
 
 📝<a href="/2023/06/26/using-esbuild-with-eleventy/">Using Esbuild With Eleventy</a>
 
@@ -216,7 +216,7 @@ With `eleventy-base-blog` atom feed generation is done using a njk template with
 
 📝<a href="/2023/06/26/generating-summary-for-atom-feed-in-11ty/">Generating Summary For Atom Feed In 11ty</a>
 
-## Newpost Creation
+## New Post Creation
 
 I moved my newpost script from Gatsby as an easy way to create posts.
 
@@ -294,6 +294,20 @@ async function preEleventy() {
 📝<a href="/2023/07/14/favicon-generation-in-eleventy/">Favicon Generation In Eleventy</a><br/>
 📝<a href="/2023/07/18/adding-webmentions-in-eleventy/">Adding Webmentions in Eleventy</a><br/>
 
+### 11ty Posts
+
+📝<a href="/2023/12/29/11ty-ecmascript-modules-support/">11ty ECMAScript Modules Support</a><br>
+📝<a href="/2024/12/06/11ty-fix-inline-styles-livereload/">11ty Fix Inline Styles Livereload</a><br>
+📝<a href="/2024/12/30/site-updates-over-2024/">Site Updates Over 2024</a><br>
+📝<a href="/2025/01/08/mastodon-post-web-component/">Mastodon Post Web Component</a><br>
+📝<a href="/2025/01/09/bluesky-post-web-component/">Bluesky Post Web Component</a><br>
+📝<a href="/2025/02/24/11ty-obsidian-and-github-style-alert-blocks/">11ty Obsidian &amp; Github Style Alert Blocks</a><br>
+📝<a href="/2025/02/25/11ty-markdown-external-links-plugin/">11ty Markdown External Links Plugin</a><br>
+📝<a href="/2025/03/22/atom-web-feed-preview/">Atom Web Feed Preview</a><br>
+📝<a href="/2025/03/23/11ty-font-awesome-svg-plugin/">11ty Font Awesome SVG Plugin</a><br>
+📝<a href="/2025/10/25/11ty-opengraph-and-seo/">11ty OpenGraph &amp; SEO</a><br>
+📝<a href="/2026/03/19/11ty-switching-to-oxlint/">11ty Switching to Oxlint</a><br>
+📝<a href="/2026/03/29/11ty-type-validation-schema/">11ty Type Validation Schema</a><br>
 
 ## Source Code
 
