@@ -220,6 +220,19 @@ export default function (eleventyConfig) {
     return dateObj.getFullYear()
   })
 
+  // Get the date from newest element of a collection.
+  eleventyConfig.addFilter('latestDateCollection', (array) => {
+    if (!Array.isArray(array) || array.length === 0) {
+      return []
+    }
+    const lastItem = array.slice(-1)
+    return new Date(
+      ...lastItem.map((item) => {
+        return item.date
+      })
+    )
+  })
+
   // XML Formatting
   eleventyConfig.addFilter('titleXML', (content) => {
     return content.replace(/&/g, '&amp;')
