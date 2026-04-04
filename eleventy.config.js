@@ -210,6 +210,11 @@ export default function (eleventyConfig) {
     return dateObj.toISOString().split('T')[0]
   })
 
+  eleventyConfig.addFilter('fullDateString', (date) => {
+    const dateObj = new Date(date)
+    return dateObj.toISOString().split('.')[0] + 'Z'
+  })
+
   eleventyConfig.addFilter('htmlDateYear', (date) => {
     const dateObj = new Date(date)
     return dateObj.getFullYear()
