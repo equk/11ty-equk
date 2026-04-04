@@ -2,7 +2,6 @@ import esbuild from 'esbuild'
 import fs from 'fs'
 import markdownItAnchor from 'markdown-it-anchor'
 import markdownItTaskLists from 'markdown-it-task-lists'
-import pluginRss from '@11ty/eleventy-plugin-rss'
 import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import pluginNavigation from '@11ty/eleventy-navigation'
 import pluginFontAwesome from '@11ty/font-awesome'
@@ -141,7 +140,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginImages)
 
   // Official plugins
-  eleventyConfig.addPlugin(pluginRss)
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
