@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
   <subtitle>{{ metadata.description }}</subtitle>
   <link href="{{ permalink | htmlBaseUrl(metadata.url) }}" rel="self"/>
   <link href="{{ metadata.url | addPathPrefixToFullUrl }}" rel="alternate"/>
-  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ collections.posts | latestDateCollection | fullDateString }}</updated>
   <id>{{ metadata.url | addPathPrefixToFullUrl }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
