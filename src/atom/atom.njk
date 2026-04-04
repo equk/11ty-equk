@@ -20,7 +20,7 @@ eleventyExcludeFromCollections: true
   <entry>
     <title type="html">{{ post.data.title | titleXML }}</title>
     <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <updated>{{ post.date | fullDateString }}</updated>
     <id>{{ absolutePostUrl | addPathPrefixToFullUrl }}</id>
     <summary type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | excerpt }}</summary>
   </entry>
