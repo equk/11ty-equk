@@ -317,16 +317,11 @@ export default function (eleventyConfig) {
 
   return {
     // Control which files Eleventy will process
-    // e.g.: *.md, *.njk, *.html, *.liquid
-    templateFormats: ['md', 'njk', 'html', 'liquid'],
+    templateFormats: ['md', 'njk', 'html'],
 
-    // Pre-process *.md files with: (default: `liquid`)
-    markdownTemplateEngine: 'njk',
+    markdownTemplateEngine: 'html',
+    htmlTemplateEngine: 'html',
 
-    // Pre-process *.html files with: (default: `liquid`)
-    htmlTemplateEngine: 'njk',
-
-    // These are all optional:
     dir: {
       input: 'src',
       output: 'dist',
