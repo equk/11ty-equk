@@ -320,7 +320,7 @@ export default function (eleventyConfig) {
     templateFormats: ['md', 'njk', 'html'],
 
     markdownTemplateEngine: 'html',
-    htmlTemplateEngine: 'html',
+    htmlTemplateEngine: 'njk',
 
     dir: {
       input: 'src',
