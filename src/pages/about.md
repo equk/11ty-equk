@@ -33,11 +33,11 @@ Servers I work on use NixOS, Debian, Ubuntu, freebsd.
 
 ### Social Media
 
-<i class="fa-brands fa-mastodon"></i> Mastodon: <a href="https://{{ metadata.author.contacts.mastodon_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.mastodon }}</a>
+<i class="fa-brands fa-mastodon"></i> Mastodon: <a href="https://hachyderm.io/@equilibriumuk" target="_blank" rel="noopener noreferrer">@equilibriumuk@hachyderm.io</a>
 
-<i class="fa-brands fa-bluesky"></i> Bluesky: <a href="https://{{ metadata.author.contacts.bluesky_url }}" target="_blank" rel="noopener noreferrer">{{ metadata.author.contacts.bluesky }}</a>
+<i class="fa-brands fa-bluesky"></i> Bluesky: <a href="https://bsky.app/profile/equilibriumuk.bsky.social" target="_blank" rel="noopener noreferrer">@equilibriumuk.bsky.social</a>
 
-<i class="fa-brands fa-github"></i> Github: <a href="https://github.com/{{ metadata.author.contacts.github }}" target="_blank" rel="noopener noreferrer">github.com/{{ metadata.author.contacts.github }}</a>
+<i class="fa-brands fa-github"></i> Github: <a href="https://github.com/equk" target="_blank" rel="noopener noreferrer">github.com/equk</a>
 
 ---
 
