@@ -12,6 +12,7 @@ import autoprefixer from 'autoprefixer'
 import postcssimport from 'postcss-import'
 import cssnano from 'cssnano'
 import sharp from 'sharp'
+import slugify from 'slugify'
 import color from 'kleur'
 import pluginImages from './eleventy.config.images.js'
 import containerPlugin from './eleventy.config.markdown.js'
@@ -300,7 +301,7 @@ export default function (eleventyConfig) {
         ariaHidden: false,
       }),
       level: [1, 2, 3, 4],
-      slugify: eleventyConfig.getFilter('slugify'),
+      slugify: (s) => slugify(s, { lower: true }),
     })
     mdLib.use(containerPlugin)
     mdLib.use(githubAlerts)
