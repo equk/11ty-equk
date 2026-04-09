@@ -7,3 +7,62 @@
           <a href="{{ 'https://' + metadata.author.contacts.bluesky_url }}" target="_blank" aria-label="go to bluesky" rel="me noopener noreferrer">
             <svg class="bluesky" viewBox="0 0 64 57" aria-hidden="true"><path fill="currentColor" d="M13.9 3.8A75.1 75.1 0 0 1 32 26.6v15.8c0-.3-.1 0-.4.9-1.5 4.5-7.4 21.8-21 8-7-7.4-3.8-14.7 9.2-17-7.4 1.4-15.7-.7-18-9A193 193 0 0 1 0 6.6C0-3.3 8.6-.1 13.9 3.9Zm36.2 0A75.1 75.1 0 0 0 32 26.6v15.8c0-.3.1 0 .4.9 1.5 4.5 7.4 21.8 21 8 7-7.4 3.8-14.7-9.2-17 7.4 1.4 15.7-.7 18-9A193 193 0 0 0 64 6.6c0-9.8-8.6-6.7-13.9-2.7Z"></path></svg>
           </a>
+
+{%- css %}
+footer .soc-blk {
+  margin: auto 0
+}
+
+.soc-blk {
+  font-size: 37px;
+  text-align: center;
+}
+
+.soc-blk svg {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  padding: 8px;
+  text-align: center;
+  margin: 0;
+  display: inline;
+  border-radius: 5px;
+}
+
+.soc-blk a {
+  display: inline-block;
+  width: 50px;
+}
+
+.soc-blk a .fa-twitter {
+  background-color: #55acee;
+}
+
+.soc-blk a .fa-facebook {
+  background-color: #3b5998;
+}
+
+.soc-blk a .fa-google-plus {
+  background-color: #d34836;
+}
+
+.soc-blk a .fa-tumblr {
+  background-color: #36465d;
+}
+
+.soc-blk a .fa-github,
+.soc-blk a .github {
+  background-color: #333;
+}
+
+.soc-blk a .fa-mastodon,
+.soc-blk a .mastodon {
+  background-color: #563acc;
+}
+
+.soc-blk a .fa-bluesky,
+.soc-blk a .bluesky {
+  background-color: #0085ff;
+}
+{%- endcss %}
