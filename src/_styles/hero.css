@@ -93,59 +93,6 @@
   color: #0282c9;
 }
 
-.soc-blk {
-  font-size: 37px;
-  text-align: center;
-}
-
-.soc-blk svg {
-  background-color: rgba(0, 0, 0, 0.65);
-  color: #fff;
-  width: 55px;
-  height: 55px;
-  padding: 8px;
-  text-align: center;
-  margin: 0;
-  display: inline;
-  border-radius: 5px;
-}
-
-.soc-blk a {
-  display: inline-block;
-  width: 50px;
-}
-
-.soc-blk a .fa-twitter {
-  background-color: #55acee;
-}
-
-.soc-blk a .fa-facebook {
-  background-color: #3b5998;
-}
-
-.soc-blk a .fa-google-plus {
-  background-color: #d34836;
-}
-
-.soc-blk a .fa-tumblr {
-  background-color: #36465d;
-}
-
-.soc-blk a .fa-github,
-.soc-blk a .github {
-  background-color: #333;
-}
-
-.soc-blk a .fa-mastodon,
-.soc-blk a .mastodon {
-  background-color: #563acc;
-}
-
-.soc-blk a .fa-bluesky,
-.soc-blk a .bluesky {
-  background-color: #0085ff;
-}
-
 /* Hero Image */
 
 main .hero-w {
