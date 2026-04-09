@@ -1,0 +1,29 @@
+            <button class="nav" aria-label="toggle dark mode" type="button" id="toggle-dark" data-aw-toggle-color-scheme=""><svg class="toggledark-ico" viewBox="0 0 24 24">
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7-.7.7m0 11.4.7.7m-12.1-.7-.7.7"></path>
+              </g></svg>
+            </button>
+
+{%- css %}
+button.nav {
+  padding: 10px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+button.nav:hover {
+  background-color: rgba(40, 40, 40, 0.25);
+  border-radius: 50%;
+}
+
+.dark button.nav:hover {
+  background-color: rgba(40, 40, 40, 0.85);
+  border-radius: 50%;
+}
+
+.toggledark-ico {
+  width: 20px;
+  height: 20px;
+}
+{%- endcss %}
