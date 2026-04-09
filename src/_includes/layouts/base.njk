@@ -72,9 +72,9 @@
     {% else %}
     {# Bundle postcss generated output #}
     {%- css %}{% include "src/_assets/css/styles.css" %}{% endcss %}
+    {% endif %}
     {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
     <style>{% getBundle "css" %}</style>
-    {% endif %}
 
     {# Bundle esbuild generated output #}
     {%- js %}{% include "src/_assets/js/darkmode.js" %}{% endjs %}
