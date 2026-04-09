@@ -286,6 +286,7 @@ export default function (eleventyConfig) {
       .split(' ')
       .slice(0, 80)
       .join(' ')
+      .replace(/^\s*\n\n/gm, '')
     return content
   })
 
