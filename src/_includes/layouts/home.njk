@@ -2,22 +2,6 @@
 layout: layouts/base.njk
 ---
 
-<section class="home-top">
-  <div class="top-banner">
-    <div class="gradient-wrapper">
-    </div>
-    <div class="gradient_overlay"></div>
-  <div class="top-banner_container">
-    <div class="top-banner_title">
-      <h1>
-        {{ title or metadata.title }}
-      </h1>
-      <p class="soc-blk">
-{% include "base/socblock.html" %}
-      </p>
-    </div>
-  </div>
-</div>
-</section>
+{% include "home/top.html" %}
 
 {{ content | safe }}
