@@ -124,8 +124,17 @@ export default function (eleventyConfig) {
     domDiff: false,
   })
 
-  // Enable Eleventy Bundle for JS + CSS
-  eleventyConfig.addBundle('css')
+  // Enable Eleventy Bundle for CSS
+  eleventyConfig.addBundle('css', {
+    transforms: [
+      async function (content) {
+        const cssBundle = content.replace(/[\n\r\s\t]+/g, ' ')
+        return cssBundle
+      },
+    ],
+  })
+
+  // Enable Eleventy Bundle for JS
   eleventyConfig.addBundle('js')
 
   // Run Eleventy when these files change:
