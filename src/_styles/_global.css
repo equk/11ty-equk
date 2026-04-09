@@ -14,7 +14,7 @@
  */
 
 @import 'src/_styles/fonts.css';
-@import 'src/_styles/hero.css';
+ /* @import 'src/_styles/hero.css'; */
 @import 'src/_styles/prism/prism-catppuccin.css';
 @import 'src/_styles/prism/language-tabs.css';
 @import 'src/_styles/table.css';
@@ -525,6 +525,47 @@ main .content-date {
 .dark main .content-date {
   color: rgb(156, 163, 175);
 }
+
+/* Post Image */
+
+main .hero-w {
+  max-width: 1200px;
+  max-height: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e5e7eb;
+}
+
+main .hero-w .hero-link {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 0.3125rem;
+  padding: 0.2rem 0.4rem;
+}
+
+main .hero-image img {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  border-radius: 15px;
+  max-height: 500px;
+  aspect-ratio: 12/5;
+}
+
+main .hero-image img {
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  main .hero-image img {
+    aspect-ratio: 8/5;
+  }
+}
+
+
 
 /* Blockquote */
 
