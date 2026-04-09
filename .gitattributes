@@ -1,2 +1,2 @@
 src/_styles/prism/** linguist-vendored
-src/_assets/css/** linguist-generated
+*.webc linguist-language=html
