@@ -276,22 +276,6 @@ header a.site-title:hover {
   color: var(--theme-text);
 }
 
-button.nav {
-  padding: 10px;
-  margin-top: 5px;
-  align-items: center;
-}
-
-button.nav:hover {
-  background-color: rgba(40, 40, 40, 0.25);
-  border-radius: 50%;
-}
-
-.dark button.nav:hover {
-  background-color: rgba(40, 40, 40, 0.85);
-  border-radius: 50%;
-}
-
 /*
   -----------------------------------------
   Footer
