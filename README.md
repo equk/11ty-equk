@@ -32,19 +32,23 @@ This is my own personal blog and shouldn't be used as a starter template or them
 - [x] sitemap generation
 - [x] post feature image
 - [x] image attribution link
+- [x] custom alert blocks in markdown
 - [x] post list pagination
 - [x] darkmode support (`localStorage` & `prefers-color-scheme`)
 - [x] inlined css
 - [x] opengraph meta tags
 - [x] 11ty bundle support
 - [x] markdown checklists
+- [x] github alert blocks in markdown
 - [x] prettier ruleset
 - [x] favicon generation
-- [x] webmentions
-- [x] blog post commenting using mastodon
+- [x] social media interaction components
+- [x] blog post interaction using mastodon & bluesky
 - [x] esm support
+- [x] external links automatically have `target` & `rel` added
 - [x] oxlint for linting
 - [x] data schema with type validation for posts
+- [x] components using eleventy bundle for css & js
 
 ## Image Optimization
 
@@ -79,4 +83,4 @@ Content & Media: Copyright
 
 ---
 
-based on eleventy-base-blog
+based on [eleventy-base-blog v8](https://github.com/11ty/eleventy-base-blog/tree/v8.0.0)
