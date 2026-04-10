@@ -11,3 +11,7 @@ dist
 *.md
 # css files
 *.css
+# html files
+*.html
+# webc files
+*.webc
