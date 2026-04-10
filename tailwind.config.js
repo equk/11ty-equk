@@ -3,7 +3,14 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
-  content: ['src/**/*.{js,md,njk,svg}'],
+  content: [
+    'src/index.njk',
+    'src/tags.njk',
+    'src/404.html',
+    'src/posts/*.md',
+    'src/pages/*.md',
+    'src/_includes/**/*.{njk,html}',
+  ],
   darkMode: 'class',
   corePlugins: {
     touchAction: false,
