@@ -77,6 +77,7 @@ layout: layouts/base.njk
   {% endif %}
   {%- if blueskyPostId or mastodonPostId %}
     {% include 'post/socicons.html' %}
+    {% include 'post/socstyles.html' %}
   {% endif %}
 </main>
 {% getBundle "fontawesome" %}
