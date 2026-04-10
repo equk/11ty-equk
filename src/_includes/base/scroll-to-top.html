@@ -1,0 +1,58 @@
+<a class="scroll-to-top" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1792 1792"><path d="M1611 320q0-53-37-90l-75-75q-38-38-91-38-54 0-90 38L832 640 346 155q-36-38-90-38t-90 38l-75 75q-38 36-38 90 0 53 38 91l651 651q37 37 90 37 52 0 91-37l650-651q38-38 38-91" style="fill:currentColor" transform="matrix(1 0 0 -1 68.339 1217.085)"/></svg></a>
+
+{%- js %}
+{% include "src/_assets/js/scrolltop.js" %}
+{%- endjs %}
+
+{%- css %}
+.scroll-to-top {
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--theme-text);
+  background-color: rgba(200, 200, 200, 0.8);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  padding: 3px;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 300ms ease;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .scroll-to-top {
+  background-color: rgba(44, 50, 66, 0.8);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.scroll-to-top svg {
+  width: 16px;
+}
+
+.scroll-to-top:hover {
+  color: var(--theme-text);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (min-width: 768px) {
+  .scroll-to-top {
+    bottom: 50%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .scroll-to-top {
+    right: 20vw;
+  }
+}
+{%- endcss %}
