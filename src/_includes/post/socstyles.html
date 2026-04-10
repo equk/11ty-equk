@@ -1,0 +1,129 @@
+{%- css %}
+.post-reactions {
+  margin-block-start: var(--space-s);
+}
+
+.post-reactions {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.masto-flex,
+.bsky-flex {
+  display: grid;
+}
+
+.masto-post,
+.bsky-post {
+  border-radius: 5px;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.masto-post p,
+.bsky-post p {
+  font-size: 1rem;
+}
+
+.masto-post a,
+.bsky-post a {
+  text-decoration: none;
+  color: var(--theme-text);
+}
+
+.masto-post a:hover,
+.bsky-post a:hover {
+  text-decoration: none;
+  color: var(--theme-hover);
+}
+
+.mastodon-title {
+  margin-bottom: 0.25rem;
+}
+
+.mastodon-text {
+  margin: 0.5rem 0 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.mastodon-text .ellipsis,
+.mastodon-text .invisible {
+  display: none
+}
+
+.mastodon-name {
+  font-weight: 700;
+  display: flex;
+}
+
+.mastodon-icon {
+  width: 20px;
+  height: auto;
+  margin: 0 4px;
+  color: #563ACC;
+}
+
+.mastodon-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.mastodon-data-icon {
+  display: inline-flex;
+  width: 2rem;
+  height: 1rem;
+}
+
+.mastodon-data-count {
+  display: inline-flex;
+  padding: 0 1rem;
+}
+
+.bluesky-title {
+  margin-bottom: 0.25rem;
+}
+
+.bluesky-text {
+  margin: 1rem 0 0rem;
+  padding-left: 0.25rem;
+}
+
+.bluesky-text .ellipsis,
+.bluesky-text .invisible {
+  display: none
+}
+
+.bluesky-name {
+  font-weight: 700;
+  display: flex;
+}
+
+.bluesky-icon {
+  width: 20px;
+  height: auto;
+  margin: 0 4px;
+  color: #0085ff;
+}
+
+.bluesky-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.bluesky-data-icon {
+  display: inline-flex;
+  width: 2rem;
+  height: 1rem;
+}
+
+.bluesky-data-count {
+  display: inline-flex;
+  padding: 0 1rem;
+}
+{%- endcss %}
