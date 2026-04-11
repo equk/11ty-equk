@@ -171,7 +171,7 @@ export default function (eleventyConfig) {
     collection.getFilteredByGlob('src/posts/*.md').forEach((item) => {
       if (!item.data.tags) return
       item.data.tags
-        .filter((tag) => !['posts', 'all', 'github', 'gatsby'].includes(tag))
+        .filter((tag) => !['posts', 'all', 'github', 'gatsby', 'nodejs'].includes(tag))
         .forEach((tag) => {
           if (typeof tagsObject[tag] === 'undefined') {
             tagsObject[tag] = 1
@@ -184,7 +184,7 @@ export default function (eleventyConfig) {
     Object.keys(tagsObject).forEach((tag) => {
       tagList.push({ tagName: tag, tagCount: tagsObject[tag] })
     })
-    return tagList.sort((a, b) => b.tagCount - a.tagCount).slice(0, 4)
+    return tagList.sort((a, b) => b.tagCount - a.tagCount).slice(0, 5)
   })
 
   // Filters
