@@ -15,8 +15,8 @@ import sharp from 'sharp'
 import slugify from 'slugify'
 import color from 'kleur'
 import containerPlugin from './eleventy.config.markdown.js'
-import githubAlerts from './eleventy.config.githubalerts.js'
 import pluginImages from './src/_plugins/images.js'
+import mdGithubAlerts from './src/_plugins/md/githubalerts.js'
 import mdExtLinks from './src/_plugins/md/extlinks.js'
 
 /** @param {import("@11ty/eleventy/src/UserConfig").default} eleventyConfig */
@@ -306,7 +306,7 @@ export default function (eleventyConfig) {
       slugify: (s) => slugify(s, { lower: true }),
     })
     mdLib.use(containerPlugin)
-    mdLib.use(githubAlerts)
+    mdLib.use(mdGithubAlerts)
     mdLib.use(mdExtLinks)
     mdLib.use(markdownItTaskLists, { label: true })
     mdLib.enable('code')
