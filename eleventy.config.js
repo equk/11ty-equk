@@ -14,10 +14,10 @@ import cssnano from 'cssnano'
 import sharp from 'sharp'
 import slugify from 'slugify'
 import color from 'kleur'
-import pluginImages from './eleventy.config.images.js'
 import containerPlugin from './eleventy.config.markdown.js'
 import githubAlerts from './eleventy.config.githubalerts.js'
 import extLinks from './eleventy.config.extlinks.js'
+import pluginImages from './src/_plugins/images.js'
 
 /** @param {import("@11ty/eleventy/src/UserConfig").default} eleventyConfig */
 export default function (eleventyConfig) {
