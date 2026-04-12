@@ -16,8 +16,8 @@ import slugify from 'slugify'
 import color from 'kleur'
 import containerPlugin from './eleventy.config.markdown.js'
 import githubAlerts from './eleventy.config.githubalerts.js'
-import extLinks from './eleventy.config.extlinks.js'
 import pluginImages from './src/_plugins/images.js'
+import mdExtLinks from './src/_plugins/md/extlinks.js'
 
 /** @param {import("@11ty/eleventy/src/UserConfig").default} eleventyConfig */
 export default function (eleventyConfig) {
@@ -307,7 +307,7 @@ export default function (eleventyConfig) {
     })
     mdLib.use(containerPlugin)
     mdLib.use(githubAlerts)
-    mdLib.use(extLinks)
+    mdLib.use(mdExtLinks)
     mdLib.use(markdownItTaskLists, { label: true })
     mdLib.enable('code')
   })
