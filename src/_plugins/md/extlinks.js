@@ -1,7 +1,7 @@
 // Add target & rel attributes to external links
 // Add css class to external links
 // equk.co.uk
-import metadata from './src/_data/metadata.js'
+import metadata from '../../_data/metadata.js'
 
 export default (md) => {
   md.use(tokensIter, 'extLink', function (tokens, idx) {
