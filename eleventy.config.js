@@ -14,8 +14,8 @@ import cssnano from 'cssnano'
 import sharp from 'sharp'
 import slugify from 'slugify'
 import color from 'kleur'
-import containerPlugin from './eleventy.config.markdown.js'
 import pluginImages from './src/_plugins/images.js'
+import mdCallouts from './src/_plugins/md/callouts.js'
 import mdGithubAlerts from './src/_plugins/md/githubalerts.js'
 import mdExtLinks from './src/_plugins/md/extlinks.js'
 
@@ -305,7 +305,7 @@ export default function (eleventyConfig) {
       level: [1, 2, 3, 4],
       slugify: (s) => slugify(s, { lower: true }),
     })
-    mdLib.use(containerPlugin)
+    mdLib.use(mdCallouts)
     mdLib.use(mdGithubAlerts)
     mdLib.use(mdExtLinks)
     mdLib.use(markdownItTaskLists, { label: true })
