@@ -462,6 +462,13 @@ main .content-date {
   color: #233240;
 }
 
+main .page .content-title {
+  text-align: center;
+  text-transform: none;
+  font-family: var(--font-header);
+  color: var(--theme-text);
+}
+
 /* Post Image */
 
 main .hero-w {
@@ -540,15 +547,6 @@ main blockquote cite {
   font-size: var(--size-base);
   margin-block-start: var(--space-s);
   display: block;
-}
-
-/* Article Header */
-
-@media (max-width: 768px) {
-  main .content header {
-    padding-top: 0;
-    padding-bottom: 2rem;
-  }
 }
 
 /*
