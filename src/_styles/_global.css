@@ -406,6 +406,11 @@ main .content-body {
 
 /* Content Head */
 
+main .content-head {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 main .content-title {
   text-align: center;
   line-height: 1;
