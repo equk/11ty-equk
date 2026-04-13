@@ -3,11 +3,10 @@ layout: layouts/base.njk
 ---
 <main>
   <article class="content">
-        <div class="content-date text-center">
-          <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDateUS }}</time>
-        </div>
     <header class="content-head">
       <h1 class="content-title">{{ title }}</h1>
+      <div class="content-date">
+        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDateShort }}</time>
       </div>
     </header>
 
