@@ -270,6 +270,13 @@ header .site-title {
   margin-left: 10px;
 }
 
+@media (min-width: 768px) {
+  header .site-title {
+    padding-left: 10rem;
+    margin-left: 0;
+  }
+}
+
 header a.site-title:hover {
   color: var(--theme-text);
 }
