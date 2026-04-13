@@ -261,11 +261,6 @@ header nav ul {
   max-height: fit-content;
 }
 
-#soc-nav a:hover svg {
-  transform: scale(1.2);
-  color: var(--theme-text);
-}
-
 header .site-title {
   font-size: 1.875rem;
   line-height: 2.25rem;
