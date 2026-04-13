@@ -412,8 +412,31 @@ main .content-head {
 }
 
 main .content-title {
-  text-align: center;
+  text-align: left;
   line-height: 1;
+  text-transform: uppercase;
+  font-family: var(--font-base);
+  color: #233240;
+}
+
+.dark main .content-title {
+  color: var(--theme-text);
+}
+
+main .content-title {
+  font-size: 60px;
+  margin-block-start: 80px;
+}
+
+@media (max-width: 768px) {
+  main .content-title {
+    font-size: 45px;
+    margin-block-start: 40px;
+  }
+  main .content-head {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 main .content-date {
