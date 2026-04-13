@@ -443,10 +443,23 @@ main .content-date {
   text-align: center;
   font-size: var(--size-base);
   color: rgb(107, 114, 128);
+  margin-left: 0.2rem;
+  margin-block-start: 0.5em;
+}
+
+main .content-date {
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+  background-color: var(--theme-text);
+  text-transform: uppercase;
+  padding: .125rem .5rem;
+  width: max-content;
 }
 
 .dark main .content-date {
-  color: rgb(156, 163, 175);
+  background-color: #fff;
+  color: #233240;
 }
 
 /* Post Image */
