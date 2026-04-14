@@ -53,18 +53,10 @@
 }
 
 .top-banner_title h1 {
-  font-size: 3rem;
+  font-size: 3.75rem;
+  margin-block-start: 65px;
   text-transform: uppercase;
-  margin-block-start: 45px;
   letter-spacing: -0.025em;
-}
-
-@media (min-width: 640px) {
-  .top-banner_title h1 {
-    font-size: 3.75rem;
-    margin-block-start: 65px;
-    letter-spacing: -0.025em;
-  }
 }
 
 .top-banner h2 {
@@ -116,6 +108,16 @@ section.home-top {
   border-top-width: 1px;
   border-color: var(--theme-bg);
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235552cf' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+  .top-banner {
+    height: 250px;
+  }
+  .top-banner_title h1 {
+    font-size: 3rem;
+    margin-block-start: 0;
+  }
 }
 
 .top-banner {
