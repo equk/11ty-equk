@@ -1027,28 +1027,22 @@ article.message {
 /* Post Footer Tags */
 
 .post-tags a {
-  display: inline-block;
-  margin: 0 .625rem 0 0;
-  font-size: 1rem;
-  border-radius: 9999px;
-  padding: 4px 16px;
-  color: var(--theme-text);
-  border: 1px solid;
-  border-color: rgb(226, 232, 240);
-  transition: 0.3s linear;
+    font-size: var(--size-sm);
+    color: rgb(107, 114, 128);
+    color: #fff;
+    text-transform: uppercase;
+    background-color: var(--theme-text);
+    padding: .125rem .5rem;
+    width: -moz-max-content;
+    width: max-content;  transition: 0.3s linear;
 }
 
 .dark .post-tags a {
-  background-color: transparent;
-  border-color: rgb(51 65 85/0.4);
-}
-
-.post-tags a:before {
-  content: "\0023"
+  color: #233240;
 }
 
 .post-tags a:hover {
-  background-color: #a09dfb;
+  background-color: var(--theme-link);
 }
 
 .taglist li {
