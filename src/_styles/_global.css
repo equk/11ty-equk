@@ -1061,6 +1061,22 @@ ul.taglist {
   padding: 0
 }
 
+/* Post Footer */
+
+.post-footer {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: #cbd5e1;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.dark .post-footer {
+  border-color: #1e293b;
+}
+
 /*
   -----------------------------------------
   Markdown Headers
