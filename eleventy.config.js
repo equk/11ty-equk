@@ -186,7 +186,7 @@ export default function (eleventyConfig) {
     Object.keys(tagsObject).forEach((tag) => {
       tagList.push({ tagName: tag, tagCount: tagsObject[tag] })
     })
-    return tagList.sort((a, b) => b.tagCount - a.tagCount).slice(0, 5)
+    return tagList.sort((a, b) => b.tagCount - a.tagCount).slice(0, 6)
   })
 
   // Filters
