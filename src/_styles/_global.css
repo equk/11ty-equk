@@ -158,20 +158,7 @@ pre {
   }
 
   main {
-    @apply mx-auto;
     padding: 0 1rem;
-  }
-
-  main .content {
-    min-height: 50vh;
-  }
-
-  main .post-full-content {
-    min-height: 60vh;
-  }
-
-  main .tag-content {
-    min-height: calc(100vh - 222px);
   }
 
   main .content-head {
@@ -179,6 +166,7 @@ pre {
   }
 
   main .post-content,
+  main .tag-content,
   main .post-footer,
   main .post-comments,
   main .post-list,
@@ -221,6 +209,17 @@ pre {
   main .postlist-date {
     color: var(--theme-link);
   }
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 /* Medium Text */
@@ -658,7 +657,6 @@ a.github {
 }
 
 a.github i {
-  font: normal normal normal 1.4rem/1 ForkAwesome;
   padding-right: 5px;
 }
 
